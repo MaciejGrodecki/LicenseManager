@@ -1,0 +1,12 @@
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Api.deps.json
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Api.runtimeconfig.json
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Api.runtimeconfig.dev.json
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Api.dll
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Api.pdb
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Core.dll
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Infrastructure.dll
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Infrastructure.pdb
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/bin/Debug/netcoreapp1.1/LicenseManager.Core.pdb
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/obj/Debug/netcoreapp1.1/LicenseManager.Api.AssemblyInfo.cs
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/obj/Debug/netcoreapp1.1/LicenseManager.Api.dll
+/home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Api/obj/Debug/netcoreapp1.1/LicenseManager.Api.pdb
