@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LicenseManager.Core.Repositories;
+using LicenseManager.Infrastructure.Mappers;
+using LicenseManager.Infrastructure.Repositories;
+using LicenseManager.Infrastructure.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -29,6 +33,16 @@ namespace LicenseManager.Api
         {
             // Add framework services.
             services.AddMvc();
+            services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
+            services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
+            services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
+            services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
+            services.AddScoped<IUserRepository, InMemoryUserRepository>();
+            services.AddScoped<IRoomService, RoomService>();
+            services.AddScoped<ILicenseTypeService, LicenseTypeService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddSingleton(AutoMapperConfig.Initialize());
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

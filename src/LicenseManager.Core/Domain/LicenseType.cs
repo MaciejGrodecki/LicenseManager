@@ -21,7 +21,7 @@ namespace LicenseManager.Core.Domain
             SetName(name);
         }
 
-        private void SetName(string name)
+        public void SetName(string name)
         {
             if(String.IsNullOrWhiteSpace(name))
             {

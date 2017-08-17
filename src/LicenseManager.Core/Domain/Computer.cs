@@ -10,7 +10,7 @@ namespace LicenseManager.Core.Domain
         public Guid ComputerId { get; protected set; }
         public string InventoryNumber { get; protected set; }
         public string IpAddress { get; protected set; }
-        public Room Room { get; protected set; }
+        public Guid RoomId { get; protected set; }
         public IEnumerable<User> Users { get; set; }
 
         protected Computer()
@@ -18,7 +18,7 @@ namespace LicenseManager.Core.Domain
 
         }
 
-        public Computer(string inventoryNumber, string ipAddress,)
+        public Computer(string inventoryNumber, string ipAddress)
         {
             ComputerId = Guid.NewGuid();
             SetInventoryNumber(inventoryNumber);
@@ -26,16 +26,24 @@ namespace LicenseManager.Core.Domain
         }
 
         public Computer(string inventoryNumber, string ipAddress,
-                Room room, IEnumerable<User> users)
+                Guid roomId)
         {
             ComputerId = Guid.NewGuid();
             SetInventoryNumber(inventoryNumber);
             SetIpAddress(ipAddress);
-            Room = room;
-            Users = users;
+            RoomId = roomId;
         }
 
-        private void SetIpAddress(string ipAddress)
+        public Computer(string inventoryNumber, string ipAddress,
+                Guid roomId, IEnumerable<User> users)
+        {
+            ComputerId = Guid.NewGuid();
+            SetInventoryNumber(inventoryNumber);
+            SetIpAddress(ipAddress);
+            RoomId = roomId;
+        }
+
+        public void SetIpAddress(string ipAddress)
         {
             if (String.IsNullOrWhiteSpace(ipAddress))
             {
@@ -49,7 +57,7 @@ namespace LicenseManager.Core.Domain
             IpAddress = ipAddress;
         }
 
-        private void SetInventoryNumber(string inventoryNumber)
+        public void SetInventoryNumber(string inventoryNumber)
         {
             if (String.IsNullOrWhiteSpace(inventoryNumber))
             {
@@ -58,7 +66,5 @@ namespace LicenseManager.Core.Domain
 
             InventoryNumber = inventoryNumber.ToUpperInvariant();
         }
-
-        
     }
 }

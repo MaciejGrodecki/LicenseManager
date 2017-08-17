@@ -7,7 +7,7 @@ namespace LicenseManager.Core.Domain
         public Guid LicenseId { get; protected set; }
         public string Name { get; protected set; }
         public int Count { get; protected set; }
-        public LicenseType LicenseType { get; protected set; }
+        public Guid LicenseTypeId { get; protected set; }
         public DateTime BuyDate { get; protected set; }
 
         protected License()
@@ -15,17 +15,26 @@ namespace LicenseManager.Core.Domain
 
         }
 
-        public License(string name, int count, LicenseType licenseType,
+        public License(string name, int count, Guid licenseTypeId,
                 DateTime buyDate)
         {
             LicenseId = Guid.NewGuid();
             SetName(name);
             SetCount(count);
-            LicenseType = licenseType;
+            LicenseTypeId = licenseTypeId;
             SetBuyDate(buyDate);
         }
 
-        private void SetBuyDate(DateTime buyDate)
+        public void SetLicenseType(Guid licenseTypeId)
+        {
+            if(licenseTypeId == null)
+            {
+                throw new Exception("License type is null");
+            }
+            LicenseTypeId = licenseTypeId;
+        }
+
+        public void SetBuyDate(DateTime buyDate)
         {
             if(buyDate > DateTime.Now)
             {
@@ -34,7 +43,7 @@ namespace LicenseManager.Core.Domain
             BuyDate = buyDate.Date;
         }
 
-        private void SetCount(int count)
+        public void SetCount(int count)
         {
             if(count < 1)
             {
@@ -44,7 +53,7 @@ namespace LicenseManager.Core.Domain
             Count = count;
         }
 
-        private void SetName(string name)
+        public void SetName(string name)
         {
             if(String.IsNullOrWhiteSpace(name))
             {

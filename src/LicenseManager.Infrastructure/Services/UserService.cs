@@ -1,0 +1,68 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using AutoMapper;
+using LicenseManager.Core.Domain;
+using LicenseManager.Core.Repositories;
+using LicenseManager.Infrastructure.DTO;
+using LicenseManager.Infrastructure.Extensions;
+
+namespace LicenseManager.Infrastructure.Services
+{
+    public class UserService : IUserService
+    {
+        private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
+
+        public UserService(IUserRepository userRepository, IMapper mapper)
+        {
+            _userRepository = userRepository;
+            _mapper = mapper;
+        }
+
+        public async Task<IEnumerable<UserDto>> BrowseAsync()
+        {
+            var users = await _userRepository.BrowseAsync();
+            return _mapper.Map<IEnumerable<UserDto>>(users);
+        }
+
+        public async Task<UserDto> GetAsync(Guid userId)
+        {
+            var user = await _userRepository.GetOrFailAsync(userId);
+            return _mapper.Map<UserDto>(user);
+        }
+
+        public async Task<UserDto> GetAsync(string name, string surname)
+        {
+            var user = await _userRepository.GetOrFailAsync(name, surname);
+            return _mapper.Map<UserDto>(user);
+        }
+
+        public async Task AddAsync(string name, string surname)
+        {
+            var user = await _userRepository.GetAsync(name,surname);
+            if(user != null)
+            {
+                throw new Exception($"User with name: {name} and username: {surname} already exist");
+            }
+            user = new User(name, surname);
+            await _userRepository.AddAsync(user);
+        }
+
+        public async Task RemoveAsync(Guid userId)
+        {
+            var user = await _userRepository.GetOrFailAsync(userId);
+            await _userRepository.RemoveAsync(user);
+        }
+
+        public async Task UpdateAsync(Guid userId, string name, string surname)
+        {
+            var user = await _userRepository.GetOrFailAsync(userId);
+            user = await _userRepository.GetOrFailAsync(name, surname);
+            user.SetName(name);
+            user.SetSurname(surname);
+
+            await _userRepository.UpdateAsync(user);
+        }
+    }
+}

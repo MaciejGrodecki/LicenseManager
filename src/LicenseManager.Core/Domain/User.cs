@@ -22,7 +22,7 @@ namespace LicenseManager.Core.Domain
             SetSurname(surname);
         }
 
-        private void SetSurname(string surname)
+        public void SetSurname(string surname)
         {
             string exceptionMsg = "Surname is incorrect";
 
@@ -38,7 +38,7 @@ namespace LicenseManager.Core.Domain
             Surname = surname;
         }
 
-        private void SetName(string name)
+        public void SetName(string name)
         {
             string exceptionMsg = "Name is incorrect";
 
