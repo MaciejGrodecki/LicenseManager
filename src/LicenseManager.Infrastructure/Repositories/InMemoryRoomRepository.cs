@@ -9,7 +9,7 @@ namespace LicenseManager.Infrastructure.Repositories
 {
     public class InMemoryRoomRepository : IRoomRepository
     {
-        private readonly ISet<Room> _rooms = new HashSet<Room>();
+        private static readonly ISet<Room> _rooms = new HashSet<Room>();
         public async Task<IEnumerable<Room>> BrowseAsync()
             => await Task.FromResult(_rooms);
         public async Task<Room> GetAsync(Guid roomId)

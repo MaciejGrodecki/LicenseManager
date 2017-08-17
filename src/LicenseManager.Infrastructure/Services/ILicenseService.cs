@@ -14,6 +14,7 @@ namespace LicenseManager.Infrastructure.Services
          Task<LicenseDto> GetAsync(Guid licenseId);
          Task AddAsync(string name, int count, Guid licenseTypeId, DateTime buyDate);
          Task RemoveAsync(Guid licenseId);
-         Task UpdateAsync(Guid roomId, string name);
+         Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
+             DateTime buyDat);
     }
 }

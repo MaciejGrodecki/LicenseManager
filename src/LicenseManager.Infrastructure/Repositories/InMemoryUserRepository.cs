@@ -9,7 +9,7 @@ namespace LicenseManager.Infrastructure.Repositories
 {
     public class InMemoryUserRepository : IUserRepository
     {
-        private ISet<User> _users = new HashSet<User>();
+        private static ISet<User> _users = new HashSet<User>();
 
         public async Task<IEnumerable<User>> BrowseAsync()
             => await Task.FromResult(_users);

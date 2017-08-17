@@ -9,7 +9,7 @@ namespace LicenseManager.Infrastructure.Repositories
 {
     public class InMemoryLicenseTypeRepository : ILicenseTypeRepository
     {
-        private ISet<LicenseType> _licenseTypes = new HashSet<LicenseType>();
+        private static ISet<LicenseType> _licenseTypes = new HashSet<LicenseType>();
 
         public async Task<IEnumerable<LicenseType>> BrowseAsync()
             => await Task.FromResult(_licenseTypes);

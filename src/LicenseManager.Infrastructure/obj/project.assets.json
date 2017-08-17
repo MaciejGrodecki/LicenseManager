@@ -4560,22 +4560,22 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
+      "projectUniqueName": "E:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
       "projectName": "LicenseManager.Infrastructure",
-      "projectPath": "e:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
-      "outputPath": "e:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\obj\\",
+      "projectPath": "E:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
+      "outputPath": "E:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
       "files": {
-        "lib/netstandard1.4/LicenseManager.Infrastructure.dll": "e:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\bin\\placeholder\\netstandard1.4\\LicenseManager.Infrastructure.dll"
+        "lib/netstandard1.4/LicenseManager.Infrastructure.dll": "E:\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\bin\\placeholder\\netstandard1.4\\LicenseManager.Infrastructure.dll"
       },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj": {
-              "projectPath": "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj"
+            "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj": {
+              "projectPath": "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj"
             }
           }
         }

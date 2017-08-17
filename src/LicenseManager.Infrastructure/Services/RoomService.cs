@@ -42,10 +42,10 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task AddAsync(string name)
         {
-            var room = await _roomRepository.GetAsync(name);
+            var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
             if(room != null)
             {
-                throw new Exception($"Room with name: {name} alredy exist");
+                throw new Exception($"Room with name: {name} already exist");
             }
             room = new Room(name);
             await _roomRepository.AddAsync(room);
@@ -56,11 +56,14 @@ namespace LicenseManager.Infrastructure.Services
             var room = await _roomRepository.GetOrFailAsync(roomId);
             await _roomRepository.RemoveAsync(room);
         }
-        
 
         public async Task UpdateAsync(Guid roomId, string name)
         {
-            var room = await _roomRepository.GetOrFailAsync(name);
+            var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
+            if(room != null)
+            {
+                throw new Exception($"Room with name: {name} already exist");
+            }
             room = await _roomRepository.GetOrFailAsync(roomId);
             room.SetName(name);
             await _roomRepository.UpdateAsync(room);

@@ -55,10 +55,10 @@ namespace LicenseManager.Infrastructure.Services
             await _licenseRepository.RemoveAsync(license);
         }
 
-        public async Task UpdateAsync(Guid roomId, string name, int count, Guid licenseTypeId,
+        public async Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
              DateTime buyDate)
         {
-            var license = await _licenseRepository.GetOrFailAsync(roomId);
+            var license = await _licenseRepository.GetOrFailAsync(licenseId);
             license.SetName(name);
             license.SetCount(count);
             license.SetLicenseType(licenseTypeId);

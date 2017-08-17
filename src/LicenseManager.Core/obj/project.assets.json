@@ -3708,16 +3708,16 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
+      "projectUniqueName": "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
       "projectName": "LicenseManager.Core",
-      "projectPath": "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
-      "outputPath": "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\obj\\",
+      "projectPath": "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
+      "outputPath": "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
       "files": {
-        "lib/netstandard1.4/LicenseManager.Core.dll": "e:\\New\\LicenseManager\\src\\LicenseManager.Core\\bin\\placeholder\\netstandard1.4\\LicenseManager.Core.dll"
+        "lib/netstandard1.4/LicenseManager.Core.dll": "E:\\New\\LicenseManager\\src\\LicenseManager.Core\\bin\\placeholder\\netstandard1.4\\LicenseManager.Core.dll"
       },
       "frameworks": {
         "netstandard1.4": {

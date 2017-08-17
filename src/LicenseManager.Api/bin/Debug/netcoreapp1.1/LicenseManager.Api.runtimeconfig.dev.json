@@ -1,7 +1,7 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/maciek/.nuget/packages"
+      "C:\\Users\\BOBW\\.nuget\\packages"
     ]
   }
 }

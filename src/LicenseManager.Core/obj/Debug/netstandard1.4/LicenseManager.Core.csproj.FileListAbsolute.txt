@@ -4,3 +4,9 @@
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Core/obj/Debug/netstandard1.4/LicenseManager.Core.AssemblyInfo.cs
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Core/obj/Debug/netstandard1.4/LicenseManager.Core.dll
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Core/obj/Debug/netstandard1.4/LicenseManager.Core.pdb
+E:\New\LicenseManager\src\LicenseManager.Core\bin\Debug\netstandard1.4\LicenseManager.Core.deps.json
+E:\New\LicenseManager\src\LicenseManager.Core\bin\Debug\netstandard1.4\LicenseManager.Core.dll
+E:\New\LicenseManager\src\LicenseManager.Core\bin\Debug\netstandard1.4\LicenseManager.Core.pdb
+E:\New\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.AssemblyInfo.cs
+E:\New\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.dll
+E:\New\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.pdb

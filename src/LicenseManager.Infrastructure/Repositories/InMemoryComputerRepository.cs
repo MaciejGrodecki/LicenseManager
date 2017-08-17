@@ -9,7 +9,7 @@ namespace LicenseManager.Infrastructure.Repositories
 {
     public class InMemoryComputerRepository : IComputerRepository
     {
-        private readonly ISet<Computer> _computers = new HashSet<Computer>();
+        private static readonly ISet<Computer> _computers = new HashSet<Computer>();
         public async Task<IEnumerable<Computer>> BrowseAsync()
             => await Task.FromResult(_computers);
 

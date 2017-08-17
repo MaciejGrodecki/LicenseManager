@@ -6,3 +6,11 @@
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Infrastructure/obj/Debug/netstandard1.4/LicenseManager.Infrastructure.AssemblyInfo.cs
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Infrastructure/obj/Debug/netstandard1.4/LicenseManager.Infrastructure.dll
 /home/maciek/Projekty/New/LicenseManager/src/LicenseManager.Infrastructure/obj/Debug/netstandard1.4/LicenseManager.Infrastructure.pdb
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard1.4\LicenseManager.Infrastructure.deps.json
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.AssemblyInfo.cs
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.dll
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.pdb
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard1.4\LicenseManager.Infrastructure.dll
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard1.4\LicenseManager.Infrastructure.pdb
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard1.4\LicenseManager.Core.dll
+E:\New\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard1.4\LicenseManager.Core.pdb
