@@ -60,7 +60,11 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task UpdateAsync(Guid licenseTypeId, string name)
         {
-            var licenseType = await _licenseTypeRepository.GetOrFailAsync(name);
+            var licenseType = await _licenseTypeRepository.GetAsync(name);
+            if(licenseType != null)
+            {
+                throw new Exception($"License type with name: {name} already exist");
+            }
             licenseType = await _licenseTypeRepository.GetOrFailAsync(licenseTypeId);
             licenseType.SetName(name);
             await _licenseTypeRepository.UpdateAsync(licenseType);

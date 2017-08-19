@@ -22,3 +22,17 @@ E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseMana
 E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.AssemblyInfo.cs
 E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.dll
 E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Api.deps.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Api.runtimeconfig.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Api.runtimeconfig.dev.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Api.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Api.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Core.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Infrastructure.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Infrastructure.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp1.1\LicenseManager.Core.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.csproj.CoreCompileInputs.cache
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.AssemblyInfoInputs.cache
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.AssemblyInfo.cs
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp1.1\LicenseManager.Api.pdb
