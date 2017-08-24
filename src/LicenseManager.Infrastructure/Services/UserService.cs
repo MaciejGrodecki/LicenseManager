@@ -5,7 +5,6 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
-using LicenseManager.Infrastructure.Extensions;
 
 namespace LicenseManager.Infrastructure.Services
 {
@@ -28,13 +27,22 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<UserDto> GetAsync(Guid userId)
         {
-            var user = await _userRepository.GetOrFailAsync(userId);
+            var user = await _userRepository.GetAsync(userId);
+            if(user == null)
+            {
+                throw new Exception($"User type with id: {userId} doesn't exist");
+            }
+
             return _mapper.Map<UserDto>(user);
         }
 
         public async Task<UserDto> GetAsync(string name, string surname)
         {
-            var user = await _userRepository.GetOrFailAsync(name, surname);
+            var user = await _userRepository.GetAsync(name, surname);
+            if(user == null)
+            {
+                throw new Exception($"User type with name: {name} and surname: {surname} doesn't exist");
+            }
             return _mapper.Map<UserDto>(user);
         }
 
@@ -51,14 +59,30 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid userId)
         {
-            var user = await _userRepository.GetOrFailAsync(userId);
+            var user = await _userRepository.GetAsync(userId);
+            if(user == null)
+            {
+                throw new Exception($"User type with id: {userId} doesn't exist");
+            }
+
             await _userRepository.RemoveAsync(user);
         }
 
         public async Task UpdateAsync(Guid userId, string name, string surname)
         {
-            var user = await _userRepository.GetOrFailAsync(userId);
-            user = await _userRepository.GetOrFailAsync(name, surname);
+            var user = await _userRepository.GetAsync(name, surname);
+            if(user != null)
+            {
+                throw new Exception($"User with name: {name} and {surname} already exists");
+            }
+
+            user = await _userRepository.GetAsync(userId);
+            if(user == null)
+            {
+                throw new Exception($"User type with id: {userId} doesn't exist");
+            }
+
+            
             user.SetName(name);
             user.SetSurname(surname);
 

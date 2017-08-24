@@ -5,7 +5,6 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
-using LicenseManager.Infrastructure.Extensions;
 
 namespace LicenseManager.Infrastructure.Services
 {
@@ -29,14 +28,22 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<LicenseTypeDto> GetAsync(Guid licenseTypeId)
         {
-            var licenseType = await _licenseTypeRepository.GetOrFailAsync(licenseTypeId);
+            var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
+            if(licenseType == null)
+            {
+                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
+            }
 
             return _mapper.Map<LicenseTypeDto>(licenseType);
         }
 
         public async Task<LicenseTypeDto> GetAsync(string name)
         {
-            var licenseType = await _licenseTypeRepository.GetOrFailAsync(name);
+            var licenseType = await _licenseTypeRepository.GetAsync(name);
+            if(licenseType == null)
+            {
+                throw new Exception($"License type with name: {name} doesn't exist");
+            }
 
             return _mapper.Map<LicenseTypeDto>(licenseType);
         }
@@ -48,13 +55,18 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"License type with name: {name} already exist");
             }
-            licenseType = new LicenseType(name);
+            licenseType = new LicenseType(Guid.NewGuid(), name);
             await _licenseTypeRepository.AddAsync(licenseType);
         }
 
         public async Task RemoveAsync(Guid licenseTypeId)
         {
-            var licenseType = await _licenseTypeRepository.GetOrFailAsync(licenseTypeId);
+            var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
+            if(licenseType == null)
+            {
+                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
+            }
+
             await _licenseTypeRepository.RemoveAsync(licenseType);
         }
 
@@ -65,8 +77,15 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"License type with name: {name} already exist");
             }
-            licenseType = await _licenseTypeRepository.GetOrFailAsync(licenseTypeId);
+
+            licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
+            if(licenseType == null)
+            {
+                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
+            }
+
             licenseType.SetName(name);
+            
             await _licenseTypeRepository.UpdateAsync(licenseType);
         }
     }

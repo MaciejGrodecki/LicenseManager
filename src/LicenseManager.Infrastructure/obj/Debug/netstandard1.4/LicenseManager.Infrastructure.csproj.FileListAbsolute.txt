@@ -24,3 +24,5 @@ C:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Infrastr
 C:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.AssemblyInfo.cs
 C:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.dll
 C:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.pdb
+e:\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.csproj.CoreCompileInputs.cache
+e:\New\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.AssemblyInfoInputs.cache

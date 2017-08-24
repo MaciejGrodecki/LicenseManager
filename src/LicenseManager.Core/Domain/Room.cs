@@ -12,9 +12,9 @@ namespace LicenseManager.Core.Domain
 
         }
 
-        public Room(string name)
+        public Room(Guid roomId, string name)
         {
-            RoomId = Guid.NewGuid();
+            RoomId = roomId;
             SetName(name);
         }
 

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using LicenseManager.Core.Domain;
@@ -11,7 +12,7 @@ namespace LicenseManager.Tests.Repositories
     {
         private readonly IComputerRepository _repository;
 
-        private static readonly Room _room = new Room("A-11");
+        private static readonly Room _room = new Room(Guid.NewGuid(), "A-11");
         private static readonly IEnumerable<User> _users = new List<User>{
             new User("Jan", "Kowalski")
         };

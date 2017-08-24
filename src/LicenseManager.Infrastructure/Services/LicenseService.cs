@@ -5,7 +5,6 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
-using LicenseManager.Infrastructure.Extensions;
 
 namespace LicenseManager.Infrastructure.Services
 {
@@ -32,25 +31,28 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task<LicenseDto> GetAsync(Guid licenseId)
         {
-            var license = await _licenseRepository.GetOrFailAsync(licenseId);
+            var license = await _licenseRepository.GetAsync(licenseId);
+            if(license == null)
+            {
+                throw new Exception($"License with id: {licenseId} doesn't exist");
+            }
 
             return _mapper.Map<LicenseDto>(license);
         }      
         public async Task AddAsync(string name, int count, Guid licenseTypeId,
              DateTime buyDate)
         {
-            var licenses = await _licenseRepository.BrowseAsync(name);
-            if(licenses != null)
-            {
-                throw new Exception($"License with name: {name} already exist");
-            }
             var license = new License(name, count, licenseTypeId, buyDate);
 
             await  _licenseRepository.AddAsync(license);
         }
         public async Task RemoveAsync(Guid licenseId)
         {
-            var license = await _licenseRepository.GetOrFailAsync(licenseId);
+            var license = await _licenseRepository.GetAsync(licenseId);
+            if(license == null)
+            {
+                throw new Exception($"License with id: {licenseId} doesn't exist");
+            }
 
             await _licenseRepository.RemoveAsync(license);
         }
@@ -58,7 +60,11 @@ namespace LicenseManager.Infrastructure.Services
         public async Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
              DateTime buyDate)
         {
-            var license = await _licenseRepository.GetOrFailAsync(licenseId);
+            var license = await _licenseRepository.GetAsync(licenseId);
+            if(license == null)
+            {
+                throw new Exception($"License with id: {licenseId} doesn't exist");
+            }
             license.SetName(name);
             license.SetCount(count);
             license.SetLicenseType(licenseTypeId);

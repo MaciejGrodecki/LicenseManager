@@ -17,7 +17,7 @@ namespace LicenseManager.Infrastructure.Repositories
         {
             var licenses = _licenses.Where(x => x.Name == name);
 
-            return await Task.FromResult(licenses);
+            return await Task.FromResult(licenses.ToList());
         }
 
         public async Task<License> GetAsync(Guid licenseId)

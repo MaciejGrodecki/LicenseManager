@@ -15,9 +15,9 @@ namespace LicenseManager.Core.Domain
             
         }
 
-        public LicenseType(string name)
+        public LicenseType(Guid licenseTypeId, string name)
         {
-            LicenseTypeId = Guid.NewGuid();
+            LicenseTypeId = licenseTypeId;
             SetName(name);
         }
 

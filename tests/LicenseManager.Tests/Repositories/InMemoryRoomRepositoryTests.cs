@@ -11,7 +11,7 @@ namespace LicenseManager.Tests.Repositories
     public class InMemoryRoomRepositoryTests
     {
         private readonly IRoomRepository _repository;
-        private static readonly Room _room = new Room("A-13");
+        private static readonly Room _room = new Room(Guid.NewGuid(), "A-13");
         public InMemoryRoomRepositoryTests()
         {
             //Arrange

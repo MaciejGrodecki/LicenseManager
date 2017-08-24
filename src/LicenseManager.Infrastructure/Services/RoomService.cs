@@ -5,7 +5,6 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
-using LicenseManager.Infrastructure.Extensions;
 
 namespace LicenseManager.Infrastructure.Services
 {
@@ -28,15 +27,22 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<RoomDto> GetAsync(Guid roomId)
         {
-            var room = await _roomRepository.GetOrFailAsync(roomId);
+            var room = await _roomRepository.GetAsync(roomId);
+            if (room == null) 
+            {
+                throw new Exception ($"Room with id: {roomId} does not exist");
+            }
 
             return _mapper.Map<RoomDto>(room);
         }
 
         public async Task<RoomDto> GetAsync(string name)
         {
-            var room = await _roomRepository.GetOrFailAsync(name);
-
+            var room = await _roomRepository.GetAsync(name);
+            if (room == null) 
+            {
+                throw new Exception ($"Room with name: {name} does not exist");
+            }
             return _mapper.Map<RoomDto>(room);
         }
 
@@ -47,13 +53,18 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"Room with name: {name} already exist");
             }
-            room = new Room(name);
+            room = new Room(Guid.NewGuid(), name);
             await _roomRepository.AddAsync(room);
         }
 
         public async Task RemoveAsync(Guid roomId)
         {
-            var room = await _roomRepository.GetOrFailAsync(roomId);
+            var room = await _roomRepository.GetAsync(roomId);
+            if(room == null)
+            {
+                throw new Exception($"Room with id: {roomId} doesn't exist");
+            }
+
             await _roomRepository.RemoveAsync(room);
         }
 
@@ -64,7 +75,11 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"Room with name: {name} already exist");
             }
-            room = await _roomRepository.GetOrFailAsync(roomId);
+            room = await _roomRepository.GetAsync(roomId);
+            if(room == null)
+            {
+                throw new Exception($"Room with id: {roomId} cannot be updated becouse it doesn't exist");
+            }
             room.SetName(name);
             await _roomRepository.UpdateAsync(room);
         }

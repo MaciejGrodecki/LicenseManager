@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using LicenseManager.Core.Domain;
@@ -10,7 +11,7 @@ namespace LicenseManager.Tests.Repositories
     public class InMemoryLicenseTypeRepositoryTests
     {
         private readonly ILicenseTypeRepository _repository;
-        private static readonly LicenseType _licenseType = new LicenseType("OEM");
+        private static readonly LicenseType _licenseType = new LicenseType(Guid.NewGuid(), "OEM");
         public InMemoryLicenseTypeRepositoryTests()
         {
             //Arrange

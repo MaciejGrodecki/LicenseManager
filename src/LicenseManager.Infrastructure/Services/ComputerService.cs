@@ -5,7 +5,6 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
-using LicenseManager.Infrastructure.Extensions;
 
 namespace LicenseManager.Infrastructure.Services
 {
@@ -29,13 +28,21 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<ComputerDto> GetAsync(Guid computerId)
         {
-            var computer = await _computerRepository.GetOrFailAsync(computerId);
+            var computer = await _computerRepository.GetAsync(computerId);
+            if(computer == null)
+            {
+                throw new Exception($"Computer with id: {computerId} doesn't exist");
+            }
 
             return _mapper.Map<ComputerDto>(computer);
         }
         public async Task<ComputerDto> GetAsync(string inventoryNumber)
         {
-            var computer = await _computerRepository.GetOrFailAsync(inventoryNumber);
+            var computer = await _computerRepository.GetAsync(inventoryNumber);
+            if(computer == null)
+            {
+                throw new Exception($"Computer with inventory number: {inventoryNumber} doesn't exist");
+            }
 
             return _mapper.Map<ComputerDto>(computer);
         }
@@ -52,7 +59,11 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid computerId)
         {
-            var computer = await _computerRepository.GetOrFailAsync(computerId);
+            var computer = await _computerRepository.GetAsync(computerId);
+            if(computer == null)
+            {
+                throw new Exception($"Computer with id: {computerId} doesn't exist");
+            }
 
             await _computerRepository.RemoveAsync(computer);
 
@@ -61,8 +72,18 @@ namespace LicenseManager.Infrastructure.Services
         public async Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, 
             Guid roomId)
         {
-            var computer = await _computerRepository.GetOrFailAsync(computerId);
-            computer = await _computerRepository.GetOrFailAsync(inventoryNumber);
+            var computer = await _computerRepository.GetAsync(inventoryNumber);
+            if(computer != null)
+            {
+                throw new Exception($"Computer with inventory number: {inventoryNumber} already exists");
+            }
+
+            computer = await _computerRepository.GetAsync(computerId);
+            if(computer == null)
+            {
+                throw new Exception($"Computer with id: {computerId} doesn't exist");
+            }
+            
             computer.SetInventoryNumber(inventoryNumber);
             computer.SetInventoryNumber(ipAddress);
 
