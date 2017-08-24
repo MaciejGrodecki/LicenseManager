@@ -6,11 +6,13 @@ using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.Mappers;
 using LicenseManager.Infrastructure.Repositories;
 using LicenseManager.Infrastructure.Services;
+using LicenseManager.Infrastructure.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 namespace LicenseManager.Api
@@ -43,7 +45,11 @@ namespace LicenseManager.Api
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ILicenseTypeService, LicenseTypeService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ILicenseService, LicenseService>();
+            services.AddScoped<IComputerService, ComputerService>();
+            services.AddScoped<IDataInitializer,DataInitializer>();
             services.AddSingleton(AutoMapperConfig.Initialize());
+            services.Configure<AppSettings>(Configuration.GetSection("app"));
 
         }
 
@@ -52,8 +58,18 @@ namespace LicenseManager.Api
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-
+            SeedData(app);
             app.UseMvc();
+        }
+
+        private void SeedData(IApplicationBuilder app)
+        {
+            var settings = app.ApplicationServices.GetService<IOptions<AppSettings>>();
+            if(settings.Value.SeedData)
+            {
+                var dataInitializer = app.ApplicationServices.GetService<IDataInitializer>();
+                dataInitializer.SeedAsync();
+            }
         }
     }
 }
