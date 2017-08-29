@@ -13,7 +13,7 @@ namespace LicenseManager.Infrastructure.Repositories
         public async Task<IEnumerable<Room>> BrowseAsync()
             => await Task.FromResult(_rooms);
         public async Task<Room> GetAsync(Guid roomId)
-            => await Task.FromResult(_rooms.SingleOrDefault(x => x.RoomId == roomId));
+            => await Task.FromResult(_rooms.Single(x => x.RoomId == roomId));
 
         public async Task<Room> GetAsync(string name)
             => await Task.FromResult(_rooms.SingleOrDefault(x => x.Name == name));

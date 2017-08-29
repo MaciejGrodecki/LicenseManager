@@ -30,9 +30,9 @@ namespace LicenseManager.Infrastructure.Repositories
             await Task.CompletedTask;
         }
 
-        public Task UpdateAsync(Computer computer)
+        public async Task UpdateAsync(Computer computer)
         {
-            throw new NotImplementedException();
+            await Task.CompletedTask;
         }
     }
 }

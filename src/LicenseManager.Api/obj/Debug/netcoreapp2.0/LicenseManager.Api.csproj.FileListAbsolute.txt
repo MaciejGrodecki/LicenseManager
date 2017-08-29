@@ -1,0 +1,14 @@
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.deps.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.runtimeconfig.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.runtimeconfig.dev.json
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Core.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Core.pdb
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.csproj.CoreCompileInputs.cache
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.AssemblyInfoInputs.cache
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.AssemblyInfo.cs
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.dll
+c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.pdb

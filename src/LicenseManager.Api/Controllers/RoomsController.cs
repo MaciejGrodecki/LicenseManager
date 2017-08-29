@@ -23,7 +23,7 @@ namespace LicenseManager.Api.Controllers
             return Json(rooms);
         }
 
-        [HttpGet("{roomId}")]
+        [HttpGet("{roomId:Guid}")]
         public async Task<IActionResult> Get(Guid roomId)
         {
             var room = await _roomService.GetAsync(roomId);
@@ -31,7 +31,6 @@ namespace LicenseManager.Api.Controllers
             {
                 return NotFound();
             }
-
             return Json(room);
         }
 

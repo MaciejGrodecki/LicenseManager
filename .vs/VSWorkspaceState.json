@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\LicenseManager.Api",
+    "\\src\\LicenseManager.Api\\Controllers",
+    "\\tests",
+    "\\tests\\LicenseManager.Tests.EndToEnd",
+    "\\tests\\LicenseManager.Tests.EndToEnd\\Controllers"
+  ],
+  "SelectedNode": "\\src\\LicenseManager.Api\\Controllers\\RoomsController.cs",
+  "PreviewInSolutionExplorer": false
+}

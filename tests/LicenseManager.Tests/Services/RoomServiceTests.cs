@@ -70,7 +70,7 @@ namespace LicenseManager.Tests.Services
             _roomRepositoryMock.Setup(x => x.GetAsync(_room.RoomId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _roomService.GetAsync(_room.RoomId));
+            var room = await _roomService.GetAsync(_room.RoomId);
 
             //Assert
             _roomRepositoryMock.Verify(x => x.GetAsync(_room.RoomId), Times.Once());
@@ -99,7 +99,7 @@ namespace LicenseManager.Tests.Services
             _roomRepositoryMock.Setup(x => x.GetAsync(_room.Name)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _roomService.GetAsync(_room.Name));
+            var room = await _roomService.GetAsync(_room.Name);
 
             //Assert
             _roomRepositoryMock.Verify(x => x.GetAsync(_room.Name), Times.Once());

@@ -28,10 +28,6 @@ namespace LicenseManager.Infrastructure.Services
         public async Task<RoomDto> GetAsync(Guid roomId)
         {
             var room = await _roomRepository.GetAsync(roomId);
-            if (room == null) 
-            {
-                throw new Exception ($"Room with id: {roomId} does not exist");
-            }
 
             return _mapper.Map<RoomDto>(room);
         }
@@ -39,10 +35,7 @@ namespace LicenseManager.Infrastructure.Services
         public async Task<RoomDto> GetAsync(string name)
         {
             var room = await _roomRepository.GetAsync(name);
-            if (room == null) 
-            {
-                throw new Exception ($"Room with name: {name} does not exist");
-            }
+            
             return _mapper.Map<RoomDto>(room);
         }
 
