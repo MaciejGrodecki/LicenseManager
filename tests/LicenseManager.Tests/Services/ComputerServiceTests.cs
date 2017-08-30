@@ -15,15 +15,15 @@ namespace LicenseManager.Tests.Services
     public class ComputerServiceTests
     {
         private static readonly Room _room = new Room(Guid.NewGuid(), "A-11");
-        private static readonly IEnumerable<User> _users = new HashSet<User>
+        private static readonly ISet<User> _users = new HashSet<User>
         {
             new User("Jan", "Kowalski")
         };
         private readonly Mock<IComputerRepository> _computerRepositoryMock;
         private readonly Mock<IMapper> _mapperMock;
         private readonly IComputerService _computerService;
-        private readonly Computer _computer = new Computer("US-IN/Z/1-W", "10.11.2.1",
-             _room.RoomId, _users);
+        private readonly Computer _computer = new Computer(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.1",
+             _room.RoomId);
         private readonly ComputerDto _computerDto;
         private readonly ISet<Computer> _computers = new HashSet<Computer>();
         private readonly ISet<ComputerDto> _computersDto = new HashSet<ComputerDto>();
@@ -126,7 +126,7 @@ namespace LicenseManager.Tests.Services
         public async Task Add_computer_async_should_invoke_add_computer_async_on_repository()
         {
             //Act
-            await _computerService.AddAsync(_computer.InventoryNumber, _computer.IpAddress, _computer.RoomId);
+            await _computerService.AddAsync(Guid.NewGuid(), _computer.InventoryNumber, _computer.IpAddress, _computer.RoomId);
 
             //Assert
             _computerRepositoryMock.Verify(x => x.AddAsync(It.IsAny<Computer>()), Times.Once());
@@ -139,7 +139,7 @@ namespace LicenseManager.Tests.Services
             _computerRepositoryMock.Setup(x => x.GetAsync(_computer.InventoryNumber)).ReturnsAsync((_computer));
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _computerService.AddAsync(_computer.InventoryNumber, 
+            await Assert.ThrowsAsync<Exception>(async () => await _computerService.AddAsync(_computer.ComputerId, _computer.InventoryNumber, 
                 _computer.IpAddress, _computer.RoomId));
 
             //Assert

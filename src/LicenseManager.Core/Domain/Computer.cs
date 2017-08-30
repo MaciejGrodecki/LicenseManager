@@ -6,38 +6,30 @@ namespace LicenseManager.Core.Domain
 {
     public class Computer
     {
+        private ISet<User> _users = new HashSet<User>();
         private static readonly string IpAddressCheck = @"((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
         public Guid ComputerId { get; protected set; }
         public string InventoryNumber { get; protected set; }
         public string IpAddress { get; protected set; }
         public Guid RoomId { get; protected set; }
-        public IEnumerable<User> Users { get; set; }
+        public ICollection<User> Users => _users;
 
         protected Computer()
         {
 
         }
 
-        public Computer(string inventoryNumber, string ipAddress)
+        public Computer(Guid computerId, string inventoryNumber, string ipAddress)
         {
-            ComputerId = Guid.NewGuid();
+            ComputerId = computerId;
             SetInventoryNumber(inventoryNumber);
             SetIpAddress(ipAddress);
         }
 
-        public Computer(string inventoryNumber, string ipAddress,
+        public Computer(Guid computerId, string inventoryNumber, string ipAddress,
                 Guid roomId)
         {
-            ComputerId = Guid.NewGuid();
-            SetInventoryNumber(inventoryNumber);
-            SetIpAddress(ipAddress);
-            RoomId = roomId;
-        }
-
-        public Computer(string inventoryNumber, string ipAddress,
-                Guid roomId, IEnumerable<User> users)
-        {
-            ComputerId = Guid.NewGuid();
+            ComputerId = computerId;
             SetInventoryNumber(inventoryNumber);
             SetIpAddress(ipAddress);
             RoomId = roomId;
@@ -65,6 +57,16 @@ namespace LicenseManager.Core.Domain
             }
 
             InventoryNumber = inventoryNumber.ToUpperInvariant();
+        }
+
+        public void AddUser(User user)
+        {
+            if(user == null)
+            {
+                throw new Exception("User's collection cannot be empty");
+            }
+
+            _users.Add(user);
         }
     }
 }

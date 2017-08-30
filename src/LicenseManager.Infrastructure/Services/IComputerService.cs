@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using LicenseManager.Core.Domain;
 using LicenseManager.Infrastructure.DTO;
 
 namespace LicenseManager.Infrastructure.Services
@@ -10,8 +11,9 @@ namespace LicenseManager.Infrastructure.Services
          Task<ComputerDto> GetAsync(Guid computerId);
          Task<ComputerDto> GetAsync(string inventoryNumber);
          Task<IEnumerable<ComputerDto>> BrowseAsync();
-         Task AddAsync(string inventoryNumber, string ipAddress, Guid roomId);
+         Task AddAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
          Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
          Task RemoveAsync(Guid computerId);
+         Task AddUserToComputer(Guid ComputerId, UserDto userDto);
     }
 }

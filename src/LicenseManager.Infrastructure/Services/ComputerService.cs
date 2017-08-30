@@ -46,14 +46,14 @@ namespace LicenseManager.Infrastructure.Services
 
             return _mapper.Map<ComputerDto>(computer);
         }
-        public async Task AddAsync(string inventoryNumber, string ipAddress, Guid roomId)
+        public async Task AddAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId)
         {
             var computer  = await _computerRepository.GetAsync(inventoryNumber);
             if(computer != null)
             {
                 throw new Exception($"Computer with inventory number: {inventoryNumber} already exist");
             }
-            computer = new Computer(inventoryNumber, ipAddress, roomId);
+            computer = new Computer(computerId, inventoryNumber, ipAddress, roomId);
             await _computerRepository.AddAsync(computer);
         }
 
@@ -88,6 +88,22 @@ namespace LicenseManager.Infrastructure.Services
             computer.SetInventoryNumber(ipAddress);
 
             await _computerRepository.UpdateAsync(computer);
+        }
+
+        public async Task AddUserToComputer(Guid computerId, UserDto userDto)
+        {
+            var computer = await _computerRepository.GetAsync(computerId);
+            if(computer == null)
+            {
+                throw new Exception($"Computer with {computerId} doesn't exist");
+            }
+            var user = new User(userDto.Name, userDto.Surname);
+
+            if(computer.Users.Contains(user))
+            {
+                throw new Exception ($"User already assigned to computer");
+            }
+            computer.Users.Add(user);
         }
     }
 }

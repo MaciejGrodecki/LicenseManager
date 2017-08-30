@@ -36,8 +36,8 @@ namespace LicenseManager.Infrastructure.Services
             tasks.Add(_licenseService.AddAsync("MS Office 2010 Pro", 10,
                 Guid.NewGuid(), DateTime.UtcNow));
             //Computers
-            tasks.Add(_computerService.AddAsync("US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));
-            tasks.Add(_computerService.AddAsync("US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));
+            tasks.Add(_computerService.AddAsync(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));
+            tasks.Add(_computerService.AddAsync(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));
             //Users
             tasks.Add(_userService.AddAsync("Jan", "Kowalski"));
 

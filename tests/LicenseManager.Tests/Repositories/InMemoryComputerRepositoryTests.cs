@@ -14,11 +14,11 @@ namespace LicenseManager.Tests.Repositories
         private readonly IComputerRepository _repository;
 
         private static readonly Room _room = new Room(Guid.NewGuid(), "A-11");
-        private static readonly IEnumerable<User> _users = new List<User>{
+        private static readonly ISet<User> _users = new HashSet<User>{
             new User("Jan", "Kowalski")
         };
         private static readonly Computer _computer = new Computer(
-            "US-IN/Z/1-W", "192.168.0.1", _room.RoomId, _users
+            Guid.NewGuid(), "US-IN/Z/1-W", "192.168.0.1", _room.RoomId
         );
         
 
