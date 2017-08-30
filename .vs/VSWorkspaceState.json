@@ -8,6 +8,6 @@
     "\\tests\\LicenseManager.Tests.EndToEnd",
     "\\tests\\LicenseManager.Tests.EndToEnd\\Controllers"
   ],
-  "SelectedNode": "\\src\\LicenseManager.Api\\Controllers\\RoomsController.cs",
+  "SelectedNode": "\\tests\\LicenseManager.Tests.EndToEnd\\Controllers\\RoomsControllerTests.cs",
   "PreviewInSolutionExplorer": false
 }

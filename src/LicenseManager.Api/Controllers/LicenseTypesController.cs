@@ -24,10 +24,14 @@ namespace LicenseManager.Api.Controllers
             return Json(licenseTypes);
         }
 
-        [HttpGet("{licenseTypeId}")]
+        [HttpGet("{licenseTypeId:Guid}")]
         public async Task<IActionResult> Get(Guid licenseTypeId)
         {
             var licenseType = await _licenseTypeService.GetAsync(licenseTypeId);
+            if(licenseType == null)
+            {
+                return NotFound();
+            }
 
             return Json(licenseType);
         }
@@ -36,6 +40,10 @@ namespace LicenseManager.Api.Controllers
         public async Task<IActionResult> Get(string name)
         {
             var licenseType = await _licenseTypeService.GetAsync(name);
+            if(licenseType == null)
+            {
+                return NotFound();
+            }
 
             return Json(licenseType);
         }

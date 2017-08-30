@@ -34,9 +34,9 @@ namespace LicenseManager.Infrastructure.Repositories
             await Task.CompletedTask;
         }
 
-        public Task UpdateAsync(License license)
+        public async Task UpdateAsync(License license)
         {
-            throw new NotImplementedException();
+            await Task.CompletedTask;
         }
     }
 }

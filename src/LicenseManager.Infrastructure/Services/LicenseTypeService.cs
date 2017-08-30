@@ -29,21 +29,13 @@ namespace LicenseManager.Infrastructure.Services
         public async Task<LicenseTypeDto> GetAsync(Guid licenseTypeId)
         {
             var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
-            if(licenseType == null)
-            {
-                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
-            }
-
+            
             return _mapper.Map<LicenseTypeDto>(licenseType);
         }
 
         public async Task<LicenseTypeDto> GetAsync(string name)
         {
             var licenseType = await _licenseTypeRepository.GetAsync(name);
-            if(licenseType == null)
-            {
-                throw new Exception($"License type with name: {name} doesn't exist");
-            }
 
             return _mapper.Map<LicenseTypeDto>(licenseType);
         }

@@ -82,10 +82,15 @@ namespace LicenseManager.Infrastructure.Services
                 throw new Exception($"User type with id: {userId} doesn't exist");
             }
 
+            if(user.Name != name && name != null)
+            {
+                user.SetName(name);
+            }
+            if(user.Surname != surname && surname != null)
+            {
+                user.SetSurname(surname);
+            }
             
-            user.SetName(name);
-            user.SetSurname(surname);
-
             await _userRepository.UpdateAsync(user);
         }
     }

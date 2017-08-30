@@ -12,3 +12,17 @@ c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\
 c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.AssemblyInfo.cs
 c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.dll
 c:\Users\macie\Documents\Projekty\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.pdb
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.deps.json
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.runtimeconfig.json
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.runtimeconfig.dev.json
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.dll
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Api.pdb
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Core.dll
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.dll
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.pdb
+E:\New\LicenseManager\src\LicenseManager.Api\bin\Debug\netcoreapp2.0\LicenseManager.Core.pdb
+E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.csproj.CoreCompileInputs.cache
+E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.AssemblyInfoInputs.cache
+E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.AssemblyInfo.cs
+E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.dll
+E:\New\LicenseManager\src\LicenseManager.Api\obj\Debug\netcoreapp2.0\LicenseManager.Api.pdb
