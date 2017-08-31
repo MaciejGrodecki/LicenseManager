@@ -59,6 +59,15 @@ namespace LicenseManager.Core.Domain
             InventoryNumber = inventoryNumber.ToUpperInvariant();
         }
 
+        public void AssignRoomToComputer(Guid roomId)
+        {
+            if(roomId == null)
+            {
+                throw new Exception("Room id cannot be null");
+            }
+            RoomId = roomId;
+        }
+
         public void AddUser(User user)
         {
             if(user == null)

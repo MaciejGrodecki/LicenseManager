@@ -86,6 +86,7 @@ namespace LicenseManager.Infrastructure.Services
             
             computer.SetInventoryNumber(inventoryNumber);
             computer.SetInventoryNumber(ipAddress);
+            computer.AssignRoomToComputer(roomId);
 
             await _computerRepository.UpdateAsync(computer);
         }
