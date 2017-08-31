@@ -5,11 +5,13 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
+using NLog;
 
 namespace LicenseManager.Infrastructure.Services
 {
     public class ComputerService : IComputerService
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IComputerRepository _computerRepository;
         private readonly IMapper _mapper;
 
@@ -21,6 +23,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<IEnumerable<ComputerDto>> BrowseAsync()
         {
+            Logger.Info("Getting all computers");
             var computers = await _computerRepository.BrowseAsync();
 
             return _mapper.Map<IEnumerable<ComputerDto>>(computers);
@@ -28,6 +31,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<ComputerDto> GetAsync(Guid computerId)
         {
+            Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(computerId);
             if(computer == null)
             {
@@ -38,6 +42,7 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task<ComputerDto> GetAsync(string inventoryNumber)
         {
+            Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(inventoryNumber);
             if(computer == null)
             {
@@ -48,6 +53,7 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task AddAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId)
         {
+            Logger.Info("Adding computer");
             var computer  = await _computerRepository.GetAsync(inventoryNumber);
             if(computer != null)
             {
@@ -59,6 +65,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid computerId)
         {
+            Logger.Info("Removing computer");
             var computer = await _computerRepository.GetAsync(computerId);
             if(computer == null)
             {
@@ -72,6 +79,7 @@ namespace LicenseManager.Infrastructure.Services
         public async Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, 
             Guid roomId)
         {
+            Logger.Info("Updating computer");
             var computer = await _computerRepository.GetAsync(inventoryNumber);
             if(computer != null)
             {
@@ -93,6 +101,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task AddUserToComputer(Guid computerId, UserDto userDto)
         {
+            Logger.Info("Assign user to computer");
             var computer = await _computerRepository.GetAsync(computerId);
             if(computer == null)
             {

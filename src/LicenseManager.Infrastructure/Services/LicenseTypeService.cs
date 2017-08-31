@@ -5,11 +5,13 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
+using NLog;
 
 namespace LicenseManager.Infrastructure.Services
 {
     public class LicenseTypeService : ILicenseTypeService
     {
+        private static Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly ILicenseTypeRepository _licenseTypeRepository;
         private readonly IMapper _mapper;
         
@@ -21,6 +23,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<IEnumerable<LicenseTypeDto>> BrowseAsync()
         {
+            Logger.Info("Getting all license types");
             var licenseTypes = await _licenseTypeRepository.BrowseAsync();
 
             return _mapper.Map<IEnumerable<LicenseTypeDto>>(licenseTypes);
@@ -28,6 +31,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<LicenseTypeDto> GetAsync(Guid licenseTypeId)
         {
+            Logger.Info("Getting single license type");
             var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
             
             return _mapper.Map<LicenseTypeDto>(licenseType);
@@ -35,6 +39,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<LicenseTypeDto> GetAsync(string name)
         {
+            Logger.Info("Getting single license type");
             var licenseType = await _licenseTypeRepository.GetAsync(name);
 
             return _mapper.Map<LicenseTypeDto>(licenseType);
@@ -42,6 +47,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task AddAsync(string name)
         {
+            Logger.Info("Adding license type");
             var licenseType = await _licenseTypeRepository.GetAsync(name);
             if(licenseType != null)
             {
@@ -53,6 +59,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid licenseTypeId)
         {
+            Logger.Info("Removing license type");
             var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
             if(licenseType == null)
             {
@@ -64,6 +71,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task UpdateAsync(Guid licenseTypeId, string name)
         {
+            Logger.Info("Updating license type");
             var licenseType = await _licenseTypeRepository.GetAsync(name);
             if(licenseType != null)
             {

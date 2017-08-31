@@ -22,7 +22,7 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task<IEnumerable<RoomDto>> BrowseAsync()
         {
-            Logger.Info("Fetching rooms");
+            Logger.Info("Getting All rooms");
             var rooms = await _roomRepository.BrowseAsync();
 
             return _mapper.Map<IEnumerable<RoomDto>>(rooms);
@@ -30,6 +30,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<RoomDto> GetAsync(Guid roomId)
         {
+            Logger.Info("Getting single room");
             var room = await _roomRepository.GetAsync(roomId);
 
             return _mapper.Map<RoomDto>(room);
@@ -37,6 +38,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<RoomDto> GetAsync(string name)
         {
+            Logger.Info("Getting single room");
             var room = await _roomRepository.GetAsync(name);
             
             return _mapper.Map<RoomDto>(room);
@@ -44,6 +46,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task AddAsync(string name)
         {
+            Logger.Info("Adding room");
             var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
             if(room != null)
             {
@@ -55,6 +58,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid roomId)
         {
+            Logger.Info("Removing room");
             var room = await _roomRepository.GetAsync(roomId);
             if(room == null)
             {
@@ -66,6 +70,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task UpdateAsync(Guid roomId, string name)
         {
+            Logger.Info("Updating room");
             var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
             if(room != null)
             {

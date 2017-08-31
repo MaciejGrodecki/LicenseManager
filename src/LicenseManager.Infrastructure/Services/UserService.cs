@@ -5,11 +5,13 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
+using NLog;
 
 namespace LicenseManager.Infrastructure.Services
 {
     public class UserService : IUserService
     {
+        private static Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
@@ -21,12 +23,14 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<IEnumerable<UserDto>> BrowseAsync()
         {
+            Logger.Info("Getting All users");
             var users = await _userRepository.BrowseAsync();
             return _mapper.Map<IEnumerable<UserDto>>(users);
         }
 
         public async Task<UserDto> GetAsync(Guid userId)
         {
+            Logger.Info("Getting single user");
             var user = await _userRepository.GetAsync(userId);
             if(user == null)
             {
@@ -38,6 +42,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task<UserDto> GetAsync(string name, string surname)
         {
+            Logger.Info("Getting single user");
             var user = await _userRepository.GetAsync(name, surname);
             if(user == null)
             {
@@ -48,6 +53,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task AddAsync(string name, string surname)
         {
+            Logger.Info("Adding user");
             var user = await _userRepository.GetAsync(name,surname);
             if(user != null)
             {
@@ -59,6 +65,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task RemoveAsync(Guid userId)
         {
+            Logger.Info("Removing user");
             var user = await _userRepository.GetAsync(userId);
             if(user == null)
             {
@@ -70,6 +77,7 @@ namespace LicenseManager.Infrastructure.Services
 
         public async Task UpdateAsync(Guid userId, string name, string surname)
         {
+            Logger.Info("Updating user");
             var user = await _userRepository.GetAsync(name, surname);
             if(user != null)
             {
