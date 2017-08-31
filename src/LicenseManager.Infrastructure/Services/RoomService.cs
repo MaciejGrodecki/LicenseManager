@@ -5,11 +5,13 @@ using AutoMapper;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.DTO;
+using NLog;
 
 namespace LicenseManager.Infrastructure.Services
 {
     public class RoomService : IRoomService
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IRoomRepository _roomRepository;
         private readonly IMapper _mapper;
 
@@ -20,6 +22,7 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task<IEnumerable<RoomDto>> BrowseAsync()
         {
+            Logger.Info("Fetching rooms");
             var rooms = await _roomRepository.BrowseAsync();
 
             return _mapper.Map<IEnumerable<RoomDto>>(rooms);

@@ -1,0 +1,70 @@
+2017-08-31 16:54:26.0177|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-08-31 16:54:26.1499|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-08-31 16:54:39.7396|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" started.
+2017-08-31 16:54:39.7396|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" started.
+2017-08-31 16:54:39.7496|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" received FIN.
+2017-08-31 16:54:39.7670|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" disconnecting.
+2017-08-31 16:54:39.7670|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" sending FIN.
+2017-08-31 16:54:39.7817|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" sent FIN with status "0".
+2017-08-31 16:54:39.7817|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEO" stopped.
+2017-08-31 16:54:39.8289|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-08-31 16:54:40.0155|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Rooms'.
+2017-08-31 16:54:40.0391|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api)' with id '8e83b04c-c6a5-41db-ad2f-e94b1b944c8d' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-08-31 16:54:40.0713|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api)
+2017-08-31 16:54:40.1240|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-08-31 16:54:40.1273|INFO|RoomService|Fetching rooms
+2017-08-31 16:54:40.1523|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-08-31 16:54:40.1782|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-08-31 16:54:40.3453|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 271.6648ms
+2017-08-31 16:54:40.3453|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" completed keep alive response.
+2017-08-31 16:54:40.3453|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 545.3237ms 200 application/json; charset=utf-8
+2017-08-31 16:56:36.2229|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-08-31 16:56:36.2584|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" disconnecting.
+2017-08-31 16:56:36.2584|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" sending FIN.
+2017-08-31 16:56:36.2602|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" sent FIN with status "0".
+2017-08-31 16:56:36.2602|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG0QBONEN" stopped.
+2017-08-31 16:56:45.7331|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-08-31 16:56:45.8300|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-08-31 16:56:50.9906|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" started.
+2017-08-31 16:56:50.9906|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" started.
+2017-08-31 16:56:51.0000|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" received FIN.
+2017-08-31 16:56:51.0186|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" disconnecting.
+2017-08-31 16:56:51.0186|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" sending FIN.
+2017-08-31 16:56:51.0186|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" sent FIN with status "0".
+2017-08-31 16:56:51.0325|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TC" stopped.
+2017-08-31 16:56:51.0767|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-08-31 16:56:51.2532|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Rooms'.
+2017-08-31 16:56:51.2764|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api)' with id 'a35c8bee-fc70-467b-80cb-28faa2602c54' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-08-31 16:56:51.3076|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api)
+2017-08-31 16:56:51.3591|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-08-31 16:56:51.3591|INFO|RoomService|Fetching rooms
+2017-08-31 16:56:51.3851|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-08-31 16:56:51.4106|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-08-31 16:56:51.5763|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 266.1486ms
+2017-08-31 16:56:51.5829|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" completed keep alive response.
+2017-08-31 16:56:51.5829|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 527.2936ms 200 application/json; charset=utf-8
+2017-08-31 16:57:15.0126|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-08-31 16:57:15.0590|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" disconnecting.
+2017-08-31 16:57:15.0590|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" sending FIN.
+2017-08-31 16:57:15.0590|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" sent FIN with status "0".
+2017-08-31 16:57:15.0590|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG21FF9TB" stopped.
+2017-08-31 16:57:42.5410|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-08-31 16:57:42.6408|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-08-31 16:57:53.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" started.
+2017-08-31 16:57:53.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4Q" started.
+2017-08-31 16:57:53.0567|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" received FIN.
+2017-08-31 16:57:53.0837|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" disconnecting.
+2017-08-31 16:57:53.0837|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" sending FIN.
+2017-08-31 16:57:53.0945|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" sent FIN with status "0".
+2017-08-31 16:57:53.0945|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4R" stopped.
+2017-08-31 16:57:53.1378|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-08-31 16:57:53.3066|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Rooms'.
+2017-08-31 16:57:53.3300|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api)' with id '1c540657-4b03-40ec-998b-ac478fe158cd' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-08-31 16:57:53.3612|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api)
+2017-08-31 16:57:53.4148|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-08-31 16:57:53.4183|INFO|RoomService|Fetching rooms
+2017-08-31 16:57:53.4420|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-08-31 16:57:53.4694|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-08-31 16:57:53.6333|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 269.7195ms
+2017-08-31 16:57:53.6333|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7GG2JVCF4Q" completed keep alive response.
+2017-08-31 16:57:53.6469|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 523.5666ms 200 application/json; charset=utf-8
