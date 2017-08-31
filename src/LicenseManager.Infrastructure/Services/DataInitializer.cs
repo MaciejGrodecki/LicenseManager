@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using NLog;
 
 namespace LicenseManager.Infrastructure.Services
 {
     public class DataInitializer : IDataInitializer
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IComputerService _computerService;
         private readonly IRoomService _roomService;
         private readonly ILicenseTypeService _licenseTypeService;
@@ -23,6 +25,7 @@ namespace LicenseManager.Infrastructure.Services
         }
         public async Task SeedAsync()
         {
+            Logger.Info("Seeding data");
             var tasks = new List<Task>();
             //Rooms
             tasks.Add(_roomService.AddAsync("B-01"));
