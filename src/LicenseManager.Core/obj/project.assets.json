@@ -3709,11 +3709,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
+      "projectUniqueName": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
       "projectName": "LicenseManager.Core",
-      "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
+      "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Core\\obj\\",
+      "outputPath": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

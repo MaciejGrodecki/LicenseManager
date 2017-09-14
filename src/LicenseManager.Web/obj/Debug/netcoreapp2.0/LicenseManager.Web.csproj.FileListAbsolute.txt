@@ -1,0 +1,10 @@
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Web.deps.json
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Web.runtimeconfig.json
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Web.runtimeconfig.dev.json
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Web.dll
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Web.pdb
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.csproj.CoreCompileInputs.cache
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.AssemblyInfoInputs.cache
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.AssemblyInfo.cs
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.dll
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.pdb

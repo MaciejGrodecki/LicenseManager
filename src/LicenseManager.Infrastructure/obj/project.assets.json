@@ -6612,11 +6612,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
       "projectName": "LicenseManager.Infrastructure",
-      "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\macie\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6635,8 +6635,8 @@
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
-            "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj": {
-              "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\New\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj"
+            "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj": {
+              "projectPath": "C:\\Users\\macie\\Documents\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj"
             }
           }
         }
