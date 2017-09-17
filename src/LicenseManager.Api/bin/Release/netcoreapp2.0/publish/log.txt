@@ -1,0 +1,142 @@
+2017-09-17 08:52:07.0852|INFO|DataInitializer|Seeding data
+2017-09-17 08:52:07.1234|INFO|RoomService|Adding room
+2017-09-17 08:52:07.1297|INFO|RoomService|Adding room
+2017-09-17 08:52:07.1297|INFO|LicenseTypeService|Adding license type
+2017-09-17 08:52:07.1297|INFO|LicenseTypeService|Adding license type
+2017-09-17 08:52:07.1297|INFO|LicenseService|Adding license
+2017-09-17 08:52:07.1450|INFO|LicenseService|Adding license
+2017-09-17 08:52:07.1450|INFO|ComputerService|Adding computer
+2017-09-17 08:52:07.1450|INFO|ComputerService|Adding computer
+2017-09-17 08:52:07.1609|INFO|UserService|Adding user
+2017-09-17 08:52:07.2333|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-09-17 08:52:07.3082|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-09-17 08:52:14.9648|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" started.
+2017-09-17 08:52:14.9648|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" started.
+2017-09-17 08:52:15.1022|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-09-17 08:52:15.2796|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes.
+2017-09-17 08:52:15.3143|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" completed keep alive response.
+2017-09-17 08:52:15.3287|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 231.471ms 404 
+2017-09-17 08:52:21.4622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers  
+2017-09-17 08:52:21.4732|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Computers'.
+2017-09-17 08:52:21.4983|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api)' with id 'd5bf54dc-9043-4c43-9dd7-3cc28efdf4ce' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-17 08:52:21.5329|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api)
+2017-09-17 08:52:21.5856|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-17 08:52:21.5856|INFO|ComputerService|Getting all computers
+2017-09-17 08:52:21.6240|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-17 08:52:21.6475|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-09-17 08:52:21.8076|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 272.3304ms
+2017-09-17 08:52:21.8165|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" completed keep alive response.
+2017-09-17 08:52:21.8165|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 356.9258ms 200 application/json; charset=utf-8
+2017-09-17 08:52:21.9074|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-09-17 08:52:21.9074|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes.
+2017-09-17 08:52:21.9074|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" completed keep alive response.
+2017-09-17 08:52:21.9104|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.0266ms 404 
+2017-09-17 08:52:26.4016|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" received FIN.
+2017-09-17 08:52:26.4016|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" disconnecting.
+2017-09-17 08:52:26.4016|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" sending FIN.
+2017-09-17 08:52:26.4128|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" sent FIN with status "0".
+2017-09-17 08:52:26.4128|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRO" stopped.
+2017-09-17 08:52:26.7659|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" started.
+2017-09-17 08:52:26.7659|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" started.
+2017-09-17 08:52:26.7723|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" started.
+2017-09-17 08:53:00.0777|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" received FIN.
+2017-09-17 08:53:00.0777|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" received FIN.
+2017-09-17 08:53:00.0777|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" received FIN.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" started.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" disconnecting.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" started.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" sending FIN.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" disconnecting.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" sent FIN with status "0".
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" sending FIN.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" disconnecting.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" sent FIN with status "0".
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRQ" stopped.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRS" stopped.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" sending FIN.
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" sent FIN with status "0".
+2017-09-17 08:53:00.0868|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRR" stopped.
+2017-09-17 08:53:00.1575|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-09-17 08:53:00.1575|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-17 08:53:00.1575|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id 'd9959d59-3917-416d-bc42-d0ae410e30a2' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-17 08:53:00.1617|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-17 08:53:00.1617|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-17 08:53:00.1617|INFO|LicenseService|Getting all licenses
+2017-09-17 08:53:00.1814|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-17 08:53:00.1814|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-17 08:53:00.1918|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 29.1056ms
+2017-09-17 08:53:00.1918|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" completed keep alive response.
+2017-09-17 08:53:00.1918|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 37.2242ms 200 application/json; charset=utf-8
+2017-09-17 08:53:18.9725|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" received FIN.
+2017-09-17 08:53:18.9725|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" received FIN.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" disconnecting.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" disconnecting.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" received FIN.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" sending FIN.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" sending FIN.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" disconnecting.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" sent FIN with status "0".
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" sent FIN with status "0".
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRU" stopped.
+2017-09-17 08:53:18.9741|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRT" stopped.
+2017-09-17 08:53:18.9890|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" sending FIN.
+2017-09-17 08:53:18.9890|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" sent FIN with status "0".
+2017-09-17 08:53:18.9890|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TJ2GL7QRP" stopped.
+2017-09-17 08:55:03.0458|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-09-17 09:50:53.6443|INFO|DataInitializer|Seeding data
+2017-09-17 09:50:53.6791|INFO|RoomService|Adding room
+2017-09-17 09:50:53.6791|INFO|RoomService|Adding room
+2017-09-17 09:50:53.6791|INFO|LicenseTypeService|Adding license type
+2017-09-17 09:50:53.6930|INFO|LicenseTypeService|Adding license type
+2017-09-17 09:50:53.6930|INFO|LicenseService|Adding license
+2017-09-17 09:50:53.6930|INFO|LicenseService|Adding license
+2017-09-17 09:50:53.6930|INFO|ComputerService|Adding computer
+2017-09-17 09:50:53.7108|INFO|ComputerService|Adding computer
+2017-09-17 09:50:53.7108|INFO|UserService|Adding user
+2017-09-17 09:50:53.7820|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-09-17 09:50:53.8545|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-09-17 09:56:29.2751|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" started.
+2017-09-17 09:56:29.3623|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses  
+2017-09-17 09:56:29.5667|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-17 09:56:29.5911|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id '8cc4a20d-c86a-4275-8c1c-cc5765ae9111' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-17 09:56:29.6268|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-17 09:56:29.6836|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-17 09:56:29.6836|INFO|LicenseService|Getting all licenses
+2017-09-17 09:56:29.7228|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-17 09:56:29.7498|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-17 09:56:29.9322|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 300.4963ms
+2017-09-17 09:56:29.9322|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" received FIN.
+2017-09-17 09:56:29.9322|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" completed keep alive response.
+2017-09-17 09:56:29.9471|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 600.5752ms 200 application/json; charset=utf-8
+2017-09-17 09:56:29.9471|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" disconnecting.
+2017-09-17 09:56:29.9471|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" sending FIN.
+2017-09-17 09:56:29.9583|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" sent FIN with status "0".
+2017-09-17 09:56:29.9583|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20S" stopped.
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" started.
+2017-09-17 10:00:31.0697|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses  
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id '8cc4a20d-c86a-4275-8c1c-cc5765ae9111' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-17 10:00:31.0697|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-17 10:00:31.0697|INFO|LicenseService|Getting all licenses
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-17 10:00:31.0697|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-17 10:00:31.0697|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 4.4679ms
+2017-09-17 10:00:31.0697|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" completed keep alive response.
+2017-09-17 10:00:31.0827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 10.878ms 200 application/json; charset=utf-8
+2017-09-17 10:00:31.0827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses  
+2017-09-17 10:00:31.0827|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-17 10:00:31.0827|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id '8cc4a20d-c86a-4275-8c1c-cc5765ae9111' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-17 10:00:31.0827|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-17 10:00:31.0827|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-17 10:00:31.0827|INFO|LicenseService|Getting all licenses
+2017-09-17 10:00:31.0827|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-17 10:00:31.0827|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-17 10:00:31.0984|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 3.5182ms
+2017-09-17 10:00:31.0984|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" completed keep alive response.
+2017-09-17 10:00:31.0984|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.0919ms 200 application/json; charset=utf-8
+2017-09-17 10:01:55.6432|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-09-17 10:01:55.6791|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" disconnecting.
+2017-09-17 10:01:55.6791|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" sending FIN.
+2017-09-17 10:01:55.6791|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" sent FIN with status "0".
+2017-09-17 10:01:55.6791|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL7TK6DAQ20T" stopped.

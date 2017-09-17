@@ -13459,6 +13459,7 @@
       "BuildBundlerMinifier >= 2.5.357",
       "LicenseManager.Api >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.0",
+      "Microsoft.AspNetCore.Cors >= 2.0.0",
       "Microsoft.AspNetCore.StaticFiles >= 2.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
@@ -13518,6 +13519,10 @@
             "version": "2.5.357"
           },
           "Microsoft.AspNetCore.All": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.AspNetCore.Cors": {
             "target": "Package",
             "version": "2.0.0"
           },

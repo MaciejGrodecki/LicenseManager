@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using LicenseManager.Infrastructure.Commands.License;
 using LicenseManager.Infrastructure.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LicenseManager.Api.Controllers

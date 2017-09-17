@@ -9,6 +9,7 @@ using LicenseManager.Infrastructure.Services;
 using LicenseManager.Infrastructure.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -39,6 +40,12 @@ namespace LicenseManager.Api
             // Add framework services.
             services.AddMvc()
                     .AddJsonOptions(x => x.SerializerSettings.Formatting = Formatting.Indented);
+            services.AddCors(o => o.AddPolicy("DefaultPolicy", builder =>
+            {
+                builder.AllowAnyOrigin();
+                builder.AllowAnyMethod();
+                builder.AllowAnyHeader();
+            }));
             services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
             services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
             services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
@@ -52,6 +59,7 @@ namespace LicenseManager.Api
             services.AddScoped<IDataInitializer,DataInitializer>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.Configure<AppSettings>(Configuration.GetSection("app"));
+            
 
         }
 
@@ -60,11 +68,14 @@ namespace LicenseManager.Api
         {
             //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             //loggerFactory.AddDebug();
+            app.UseCors("DefaultPolicy");
             loggerFactory.AddNLog();
             app.AddNLogWeb();
             env.ConfigureNLog("nlog.config");
             SeedData(app);
+            
             app.UseMvc();
+            
         }
 
         private void SeedData(IApplicationBuilder app)

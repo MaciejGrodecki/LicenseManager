@@ -8,3 +8,9 @@ C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debu
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.AssemblyInfo.cs
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.dll
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.pdb
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Api.dll
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Core.dll
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.dll
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Api.pdb
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Core.pdb
+C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Web\bin\Debug\netcoreapp2.0\LicenseManager.Infrastructure.pdb
