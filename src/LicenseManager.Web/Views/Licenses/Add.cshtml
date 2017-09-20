@@ -12,12 +12,8 @@
                 <label for="count">Ilość</label>
             </div>
             <div class="input-field col s3">
-                <select data-bind="options: licenseTypes,
-                                    optionsText: 'name',
-                                    value: selectedLicenseType">
-                                    <option>test</option>
-                    </select>
-                    <label>tesT</label>
+                <select class="browser-default mySelect" data-bind="options: licenseTypes, optionsText: 'name', optionsValue: 'licenseTypeId',
+                    optionsCaption: 'Typ licencji'"></select> 
             </div>
         </div>
         <div class="row">

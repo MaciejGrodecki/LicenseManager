@@ -1,6 +1,6 @@
-$(document).ready(function() {
+$(function() {
     $('select').material_select();
-  });
+ });
 
 $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -32,8 +32,8 @@ $(function() {
         var self = this;
         self.licenses = ko.observableArray([]);
         self.license = ko.observable(new LicenseViewModel(""));
-        self.licenseTypes = ko.observableArray([]);
         selectedLicenseType : ko.observable();
+        self.licenseTypes = ko.observableArray([]);
 
         self.getLicense = function(licenseId){
             $.get("http://localhost:5000/licenses/" + licenseId, function(response){
@@ -41,13 +41,14 @@ $(function() {
             })
         }
 
-        loadLicenseTypes();
+        
         function loadLicenseTypes(){
             $.get("http://localhost:5000/licensetypes", function(response){
                 self.licenseTypes(response);
             })
         }
-        
+
+        loadLicenseTypes();
         loadLicenses();
         function loadLicenses() {
             $.get("http://localhost:5000/licenses", function(response){
