@@ -3,6 +3,8 @@
     "private": true,
     "dependencies": {
         "jquery": "2.2.0",
-        "knockout": "latest"
+        "knockout": "latest",
+        "moment" :"latest",
+        "pickadate" :"latest"
     }
 }

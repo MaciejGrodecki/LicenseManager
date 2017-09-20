@@ -1,0 +1,23 @@
+<div class = "row">
+    <div class="col s12 m12">
+        <h5>Lista licencji</h5>
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Nazwa</th>
+                    <th>Ilość</th>
+                    <th>Data zakupu</th>
+                    <th>Typ licencji</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: licenses">
+                <tr>
+                    <td data-bind="text: $data.name"></td>
+                    <td data-bind="text: $data.count"></td>
+                    <td data-bind="text: moment($data.buyDate).format('L')"</td>
+                    <td data-bind="text: $data.licenseTypeId"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

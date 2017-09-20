@@ -6,3 +6,11 @@ C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Core\obj\Rel
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.AssemblyInfo.cs
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.dll
 C:\Users\macie\Documents\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Core\bin\Release\netstandard1.4\LicenseManager.Core.deps.json
+D:\Projekty\LicenseManager\src\LicenseManager.Core\bin\Release\netstandard1.4\LicenseManager.Core.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Core\bin\Release\netstandard1.4\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.csproj.CoreCompileInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.AssemblyInfoInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.AssemblyInfo.cs
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Release\netstandard1.4\LicenseManager.Core.pdb
