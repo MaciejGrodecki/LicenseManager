@@ -68,7 +68,9 @@ namespace LicenseManager.Api
         {
             //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             //loggerFactory.AddDebug();
-            app.UseCors("DefaultPolicy");
+            //app.UseCors("DefaultPolicy");
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:5050").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             loggerFactory.AddNLog();
             app.AddNLogWeb();
             env.ConfigureNLog("nlog.config");

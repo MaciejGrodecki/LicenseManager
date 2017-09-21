@@ -1,33 +1,38 @@
-<div class="row">
-    <form class="col s12 m12 l12">
+<div class="row" ng-app="licenseApp">
+    <form class="col s12 m12 l12"ng-controller="AddLicenseController">
         <div class="row">
             <div class="input-field col s5">
-                <input id="name" type="text" class="validate">
+                <input id="name" type="text" name="name" ng-model="name" class="validate">
                 <label for="name">Nazwa</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s2">
-                <input id="count" type="text" class="validate">
+                <input id="count" type="text" class="validate" name="count" ng-model="count">
                 <label for="count">Ilość</label>
             </div>
             <div class="input-field col s3">
-                <select class="browser-default mySelect" data-bind="options: licenseTypes, optionsText: 'name', optionsValue: 'licenseTypeId',
-                    optionsCaption: 'Typ licencji'"></select> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s5">
-                <input id="buyDate" type="text" class="datepicker">
+                <input  type="text" class="datepicker" name="buyDate" ng-model="AddLicenseController.buyDate" materialize-date-picker readonly />
                 <label for="buyDate">Data zakupu</label>
             </div>
         </div>
         <div class="row">
-            <div class="col s5">
-                <button class="btn lighten-2 red right" data-bind="">Utwórz licencję</button>
+            <div class="input-field col s5">
+                <div>
+                <select name="licenseTypeId" id="repeatSelect" class="browser-default mySelect right" ng-model="licenseTypeId">
+                    <option disabled selected="selected">Proszę wybrać typ licencji</option>
+                    <option ng-repeat="licensetype in licenseTypes"
+                        value="{{licensetype.licenseTypeId}}">{{licensetype.name}}</option>
+                </select>
+                </div>
             </div>
-            
         </div>
-        
+        <div class="row">
+            <div class="col s5">
+                <button  ng-click="SaveButton()">Utwórz licencję</button>
+            </div>
+        </div>
     </form>
-</div>  
+</div>
+
+

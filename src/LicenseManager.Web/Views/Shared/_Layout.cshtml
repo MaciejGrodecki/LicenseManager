@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>License Manager</title>
+    <script type="text/javascript" src="~/lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="~/lib/angular-materializecss-datepicker/angular-materializecss-datepicker.min.js"></script>
     <environment names="Development">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.css">
         <link rel="stylesheet" href="~/css/site.css" />
@@ -32,18 +34,19 @@
     </div>
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
-        <script src="~/lib/knockout/dist/knockout.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.js"></script>
         <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     <environment names="Staging,Production">
+        
         <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-2.2.0.min.js"></script>
-        <script src="~/lib/knockout/dist/knockout.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        
         <script src="~/lib/moment/moment.js"></script>
         <script src="~/lib/moment/locale/pl.js"></script>
+        <script src="~/lib/pickadate/lib/picker.js"></script>
         <script src="~/lib/pickadate/lib/picker.date.js"></script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
     @RenderSection("Scripts", required: false)
 </body>

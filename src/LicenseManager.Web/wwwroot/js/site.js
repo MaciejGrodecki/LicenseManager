@@ -1,6 +1,9 @@
 $(function() {
     $('select').material_select();
  });
+ 
+
+
 
 $('.datepicker').pickadate({
     selectMonths: true, // Creates a dropdown to control month
@@ -19,49 +22,33 @@ $('.datepicker').pickadate({
     firstDay: 1,
     format: 'dd.mm.yyyy',
     formatSubmit: 'dd.mm.yyyy'
-  }); 
+  });
 
-$(function() {
-    init();
-    function init() {
-        ko.applyBindings(new ViewModel());
-    };
+  var licenseApp = angular.module("licenseApp", ['angularMaterializeDatePicker']);
 
-    function ViewModel()
-    {
-        var self = this;
-        self.licenses = ko.observableArray([]);
-        self.license = ko.observable(new LicenseViewModel(""));
-        selectedLicenseType : ko.observable();
-        self.licenseTypes = ko.observableArray([]);
+  licenseApp.controller("AddLicenseController", function($scope, $http){
+      $http.get("http://localhost:5000/licenseTypes/")
+      .then(function(response){
+          $scope.licenseTypes = response.data;
+          $('select').material_select();
+      });
 
-        self.getLicense = function(licenseId){
-            $.get("http://localhost:5000/licenses/" + licenseId, function(response){
-                self.license(new LicenseViewModel(response.name, response.count, response.buyDate, response.licenseTypeId));
-            })
-        }
+      $scope.SaveButton = function(){
+          var postRequest = $http({
+              method: "POST",
+              url: "http://localhost:5000/licenses",
+              dataType: 'json',
+              data : { name: $scope.name, count: $scope.count, buyDate: $scope.buyDate, licenseTypeId: $scope.licenseTypeId},
+              headers: { "Content-Type": "application/json"}
+          });
 
-        
-        function loadLicenseTypes(){
-            $.get("http://localhost:5000/licensetypes", function(response){
-                self.licenseTypes(response);
-            })
-        }
+          postRequest.error(function (data, status){
+              $window.aler(data.Message);
+          })
+      }
+  });
 
-        loadLicenseTypes();
-        loadLicenses();
-        function loadLicenses() {
-            $.get("http://localhost:5000/licenses", function(response){
-                self.licenses(response);
-            })
-        }
-
-        function LicenseViewModel(name, count, buyDate, licenseTypeId){
-            this.name = ko.observable(name);
-            this.count = ko.observable(count);
-            this.buyDate = ko.observable(buyDate);
-            this.licenseTypeId = ko.observable(licenseTypeId);
-        }
-    }
-})();
-
+  licenseApp.controller("")
+  
+  var evt = document.createEvent("HTMLEvents");
+  evt.initEvent("change", false, true);
