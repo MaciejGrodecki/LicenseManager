@@ -1097,3 +1097,33 @@
 2017-09-22 12:19:30.7385|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 1.6647ms
 2017-09-22 12:19:30.7385|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONU" completed keep alive response.
 2017-09-22 12:19:30.7385|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.6684ms 200 application/json; charset=utf-8
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONO" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONQ" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONP" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONS" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONO" disconnecting.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONR" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONT" received FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONO" sending FIN.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONP" disconnecting.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONO" sent FIN with status "0".
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONS" disconnecting.
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONQ" disconnecting.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONO" stopped.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONS" sending FIN.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONP" sending FIN.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONQ" sending FIN.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONT" disconnecting.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONQ" sent FIN with status "0".
+2017-09-22 12:19:51.2575|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONR" disconnecting.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONP" sent FIN with status "0".
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONQ" stopped.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONP" stopped.
+2017-09-22 12:19:51.2689|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONS" sent FIN with status "0".
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONR" sending FIN.
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONS" stopped.
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONT" sending FIN.
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONR" sent FIN with status "0".
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONT" sent FIN with status "0".
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONT" stopped.
+2017-09-22 12:19:51.2844|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K5ILOONR" stopped.
