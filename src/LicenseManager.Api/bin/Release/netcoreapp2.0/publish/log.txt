@@ -17610,3 +17610,273 @@
 2017-09-21 13:03:23.8047|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL80RUGOIO05" sent FIN with status "0".
 2017-09-21 13:03:23.8220|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL80RUGOIO05" stopped.
 2017-09-21 13:04:58.7440|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-09-22 11:49:21.0629|INFO|DataInitializer|Seeding data
+2017-09-22 11:49:21.0977|INFO|RoomService|Adding room
+2017-09-22 11:49:21.0977|INFO|RoomService|Adding room
+2017-09-22 11:49:21.0977|INFO|LicenseTypeService|Adding license type
+2017-09-22 11:49:21.0977|INFO|LicenseTypeService|Adding license type
+2017-09-22 11:49:21.1130|INFO|LicenseService|Adding license
+2017-09-22 11:49:21.1130|INFO|LicenseService|Adding license
+2017-09-22 11:49:21.1130|INFO|ComputerService|Adding computer
+2017-09-22 11:49:21.1130|INFO|ComputerService|Adding computer
+2017-09-22 11:49:21.1305|INFO|UserService|Adding user
+2017-09-22 11:49:21.2018|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-09-22 11:49:21.2747|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-09-22 11:50:34.1964|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" started.
+2017-09-22 11:50:34.2900|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-09-22 11:50:34.4827|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'LicenseTypes'.
+2017-09-22 11:50:34.5057|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicenseTypesController.Post (LicenseManager.Api)' with id '6ac1c185-c538-4cbb-8982-ecb00dddb125' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:50:34.5388|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api)
+2017-09-22 11:50:34.5918|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:50:34.5918|INFO|LicenseTypeService|Getting all license types
+2017-09-22 11:50:34.6217|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:50:34.6457|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-09-22 11:50:34.8164|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 274.5251ms
+2017-09-22 11:50:34.8164|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:50:34.8164|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 556.2683ms 200 application/json; charset=utf-8
+2017-09-22 11:51:44.4598|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-09-22 11:51:44.4598|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'LicenseTypes'.
+2017-09-22 11:51:44.4598|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicenseTypesController.Post (LicenseManager.Api)' with id '6ac1c185-c538-4cbb-8982-ecb00dddb125' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:51:44.4598|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api)
+2017-09-22 11:51:44.4598|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:51:44.4598|INFO|LicenseTypeService|Getting all license types
+2017-09-22 11:51:44.4598|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:51:44.4598|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-09-22 11:51:44.4598|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 4.0871ms
+2017-09-22 11:51:44.4598|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:51:44.4598|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.3987ms 200 application/json; charset=utf-8
+2017-09-22 11:51:57.4287|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenses  
+2017-09-22 11:51:57.4438|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:51:57.4438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.3497ms 204 
+2017-09-22 11:51:57.4438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses application/json 84
+2017-09-22 11:51:57.4438|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:51:57.4438|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '5b79b2f1-56c5-44e1-91db-37dc79c555db' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:51:57.4438|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:51:57.5112|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:51:57.5939|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.License.AddLicense) - ModelState is Valid
+2017-09-22 11:51:57.5991|INFO|LicenseService|Adding license
+2017-09-22 11:51:57.5991|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.CreatedResult.
+2017-09-22 11:51:57.5991|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|No information found on request to perform content negotiation.
+2017-09-22 11:51:57.6149|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter' and content type '' to write the response.
+2017-09-22 11:51:57.6149|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-09-22 11:51:57.6149|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 163.289ms
+2017-09-22 11:51:57.6149|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:51:57.6149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 169.1524ms 201 
+2017-09-22 11:52:51.7488|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-09-22 11:52:51.7488|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'LicenseTypes'.
+2017-09-22 11:52:51.7488|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicenseTypesController.Post (LicenseManager.Api)' with id '6ac1c185-c538-4cbb-8982-ecb00dddb125' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:52:51.7488|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api)
+2017-09-22 11:52:51.7488|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:52:51.7488|INFO|LicenseTypeService|Getting all license types
+2017-09-22 11:52:51.7488|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:52:51.7539|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-09-22 11:52:51.7539|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 2.2562ms
+2017-09-22 11:52:51.7539|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:52:51.7539|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.2739ms 200 application/json; charset=utf-8
+2017-09-22 11:53:00.7306|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenses  
+2017-09-22 11:53:00.7306|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:53:00.7306|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5.2907ms 204 
+2017-09-22 11:53:00.7306|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses application/json 106
+2017-09-22 11:53:00.7384|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:53:00.7384|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '5b79b2f1-56c5-44e1-91db-37dc79c555db' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:53:00.7384|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:53:00.7384|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:53:00.7567|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:53:00.7567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:53:00.7567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 20.5049ms
+2017-09-22 11:53:00.7567|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS": An unhandled exception was thrown by the application.
+2017-09-22 11:53:00.7567|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:53:00.7567|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.1545ms 500 
+2017-09-22 11:53:20.1643|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-09-22 11:53:20.1643|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'LicenseTypes'.
+2017-09-22 11:53:20.1643|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicenseTypesController.Post (LicenseManager.Api)' with id '6ac1c185-c538-4cbb-8982-ecb00dddb125' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:53:20.1643|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api)
+2017-09-22 11:53:20.1643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:53:20.1643|INFO|LicenseTypeService|Getting all license types
+2017-09-22 11:53:20.1643|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:53:20.1643|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-09-22 11:53:20.1643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 2.055ms
+2017-09-22 11:53:20.1643|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:53:20.1643|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.2492ms 200 application/json; charset=utf-8
+2017-09-22 11:53:25.8746|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenses  
+2017-09-22 11:53:25.8746|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:53:25.8746|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.2473ms 204 
+2017-09-22 11:53:25.8804|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses application/json 104
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '5b79b2f1-56c5-44e1-91db-37dc79c555db' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:53:25.8804|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:53:25.8804|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 2.7707ms
+2017-09-22 11:53:25.8804|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS": An unhandled exception was thrown by the application.
+2017-09-22 11:53:25.8804|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" completed keep alive response.
+2017-09-22 11:53:25.8804|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.9718ms 500 
+2017-09-22 11:54:15.7711|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" started.
+2017-09-22 11:54:15.7711|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" started.
+2017-09-22 11:54:15.7711|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" received FIN.
+2017-09-22 11:54:15.7711|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" disconnecting.
+2017-09-22 11:54:15.7711|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" sending FIN.
+2017-09-22 11:54:15.7711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-09-22 11:54:15.7850|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" sent FIN with status "0".
+2017-09-22 11:54:15.7850|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Rooms'.
+2017-09-22 11:54:15.7850|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api)' with id '7be7e615-a7ed-4fa8-8f58-89957c9046d6' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:54:15.7850|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMT" stopped.
+2017-09-22 11:54:15.7850|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api)
+2017-09-22 11:54:15.7850|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:54:15.7850|INFO|RoomService|Getting All rooms
+2017-09-22 11:54:15.8050|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:54:15.8050|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-09-22 11:54:15.8050|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 20.079ms
+2017-09-22 11:54:15.8050|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" completed keep alive response.
+2017-09-22 11:54:15.8050|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.4734ms 200 application/json; charset=utf-8
+2017-09-22 11:54:33.6621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/licenses  0
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '5b79b2f1-56c5-44e1-91db-37dc79c555db' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id 'c27f9af8-4bb5-44d0-842f-9999b17c0afa' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Mvc.Internal.MvcAttributeRouteHandler|No actions matched the current request
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes.
+2017-09-22 11:54:33.6621|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" completed keep alive response.
+2017-09-22 11:54:33.6621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8.2256ms 404 
+2017-09-22 11:54:50.0592|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" started.
+2017-09-22 11:54:50.0666|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" started.
+2017-09-22 11:54:50.0666|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" started.
+2017-09-22 11:54:50.1424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses  
+2017-09-22 11:54:50.1424|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:54:50.1442|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id 'c27f9af8-4bb5-44d0-842f-9999b17c0afa' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:54:50.1442|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-22 11:54:50.1442|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:54:50.1442|INFO|LicenseService|Getting all licenses
+2017-09-22 11:54:50.1698|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:54:50.1698|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-22 11:54:50.1799|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 29.7894ms
+2017-09-22 11:54:50.1799|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" completed keep alive response.
+2017-09-22 11:54:50.1799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.1102ms 200 application/json; charset=utf-8
+2017-09-22 11:54:50.3224|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-09-22 11:54:50.3224|DEBUG|Microsoft.AspNetCore.Builder.RouterMiddleware|Request did not match any routes.
+2017-09-22 11:54:50.3224|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" completed keep alive response.
+2017-09-22 11:54:50.3224|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6003ms 404 
+2017-09-22 11:54:55.9350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses  
+2017-09-22 11:54:55.9350|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:54:55.9350|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)' with id 'c27f9af8-4bb5-44d0-842f-9999b17c0afa' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:54:55.9350|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)
+2017-09-22 11:54:55.9350|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-09-22 11:54:55.9350|INFO|LicenseService|Getting all licenses
+2017-09-22 11:54:55.9350|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api), returned result Microsoft.AspNetCore.Mvc.JsonResult.
+2017-09-22 11:54:55.9350|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-09-22 11:54:55.9413|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 2.1539ms
+2017-09-22 11:54:55.9413|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" completed keep alive response.
+2017-09-22 11:54:55.9413|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.6618ms 200 application/json; charset=utf-8
+2017-09-22 11:55:01.2291|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" received FIN.
+2017-09-22 11:55:01.2291|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" received FIN.
+2017-09-22 11:55:01.2291|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" disconnecting.
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" disconnecting.
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" sending FIN.
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" sending FIN.
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" sent FIN with status "0".
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" sent FIN with status "0".
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN1" stopped.
+2017-09-22 11:55:01.2437|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QN0" stopped.
+2017-09-22 11:55:23.0636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 103
+2017-09-22 11:55:23.0636|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:55:23.0665|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '5b79b2f1-56c5-44e1-91db-37dc79c555db' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:55:23.0665|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:55:23.0665|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:55:23.0665|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:55:23.0665|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:55:23.0665|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 4.2873ms
+2017-09-22 11:55:23.0665|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU": An unhandled exception was thrown by the application.
+2017-09-22 11:55:23.0665|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" completed keep alive response.
+2017-09-22 11:55:23.0665|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 14.6922ms 500 
+2017-09-22 11:55:26.2020|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" disconnecting.
+2017-09-22 11:55:26.2020|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" sending FIN.
+2017-09-22 11:55:26.2020|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" sent FIN with status "0".
+2017-09-22 11:55:26.2020|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMS" stopped.
+2017-09-22 11:55:48.0821|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-09-22 11:55:48.1273|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" disconnecting.
+2017-09-22 11:55:48.1273|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" sending FIN.
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" disconnecting.
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" sending FIN.
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" sent FIN with status "0".
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMU" stopped.
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" sent FIN with status "0".
+2017-09-22 11:55:48.1302|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81JTFA3QMV" stopped.
+2017-09-22 11:55:53.2710|INFO|DataInitializer|Seeding data
+2017-09-22 11:55:53.3039|INFO|RoomService|Adding room
+2017-09-22 11:55:53.3039|INFO|RoomService|Adding room
+2017-09-22 11:55:53.3039|INFO|LicenseTypeService|Adding license type
+2017-09-22 11:55:53.3162|INFO|LicenseTypeService|Adding license type
+2017-09-22 11:55:53.3162|INFO|LicenseService|Adding license
+2017-09-22 11:55:53.3162|INFO|LicenseService|Adding license
+2017-09-22 11:55:53.3162|INFO|ComputerService|Adding computer
+2017-09-22 11:55:53.3321|INFO|ComputerService|Adding computer
+2017-09-22 11:55:53.3321|INFO|UserService|Adding user
+2017-09-22 11:55:53.4038|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
+2017-09-22 11:55:53.4740|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-09-22 11:55:55.2628|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" started.
+2017-09-22 11:55:55.2628|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" started.
+2017-09-22 11:55:55.2726|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" received FIN.
+2017-09-22 11:55:55.2909|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" disconnecting.
+2017-09-22 11:55:55.2909|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" sending FIN.
+2017-09-22 11:55:55.3024|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" sent FIN with status "0".
+2017-09-22 11:55:55.3024|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIU" stopped.
+2017-09-22 11:55:55.3536|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 103
+2017-09-22 11:55:55.5353|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:55:55.5595|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '572f2c36-86bd-4f08-954c-c6c9ba3b1da7' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:55:55.5972|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:55:55.6980|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:55:55.8545|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:55:55.8818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:55:55.8818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 289.2956ms
+2017-09-22 11:55:55.8818|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT": An unhandled exception was thrown by the application.
+2017-09-22 11:55:55.9228|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" completed keep alive response.
+2017-09-22 11:55:55.9309|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 589.0975ms 500 
+2017-09-22 11:56:28.9771|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 106
+2017-09-22 11:56:28.9771|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:56:28.9771|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '572f2c36-86bd-4f08-954c-c6c9ba3b1da7' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:56:28.9771|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:56:28.9771|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:56:28.9771|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:56:28.9771|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:56:28.9771|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 3.9657ms
+2017-09-22 11:56:28.9771|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT": An unhandled exception was thrown by the application.
+2017-09-22 11:56:28.9897|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" completed keep alive response.
+2017-09-22 11:56:28.9897|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 13.6676ms 500 
+2017-09-22 11:56:35.5947|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 110
+2017-09-22 11:56:35.5947|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:56:35.5947|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '572f2c36-86bd-4f08-954c-c6c9ba3b1da7' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:56:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:56:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:56:35.5977|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:56:35.5977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:56:35.5977|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 1.8405ms
+2017-09-22 11:56:35.5977|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT": An unhandled exception was thrown by the application.
+2017-09-22 11:56:35.5977|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" completed keep alive response.
+2017-09-22 11:56:35.5977|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5301ms 500 
+2017-09-22 11:56:38.3318|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 111
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '572f2c36-86bd-4f08-954c-c6c9ba3b1da7' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:56:38.3318|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:56:38.3318|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 1.9921ms
+2017-09-22 11:56:38.3318|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT": An unhandled exception was thrown by the application.
+2017-09-22 11:56:38.3318|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" completed keep alive response.
+2017-09-22 11:56:38.3318|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.5729ms 500 
+2017-09-22 11:57:25.3839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/licenses/ application/json 111
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Routing.Tree.TreeRouter|Request successfully matched the route with name '(null)' and template 'Licenses'.
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ActionSelector|Action 'LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api)' with id '572f2c36-86bd-4f08-954c-c6c9ba3b1da7' did not match the constraint 'Microsoft.AspNetCore.Mvc.Internal.HttpMethodActionConstraint'
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api)
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder|Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter' for content type 'application/json'.
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Mvc.Formatters.JsonInputFormatter|JSON input formatter threw an exception.
+2017-09-22 11:57:25.3839|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-09-22 11:57:25.3839|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Post (LicenseManager.Api) in 2.0694ms
+2017-09-22 11:57:25.3839|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT": An unhandled exception was thrown by the application.
+2017-09-22 11:57:25.3839|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" completed keep alive response.
+2017-09-22 11:57:25.3839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9.2817ms 500 
+2017-09-22 11:58:24.1699|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting shutdown
+2017-09-22 11:58:24.2127|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" disconnecting.
+2017-09-22 11:58:24.2127|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" sending FIN.
+2017-09-22 11:58:24.2127|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" sent FIN with status "0".
+2017-09-22 11:58:24.2127|DEBUG|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL81K0F01CIT" stopped.

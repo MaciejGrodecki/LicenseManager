@@ -1,4 +1,4 @@
-<div class="row" ng-app="licenseApp">
+<div class="row row-top-margin" ng-app="licenseApp">
     <form class="col s12 m12 l12"ng-controller="AddLicenseController">
         <div class="row">
             <div class="input-field col s5">
@@ -12,7 +12,7 @@
                 <label for="count">Ilość</label>
             </div>
             <div class="input-field col s3">
-                <input  type="text" class="datepicker" name="buyDate" ng-model="AddLicenseController.buyDate" materialize-date-picker readonly />
+                <input id="buyDate" type="text" class="datepicker" name="buyDate" ng-model="AddLicenseController.buyDate" materialize-date-picker readonly />
                 <label for="buyDate">Data zakupu</label>
             </div>
         </div>

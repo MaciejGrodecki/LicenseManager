@@ -34,21 +34,16 @@ $('.datepicker').pickadate({
       });
 
       $scope.SaveButton = function(){
+          var buyDateStr = document.getElementById("buyDate").value;
           var postRequest = $http({
               method: "POST",
               url: "http://localhost:5000/licenses",
-              dataType: 'json',
-              data : { name: $scope.name, count: $scope.count, buyDate: $scope.buyDate, licenseTypeId: $scope.licenseTypeId},
+              dataType: 'application/json',
+              data : { name: $scope.name, count: $scope.count, buyDate: buyDateStr, licenseTypeId: $scope.licenseTypeId},
               headers: { "Content-Type": "application/json"}
           });
-
-          postRequest.error(function (data, status){
-              $window.aler(data.Message);
-          })
       }
   });
-
-  licenseApp.controller("")
   
   var evt = document.createEvent("HTMLEvents");
   evt.initEvent("change", false, true);
