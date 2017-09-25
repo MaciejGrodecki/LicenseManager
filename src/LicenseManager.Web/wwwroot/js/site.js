@@ -20,18 +20,18 @@ $('.datepicker').pickadate({
     clear: 'Usuń',
     close: 'Zamknij',
     firstDay: 1,
-    format: 'dd.mm.yyyy',
-    formatSubmit: 'dd.mm.yyyy'
+    format: 'mm/dd/yyyy',
+    formatSubmit: 'mm/dd/yyyy'
   });
 
   var licenseApp = angular.module("licenseApp", ['angularMaterializeDatePicker']);
 
-  licenseApp.controller("AddLicenseController", function($scope, $http){
-      $http.get("http://localhost:5000/licenseTypes/")
-      .then(function(response){
-          $scope.licenseTypes = response.data;
-          $('select').material_select();
-      });
+  licenseApp.controller("AddLicenseController", function($scope, $http, $window){
+    $http.get("http://localhost:5000/licenseTypes/")
+    .then(function(response){
+        $scope.licenseTypes = response.data;
+        $('select').material_select();
+    });
 
       $scope.SaveButton = function(){
           var buyDateStr = document.getElementById("buyDate").value;
@@ -42,7 +42,26 @@ $('.datepicker').pickadate({
               data : { name: $scope.name, count: $scope.count, buyDate: buyDateStr, licenseTypeId: $scope.licenseTypeId},
               headers: { "Content-Type": "application/json"}
           });
+          $window.location.href = 'http://localhost:5050/';
       }
+  });
+
+  licenseApp.controller("BrowseLicensesController", function($scope, $http, $filter){
+      $http.get("http://localhost:5000/licenses/")
+      .then(function(reponse){
+          $scope.licenses = reponse.data;
+      }); 
+  });
+
+
+
+  licenseApp.controller("GetLicenseType", function($scope, $http){
+      $http({
+          method: "GET",
+          url: "http://localhost:5000/licenseTypes/" + $scope.license.licenseTypeId
+      }).then(function(response){
+          $scope.licenseType = response.data.name;
+      })
   });
   
   var evt = document.createEvent("HTMLEvents");

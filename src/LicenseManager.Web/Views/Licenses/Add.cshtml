@@ -12,7 +12,8 @@
                 <label for="count">Ilość</label>
             </div>
             <div class="input-field col s3">
-                <input id="buyDate" type="text" class="datepicker" name="buyDate" ng-model="AddLicenseController.buyDate" materialize-date-picker readonly />
+                <input id="buyDate" type="text" class="datepicker" name="buyDate" ng-model="AddLicenseController.buyDate" materialize-date-picker readonly 
+                    placeholder="mm/dd/yyyy" />
                 <label for="buyDate">Data zakupu</label>
             </div>
         </div>
@@ -27,9 +28,9 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row">   
             <div class="col s5">
-                <button  ng-click="SaveButton()">Utwórz licencję</button>
+                <button  ng-click="SaveButton()" class="waves-effect waves-light btn right red">Utwórz licencję</button>
             </div>
         </div>
     </form>

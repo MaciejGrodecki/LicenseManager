@@ -36,6 +36,7 @@ namespace LicenseManager.Core.Domain
 
         public void SetBuyDate(DateTime buyDate)
         {
+
             if(buyDate > DateTime.Now)
             {
                 throw new Exception("Buy date must be earlier");
@@ -62,5 +63,6 @@ namespace LicenseManager.Core.Domain
 
             Name = name;
         }
+
     }
 }

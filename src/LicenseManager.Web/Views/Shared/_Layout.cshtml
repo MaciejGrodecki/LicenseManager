@@ -29,9 +29,10 @@
       </ul>
     </div>
   </nav>
-    <div class="container">
+      <div class="container s12">
         @RenderBody()            
-    </div>
+      </div>
+    
     <environment names="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.js"></script>
@@ -46,7 +47,7 @@
         <script src="~/lib/moment/locale/pl.js"></script>
         <script src="~/lib/pickadate/lib/picker.js"></script>
         <script src="~/lib/pickadate/lib/picker.date.js"></script>
-        <script src="~/js/site.min.js" asp-append-version="true"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
     </environment>
     @RenderSection("Scripts", required: false)
 </body>
