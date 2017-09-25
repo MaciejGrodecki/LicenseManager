@@ -46,11 +46,15 @@ $('.datepicker').pickadate({
       }
   });
 
-  licenseApp.controller("BrowseLicensesController", function($scope, $http, $filter){
+  licenseApp.controller("BrowseLicensesController", function($scope, $http, $filter, $window){
       $http.get("http://localhost:5000/licenses/")
       .then(function(reponse){
           $scope.licenses = reponse.data;
-      }); 
+      });
+      
+      $scope.redirect = function(licenseTypeId){
+        $window.location.href = 'http://localhost:5050/licenses/Edit/' + licenseTypeId;
+      };
   });
 
 

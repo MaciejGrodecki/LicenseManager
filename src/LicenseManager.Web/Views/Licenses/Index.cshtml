@@ -17,7 +17,7 @@
                 <th>Typ licencji</th>
             </thead>
             <tbody>
-            <tr ng-repeat="license in licenses">
+            <tr ng-repeat="license in licenses" ng-click="redirect(license.licenseId)">
                 <td>{{license.name}}</td>
                 <td>{{license.count}}</td>
                 <td>{{license.buyDate | date: 'MM/dd/yyyy'}}</td>
