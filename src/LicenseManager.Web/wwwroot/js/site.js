@@ -1,72 +1,43 @@
-$(function() {
-    $('select').material_select();
- });
- 
+var app = angular.module('app', []);
 
+app.controller("BrowseLicensesCtrl", function($scope, $http){
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/licenses/'
+    }).then(function successCallback(response){
+        $scope.licenses = response.data;
+    }),function errorCallback(response){
 
+    }});
 
-$('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 20, // Creates a dropdown of 15 years to control year,
-    today: 'Dzisiaj',
-    clear: 'Clear',
-    close: 'Ok',
-    closeOnSelect: false, // Close upon selecting a date,
-    monthsFull: [ 'styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień' ],
-    monthsShort: [ 'sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru' ],
-    weekdaysFull: [ 'niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota' ],
-    weekdaysShort: [ 'niedz.', 'pn.', 'wt.', 'śr.', 'cz.', 'pt.', 'sob.' ],
-    today: 'Dzisiaj',
-    clear: 'Usuń',
-    close: 'Zamknij',
-    firstDay: 1,
-    format: 'mm/dd/yyyy',
-    formatSubmit: 'mm/dd/yyyy'
-  });
+app.controller("GetLicenseTypeNameCtrl", function($scope, $http){
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/licenseTypes/" + $scope.license.licenseTypeId 
+    }).then(function successCallback(response){
+        $scope.licenseTypeName = response.data.name;
+    }), function errorCallback(response){
 
-  var licenseApp = angular.module("licenseApp", ['angularMaterializeDatePicker']);
+    }});
 
-  licenseApp.controller("AddLicenseController", function($scope, $http, $window){
-    $http.get("http://localhost:5000/licenseTypes/")
-    .then(function(response){
+app.controller("AddLicenseFormCtrl", function($scope, $http){
+    
+})
+
+app.controller("BrowseLicenseTypesCtrl", function($scope, $http){
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/licenseTypes/"
+    }).then(function successCallback(response){
         $scope.licenseTypes = response.data;
-        $('select').material_select();
-    });
+    }),function errorCallback(response){
 
-      $scope.SaveButton = function(){
-          var buyDateStr = document.getElementById("buyDate").value;
-          var postRequest = $http({
-              method: "POST",
-              url: "http://localhost:5000/licenses",
-              dataType: 'application/json',
-              data : { name: $scope.name, count: $scope.count, buyDate: buyDateStr, licenseTypeId: $scope.licenseTypeId},
-              headers: { "Content-Type": "application/json"}
-          });
-          $window.location.href = 'http://localhost:5050/';
-      }
-  });
+    }});
 
-  licenseApp.controller("BrowseLicensesController", function($scope, $http, $filter, $window){
-      $http.get("http://localhost:5000/licenses/")
-      .then(function(reponse){
-          $scope.licenses = reponse.data;
-      });
-      
-      $scope.redirect = function(licenseTypeId){
-        $window.location.href = 'http://localhost:5050/licenses/Edit/' + licenseTypeId;
-      };
-  });
+function AddLicenseRedirect(){
+    location.href = "http://localhost:5050/licenses/Add/ ";
+};
 
-
-
-  licenseApp.controller("GetLicenseType", function($scope, $http){
-      $http({
-          method: "GET",
-          url: "http://localhost:5000/licenseTypes/" + $scope.license.licenseTypeId
-      }).then(function(response){
-          $scope.licenseType = response.data.name;
-      })
-  });
-  
-  var evt = document.createEvent("HTMLEvents");
-  evt.initEvent("change", false, true);
+function MainPageRedirect(){
+    location.href = "http://localhost:5050/ ";
+};
