@@ -46,3 +46,4 @@ D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstanda
 D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.AssemblyInfo.cs
 D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.dll
 D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard1.4\LicenseManager.Infrastructure.csprojResolveAssemblyReference.cache

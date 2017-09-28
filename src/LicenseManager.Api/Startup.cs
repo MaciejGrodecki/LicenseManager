@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using LicenseManager.Core.Repositories;
+﻿using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.Mappers;
 using LicenseManager.Infrastructure.Repositories;
 using LicenseManager.Infrastructure.Services;
 using LicenseManager.Infrastructure.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -66,9 +61,6 @@ namespace LicenseManager.Api
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            //loggerFactory.AddConsole(Configuration.GetSection("Logging"));
-            //loggerFactory.AddDebug();
-            //app.UseCors("DefaultPolicy");
             app.UseCors(builder =>
                 builder.WithOrigins("http://localhost:5050").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             loggerFactory.AddNLog();

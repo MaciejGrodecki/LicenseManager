@@ -36,3 +36,4 @@ D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\Lice
 D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.AssemblyInfo.cs
 D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.dll
 D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Core\obj\Debug\netstandard1.4\LicenseManager.Core.csprojResolveAssemblyReference.cache

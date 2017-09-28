@@ -21,5 +21,7 @@ namespace LicenseManager.Api
 
             host.Run();
         }
+
+        
     }
 }
