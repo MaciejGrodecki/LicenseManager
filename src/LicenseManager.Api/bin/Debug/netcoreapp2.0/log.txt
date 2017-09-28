@@ -10483,3 +10483,5 @@
 2017-09-27 19:44:22.8574|INFO|UserService|Adding user
 2017-09-27 19:44:22.9316|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting starting
 2017-09-27 19:44:23.0123|DEBUG|Microsoft.AspNetCore.Hosting.Internal.WebHost|Hosting started
+2017-09-28 08:21:47.5050|WARN|Microsoft.AspNetCore.Server.Kestrel|Connection processing ended abnormally.
+2017-09-28 08:21:49.9888|WARN|Microsoft.AspNetCore.Server.Kestrel|Connection processing ended abnormally.
