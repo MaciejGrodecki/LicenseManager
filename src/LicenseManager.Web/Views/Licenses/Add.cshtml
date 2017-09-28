@@ -1,28 +1,28 @@
-<div ng-app="app" ng-controller="AddLicenseFormCtrl">
+<div ng-app="app">
     <div class="row">
-        <form>
+        <form ng-controller="AddLicenseFormCtrl">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" ng-model="name">
             </div>
             <div class="form-group">
                 <label for="count">Count</label>
-                <input type="text" class="form-control" id="count">
+                <input type="text" class="form-control" id="count"  ng-model="count">
             </div>
             <div class="form-group">
                 <label for="buyDate">Buy date</label>
-                <input type="date" class="form-control" id="buyDate">
+                <input type="date" class="form-control" id="buyDate"  ng-model="buyDate">
             </div>
-            <div ng-controller="BrowseLicenseTypesCtrl">
+            <div class="form-group">
                 <label for="licenseTypeSelect">Wybierz typ licencji</label>
-                <select id="licenseTypeSelect" class="form-control" ng-model="selectedLicenseType" 
-                    ng-options="l.name for l in licenseTypes track by l.licenseTypeId">
-                    <option value="">--Select license type--</option>
-                </select>
+                <select ng-model="ddlLicenseTypes" ng-options="licenseType.licenseTypeId as 
+                        licenseType.name for licenseType in licenseTypes" class="form-control"></select>
             </div>
-            </br>
-            <button type="submit" class="btn btn-info pull-right">Add license</button>
-            <button type="submit" class="btn btn-warning pull-left" onclick="MainPageRedirect()">Return</button>
+            <div class="row">
+                <button class="btn btn-info pull-right" ng-click="AddLicenseButton()">Add license</button>
+                <button type="submit" class="btn btn-warning pull-left" onclick="MainPageRedirect()">Return</button>
+            </div>
+            
         </form>
     </div>
 

@@ -12,6 +12,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseManager.Infrastructu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseManager.Web", "src\LicenseManager.Web\LicenseManager.Web.csproj", "{34F2FBD3-3A6B-4CC0-9B15-CBE886F91765}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LicenseManager.Tests", "tests\LicenseManager.Tests\LicenseManager.Tests.csproj", "{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,18 @@ Global
 		{34F2FBD3-3A6B-4CC0-9B15-CBE886F91765}.Release|x64.Build.0 = Release|Any CPU
 		{34F2FBD3-3A6B-4CC0-9B15-CBE886F91765}.Release|x86.ActiveCfg = Release|Any CPU
 		{34F2FBD3-3A6B-4CC0-9B15-CBE886F91765}.Release|x86.Build.0 = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|x64.Build.0 = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Debug|x86.Build.0 = Debug|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|x64.ActiveCfg = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|x64.Build.0 = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|x86.ActiveCfg = Release|Any CPU
+		{79BAD55A-8FEE-4DCD-85D9-4DD8B1AF404D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

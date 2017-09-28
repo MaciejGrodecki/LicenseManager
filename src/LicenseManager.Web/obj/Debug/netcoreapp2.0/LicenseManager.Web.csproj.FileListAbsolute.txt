@@ -30,3 +30,4 @@ D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\Licens
 D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.AssemblyInfo.cs
 D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.dll
 D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Debug\netcoreapp2.0\LicenseManager.Web.csprojResolveAssemblyReference.cache

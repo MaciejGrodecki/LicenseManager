@@ -4,19 +4,22 @@
     </div>
     <div class="row">
         <table class="table table-hover">
-            <thead>
-                <th>Name</th>
-                <th>Count</th>
-                <th>License Type</th>
-                <th>Buy date (dd/MM/yyyy)</th>
-            </thead>
-            <tbody>
-                <tr ng-repeat="license in licenses">
-                    <td>{{license.name}}</td>
-                    <td>{{license.count}}</td>
-                    <td ng-controller="GetLicenseTypeNameCtrl">{{licenseTypeName}}</td>
-                    <td>{{license.buyDate | date: 'dd/MM/yyyy'}}</td>
-                </tr>
-            </tbody>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Count</th>
+                        <th>License Type</th>
+                        <th>Buy date (dd.MM.yyyy)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="license in licenses">
+                        <td>{{license.name}}</td>
+                        <td>{{license.count}}</td>
+                        <td ng-controller="GetLicenseTypeNameCtrl">{{licenseTypeName}}</td>
+                        <td>{{license.buyDate | date: 'dd.MM.yyyy'}}</td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
 </div>
