@@ -13,7 +13,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="license in licenses">
+                    <tr ng-repeat="license in licenses" ng-click="selectLicense(license.licenseId)">
                         <td>{{license.name}}</td>
                         <td>{{license.count}}</td>
                         <td ng-controller="GetLicenseTypeNameCtrl">{{licenseTypeName}}</td>

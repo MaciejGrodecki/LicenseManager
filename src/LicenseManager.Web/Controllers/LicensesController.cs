@@ -18,14 +18,13 @@ namespace LicenseManager.Web.Controllers
             return View();
         }
 
-        [Route("licenses/Edit")]
-        public IActionResult Edit(Guid? licenseTypeId)
+        [Route("license/{licenseId}")]
+        public IActionResult Details(Guid? licenseId)
         {
-            if(licenseTypeId == null)
+            if(licenseId == null)
             {
                 return NotFound();
             }
-            ViewData["licenseTypeId"] = licenseTypeId;
             return View();
         }
     }
