@@ -1,0 +1,22 @@
+﻿<div ng-app="app" ng-controller="BrowseRoomsCtrl">
+    <div class="row">
+        <button type="button" class="btn btn-primary pull-right" onclick="AddRoomRedirect()">Add room</button>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="room in rooms">
+                    <td class="text-uppercase">{{room.name}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning pull-right" ng-click="DeleteButton(room.roomId)">Delete room</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

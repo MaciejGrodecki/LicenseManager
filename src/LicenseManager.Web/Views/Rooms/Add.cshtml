@@ -1,0 +1,16 @@
+﻿<div ng-app="app">
+    <div class="row">
+        <form ng-controller="AddRoomFormCtrl">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="name">
+            </div>
+            <div class="row">
+                <button class="btn btn-info pull-right" ng-click="AddRoomButton()" type="button">Add room</button>
+                <button type="button" class="btn btn-warning pull-left" onclick="MainPageRedirect()">Return</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

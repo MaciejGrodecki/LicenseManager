@@ -1,13 +1,26 @@
+
+function AddLicenseRedirect() {
+    location.href = "http://localhost:5050/licenses/Add/ ";
+}
+
+function MainPageRedirect() {
+    location.href = "http://localhost:5050/ ";
+}
+
+function AddRoomRedirect() {
+    location.href = "http://localhost:5050/rooms/Add/";
+}
+
 var app = angular.module('app', ['cp.ngConfirm']);
 
-app.controller("BrowseLicensesCtrl", function ($scope, $http, $window) {
+app.controller("BrowseLicensesCtrl", function ($scope, $http) {
     $http({
         method: 'GET',
         url: 'http://localhost:5000/licenses/'
     }).then(function successCallback(response) {
         $scope.licenses = response.data;
     }), function errorCallback(response) {
-        };
+    };
 
     $scope.selectLicense = function (licenseId) {
         location.href = "http://localhost:5050/license/" + licenseId;
@@ -21,7 +34,6 @@ app.controller("GetLicenseTypeNameCtrl", function ($scope, $http) {
     }).then(function successCallback(response) {
         $scope.licenseTypeName = response.data.name;
     }), function errorCallback(response) {
-
     };
 });
 
@@ -32,7 +44,6 @@ app.controller("AddLicenseFormCtrl", function ($scope, $http, $window) {
     }).then(function successCallback(response) {
         $scope.licenseTypes = response.data;
     }), function errorCallback(response) {
-
     };
 
     $scope.AddLicenseButton = function () {
@@ -105,41 +116,105 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
                 }
             }
         });
-    };  
-    
+    };
 
     $scope.SaveButton = function () {
-        $http({
-            method: 'PUT',
-            url: "http://localhost:5000/licenses/" + currentLicenseId,
-            dataType: 'application/json',
-            data: {
-                name: $scope.license.name,
-                count: $scope.license.count,
-                licenseTypeId: $scope.ddlLicenseTypes,
-                buyDate: $scope.license.buyDate
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want save changes?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'PUT',
+                            url: "http://localhost:5000/licenses/" + currentLicenseId,
+                            dataType: 'application/json',
+                            data: {
+                                name: $scope.license.name,
+                                count: $scope.license.count,
+                                licenseTypeId: $scope.ddlLicenseTypes,
+                                buyDate: $scope.license.buyDate
+                            }
+                        }).then(function successCallback(response) {
+                            $window.location.href = 'http://localhost:5050/';
+                        });
+                    }
+                },
+                No: function (scope, button) {
+                }
             }
-        }).then(function successCallback(response) {
         });
+        
     };
 
     $scope.UnlockForm = function () {
         $scope.isDisabled = false;
+        var licenseType = $scope.ddlLicenseTypes;
 
         $http({
             method: 'GET',
             url: "http://localhost:5000/licenseTypes/"
         }).then(function successCallback(response) {
+            
             $scope.licenseTypes = response.data;
+            $scope.ddlLicenseTypes = $scope.license.licenseTypeId;
         });
     };
 });
 
+app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location) {
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/rooms'
+    }).then(function successCallback(response) {
+        $scope.rooms = response.data;
+        });
 
-function AddLicenseRedirect() {
-    location.href = "http://localhost:5050/licenses/Add/ ";
-}
+    $scope.DeleteButton = function (roomId) {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want to delete room?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'DELETE',
+                            url: "http://localhost:5000/rooms/" + roomId
+                        }).then(function successCallback(response) {
+                            location.reload();
+                        })
+                    }
+                },
+                No: function (scope, button) {
 
-function MainPageRedirect() {
-    location.href = "http://localhost:5050/ ";
-}
+                }
+            }
+        });
+    }
+});
+
+app.controller("AddRoomFormCtrl", function ($scope, $http, $window) {
+
+    $scope.AddRoomButton = function () {
+        $http({
+            method: 'POST',
+            url: "http://localhost:5000/rooms",
+            dataType: 'application/json',
+            data: {
+                name: $scope.name
+            }
+        }).then(function successCallback(response) {
+            $window.alert('Added room');
+            $window.location.href = 'http://localhost:5050/rooms/index';
+        });
+    }
+    
+});
+
+
