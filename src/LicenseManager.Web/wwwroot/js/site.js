@@ -15,6 +15,10 @@ function AddLicenseTypeRedirect() {
     location.href = "http://localhost:5050/licenseTypes/Add";
 }
 
+function BrowseLicenseTypesRedirect() {
+    location.href = "http://localhost:5050/licenseTypes/index";
+}
+
 var app = angular.module('app', ['cp.ngConfirm']);
 
 app.controller("BrowseLicensesCtrl", function ($scope, $http) {
@@ -255,7 +259,7 @@ app.controller("BrowseLicenseTypesCtrl", function ($scope, $http, $ngConfirm, $l
 });
 
 app.controller("AddLicenseTypeFormCtrl", function ($scope, $http, $window) {
-    $scope.AddRoomButton = function () {
+    $scope.AddLicenseTypeButton = function () {
         $http({
             method: 'POST',
             url: "http://localhost:5000/licenseTypes",

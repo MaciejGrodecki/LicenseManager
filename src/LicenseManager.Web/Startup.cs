@@ -44,7 +44,7 @@ namespace LicenseManager.Web
                 routes.MapRoute(
                     name: "Default",
                     template: "{controller}/{action}/{id}",
-                    defaults: new { controller = "Licenses", action = "Index"}
+                    defaults: new { controller = "Licenses", action = "Index" });
             });
         }
     }
