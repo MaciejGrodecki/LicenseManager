@@ -1,0 +1,25 @@
+﻿<div ng-app="app">
+    <div class="row">
+        <form ng-controller="AddComputerFormCtrl">
+            <div class="form-group">
+                <label for="name">Inventory number</label>
+                <input type="text" class="form-control" id="inventoryNumber" ng-model="inventoryNumber">
+            </div>
+            <div class="form-group">
+                <label for="count">IP address</label>
+                <input type="text" class="form-control" id="ipAddress" ng-model="ipAddress">
+            </div>
+            <div class="form-group">
+                <label for="licenseTypeSelect">Wybierz typ licencji</label>
+                <select ng-model="ddlRooms" ng-options="room.roomId as
+                        room.name for room in rooms" class="form-control text-uppercase"></select>
+            </div>
+            <div class="row">
+                <button class="btn btn-info pull-right" ng-click="AddComputerButton()" type="button">Add computer</button>
+                <button type="button" class="btn btn-warning pull-left" onclick="BrowseComputerRedirect()">Return</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>

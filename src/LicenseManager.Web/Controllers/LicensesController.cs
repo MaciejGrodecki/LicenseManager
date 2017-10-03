@@ -12,7 +12,7 @@ namespace LicenseManager.Web.Controllers
             return View();
         }
 
-        [Route("licenses/Add")]
+        [Route("license/Add")]
         public IActionResult Add()
         {
             return View();

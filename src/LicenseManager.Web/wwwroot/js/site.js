@@ -1,4 +1,3 @@
-
 function AddLicenseRedirect() {
     location.href = "http://localhost:5050/licenses/Add/ ";
 }
@@ -17,6 +16,14 @@ function AddLicenseTypeRedirect() {
 
 function BrowseLicenseTypesRedirect() {
     location.href = "http://localhost:5050/licenseTypes/index";
+}
+
+function AddComputerRedirect() {
+    location.href = "http://localhost:5050/computers/add";
+}
+
+function BrowseComputerRedirect() {
+    location.href = "http://localhost:5050/computers/index";
 }
 
 var app = angular.module('app', ['cp.ngConfirm']);
@@ -155,7 +162,6 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
                 }
             }
         });
-        
     };
 
     $scope.UnlockForm = function () {
@@ -166,7 +172,6 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
             method: 'GET',
             url: "http://localhost:5000/licenseTypes/"
         }).then(function successCallback(response) {
-            
             $scope.licenseTypes = response.data;
             $scope.ddlLicenseTypes = $scope.license.licenseTypeId;
         });
@@ -179,7 +184,7 @@ app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location
         url: 'http://localhost:5000/rooms'
     }).then(function successCallback(response) {
         $scope.rooms = response.data;
-        });
+    });
 
     $scope.DeleteButton = function (roomId) {
         $ngConfirm({
@@ -200,7 +205,6 @@ app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location
                     }
                 },
                 No: function (scope, button) {
-
                 }
             }
         });
@@ -208,7 +212,6 @@ app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location
 });
 
 app.controller("AddRoomFormCtrl", function ($scope, $http, $window) {
-
     $scope.AddRoomButton = function () {
         $http({
             method: 'POST',
@@ -251,7 +254,6 @@ app.controller("BrowseLicenseTypesCtrl", function ($scope, $http, $ngConfirm, $l
                     }
                 },
                 No: function (scope, button) {
-
                 }
             }
         });
@@ -274,6 +276,146 @@ app.controller("AddLicenseTypeFormCtrl", function ($scope, $http, $window) {
     }
 });
 
+app.controller("BrowseComputersCtrl", function ($scope, $http) {
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/computers/'
+    }).then(function successCallback(response) {
+        $scope.computers = response.data;
+    }), function errorCallback(response) {
+    };
 
+    $scope.selectComputer = function (computerId) {
+        location.href = "http://localhost:5050/computer/" + computerId;
+    };
+});
 
+app.controller("GetRoomNameCtrl", function ($scope, $http) {
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/rooms/" + $scope.computer.roomId
+    }).then(function successCallback(response) {
+        $scope.roomName = response.data.name;
+    }), function errorCallback(response) {
+    };
+});
 
+app.controller("AddComputerFormCtrl", function ($scope, $http, $window) {
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/rooms/"
+    }).then(function successCallback(response) {
+        $scope.rooms = response.data;
+    }), function errorCallback(response) {
+    };
+
+    $scope.AddComputerButton = function () {
+        $http({
+            method: 'POST',
+            url: "http://localhost:5000/computers",
+            dataType: 'application/json',
+            data: {
+                inventoryNumber: $scope.inventoryNumber,
+                ipAddress: $scope.ipAddress,
+                roomId: $scope.ddlRooms,
+            }
+        }).then(function successCallback(response) {
+            $window.alert('Added computer');
+            $window.location.href = 'http://localhost:5050/computers/index';
+        });
+    };
+});
+
+app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $window, $filter,
+    $ngConfirm) {
+    $scope.isDisabled = true;
+    var currentComputerId = $location.absUrl().split('/')[4];
+    var currentRoomId;
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/computers/" + currentComputerId
+    }).then(function successCallback(response) {
+        $scope.computer = response.data;
+        $http({
+            method: 'GET',
+            url: "http://localhost:5000/rooms/" + $scope.computer.roomId
+        }).then(function successCallback(response) {
+            $scope.rooms = response.data;
+            var arrayOfRooms = [];
+            for (var key in $scope.rooms) {
+                var tmp = {};
+                tmp[key] = $scope.rooms[key];
+                arrayOfRooms.push(tmp);
+            }
+            $scope.rooms = arrayOfRooms;
+        });
+    });
+
+    $scope.DeleteButton = function () {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want to delete this computer?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'DELETE',
+                            url: "http://localhost:5000/computers/" + currentComputerId
+                        }).then(function successCallback(response) {
+                            $window.location.href = 'http://localhost:5050/computers/index';
+                        });
+                    }
+                },
+                No: function (scope, button) {
+                }
+            }
+        });
+    };
+
+    $scope.SaveButton = function () {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want save changes?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'PUT',
+                            url: "http://localhost:5000/computers/" + currentComputerId,
+                            dataType: 'application/json',
+                            data: {
+
+                                inventoryNumber: $scope.computer.inventoryNumber,
+                                ipAddress: $scope.computer.ipAddress,
+                                roomId: $scope.ddlRooms
+                            }
+                        }).then(function successCallback(response) {
+                            $window.location.href = 'http://localhost:5050/computers/index';
+                        });
+                    }
+                },
+                No: function (scope, button) {
+                }
+            }
+        });
+    };
+
+    $scope.UnlockForm = function () {
+        $scope.isDisabled = false;
+        var licenseType = $scope.ddlRooms;
+
+        $http({
+            method: 'GET',
+            url: "http://localhost:5000/rooms/"
+        }).then(function successCallback(response) {
+            $scope.rooms = response.data;
+            $scope.ddlRooms = $scope.computer.roomId;
+        });
+    };
+});
