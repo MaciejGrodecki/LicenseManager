@@ -41,7 +41,10 @@ namespace LicenseManager.Web
 
             app.UseMvc(routes =>
             {
-                routes.MapRoute("default", "{controller=Licenses}/{action=Index}/{id?}");
+                routes.MapRoute(
+                    name: "Default",
+                    template: "{controller}/{action}/{id}",
+                    defaults: new { controller = "Licenses", action = "Index"}
             });
         }
     }

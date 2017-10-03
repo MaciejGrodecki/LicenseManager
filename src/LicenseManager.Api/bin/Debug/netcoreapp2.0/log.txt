@@ -12866,3 +12866,297 @@
 2017-10-02 18:43:28.7425|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
 2017-10-02 18:43:28.7610|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 16.2183ms
 2017-10-02 18:43:28.7610|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.4897ms 200 application/json; charset=utf-8
+2017-10-03 13:15:33.3568|INFO|DataInitializer|Seeding data
+2017-10-03 13:15:33.4520|INFO|RoomService|Adding room
+2017-10-03 13:15:33.4520|INFO|RoomService|Adding room
+2017-10-03 13:15:33.4669|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:15:33.4669|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:15:33.4812|INFO|LicenseService|Adding license
+2017-10-03 13:15:33.4812|INFO|LicenseService|Adding license
+2017-10-03 13:15:33.4954|INFO|ComputerService|Adding computer
+2017-10-03 13:15:33.4954|INFO|ComputerService|Adding computer
+2017-10-03 13:15:33.5141|INFO|UserService|Adding user
+2017-10-03 13:18:31.5284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-03 13:18:31.7898|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:32.0605|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:18:32.0605|INFO|LicenseService|Getting all licenses
+2017-10-03 13:18:32.1937|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-03 13:18:32.4029|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 372.438ms
+2017-10-03 13:18:32.4029|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 884.9855ms 200 application/json; charset=utf-8
+2017-10-03 13:18:32.5041|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:18:32.5041|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/a3f2c370-0150-4332-81c3-e2f6d0e7a25b  
+2017-10-03 13:18:32.5041|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:32.5325|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:32.7372|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (a3f2c370-0150-4332-81c3-e2f6d0e7a25b) - ModelState is Valid
+2017-10-03 13:18:32.7372|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:18:32.7522|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:32.7522|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:32.7870|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:32.8009|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 147.1333ms
+2017-10-03 13:18:32.7870|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:32.8129|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 165.8473ms
+2017-10-03 13:18:32.8129|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 308.5069ms 404 
+2017-10-03 13:18:32.8358|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 331.7409ms 404 
+2017-10-03 13:18:40.9747|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/f5edb0e8-393c-41b5-9a81-40743c36bedc  
+2017-10-03 13:18:40.9848|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:40.9848|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments (f5edb0e8-393c-41b5-9a81-40743c36bedc) - ModelState is Valid
+2017-10-03 13:18:41.0089|INFO|LicenseService|Getting single license
+2017-10-03 13:18:41.0401|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseDto.
+2017-10-03 13:18:41.0504|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 54.5123ms
+2017-10-03 13:18:41.0694|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.739ms 200 application/json; charset=utf-8
+2017-10-03 13:18:41.1716|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:18:41.1881|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:41.1942|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:18:41.1942|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:41.2325|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:41.2448|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 50.6862ms
+2017-10-03 13:18:41.2787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 107.1036ms 404 
+2017-10-03 13:18:44.3934|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-03 13:18:44.3934|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:44.4284|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:18:44.4423|INFO|LicenseService|Getting all licenses
+2017-10-03 13:18:44.4663|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-03 13:18:44.4786|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 50.2245ms
+2017-10-03 13:18:44.5068|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 113.4081ms 200 application/json; charset=utf-8
+2017-10-03 13:18:44.5217|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/a3f2c370-0150-4332-81c3-e2f6d0e7a25b  
+2017-10-03 13:18:44.5217|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:18:44.5360|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:44.5871|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:44.5871|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (a3f2c370-0150-4332-81c3-e2f6d0e7a25b) - ModelState is Valid
+2017-10-03 13:18:44.6117|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:44.6117|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:44.6117|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:18:44.6312|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 43.0003ms
+2017-10-03 13:18:44.6428|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:44.6428|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 129.3778ms 404 
+2017-10-03 13:18:44.6581|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:44.6868|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 75.1499ms
+2017-10-03 13:18:44.6947|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 172.7881ms 404 
+2017-10-03 13:18:45.9472|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-10-03 13:18:45.9553|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:45.9553|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:18:45.9792|INFO|LicenseTypeService|Getting all license types
+2017-10-03 13:18:45.9939|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-03 13:18:46.0023|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 34.0181ms
+2017-10-03 13:18:46.0023|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.9702ms 200 application/json; charset=utf-8
+2017-10-03 13:18:46.5417|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:18:46.5504|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:46.5417|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/a3f2c370-0150-4332-81c3-e2f6d0e7a25b  
+2017-10-03 13:18:46.5643|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:46.5504|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:18:46.5643|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (a3f2c370-0150-4332-81c3-e2f6d0e7a25b) - ModelState is Valid
+2017-10-03 13:18:46.5812|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:46.5812|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:46.5948|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:46.5948|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:46.5948|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 46.9895ms
+2017-10-03 13:18:46.6135|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.99ms 404 
+2017-10-03 13:18:46.6135|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 39.3456ms
+2017-10-03 13:18:46.6327|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.0837ms 404 
+2017-10-03 13:18:53.3024|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:18:53.3024|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/a3f2c370-0150-4332-81c3-e2f6d0e7a25b  
+2017-10-03 13:18:53.3297|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:53.3185|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:18:53.3603|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (a3f2c370-0150-4332-81c3-e2f6d0e7a25b) - ModelState is Valid
+2017-10-03 13:18:53.3603|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:18:53.3768|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:53.3978|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:18:53.3978|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:53.4137|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 53.4807ms
+2017-10-03 13:18:53.3978|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:18:53.4368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 134.1328ms 404 
+2017-10-03 13:18:53.5013|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 131.4987ms
+2017-10-03 13:18:53.5387|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 236.2798ms 404 
+2017-10-03 13:19:10.4299|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-03 13:19:10.4566|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:10.4818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:19:10.4972|INFO|RoomService|Getting All rooms
+2017-10-03 13:19:10.5161|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-03 13:19:10.5265|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 45.0483ms
+2017-10-03 13:19:10.5413|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 111.4344ms 200 application/json; charset=utf-8
+2017-10-03 13:19:20.5102|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/rooms  
+2017-10-03 13:19:20.8431|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:20.8431|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 338.774ms 204 
+2017-10-03 13:19:20.8555|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/rooms application/json;charset=UTF-8 15
+2017-10-03 13:19:20.8555|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:22.5536|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Room.AddRoom) - ModelState is Valid
+2017-10-03 13:19:22.5536|INFO|RoomService|Adding room
+2017-10-03 13:19:22.5536|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-03 13:19:22.5889|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api) in 1716.8046ms
+2017-10-03 13:19:22.5889|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1740.4708ms 201 
+2017-10-03 13:19:24.0494|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-03 13:19:24.0824|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:24.0824|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:19:24.1002|INFO|RoomService|Getting All rooms
+2017-10-03 13:19:24.1002|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-03 13:19:24.1246|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 30.1263ms
+2017-10-03 13:19:24.1246|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.6935ms 200 application/json; charset=utf-8
+2017-10-03 13:19:27.1082|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/rooms/84316b81-7a81-4832-828e-93baa24afa61  
+2017-10-03 13:19:27.1475|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:27.2304|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 122.2368ms 204 
+2017-10-03 13:19:27.2939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/rooms/84316b81-7a81-4832-828e-93baa24afa61  
+2017-10-03 13:19:27.3071|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:27.3983|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Delete (LicenseManager.Api) with arguments (84316b81-7a81-4832-828e-93baa24afa61) - ModelState is Valid
+2017-10-03 13:19:27.4085|INFO|RoomService|Removing room
+2017-10-03 13:19:27.4835|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-03 13:19:27.4891|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Delete (LicenseManager.Api) in 90.8479ms
+2017-10-03 13:19:27.4891|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 205.396ms 204 
+2017-10-03 13:19:27.6847|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-03 13:19:27.7500|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:27.7580|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:19:27.7580|INFO|RoomService|Getting All rooms
+2017-10-03 13:19:27.7805|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-03 13:19:27.7972|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 39.2967ms
+2017-10-03 13:19:27.8075|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 122.8844ms 200 application/json; charset=utf-8
+2017-10-03 13:19:36.6628|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-03 13:19:36.6891|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:36.7217|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:19:36.7459|INFO|LicenseService|Getting all licenses
+2017-10-03 13:19:36.7558|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-03 13:19:36.7753|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 53.6163ms
+2017-10-03 13:19:36.7753|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 123.8585ms 200 application/json; charset=utf-8
+2017-10-03 13:19:36.8115|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/a3f2c370-0150-4332-81c3-e2f6d0e7a25b  
+2017-10-03 13:19:36.8363|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/5dd3727f-df2c-4887-b735-ff294686d673  
+2017-10-03 13:19:36.8739|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:36.9106|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:19:36.9357|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (a3f2c370-0150-4332-81c3-e2f6d0e7a25b) - ModelState is Valid
+2017-10-03 13:19:36.9693|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (5dd3727f-df2c-4887-b735-ff294686d673) - ModelState is Valid
+2017-10-03 13:19:37.0002|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:19:37.0191|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:19:37.0191|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:19:37.0518|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:19:37.0696|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 134.0084ms
+2017-10-03 13:19:37.0696|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 108.97ms
+2017-10-03 13:19:37.1036|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 292.1644ms 404 
+2017-10-03 13:19:37.2315|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 395.214ms 404 
+2017-10-03 13:20:43.9357|INFO|DataInitializer|Seeding data
+2017-10-03 13:20:44.3022|INFO|RoomService|Adding room
+2017-10-03 13:20:44.3512|INFO|RoomService|Adding room
+2017-10-03 13:20:44.3663|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:20:44.4034|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:20:44.4171|INFO|LicenseService|Adding license
+2017-10-03 13:20:44.4303|INFO|LicenseService|Adding license
+2017-10-03 13:20:44.5069|INFO|ComputerService|Adding computer
+2017-10-03 13:20:44.5352|INFO|ComputerService|Adding computer
+2017-10-03 13:20:44.5538|INFO|UserService|Adding user
+2017-10-03 13:20:48.9481|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-03 13:20:48.9807|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:20:49.4141|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:20:49.4249|INFO|LicenseService|Getting all licenses
+2017-10-03 13:20:49.4668|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-03 13:20:49.6861|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 279.8943ms
+2017-10-03 13:20:49.7194|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 774.4411ms 200 application/json; charset=utf-8
+2017-10-03 13:20:49.7445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/58f15572-28fc-4bbd-bcc6-c44dc5ba885f  
+2017-10-03 13:20:49.7445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/7509d147-f21c-4932-8e97-95a87aaeec53  
+2017-10-03 13:20:49.7695|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:20:49.7980|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:20:49.9027|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (7509d147-f21c-4932-8e97-95a87aaeec53) - ModelState is Valid
+2017-10-03 13:20:49.9027|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (58f15572-28fc-4bbd-bcc6-c44dc5ba885f) - ModelState is Valid
+2017-10-03 13:20:49.9339|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:20:50.0253|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:20:50.0466|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:20:50.1515|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:20:50.2085|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 370.6354ms
+2017-10-03 13:20:50.2289|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 480.3417ms 404 
+2017-10-03 13:20:50.2740|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 436.1346ms
+2017-10-03 13:20:50.2881|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 543.6343ms 404 
+2017-10-03 13:20:53.6775|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/58f15572-28fc-4bbd-bcc6-c44dc5ba885f  
+2017-10-03 13:20:53.6775|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/7509d147-f21c-4932-8e97-95a87aaeec53  
+2017-10-03 13:20:53.7206|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:20:53.7513|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:20:53.7903|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (58f15572-28fc-4bbd-bcc6-c44dc5ba885f) - ModelState is Valid
+2017-10-03 13:20:53.8214|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (7509d147-f21c-4932-8e97-95a87aaeec53) - ModelState is Valid
+2017-10-03 13:20:53.8415|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:20:53.8892|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:20:53.9033|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:20:53.9189|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:20:53.9326|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 142.5024ms
+2017-10-03 13:20:53.9478|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 132.9954ms
+2017-10-03 13:20:53.9858|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 308.4102ms 404 
+2017-10-03 13:20:54.0152|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 336.2143ms 404 
+2017-10-03 13:21:13.6831|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-03 13:21:13.7276|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:21:13.7399|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:21:13.7638|INFO|LicenseService|Getting all licenses
+2017-10-03 13:21:13.7789|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-03 13:21:13.7853|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 45.4739ms
+2017-10-03 13:21:13.7853|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.237ms 200 application/json; charset=utf-8
+2017-10-03 13:21:13.8301|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/7509d147-f21c-4932-8e97-95a87aaeec53  
+2017-10-03 13:21:13.8316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/58f15572-28fc-4bbd-bcc6-c44dc5ba885f  
+2017-10-03 13:21:13.8700|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:21:13.8896|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:21:13.9129|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (7509d147-f21c-4932-8e97-95a87aaeec53) - ModelState is Valid
+2017-10-03 13:21:13.9303|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (58f15572-28fc-4bbd-bcc6-c44dc5ba885f) - ModelState is Valid
+2017-10-03 13:21:13.9862|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:21:14.0157|INFO|LicenseTypeService|Getting single license type
+2017-10-03 13:21:14.0419|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:21:14.0641|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-03 13:21:14.0871|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 174.211ms
+2017-10-03 13:21:14.1142|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 184.0466ms
+2017-10-03 13:21:14.1300|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 299.9524ms 404 
+2017-10-03 13:21:14.1547|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 323.0916ms 404 
+2017-10-03 13:21:21.0232|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-03 13:21:21.0232|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:21:21.0442|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:21:21.0602|INFO|RoomService|Getting All rooms
+2017-10-03 13:21:21.0755|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-03 13:21:21.0877|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 44.0936ms
+2017-10-03 13:21:21.0877|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.8807ms 200 application/json; charset=utf-8
+2017-10-03 13:23:46.3713|INFO|DataInitializer|Seeding data
+2017-10-03 13:23:46.5362|INFO|RoomService|Adding room
+2017-10-03 13:23:46.5671|INFO|RoomService|Adding room
+2017-10-03 13:23:46.5768|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:23:46.5768|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:23:46.5927|INFO|LicenseService|Adding license
+2017-10-03 13:23:46.5927|INFO|LicenseService|Adding license
+2017-10-03 13:23:46.6071|INFO|ComputerService|Adding computer
+2017-10-03 13:23:46.6071|INFO|ComputerService|Adding computer
+2017-10-03 13:23:46.6276|INFO|UserService|Adding user
+2017-10-03 13:34:02.4957|INFO|DataInitializer|Seeding data
+2017-10-03 13:34:02.7349|INFO|RoomService|Adding room
+2017-10-03 13:34:02.7349|INFO|RoomService|Adding room
+2017-10-03 13:34:02.7564|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:34:02.7809|INFO|LicenseTypeService|Adding license type
+2017-10-03 13:34:02.7809|INFO|LicenseService|Adding license
+2017-10-03 13:34:02.8033|INFO|LicenseService|Adding license
+2017-10-03 13:34:02.8270|INFO|ComputerService|Adding computer
+2017-10-03 13:34:02.8541|INFO|ComputerService|Adding computer
+2017-10-03 13:34:02.8666|INFO|UserService|Adding user
+2017-10-03 13:36:03.9925|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-03 13:36:04.0090|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:36:04.2182|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:36:04.2182|INFO|RoomService|Getting All rooms
+2017-10-03 13:36:04.2947|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-03 13:36:04.4825|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 280.3548ms
+2017-10-03 13:36:04.4900|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 501.4497ms 200 application/json; charset=utf-8
+2017-10-03 13:37:02.1525|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes  
+2017-10-03 13:37:02.1686|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:37:02.1817|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:37:02.1923|INFO|LicenseTypeService|Getting all license types
+2017-10-03 13:37:02.2061|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-03 13:37:02.2061|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 34.1049ms
+2017-10-03 13:37:02.2217|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.2571ms 200 application/json; charset=utf-8
+2017-10-03 13:37:20.9469|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes  
+2017-10-03 13:37:20.9525|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:37:20.9713|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:37:20.9922|INFO|LicenseTypeService|Getting all license types
+2017-10-03 13:37:20.9922|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-03 13:37:21.0045|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 33.4226ms
+2017-10-03 13:37:21.0045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.7597ms 200 application/json; charset=utf-8
+2017-10-03 13:37:23.5065|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenseTypes/b1b82014-6263-41c1-99a1-19bcef3ea92f  
+2017-10-03 13:37:23.5232|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:37:23.5382|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 31.7567ms 204 
+2017-10-03 13:37:23.5496|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/licenseTypes/b1b82014-6263-41c1-99a1-19bcef3ea92f  
+2017-10-03 13:37:23.5496|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:37:23.6168|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Delete (LicenseManager.Api) with arguments (b1b82014-6263-41c1-99a1-19bcef3ea92f) - ModelState is Valid
+2017-10-03 13:37:23.6414|INFO|LicenseTypeService|Removing license type
+2017-10-03 13:37:23.6618|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-03 13:37:23.6857|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Delete (LicenseManager.Api) in 86.4897ms
+2017-10-03 13:37:23.7052|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 155.538ms 204 
+2017-10-03 13:37:23.8400|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes  
+2017-10-03 13:37:23.8524|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-03 13:37:23.8591|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-03 13:37:23.8591|INFO|LicenseTypeService|Getting all license types
+2017-10-03 13:37:23.8591|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-03 13:37:23.8811|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 22.1039ms
+2017-10-03 13:37:23.8811|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.4595ms 200 application/json; charset=utf-8

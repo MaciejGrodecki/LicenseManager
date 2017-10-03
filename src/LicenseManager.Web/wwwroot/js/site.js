@@ -11,6 +11,10 @@ function AddRoomRedirect() {
     location.href = "http://localhost:5050/rooms/Add/";
 }
 
+function AddLicenseTypeRedirect() {
+    location.href = "http://localhost:5050/licenseTypes/Add";
+}
+
 var app = angular.module('app', ['cp.ngConfirm']);
 
 app.controller("BrowseLicensesCtrl", function ($scope, $http) {
@@ -214,7 +218,58 @@ app.controller("AddRoomFormCtrl", function ($scope, $http, $window) {
             $window.location.href = 'http://localhost:5050/rooms/index';
         });
     }
-    
 });
+
+app.controller("BrowseLicenseTypesCtrl", function ($scope, $http, $ngConfirm, $location) {
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/licenseTypes'
+    }).then(function successCallback(response) {
+        $scope.licenseTypes = response.data;
+    });
+
+    $scope.DeleteButton = function (licenseTypeId) {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want to delete license Type?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'DELETE',
+                            url: "http://localhost:5000/licenseTypes/" + licenseTypeId
+                        }).then(function successCallback(response) {
+                            location.reload();
+                        })
+                    }
+                },
+                No: function (scope, button) {
+
+                }
+            }
+        });
+    }
+});
+
+app.controller("AddLicenseTypeFormCtrl", function ($scope, $http, $window) {
+    $scope.AddRoomButton = function () {
+        $http({
+            method: 'POST',
+            url: "http://localhost:5000/licenseTypes",
+            dataType: 'application/json',
+            data: {
+                name: $scope.name
+            }
+        }).then(function successCallback(response) {
+            $window.alert('Added license type');
+            $window.location.href = 'http://localhost:5050/licenseTypes/index';
+        });
+    }
+});
+
+
 
 
