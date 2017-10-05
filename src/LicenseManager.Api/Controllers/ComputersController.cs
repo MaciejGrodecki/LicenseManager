@@ -55,7 +55,7 @@ namespace LicenseManager.Api.Controllers
             await _computerService.AddAsync(command.ComputerId, command.InventoryNumber, command.IpAddress,
                 command.RoomId);
             
-            await _computerService.AddUserToComputer(command.ComputerId, command.User);
+            //await _computerService.AddUserToComputer(command.ComputerId, command.User);
             
             return Created($"/computers/{command.InventoryNumber}", null);
         }

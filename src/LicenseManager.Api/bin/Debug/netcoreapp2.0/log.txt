@@ -15197,3 +15197,1145 @@
 2017-10-03 18:39:12.5511|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 23.7925ms
 2017-10-03 18:39:12.5511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.9866ms 404 
 2017-10-03 18:39:12.5511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 80.7207ms 404 
+2017-10-04 08:08:33.6228|INFO|DataInitializer|Seeding data
+2017-10-04 08:08:33.6936|INFO|RoomService|Adding room
+2017-10-04 08:08:33.7012|INFO|RoomService|Adding room
+2017-10-04 08:08:33.7012|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:08:33.7158|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:08:33.7158|INFO|LicenseService|Adding license
+2017-10-04 08:08:33.7289|INFO|LicenseService|Adding license
+2017-10-04 08:08:33.7289|INFO|ComputerService|Adding computer
+2017-10-04 08:08:33.7465|INFO|ComputerService|Adding computer
+2017-10-04 08:08:33.7465|INFO|UserService|Adding user
+2017-10-04 08:09:27.9767|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-04 08:09:27.9767|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:28.0865|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:09:28.0933|INFO|LicenseService|Getting all licenses
+2017-10-04 08:09:28.1318|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-04 08:09:28.2355|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 155.3221ms
+2017-10-04 08:09:28.2435|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 269.7885ms 200 application/json; charset=utf-8
+2017-10-04 08:09:28.2759|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/b76ea420-6924-4c70-ae28-18187d0fce7c  
+2017-10-04 08:09:28.2759|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/10d93424-e37b-40de-b7be-130e7a8cde8d  
+2017-10-04 08:09:28.2832|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:28.2832|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:28.3567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (10d93424-e37b-40de-b7be-130e7a8cde8d) - ModelState is Valid
+2017-10-04 08:09:28.3567|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (b76ea420-6924-4c70-ae28-18187d0fce7c) - ModelState is Valid
+2017-10-04 08:09:28.3567|INFO|LicenseTypeService|Getting single license type
+2017-10-04 08:09:28.3567|INFO|LicenseTypeService|Getting single license type
+2017-10-04 08:09:28.3759|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-04 08:09:28.3759|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 39.2231ms
+2017-10-04 08:09:28.3759|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-04 08:09:28.3939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 117.6941ms 404 
+2017-10-04 08:09:28.3939|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 56.0614ms
+2017-10-04 08:09:28.4115|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 135.6042ms 404 
+2017-10-04 08:09:42.5375|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-04 08:09:42.5375|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:42.5541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:09:42.5541|INFO|RoomService|Getting All rooms
+2017-10-04 08:09:42.5728|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:09:42.5811|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 27.0736ms
+2017-10-04 08:09:42.5811|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.0503ms 200 application/json; charset=utf-8
+2017-10-04 08:09:47.6970|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:09:47.6970|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:47.7163|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:09:47.7243|INFO|ComputerService|Getting all computers
+2017-10-04 08:09:47.7446|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:09:47.7564|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 40.2478ms
+2017-10-04 08:09:47.7564|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.5817ms 200 application/json; charset=utf-8
+2017-10-04 08:09:47.7709|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bb6ed97d-2170-44d9-9a6b-2c222880cc2b  
+2017-10-04 08:09:47.7709|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:47.7883|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bb6ed97d-2170-44d9-9a6b-2c222880cc2b) - ModelState is Valid
+2017-10-04 08:09:47.7883|INFO|RoomService|Getting single room
+2017-10-04 08:09:47.8196|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.5806ms
+2017-10-04 08:09:47.8330|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7F", Request id "0HL8ATPQ2QM7F:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:09:47.8407|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.8654ms 500 
+2017-10-04 08:09:49.2956|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:09:49.3012|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:09:49.3012|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:09:49.3134|INFO|RoomService|Getting All rooms
+2017-10-04 08:09:49.3134|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:09:49.3382|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.2426ms
+2017-10-04 08:09:49.3458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.1683ms 200 application/json; charset=utf-8
+2017-10-04 08:10:05.9411|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers  
+2017-10-04 08:10:05.9411|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:05.9411|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 12.1395ms 204 
+2017-10-04 08:10:05.9638|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=UTF-8 101
+2017-10-04 08:10:05.9638|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:06.0137|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:10:06.0204|INFO|ComputerService|Adding computer
+2017-10-04 08:10:06.0204|INFO|ComputerService|Assign user to computer
+2017-10-04 08:10:06.0527|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 75.2545ms
+2017-10-04 08:10:06.0527|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7G", Request id "0HL8ATPQ2QM7G:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:10:06.0527|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.9279ms 500 
+2017-10-04 08:10:14.3546|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:10:14.3623|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:14.4073|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:10:14.4256|INFO|ComputerService|Getting all computers
+2017-10-04 08:10:14.4256|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:10:14.4393|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 32.0208ms
+2017-10-04 08:10:14.4393|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.8895ms 200 application/json; charset=utf-8
+2017-10-04 08:10:14.4707|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:10:14.4862|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:14.4862|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:10:14.4862|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bb6ed97d-2170-44d9-9a6b-2c222880cc2b  
+2017-10-04 08:10:14.5101|INFO|RoomService|Getting single room
+2017-10-04 08:10:14.5101|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:14.5208|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bb6ed97d-2170-44d9-9a6b-2c222880cc2b) - ModelState is Valid
+2017-10-04 08:10:14.5208|INFO|RoomService|Getting single room
+2017-10-04 08:10:14.5380|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 11.1137ms
+2017-10-04 08:10:14.5208|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:10:14.5568|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7H", Request id "0HL8ATPQ2QM7H:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:10:14.5568|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 71.1862ms
+2017-10-04 08:10:14.5736|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.4284ms 500 
+2017-10-04 08:10:14.5958|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 125.0006ms 200 application/json; charset=utf-8
+2017-10-04 08:10:45.3200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/1e5376fb-6b30-4296-bc16-43491a1a00dc  
+2017-10-04 08:10:45.3200|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:45.3359|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (1e5376fb-6b30-4296-bc16-43491a1a00dc) - ModelState is Valid
+2017-10-04 08:10:45.4130|INFO|ComputerService|Getting single computer
+2017-10-04 08:10:45.4361|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:10:45.4424|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 106.6364ms
+2017-10-04 08:10:45.4424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 133.7156ms 200 application/json; charset=utf-8
+2017-10-04 08:10:45.4791|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:10:45.4892|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:45.4892|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:10:45.5020|INFO|RoomService|Getting single room
+2017-10-04 08:10:45.5020|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:10:45.5020|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 17.8226ms
+2017-10-04 08:10:45.5199|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.8499ms 200 application/json; charset=utf-8
+2017-10-04 08:10:50.8629|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bb6ed97d-2170-44d9-9a6b-2c222880cc2b  
+2017-10-04 08:10:50.8825|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:10:50.9073|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:50.9350|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bb6ed97d-2170-44d9-9a6b-2c222880cc2b) - ModelState is Valid
+2017-10-04 08:10:50.9485|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:10:50.9485|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:10:50.9731|INFO|RoomService|Getting single room
+2017-10-04 08:10:50.9731|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 46.1132ms
+2017-10-04 08:10:50.9731|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7J", Request id "0HL8ATPQ2QM7J:00000003": An unhandled exception was thrown by the application.
+2017-10-04 08:10:51.0049|INFO|RoomService|Getting single room
+2017-10-04 08:10:51.0158|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.9623ms 500 
+2017-10-04 08:10:51.0321|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:10:51.0451|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 88.6056ms
+2017-10-04 08:10:51.0587|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 176.2226ms 200 application/json; charset=utf-8
+2017-10-04 08:12:17.9167|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/c7370198-2817-40b0-ac34-b1e8c8d90507  
+2017-10-04 08:12:17.9167|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:17.9294|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (c7370198-2817-40b0-ac34-b1e8c8d90507) - ModelState is Valid
+2017-10-04 08:12:17.9294|INFO|ComputerService|Getting single computer
+2017-10-04 08:12:17.9465|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:12:17.9465|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 25.5774ms
+2017-10-04 08:12:17.9620|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.3517ms 200 application/json; charset=utf-8
+2017-10-04 08:12:18.0449|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bb6ed97d-2170-44d9-9a6b-2c222880cc2b  
+2017-10-04 08:12:18.0684|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:18.0892|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bb6ed97d-2170-44d9-9a6b-2c222880cc2b) - ModelState is Valid
+2017-10-04 08:12:18.1108|INFO|RoomService|Getting single room
+2017-10-04 08:12:18.1184|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 29.3189ms
+2017-10-04 08:12:18.1184|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7O", Request id "0HL8ATPQ2QM7O:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:12:18.1404|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 95.4435ms 500 
+2017-10-04 08:12:19.6234|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:12:19.6306|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:19.6306|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:12:19.6450|INFO|RoomService|Getting All rooms
+2017-10-04 08:12:19.6450|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:12:19.6600|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 22.1009ms
+2017-10-04 08:12:19.6600|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.0925ms 200 application/json; charset=utf-8
+2017-10-04 08:12:21.5385|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/c7370198-2817-40b0-ac34-b1e8c8d90507  
+2017-10-04 08:12:21.5385|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:21.5579|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.3338ms 204 
+2017-10-04 08:12:21.5673|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/computers/c7370198-2817-40b0-ac34-b1e8c8d90507  
+2017-10-04 08:12:21.5673|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:21.5905|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) with arguments (c7370198-2817-40b0-ac34-b1e8c8d90507) - ModelState is Valid
+2017-10-04 08:12:21.6009|INFO|ComputerService|Removing computer
+2017-10-04 08:12:21.6009|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:12:21.6181|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) in 27.6162ms
+2017-10-04 08:12:21.6181|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.8027ms 204 
+2017-10-04 08:12:21.8982|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:12:21.8982|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:21.9098|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:12:21.9098|INFO|ComputerService|Getting all computers
+2017-10-04 08:12:21.9098|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:12:21.9310|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 21.2071ms
+2017-10-04 08:12:21.9310|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.418ms 200 application/json; charset=utf-8
+2017-10-04 08:12:22.0158|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:12:22.0264|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:22.0264|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:12:22.0419|INFO|RoomService|Getting single room
+2017-10-04 08:12:22.0516|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:12:22.0516|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 26.7629ms
+2017-10-04 08:12:22.0683|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.0752ms 200 application/json; charset=utf-8
+2017-10-04 08:12:24.2621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/1e5376fb-6b30-4296-bc16-43491a1a00dc  
+2017-10-04 08:12:24.2691|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:24.2691|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (1e5376fb-6b30-4296-bc16-43491a1a00dc) - ModelState is Valid
+2017-10-04 08:12:24.2691|INFO|ComputerService|Getting single computer
+2017-10-04 08:12:24.2910|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:12:24.2910|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 24.5924ms
+2017-10-04 08:12:24.3087|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.6292ms 200 application/json; charset=utf-8
+2017-10-04 08:12:24.3821|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:12:24.4012|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:24.4012|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:12:24.4430|INFO|RoomService|Getting single room
+2017-10-04 08:12:24.4430|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:12:24.4594|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 50.6074ms
+2017-10-04 08:12:24.4594|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 86.7917ms 200 application/json; charset=utf-8
+2017-10-04 08:12:26.2216|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:12:26.2306|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:26.2412|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:12:26.2412|INFO|RoomService|Getting single room
+2017-10-04 08:12:26.2573|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:12:26.2573|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 23.7591ms
+2017-10-04 08:12:26.2743|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.6153ms 200 application/json; charset=utf-8
+2017-10-04 08:12:27.2080|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:12:27.2080|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:27.2080|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:12:27.2275|INFO|RoomService|Getting All rooms
+2017-10-04 08:12:27.2275|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:12:27.2424|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 21.7388ms
+2017-10-04 08:12:27.2424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 41.9891ms 200 application/json; charset=utf-8
+2017-10-04 08:12:34.1445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers  
+2017-10-04 08:12:34.1445|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:34.1445|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.0442ms 204 
+2017-10-04 08:12:34.1703|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=UTF-8 101
+2017-10-04 08:12:34.1775|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:12:34.1775|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:12:34.1925|INFO|ComputerService|Adding computer
+2017-10-04 08:12:34.1925|INFO|ComputerService|Assign user to computer
+2017-10-04 08:12:34.2077|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 22.8281ms
+2017-10-04 08:12:34.2077|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7T", Request id "0HL8ATPQ2QM7T:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:12:34.2229|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.5956ms 500 
+2017-10-04 08:13:05.9517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:13:05.9517|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:13:05.9843|INFO|RoomService|Getting All rooms
+2017-10-04 08:13:05.9950|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:13:05.9950|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 43.7815ms
+2017-10-04 08:13:06.0098|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.0938ms 200 application/json; charset=utf-8
+2017-10-04 08:13:07.6311|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:13:07.6402|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:13:07.6548|INFO|ComputerService|Getting all computers
+2017-10-04 08:13:07.6548|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:13:07.6717|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 31.6043ms
+2017-10-04 08:13:07.6717|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.3615ms 200 application/json; charset=utf-8
+2017-10-04 08:13:07.7041|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:13:07.7098|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:13:07.7098|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/d73897ee-34b9-489e-ae09-b904cb7d97c7  
+2017-10-04 08:13:07.7098|INFO|RoomService|Getting single room
+2017-10-04 08:13:07.7295|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (d73897ee-34b9-489e-ae09-b904cb7d97c7) - ModelState is Valid
+2017-10-04 08:13:07.7404|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:13:07.7404|INFO|RoomService|Getting single room
+2017-10-04 08:13:07.7591|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:13:07.7404|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 40.2212ms
+2017-10-04 08:13:07.7764|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.312ms 200 application/json; charset=utf-8
+2017-10-04 08:13:07.7591|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 37.0317ms
+2017-10-04 08:13:07.7922|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 82.35ms 200 application/json; charset=utf-8
+2017-10-04 08:13:28.3925|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=utf-8 101
+2017-10-04 08:13:28.3925|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:13:28.4101|INFO|ComputerService|Adding computer
+2017-10-04 08:13:28.4205|INFO|ComputerService|Assign user to computer
+2017-10-04 08:13:28.4284|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 28.7128ms
+2017-10-04 08:13:28.4284|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM7V", Request id "0HL8ATPQ2QM7V:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:13:28.4284|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.2892ms 500 
+2017-10-04 08:15:48.4915|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:15:48.5070|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:15:48.5070|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:15:48.5222|INFO|ComputerService|Adding computer
+2017-10-04 08:15:48.5222|INFO|ComputerService|Assign user to computer
+2017-10-04 08:15:48.5447|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 30.9402ms
+2017-10-04 08:15:48.5447|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM80", Request id "0HL8ATPQ2QM80:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:15:48.5597|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.1452ms 500 
+2017-10-04 08:16:24.5582|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers  
+2017-10-04 08:16:24.5712|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:16:24.5712|INFO|ComputerService|Getting all computers
+2017-10-04 08:16:24.5712|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:16:24.5911|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 19.9293ms
+2017-10-04 08:16:24.5911|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.5253ms 200 application/json; charset=utf-8
+2017-10-04 08:17:52.1507|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:18:48.2576|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:18:57.3458|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:18:57.3468|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:18:57.3622|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:18:57.3622|INFO|ComputerService|Adding computer
+2017-10-04 08:18:57.3622|INFO|ComputerService|Assign user to computer
+2017-10-04 08:18:57.3821|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 20.2626ms
+2017-10-04 08:18:57.3879|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM83", Request id "0HL8ATPQ2QM83:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:18:57.3879|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 9136.548ms 500 
+2017-10-04 08:18:57.4167|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments () - ModelState is Invalid
+2017-10-04 08:18:57.4167|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 69.0668ms
+2017-10-04 08:18:57.4167|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATPQ2QM82", Request id "0HL8ATPQ2QM82:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:18:57.4363|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65284.7564ms 0 
+2017-10-04 08:20:14.3012|INFO|DataInitializer|Seeding data
+2017-10-04 08:20:14.5330|INFO|RoomService|Adding room
+2017-10-04 08:20:14.5480|INFO|RoomService|Adding room
+2017-10-04 08:20:14.5480|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:20:14.5650|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:20:14.5650|INFO|LicenseService|Adding license
+2017-10-04 08:20:14.5821|INFO|LicenseService|Adding license
+2017-10-04 08:20:14.5821|INFO|ComputerService|Adding computer
+2017-10-04 08:20:14.6063|INFO|ComputerService|Adding computer
+2017-10-04 08:20:14.6172|INFO|UserService|Adding user
+2017-10-04 08:20:19.9752|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:20:19.9829|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:20:20.5047|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:20:20.5113|INFO|ComputerService|Adding computer
+2017-10-04 08:20:20.5113|INFO|ComputerService|Assign user to computer
+2017-10-04 08:20:20.5460|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 194.7705ms
+2017-10-04 08:20:20.5460|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATVUDDOC7", Request id "0HL8ATVUDDOC7:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:20:20.5620|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 590.3183ms 500 
+2017-10-04 08:20:53.9974|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers  
+2017-10-04 08:20:53.9974|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:20:54.0285|INFO|ComputerService|Getting all computers
+2017-10-04 08:20:54.2249|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:20:54.2477|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 230.5438ms
+2017-10-04 08:20:54.2477|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 260.2763ms 200 application/json; charset=utf-8
+2017-10-04 08:21:35.3472|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers  
+2017-10-04 08:21:35.3935|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:21:35.4071|INFO|ComputerService|Getting all computers
+2017-10-04 08:21:35.4409|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:21:35.4505|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 57.0534ms
+2017-10-04 08:21:35.4852|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.9994ms 200 application/json; charset=utf-8
+2017-10-04 08:22:45.8811|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:22:46.2470|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:22:46.2470|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:22:46.2470|INFO|ComputerService|Adding computer
+2017-10-04 08:22:46.2665|INFO|ComputerService|Assign user to computer
+2017-10-04 08:22:46.2665|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 19.662ms
+2017-10-04 08:22:46.2793|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8ATVUDDOCA", Request id "0HL8ATVUDDOCA:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:22:46.2793|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 404.4814ms 500 
+2017-10-04 08:26:02.3877|INFO|DataInitializer|Seeding data
+2017-10-04 08:26:02.6237|INFO|RoomService|Adding room
+2017-10-04 08:26:02.6354|INFO|RoomService|Adding room
+2017-10-04 08:26:02.6471|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:26:02.6635|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:26:02.6635|INFO|LicenseService|Adding license
+2017-10-04 08:26:02.6888|INFO|LicenseService|Adding license
+2017-10-04 08:26:02.6888|INFO|ComputerService|Adding computer
+2017-10-04 08:26:02.7152|INFO|ComputerService|Adding computer
+2017-10-04 08:26:02.8459|INFO|UserService|Adding user
+2017-10-04 08:26:05.0555|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-04 08:26:05.8300|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 941.3303ms 404 
+2017-10-04 08:26:19.7117|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:26:19.7242|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:26:20.1219|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:27:01.3705|INFO|ComputerService|Adding computer
+2017-10-04 08:27:37.2305|INFO|ComputerService|Assign user to computer
+2017-10-04 08:27:37.5476|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 77588.6083ms
+2017-10-04 08:27:37.7835|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU3558DJI", Request id "0HL8AU3558DJI:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:27:37.7835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78080.8431ms 500 
+2017-10-04 08:28:11.8273|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:28:11.8373|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:28:19.3326|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:28:21.4265|INFO|ComputerService|Adding computer
+2017-10-04 08:28:25.8781|INFO|ComputerService|Assign user to computer
+2017-10-04 08:29:59.4700|INFO|DataInitializer|Seeding data
+2017-10-04 08:30:00.0167|INFO|RoomService|Adding room
+2017-10-04 08:30:00.0248|INFO|RoomService|Adding room
+2017-10-04 08:30:00.0411|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:30:00.0529|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:30:00.1281|INFO|LicenseService|Adding license
+2017-10-04 08:30:00.1429|INFO|LicenseService|Adding license
+2017-10-04 08:30:00.1429|INFO|ComputerService|Adding computer
+2017-10-04 08:30:00.1788|INFO|ComputerService|Adding computer
+2017-10-04 08:30:00.1916|INFO|UserService|Adding user
+2017-10-04 08:30:11.8076|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json 124
+2017-10-04 08:30:11.8076|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:12.3170|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:30:12.3170|INFO|ComputerService|Adding computer
+2017-10-04 08:30:12.3334|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-04 08:30:12.3334|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 238.2895ms
+2017-10-04 08:30:12.3511|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 550.4238ms 201 
+2017-10-04 08:30:34.3381|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:30:34.3470|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:34.3470|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:30:34.3689|INFO|ComputerService|Getting all computers
+2017-10-04 08:30:34.4374|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:30:34.4677|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 109.7019ms
+2017-10-04 08:30:34.4677|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.0177ms 200 application/json; charset=utf-8
+2017-10-04 08:30:34.4947|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:30:34.4947|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:34.5032|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:30:34.5032|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:34.5268|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:30:34.5268|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:30:34.5388|INFO|RoomService|Getting single room
+2017-10-04 08:30:34.5565|INFO|RoomService|Getting single room
+2017-10-04 08:30:34.5857|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 59.6991ms
+2017-10-04 08:30:34.5857|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 59.3089ms
+2017-10-04 08:30:34.5936|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VA", Request id "0HL8AU5EPL1VA:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:30:34.5936|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VB", Request id "0HL8AU5EPL1VB:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:30:34.6133|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.1085ms 500 
+2017-10-04 08:30:34.5936|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.4641ms 500 
+2017-10-04 08:30:38.1527|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:30:38.1750|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:38.1898|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:30:38.2101|INFO|RoomService|Getting All rooms
+2017-10-04 08:30:38.2355|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:30:38.2479|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 58.2043ms
+2017-10-04 08:30:38.2577|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 105.006ms 200 application/json; charset=utf-8
+2017-10-04 08:30:45.9674|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers  
+2017-10-04 08:30:45.9753|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:45.9753|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.3854ms 204 
+2017-10-04 08:30:45.9975|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=UTF-8 100
+2017-10-04 08:30:46.0113|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:46.0242|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:30:46.0242|INFO|ComputerService|Adding computer
+2017-10-04 08:30:46.0542|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-04 08:30:46.0701|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 47.5467ms
+2017-10-04 08:30:46.0861|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.6012ms 201 
+2017-10-04 08:30:47.4024|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:30:47.4113|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:47.4357|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:30:47.4452|INFO|ComputerService|Getting all computers
+2017-10-04 08:30:47.4564|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:30:47.4564|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 32.0069ms
+2017-10-04 08:30:47.4745|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 72.0925ms 200 application/json; charset=utf-8
+2017-10-04 08:30:47.4880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:30:47.4880|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:47.5024|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:30:47.5195|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:30:47.5195|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:30:47.5519|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:47.5519|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:30:47.5781|INFO|RoomService|Getting single room
+2017-10-04 08:30:47.5935|INFO|RoomService|Getting single room
+2017-10-04 08:30:47.5999|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 69.5423ms
+2017-10-04 08:30:47.5999|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VC", Request id "0HL8AU5EPL1VC:00000004": An unhandled exception was thrown by the application.
+2017-10-04 08:30:47.6222|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:47.6222|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.4914ms 500 
+2017-10-04 08:30:47.6317|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:30:47.6488|INFO|RoomService|Getting single room
+2017-10-04 08:30:47.6734|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:30:47.6849|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 53.5117ms
+2017-10-04 08:30:47.6488|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 85.3024ms
+2017-10-04 08:30:47.7143|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VD", Request id "0HL8AU5EPL1VD:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:30:47.7222|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 219.7918ms 500 
+2017-10-04 08:30:47.6973|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 177.8038ms 200 application/json; charset=utf-8
+2017-10-04 08:30:54.4887|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:30:54.4887|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:54.5131|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (c6e5490f-8d8b-429e-bd58-43542081ad65) - ModelState is Valid
+2017-10-04 08:30:54.5386|INFO|ComputerService|Getting single computer
+2017-10-04 08:30:54.5785|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:30:54.5863|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 73.2062ms
+2017-10-04 08:30:54.5863|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.3538ms 200 application/json; charset=utf-8
+2017-10-04 08:30:54.6049|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:30:54.6159|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:54.6159|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:30:54.6324|INFO|RoomService|Getting single room
+2017-10-04 08:30:54.6324|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 17.6373ms
+2017-10-04 08:30:54.6503|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VF", Request id "0HL8AU5EPL1VF:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:30:54.6589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.9715ms 500 
+2017-10-04 08:30:55.5551|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:30:55.5648|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:55.5648|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:30:55.5846|INFO|RoomService|Getting All rooms
+2017-10-04 08:30:55.5846|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:30:55.6053|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 30.3739ms
+2017-10-04 08:30:55.6131|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.9946ms 200 application/json; charset=utf-8
+2017-10-04 08:30:58.4904|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:30:58.5086|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:58.5211|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.6098ms 204 
+2017-10-04 08:30:58.5392|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65 application/json;charset=UTF-8 101
+2017-10-04 08:30:58.5576|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:30:58.5867|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (c6e5490f-8d8b-429e-bd58-43542081ad65, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:30:58.6220|INFO|ComputerService|Updating computer
+2017-10-04 08:30:58.6540|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 73.4815ms
+2017-10-04 08:30:58.6648|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VF", Request id "0HL8AU5EPL1VF:00000005": An unhandled exception was thrown by the application.
+2017-10-04 08:30:58.6779|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 138.7495ms 500 
+2017-10-04 08:31:00.3968|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:31:00.3968|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:00.4109|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:00.4273|INFO|ComputerService|Getting all computers
+2017-10-04 08:31:00.4273|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:31:00.4469|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 35.984ms
+2017-10-04 08:31:00.4561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.2848ms 200 application/json; charset=utf-8
+2017-10-04 08:31:00.4561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:31:00.4771|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:31:00.4893|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:00.4893|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:00.4561|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:31:00.4893|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:31:00.5213|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:00.5213|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:31:00.5415|INFO|RoomService|Getting single room
+2017-10-04 08:31:00.5415|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:31:00.5569|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 23.897ms
+2017-10-04 08:31:00.5709|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 101.1098ms 200 application/json; charset=utf-8
+2017-10-04 08:31:00.5139|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:31:00.5213|INFO|RoomService|Getting single room
+2017-10-04 08:31:00.5882|INFO|RoomService|Getting single room
+2017-10-04 08:31:00.5969|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 90.6558ms
+2017-10-04 08:31:00.5969|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VG", Request id "0HL8AU5EPL1VG:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:31:00.6198|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 142.6322ms 500 
+2017-10-04 08:31:00.5969|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 98.7825ms
+2017-10-04 08:31:00.6404|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VH", Request id "0HL8AU5EPL1VH:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:31:00.6471|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 177.9055ms 500 
+2017-10-04 08:31:01.7913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:31:01.7913|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:01.8312|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (c6e5490f-8d8b-429e-bd58-43542081ad65) - ModelState is Valid
+2017-10-04 08:31:01.8312|INFO|ComputerService|Getting single computer
+2017-10-04 08:31:01.8547|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:31:01.8717|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 40.7594ms
+2017-10-04 08:31:01.8805|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.2186ms 200 application/json; charset=utf-8
+2017-10-04 08:31:01.8984|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:31:01.9137|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:01.9137|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:31:01.9329|INFO|RoomService|Getting single room
+2017-10-04 08:31:01.9444|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 22.5032ms
+2017-10-04 08:31:01.9444|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VH", Request id "0HL8AU5EPL1VH:00000003": An unhandled exception was thrown by the application.
+2017-10-04 08:31:01.9605|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.0884ms 500 
+2017-10-04 08:31:03.6260|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:31:03.6319|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:03.6533|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:03.6604|INFO|ComputerService|Getting all computers
+2017-10-04 08:31:03.6604|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:31:03.6784|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 25.1941ms
+2017-10-04 08:31:03.6784|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.9849ms 200 application/json; charset=utf-8
+2017-10-04 08:31:03.6982|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:31:03.6982|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:31:03.7084|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:03.7084|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:03.7382|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:31:03.7382|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:31:03.7592|INFO|RoomService|Getting single room
+2017-10-04 08:31:03.7084|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:31:03.7982|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 60.2935ms
+2017-10-04 08:31:03.8086|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:03.8156|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VG", Request id "0HL8AU5EPL1VG:00000003": An unhandled exception was thrown by the application.
+2017-10-04 08:31:03.7829|INFO|RoomService|Getting single room
+2017-10-04 08:31:03.8156|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:31:03.8479|INFO|RoomService|Getting single room
+2017-10-04 08:31:03.8706|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 46.344ms
+2017-10-04 08:31:03.8801|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VH", Request id "0HL8AU5EPL1VH:00000005": An unhandled exception was thrown by the application.
+2017-10-04 08:31:03.8379|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 139.7345ms 500 
+2017-10-04 08:31:03.8479|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:31:03.9313|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 190.7154ms
+2017-10-04 08:31:03.9104|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 202.0611ms 500 
+2017-10-04 08:31:03.9450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 246.4979ms 200 application/json; charset=utf-8
+2017-10-04 08:31:23.3006|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:31:23.3570|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:23.3875|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (c6e5490f-8d8b-429e-bd58-43542081ad65) - ModelState is Valid
+2017-10-04 08:31:23.4698|INFO|ComputerService|Getting single computer
+2017-10-04 08:31:23.5123|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:31:23.5612|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 174.3328ms
+2017-10-04 08:31:23.5869|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 286.2465ms 200 application/json; charset=utf-8
+2017-10-04 08:31:23.6403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6e5c2954-35d0-462b-9aae-7296c8fcca91  
+2017-10-04 08:31:23.6550|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:23.7026|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6e5c2954-35d0-462b-9aae-7296c8fcca91) - ModelState is Valid
+2017-10-04 08:31:23.7313|INFO|RoomService|Getting single room
+2017-10-04 08:31:23.7436|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 41.0873ms
+2017-10-04 08:31:23.7587|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VJ", Request id "0HL8AU5EPL1VJ:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:31:23.7757|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 135.4223ms 500 
+2017-10-04 08:31:24.5517|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:31:24.5745|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:24.5819|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:24.5819|INFO|RoomService|Getting All rooms
+2017-10-04 08:31:24.6277|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:31:24.6541|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 72.2208ms
+2017-10-04 08:31:24.6805|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 128.8122ms 200 application/json; charset=utf-8
+2017-10-04 08:31:26.4658|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:31:26.4773|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:26.4883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.5396ms 204 
+2017-10-04 08:31:26.5053|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/computers/c6e5490f-8d8b-429e-bd58-43542081ad65  
+2017-10-04 08:31:26.5379|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:26.5831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) with arguments (c6e5490f-8d8b-429e-bd58-43542081ad65) - ModelState is Valid
+2017-10-04 08:31:26.6453|INFO|ComputerService|Removing computer
+2017-10-04 08:31:26.7214|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:31:26.7402|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) in 157.167ms
+2017-10-04 08:31:26.7563|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 251.0034ms 204 
+2017-10-04 08:31:26.9924|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:31:27.0388|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:27.0872|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:27.0872|INFO|ComputerService|Getting all computers
+2017-10-04 08:31:27.1236|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:31:27.2054|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 118.1769ms
+2017-10-04 08:31:27.2202|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 227.7938ms 200 application/json; charset=utf-8
+2017-10-04 08:31:27.2441|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:31:27.3154|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:31:27.3316|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:27.3445|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:31:27.3445|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:27.3619|INFO|RoomService|Getting single room
+2017-10-04 08:31:27.3619|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:31:27.3800|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 35.6653ms
+2017-10-04 08:31:27.4022|INFO|RoomService|Getting single room
+2017-10-04 08:31:27.4127|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:31:27.4127|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 50.153ms
+2017-10-04 08:31:27.4298|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 185.7369ms 200 application/json; charset=utf-8
+2017-10-04 08:31:27.4127|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VJ", Request id "0HL8AU5EPL1VJ:00000007": An unhandled exception was thrown by the application.
+2017-10-04 08:31:27.4521|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.6406ms 500 
+2017-10-04 08:31:28.3759|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/faee5bfc-3a31-48de-ae73-972424186122  
+2017-10-04 08:31:28.3817|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:28.4128|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (faee5bfc-3a31-48de-ae73-972424186122) - ModelState is Valid
+2017-10-04 08:31:28.4416|INFO|ComputerService|Getting single computer
+2017-10-04 08:31:28.4416|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:31:28.4800|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 67.2864ms
+2017-10-04 08:31:28.5036|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.7233ms 200 application/json; charset=utf-8
+2017-10-04 08:31:28.5036|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/ed11b3b7-88e2-4528-8217-43724f83409a  
+2017-10-04 08:31:28.5313|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:28.5583|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (ed11b3b7-88e2-4528-8217-43724f83409a) - ModelState is Valid
+2017-10-04 08:31:28.5918|INFO|RoomService|Getting single room
+2017-10-04 08:31:28.6095|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 51.5092ms
+2017-10-04 08:31:28.6316|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VJ", Request id "0HL8AU5EPL1VJ:00000009": An unhandled exception was thrown by the application.
+2017-10-04 08:31:28.6623|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.2123ms 500 
+2017-10-04 08:31:29.2213|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:31:29.2399|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:29.2675|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:29.2794|INFO|RoomService|Getting All rooms
+2017-10-04 08:31:29.2950|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:31:29.3117|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 44.2125ms
+2017-10-04 08:31:29.3203|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 99.0392ms 200 application/json; charset=utf-8
+2017-10-04 08:31:30.9621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/faee5bfc-3a31-48de-ae73-972424186122  
+2017-10-04 08:31:30.9802|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:31.0150|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.9074ms 204 
+2017-10-04 08:31:31.0338|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/computers/faee5bfc-3a31-48de-ae73-972424186122  
+2017-10-04 08:31:31.0505|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:31.0723|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) with arguments (faee5bfc-3a31-48de-ae73-972424186122) - ModelState is Valid
+2017-10-04 08:31:31.1113|INFO|ComputerService|Removing computer
+2017-10-04 08:31:31.1368|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:31:31.1544|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) in 82.4269ms
+2017-10-04 08:31:31.2009|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 167.5149ms 204 
+2017-10-04 08:31:31.3347|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:31:31.3809|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:31.4254|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:31.4254|INFO|ComputerService|Getting all computers
+2017-10-04 08:31:31.4578|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:31:31.4821|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 56.6573ms
+2017-10-04 08:31:31.4947|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 160.0045ms 200 application/json; charset=utf-8
+2017-10-04 08:31:31.5199|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:31:31.5199|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:31.5464|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:31:31.5550|INFO|RoomService|Getting single room
+2017-10-04 08:31:31.5550|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:31:31.5550|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 24.3834ms
+2017-10-04 08:31:31.5793|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.3599ms 200 application/json; charset=utf-8
+2017-10-04 08:31:56.0529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/2773df37-3e92-45f8-80fa-7bc8150d8bb6  
+2017-10-04 08:31:56.0529|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:56.1132|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (2773df37-3e92-45f8-80fa-7bc8150d8bb6) - ModelState is Valid
+2017-10-04 08:31:56.1132|INFO|ComputerService|Getting single computer
+2017-10-04 08:31:56.1416|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:31:56.1667|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 53.5901ms
+2017-10-04 08:31:56.1906|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.6788ms 200 application/json; charset=utf-8
+2017-10-04 08:31:56.2070|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd53327d-e0f2-413f-8b51-fa2c9f440e7d  
+2017-10-04 08:31:56.2300|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:56.2610|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd53327d-e0f2-413f-8b51-fa2c9f440e7d) - ModelState is Valid
+2017-10-04 08:31:56.3498|INFO|RoomService|Getting single room
+2017-10-04 08:31:56.3498|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:31:56.3864|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 125.5929ms
+2017-10-04 08:31:56.4046|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 197.5971ms 200 application/json; charset=utf-8
+2017-10-04 08:31:57.7212|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:31:57.7327|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:31:57.7411|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:31:57.7411|INFO|RoomService|Getting All rooms
+2017-10-04 08:31:57.7584|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:31:57.7584|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 23.6858ms
+2017-10-04 08:31:57.7755|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.299ms 200 application/json; charset=utf-8
+2017-10-04 08:32:03.7799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/2773df37-3e92-45f8-80fa-7bc8150d8bb6  
+2017-10-04 08:32:03.8298|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:32:03.8403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.3868ms 204 
+2017-10-04 08:32:03.8598|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/2773df37-3e92-45f8-80fa-7bc8150d8bb6 application/json;charset=UTF-8 100
+2017-10-04 08:32:03.8923|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:32:03.9060|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (2773df37-3e92-45f8-80fa-7bc8150d8bb6, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:32:03.9202|INFO|ComputerService|Updating computer
+2017-10-04 08:32:03.9409|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 35.5544ms
+2017-10-04 08:32:03.9562|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU5EPL1VN", Request id "0HL8AU5EPL1VN:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:32:03.9668|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.9811ms 500 
+2017-10-04 08:33:44.7496|INFO|DataInitializer|Seeding data
+2017-10-04 08:33:45.0876|INFO|RoomService|Adding room
+2017-10-04 08:33:45.1115|INFO|RoomService|Adding room
+2017-10-04 08:33:45.1185|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:33:45.1297|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:33:45.1297|INFO|LicenseService|Adding license
+2017-10-04 08:33:45.1297|INFO|LicenseService|Adding license
+2017-10-04 08:33:45.1514|INFO|ComputerService|Adding computer
+2017-10-04 08:34:04.7916|INFO|ComputerService|Adding computer
+2017-10-04 08:34:04.8471|INFO|UserService|Adding user
+2017-10-04 08:34:06.6786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-04 08:34:07.4848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 967.5539ms 404 
+2017-10-04 08:37:12.5161|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:37:12.5334|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:13.0762|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:37:13.0762|INFO|ComputerService|Getting all computers
+2017-10-04 08:37:13.1403|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:37:13.4856|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 417.6603ms
+2017-10-04 08:37:13.4939|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1041.2411ms 200 application/json; charset=utf-8
+2017-10-04 08:37:13.5789|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/de04e7d9-f83a-4acf-aa6a-4ef5bd163f80  
+2017-10-04 08:37:13.5855|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:13.7416|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (de04e7d9-f83a-4acf-aa6a-4ef5bd163f80) - ModelState is Valid
+2017-10-04 08:37:13.7547|INFO|RoomService|Getting single room
+2017-10-04 08:37:14.0984|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 396.1599ms
+2017-10-04 08:37:14.5099|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU7KK896K", Request id "0HL8AU7KK896K:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:37:14.5319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 938.2718ms 500 
+2017-10-04 08:37:15.3563|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/00775b53-22ba-4105-bf49-e466ea3b233d  
+2017-10-04 08:37:15.5327|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:15.5502|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (00775b53-22ba-4105-bf49-e466ea3b233d) - ModelState is Valid
+2017-10-04 08:37:15.5585|INFO|ComputerService|Getting single computer
+2017-10-04 08:37:15.5756|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:37:15.6101|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 39.8663ms
+2017-10-04 08:37:15.6497|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 312.4949ms 200 application/json; charset=utf-8
+2017-10-04 08:37:15.6705|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/de04e7d9-f83a-4acf-aa6a-4ef5bd163f80  
+2017-10-04 08:37:15.6812|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:15.6812|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (de04e7d9-f83a-4acf-aa6a-4ef5bd163f80) - ModelState is Valid
+2017-10-04 08:37:15.6993|INFO|RoomService|Getting single room
+2017-10-04 08:37:15.7982|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 109.2712ms
+2017-10-04 08:37:15.9100|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AU7KK896K", Request id "0HL8AU7KK896K:00000004": An unhandled exception was thrown by the application.
+2017-10-04 08:37:15.9170|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 246.693ms 500 
+2017-10-04 08:37:16.6000|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:37:16.6107|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:16.6262|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:37:16.6345|INFO|RoomService|Getting All rooms
+2017-10-04 08:37:16.6517|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:37:16.7169|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 38.5634ms
+2017-10-04 08:37:16.7273|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 127.5289ms 200 application/json; charset=utf-8
+2017-10-04 08:37:19.8305|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/00775b53-22ba-4105-bf49-e466ea3b233d  
+2017-10-04 08:37:19.9146|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:19.9798|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.4655ms 204 
+2017-10-04 08:37:20.0796|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/00775b53-22ba-4105-bf49-e466ea3b233d application/json;charset=UTF-8 107
+2017-10-04 08:37:20.1015|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:37:20.1615|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (00775b53-22ba-4105-bf49-e466ea3b233d, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:37:29.3487|INFO|ComputerService|Updating computer
+2017-10-04 08:39:39.8490|INFO|DataInitializer|Seeding data
+2017-10-04 08:39:40.0364|INFO|RoomService|Adding room
+2017-10-04 08:39:40.0475|INFO|RoomService|Adding room
+2017-10-04 08:39:40.0475|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:39:40.0648|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:39:40.0648|INFO|LicenseService|Adding license
+2017-10-04 08:39:40.0819|INFO|LicenseService|Adding license
+2017-10-04 08:39:40.0902|INFO|ComputerService|Adding computer
+2017-10-04 08:39:40.1038|INFO|ComputerService|Adding computer
+2017-10-04 08:39:40.1038|INFO|UserService|Adding user
+2017-10-04 08:41:48.9713|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:41:48.9838|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:41:49.8560|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:41:49.8633|INFO|RoomService|Getting All rooms
+2017-10-04 08:41:49.9075|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:41:50.1112|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 261.9261ms
+2017-10-04 08:41:50.1229|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1154.7288ms 200 application/json; charset=utf-8
+2017-10-04 08:41:59.0190|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers  
+2017-10-04 08:41:59.0500|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:41:59.0681|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 49.2253ms 204 
+2017-10-04 08:41:59.1149|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=UTF-8 109
+2017-10-04 08:41:59.1334|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:41:59.2660|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-04 08:41:59.2660|INFO|ComputerService|Adding computer
+2017-10-04 08:41:59.2844|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-04 08:41:59.2844|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 72.2354ms
+2017-10-04 08:41:59.2991|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 184.1557ms 201 
+2017-10-04 08:42:00.9733|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:42:01.0104|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:01.0362|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:01.0696|INFO|ComputerService|Getting all computers
+2017-10-04 08:42:01.0921|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:42:01.1091|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 72.9994ms
+2017-10-04 08:42:01.1443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.9742ms 200 application/json; charset=utf-8
+2017-10-04 08:42:01.1780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:01.2006|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5ebd68ed-91a4-4f55-a409-1e9011605a58  
+2017-10-04 08:42:01.2185|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:01.2595|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:01.2734|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:01.2817|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5ebd68ed-91a4-4f55-a409-1e9011605a58) - ModelState is Valid
+2017-10-04 08:42:01.2817|INFO|RoomService|Getting single room
+2017-10-04 08:42:01.2945|INFO|RoomService|Getting single room
+2017-10-04 08:42:01.3187|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:01.3294|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 56.8422ms
+2017-10-04 08:42:01.3294|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 161.1331ms 200 application/json; charset=utf-8
+2017-10-04 08:42:01.3735|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 91.958ms
+2017-10-04 08:42:01.3914|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUBUHSS48", Request id "0HL8AUBUHSS48:00000004": An unhandled exception was thrown by the application.
+2017-10-04 08:42:01.3914|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 199.8351ms 500 
+2017-10-04 08:42:03.0196|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:42:03.0196|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:03.0382|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8) - ModelState is Valid
+2017-10-04 08:42:03.0520|INFO|ComputerService|Getting single computer
+2017-10-04 08:42:03.1015|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:42:03.1084|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 70.237ms
+2017-10-04 08:42:03.1084|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 100.076ms 200 application/json; charset=utf-8
+2017-10-04 08:42:03.2030|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5ebd68ed-91a4-4f55-a409-1e9011605a58  
+2017-10-04 08:42:03.2441|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:03.2573|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5ebd68ed-91a4-4f55-a409-1e9011605a58) - ModelState is Valid
+2017-10-04 08:42:03.2752|INFO|RoomService|Getting single room
+2017-10-04 08:42:03.2881|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.3056ms
+2017-10-04 08:42:03.2969|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUBUHSS48", Request id "0HL8AUBUHSS48:00000006": An unhandled exception was thrown by the application.
+2017-10-04 08:42:03.3181|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 115.1031ms 500 
+2017-10-04 08:42:03.7064|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:42:03.7261|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:03.7405|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:03.7504|INFO|RoomService|Getting All rooms
+2017-10-04 08:42:03.7504|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:42:03.7681|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 27.6458ms
+2017-10-04 08:42:03.7681|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.4649ms 200 application/json; charset=utf-8
+2017-10-04 08:42:06.7501|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:42:06.7870|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:06.8034|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 53.3505ms 204 
+2017-10-04 08:42:06.8281|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8 application/json;charset=UTF-8 107
+2017-10-04 08:42:06.8556|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:06.8836|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:42:06.9050|INFO|ComputerService|Updating computer
+2017-10-04 08:42:06.9201|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:42:06.9201|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 52.2492ms
+2017-10-04 08:42:06.9444|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.3903ms 204 
+2017-10-04 08:42:07.3018|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:42:07.3018|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:07.3170|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:07.3170|INFO|ComputerService|Getting all computers
+2017-10-04 08:42:07.3334|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:42:07.3414|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 24.4469ms
+2017-10-04 08:42:07.3414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.1263ms 200 application/json; charset=utf-8
+2017-10-04 08:42:07.4500|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:07.4650|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:07.4734|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:07.4831|INFO|RoomService|Getting single room
+2017-10-04 08:42:07.4831|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:07.4995|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 26.178ms
+2017-10-04 08:42:07.5169|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.8043ms 200 application/json; charset=utf-8
+2017-10-04 08:42:07.4995|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:07.5369|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:07.5369|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:07.5535|INFO|RoomService|Getting single room
+2017-10-04 08:42:07.5672|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:07.5672|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.1032ms
+2017-10-04 08:42:07.5880|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.4119ms 200 application/json; charset=utf-8
+2017-10-04 08:42:10.9248|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:42:10.9371|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:11.0122|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8) - ModelState is Valid
+2017-10-04 08:42:11.0365|INFO|ComputerService|Getting single computer
+2017-10-04 08:42:11.0482|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:42:11.0598|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 48.2268ms
+2017-10-04 08:42:11.1043|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 179.4087ms 200 application/json; charset=utf-8
+2017-10-04 08:42:11.1403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:11.1403|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:11.1584|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:11.1832|INFO|RoomService|Getting single room
+2017-10-04 08:42:11.1909|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:11.1909|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 42.4482ms
+2017-10-04 08:42:11.2161|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.8114ms 200 application/json; charset=utf-8
+2017-10-04 08:42:13.2440|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:42:13.2583|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:13.2825|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:13.3057|INFO|ComputerService|Getting all computers
+2017-10-04 08:42:13.3718|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:42:13.4291|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 146.5499ms
+2017-10-04 08:42:13.4563|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 212.2774ms 200 application/json; charset=utf-8
+2017-10-04 08:42:13.5037|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:13.5269|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:13.5579|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:13.5686|INFO|RoomService|Getting single room
+2017-10-04 08:42:13.6051|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:13.6158|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 58.0099ms
+2017-10-04 08:42:13.6244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:13.6768|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 173.0856ms 200 application/json; charset=utf-8
+2017-10-04 08:42:13.6994|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:13.7316|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:13.7486|INFO|RoomService|Getting single room
+2017-10-04 08:42:13.7486|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:13.7755|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 44.4156ms
+2017-10-04 08:42:13.7896|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 165.1358ms 200 application/json; charset=utf-8
+2017-10-04 08:42:14.7997|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/51f1c92b-c7c2-4a3f-9729-fd9ee0393e9d  
+2017-10-04 08:42:14.7997|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:14.8150|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (51f1c92b-c7c2-4a3f-9729-fd9ee0393e9d) - ModelState is Valid
+2017-10-04 08:42:14.8704|INFO|ComputerService|Getting single computer
+2017-10-04 08:42:14.8931|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:42:14.8931|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 88.5461ms
+2017-10-04 08:42:14.9141|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.3139ms 200 application/json; charset=utf-8
+2017-10-04 08:42:14.9438|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:14.9540|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:14.9540|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:14.9723|INFO|RoomService|Getting single room
+2017-10-04 08:42:14.9723|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:14.9879|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 22.8693ms
+2017-10-04 08:42:14.9982|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 54.3967ms 200 application/json; charset=utf-8
+2017-10-04 08:42:16.0667|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:42:16.0667|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:16.0838|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:16.0989|INFO|RoomService|Getting All rooms
+2017-10-04 08:42:16.1129|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:42:16.1129|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 38.8657ms
+2017-10-04 08:42:16.1319|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65.1575ms 200 application/json; charset=utf-8
+2017-10-04 08:42:20.7900|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/51f1c92b-c7c2-4a3f-9729-fd9ee0393e9d  
+2017-10-04 08:42:20.8053|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:20.8166|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.6542ms 204 
+2017-10-04 08:42:20.8450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/51f1c92b-c7c2-4a3f-9729-fd9ee0393e9d application/json;charset=UTF-8 109
+2017-10-04 08:42:20.8616|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:20.8831|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (51f1c92b-c7c2-4a3f-9729-fd9ee0393e9d, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:42:20.8994|INFO|ComputerService|Updating computer
+2017-10-04 08:42:20.9108|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:42:20.9108|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 36.7199ms
+2017-10-04 08:42:20.9288|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.7995ms 204 
+2017-10-04 08:42:21.2792|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:42:21.2792|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:21.2792|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:42:21.3044|INFO|ComputerService|Getting all computers
+2017-10-04 08:42:21.3140|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:42:21.3140|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 27.8077ms
+2017-10-04 08:42:21.3315|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.3163ms 200 application/json; charset=utf-8
+2017-10-04 08:42:21.4220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:42:21.4220|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/3e087e88-1fa4-409b-ac86-2a55cb2eedce  
+2017-10-04 08:42:21.4576|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:21.4819|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:42:21.4945|INFO|RoomService|Getting single room
+2017-10-04 08:42:21.5046|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:21.5214|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:42:21.5478|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (3e087e88-1fa4-409b-ac86-2a55cb2eedce) - ModelState is Valid
+2017-10-04 08:42:21.5478|INFO|RoomService|Getting single room
+2017-10-04 08:42:21.5669|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:42:21.5669|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 26.0708ms
+2017-10-04 08:42:21.5819|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 159.4122ms 200 application/json; charset=utf-8
+2017-10-04 08:42:21.5319|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 50.2405ms
+2017-10-04 08:42:21.5997|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 177.7396ms 200 application/json; charset=utf-8
+2017-10-04 08:47:30.8012|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:47:30.8154|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:30.8852|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8) - ModelState is Valid
+2017-10-04 08:47:30.9055|INFO|ComputerService|Getting single computer
+2017-10-04 08:47:30.9198|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:47:30.9299|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 49.8551ms
+2017-10-04 08:47:30.9450|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 143.949ms 200 application/json; charset=utf-8
+2017-10-04 08:47:30.9835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:47:31.0740|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:31.1574|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:47:31.3498|INFO|RoomService|Getting single room
+2017-10-04 08:47:31.3756|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:31.3935|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 236.3432ms
+2017-10-04 08:47:31.3935|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 423.8882ms 200 application/json; charset=utf-8
+2017-10-04 08:47:31.7495|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:47:31.7534|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/3e087e88-1fa4-409b-ac86-2a55cb2eedce  
+2017-10-04 08:47:31.7977|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:31.8205|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:47:31.8302|INFO|RoomService|Getting single room
+2017-10-04 08:47:31.8302|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:31.8572|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:31.8627|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (3e087e88-1fa4-409b-ac86-2a55cb2eedce) - ModelState is Valid
+2017-10-04 08:47:31.8627|INFO|RoomService|Getting single room
+2017-10-04 08:47:31.8787|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:31.9026|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 82.2931ms
+2017-10-04 08:47:31.9242|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 174.6877ms 200 application/json; charset=utf-8
+2017-10-04 08:47:31.9693|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 106.6419ms
+2017-10-04 08:47:31.9848|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 231.3458ms 200 application/json; charset=utf-8
+2017-10-04 08:47:32.8082|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:47:32.8143|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:32.8143|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8) - ModelState is Valid
+2017-10-04 08:47:32.8717|INFO|ComputerService|Getting single computer
+2017-10-04 08:47:32.8899|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:47:32.9069|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 84.6033ms
+2017-10-04 08:47:32.9200|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 111.7072ms 200 application/json; charset=utf-8
+2017-10-04 08:47:32.9477|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:47:32.9577|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:32.9709|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:47:32.9709|INFO|RoomService|Getting single room
+2017-10-04 08:47:32.9872|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:32.9872|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 23.2081ms
+2017-10-04 08:47:33.0040|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.3189ms 200 application/json; charset=utf-8
+2017-10-04 08:47:33.9550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/5f545f79-1b05-4753-95ad-de532d135f10  
+2017-10-04 08:47:33.9550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/3e087e88-1fa4-409b-ac86-2a55cb2eedce  
+2017-10-04 08:47:34.0140|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:34.0212|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:47:34.0212|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (3e087e88-1fa4-409b-ac86-2a55cb2eedce) - ModelState is Valid
+2017-10-04 08:47:34.0212|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (5f545f79-1b05-4753-95ad-de532d135f10) - ModelState is Valid
+2017-10-04 08:47:34.0391|INFO|RoomService|Getting single room
+2017-10-04 08:47:34.0566|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:34.0391|INFO|RoomService|Getting single room
+2017-10-04 08:47:34.0566|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 33.5706ms
+2017-10-04 08:47:34.0972|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 137.8335ms 200 application/json; charset=utf-8
+2017-10-04 08:47:34.0972|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:47:34.1452|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 120.4678ms
+2017-10-04 08:47:34.1452|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 202.5527ms 200 application/json; charset=utf-8
+2017-10-04 08:49:24.0500|INFO|DataInitializer|Seeding data
+2017-10-04 08:49:24.2344|INFO|RoomService|Adding room
+2017-10-04 08:49:24.2468|INFO|RoomService|Adding room
+2017-10-04 08:49:24.2619|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:49:24.2746|INFO|LicenseTypeService|Adding license type
+2017-10-04 08:49:24.2905|INFO|LicenseService|Adding license
+2017-10-04 08:49:24.3001|INFO|LicenseService|Adding license
+2017-10-04 08:49:24.3001|INFO|ComputerService|Adding computer
+2017-10-04 08:49:24.3312|INFO|ComputerService|Adding computer
+2017-10-04 08:49:24.3418|INFO|UserService|Adding user
+2017-10-04 08:50:03.9122|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/daf664f9-536a-427a-b664-de4294293da8  
+2017-10-04 08:50:03.9271|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:04.1599|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (daf664f9-536a-427a-b664-de4294293da8) - ModelState is Valid
+2017-10-04 08:50:04.1786|INFO|ComputerService|Getting single computer
+2017-10-04 08:50:04.2345|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 99.3886ms
+2017-10-04 08:50:04.2613|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUGI1SDO3", Request id "0HL8AUGI1SDO3:00000001": An unhandled exception was thrown by the application.
+2017-10-04 08:50:04.2704|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 369.3671ms 500 
+2017-10-04 08:50:07.6316|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:50:07.6552|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:07.6737|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:07.6849|INFO|RoomService|Getting All rooms
+2017-10-04 08:50:07.7516|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:50:07.8659|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 192.5194ms
+2017-10-04 08:50:07.8659|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 244.5535ms 200 application/json; charset=utf-8
+2017-10-04 08:50:09.5643|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:50:09.5786|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:09.6263|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:09.6534|INFO|ComputerService|Getting all computers
+2017-10-04 08:50:09.6782|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:50:09.6995|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 73.2897ms
+2017-10-04 08:50:09.7089|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 144.5522ms 200 application/json; charset=utf-8
+2017-10-04 08:50:09.7447|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343  
+2017-10-04 08:50:09.7551|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:09.7732|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343) - ModelState is Valid
+2017-10-04 08:50:09.7877|INFO|RoomService|Getting single room
+2017-10-04 08:50:09.8491|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 76.1954ms
+2017-10-04 08:50:09.8491|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUGI1SDO4", Request id "0HL8AUGI1SDO4:00000003": An unhandled exception was thrown by the application.
+2017-10-04 08:50:09.8660|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 121.2631ms 500 
+2017-10-04 08:50:13.5882|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:50:13.6008|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:13.6458|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:13.6677|INFO|ComputerService|Getting all computers
+2017-10-04 08:50:13.7108|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:50:13.7230|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 77.1322ms
+2017-10-04 08:50:13.7568|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 168.5787ms 200 application/json; charset=utf-8
+2017-10-04 08:50:13.8000|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343  
+2017-10-04 08:50:13.8281|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:13.8460|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343) - ModelState is Valid
+2017-10-04 08:50:13.8570|INFO|RoomService|Getting single room
+2017-10-04 08:50:13.8813|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 35.3101ms
+2017-10-04 08:50:13.8813|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUGI1SDO5", Request id "0HL8AUGI1SDO5:00000002": An unhandled exception was thrown by the application.
+2017-10-04 08:50:13.9010|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 101.0052ms 500 
+2017-10-04 08:50:14.6045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43  
+2017-10-04 08:50:14.6045|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:14.6194|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (274d77a3-41e9-4325-9abd-1a0c13474d43) - ModelState is Valid
+2017-10-04 08:50:14.6641|INFO|ComputerService|Getting single computer
+2017-10-04 08:50:14.6867|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:50:14.6958|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 76.8117ms
+2017-10-04 08:50:14.6958|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 102.2009ms 200 application/json; charset=utf-8
+2017-10-04 08:50:14.7332|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343  
+2017-10-04 08:50:14.7469|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:14.7601|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (bc93f2c1-d5d8-4f8e-a5d0-74f66cf8f343) - ModelState is Valid
+2017-10-04 08:50:14.7724|INFO|RoomService|Getting single room
+2017-10-04 08:50:14.7724|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 20.5332ms
+2017-10-04 08:50:14.7890|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8AUGI1SDO5", Request id "0HL8AUGI1SDO5:00000004": An unhandled exception was thrown by the application.
+2017-10-04 08:50:14.7890|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.4228ms 500 
+2017-10-04 08:50:15.2975|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:50:15.3128|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:15.3382|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:15.3382|INFO|RoomService|Getting All rooms
+2017-10-04 08:50:15.3601|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:50:15.3695|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 32.2005ms
+2017-10-04 08:50:15.3827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.2404ms 200 application/json; charset=utf-8
+2017-10-04 08:50:18.2132|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43  
+2017-10-04 08:50:18.2580|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:18.2778|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.5317ms 204 
+2017-10-04 08:50:18.3017|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43 application/json;charset=UTF-8 107
+2017-10-04 08:50:18.3017|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:18.4207|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (274d77a3-41e9-4325-9abd-1a0c13474d43, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:50:18.4349|INFO|ComputerService|Updating computer
+2017-10-04 08:50:18.4453|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:50:18.4453|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 108.5652ms
+2017-10-04 08:50:18.4622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 160.5672ms 204 
+2017-10-04 08:50:18.8065|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:50:18.8065|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:18.8222|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:18.8222|INFO|ComputerService|Getting all computers
+2017-10-04 08:50:18.8373|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:50:18.8373|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 23.0319ms
+2017-10-04 08:50:18.8548|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 48.256ms 200 application/json; charset=utf-8
+2017-10-04 08:50:18.9304|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/0e886f92-ee5d-46b7-add3-910d9b4cbb79  
+2017-10-04 08:50:18.9467|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:18.9572|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (0e886f92-ee5d-46b7-add3-910d9b4cbb79) - ModelState is Valid
+2017-10-04 08:50:18.9572|INFO|RoomService|Getting single room
+2017-10-04 08:50:18.9790|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:50:18.9790|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 27.2684ms
+2017-10-04 08:50:18.9951|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.6528ms 200 application/json; charset=utf-8
+2017-10-04 08:50:45.5826|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:50:45.5826|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:45.6526|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:45.6770|INFO|ComputerService|Getting all computers
+2017-10-04 08:50:45.6919|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:50:45.6919|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 48.8263ms
+2017-10-04 08:50:45.7189|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.2639ms 200 application/json; charset=utf-8
+2017-10-04 08:50:45.7449|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/0e886f92-ee5d-46b7-add3-910d9b4cbb79  
+2017-10-04 08:50:45.7651|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:45.7815|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (0e886f92-ee5d-46b7-add3-910d9b4cbb79) - ModelState is Valid
+2017-10-04 08:50:45.7919|INFO|RoomService|Getting single room
+2017-10-04 08:50:45.8017|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:50:45.8017|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.473ms
+2017-10-04 08:50:45.8619|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.9508ms 200 application/json; charset=utf-8
+2017-10-04 08:50:58.2925|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:50:58.2925|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:50:58.3118|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:50:58.3232|INFO|RoomService|Getting All rooms
+2017-10-04 08:50:58.3748|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:50:58.4171|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 105.3809ms
+2017-10-04 08:50:58.4285|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 136.0695ms 200 application/json; charset=utf-8
+2017-10-04 08:51:01.7460|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:51:01.7632|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:01.7742|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:51:01.7901|INFO|ComputerService|Getting all computers
+2017-10-04 08:51:01.7901|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:51:01.8086|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 34.401ms
+2017-10-04 08:51:01.8219|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.9106ms 200 application/json; charset=utf-8
+2017-10-04 08:51:01.8326|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/0e886f92-ee5d-46b7-add3-910d9b4cbb79  
+2017-10-04 08:51:01.8326|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:01.8577|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (0e886f92-ee5d-46b7-add3-910d9b4cbb79) - ModelState is Valid
+2017-10-04 08:51:01.8577|INFO|RoomService|Getting single room
+2017-10-04 08:51:01.8577|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:51:01.8840|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 26.3348ms
+2017-10-04 08:51:01.8962|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 63.6598ms 200 application/json; charset=utf-8
+2017-10-04 08:51:02.6213|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43  
+2017-10-04 08:51:02.6329|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:02.6574|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (274d77a3-41e9-4325-9abd-1a0c13474d43) - ModelState is Valid
+2017-10-04 08:51:02.6730|INFO|ComputerService|Getting single computer
+2017-10-04 08:51:02.6837|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-04 08:51:02.6837|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 34.5921ms
+2017-10-04 08:51:02.7049|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 83.5126ms 200 application/json; charset=utf-8
+2017-10-04 08:51:02.7247|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/0e886f92-ee5d-46b7-add3-910d9b4cbb79  
+2017-10-04 08:51:02.7247|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:02.7415|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (0e886f92-ee5d-46b7-add3-910d9b4cbb79) - ModelState is Valid
+2017-10-04 08:51:02.7415|INFO|RoomService|Getting single room
+2017-10-04 08:51:02.7577|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:51:02.7577|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 23.4991ms
+2017-10-04 08:51:02.7577|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.9435ms 200 application/json; charset=utf-8
+2017-10-04 08:51:03.6495|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:51:03.6495|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:03.6641|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:51:03.6641|INFO|RoomService|Getting All rooms
+2017-10-04 08:51:03.6801|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:51:03.6801|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 24.968ms
+2017-10-04 08:51:03.6964|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.9133ms 200 application/json; charset=utf-8
+2017-10-04 08:51:06.9088|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43  
+2017-10-04 08:51:06.9238|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:06.9367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.9554ms 204 
+2017-10-04 08:51:06.9556|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/computers/274d77a3-41e9-4325-9abd-1a0c13474d43 application/json;charset=UTF-8 107
+2017-10-04 08:51:06.9663|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:06.9941|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) with arguments (274d77a3-41e9-4325-9abd-1a0c13474d43, LicenseManager.Infrastructure.Commands.Computer.UpdateComputer) - ModelState is Valid
+2017-10-04 08:51:07.0050|INFO|ComputerService|Updating computer
+2017-10-04 08:51:07.0231|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-04 08:51:07.0409|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Put (LicenseManager.Api) in 49.1779ms
+2017-10-04 08:51:07.0590|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 103.4904ms 204 
+2017-10-04 08:51:07.1994|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:51:07.1994|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:07.2156|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:51:07.2241|INFO|ComputerService|Getting all computers
+2017-10-04 08:51:07.2241|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:51:07.2528|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 37.2473ms
+2017-10-04 08:51:07.2528|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.3858ms 200 application/json; charset=utf-8
+2017-10-04 08:51:07.2786|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/4906ee0f-4374-4cd1-8584-2135c24f0c1f  
+2017-10-04 08:51:07.2860|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:07.3021|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (4906ee0f-4374-4cd1-8584-2135c24f0c1f) - ModelState is Valid
+2017-10-04 08:51:07.3231|INFO|RoomService|Getting single room
+2017-10-04 08:51:07.3231|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:51:07.3231|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 41.2061ms
+2017-10-04 08:51:07.3569|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.3291ms 200 application/json; charset=utf-8
+2017-10-04 08:51:13.3246|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-04 08:51:13.3335|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:13.3335|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:51:13.3758|INFO|RoomService|Getting All rooms
+2017-10-04 08:51:13.3935|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-04 08:51:13.4014|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 56.5315ms
+2017-10-04 08:51:13.4117|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.0918ms 200 application/json; charset=utf-8
+2017-10-04 08:51:14.5257|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-04 08:51:14.5257|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:14.5499|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-04 08:51:14.5603|INFO|ComputerService|Getting all computers
+2017-10-04 08:51:14.5674|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-04 08:51:14.5674|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 26.6557ms
+2017-10-04 08:51:14.5844|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.7071ms 200 application/json; charset=utf-8
+2017-10-04 08:51:14.5844|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/4906ee0f-4374-4cd1-8584-2135c24f0c1f  
+2017-10-04 08:51:14.6068|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-04 08:51:14.6068|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (4906ee0f-4374-4cd1-8584-2135c24f0c1f) - ModelState is Valid
+2017-10-04 08:51:14.6236|INFO|RoomService|Getting single room
+2017-10-04 08:51:14.6344|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-04 08:51:14.6456|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 31.8133ms
+2017-10-04 08:51:14.6456|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 56.9137ms 200 application/json; charset=utf-8
+2017-10-04 09:01:23.9401|INFO|DataInitializer|Seeding data
+2017-10-04 09:01:23.9988|INFO|RoomService|Adding room
+2017-10-04 09:01:24.0124|INFO|RoomService|Adding room
+2017-10-04 09:01:24.0198|INFO|LicenseTypeService|Adding license type
+2017-10-04 09:01:24.0198|INFO|LicenseTypeService|Adding license type
+2017-10-04 09:01:24.0423|INFO|LicenseService|Adding license
+2017-10-04 09:01:24.0500|INFO|LicenseService|Adding license
+2017-10-04 09:01:24.0500|INFO|ComputerService|Adding computer
+2017-10-04 09:01:24.0700|INFO|ComputerService|Adding computer
+2017-10-04 09:01:24.0700|INFO|UserService|Adding user

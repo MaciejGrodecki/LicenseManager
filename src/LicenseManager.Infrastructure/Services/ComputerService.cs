@@ -80,20 +80,15 @@ namespace LicenseManager.Infrastructure.Services
             Guid roomId)
         {
             Logger.Info("Updating computer");
-            var computer = await _computerRepository.GetAsync(inventoryNumber);
-            if(computer != null)
-            {
-                throw new Exception($"Computer with inventory number: {inventoryNumber} already exists");
-            }
 
-            computer = await _computerRepository.GetAsync(computerId);
+            var computer = await _computerRepository.GetAsync(computerId);
             if(computer == null)
             {
                 throw new Exception($"Computer with id: {computerId} doesn't exist");
             }
             
             computer.SetInventoryNumber(inventoryNumber);
-            computer.SetInventoryNumber(ipAddress);
+            computer.SetIpAddress(ipAddress);
             computer.AssignRoomToComputer(roomId);
 
             await _computerRepository.UpdateAsync(computer);
