@@ -9892,6 +9892,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projekty\\LicenseManager\\src\\LicenseManager.Api\\LicenseManager.Api.csproj",
       "projectName": "LicenseManager.Api",
@@ -9931,6 +9934,26 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.AspNetCore": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Nlog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "4.4.1"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.AspNetCore.Cors": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "2.0.0",
@@ -9940,33 +9963,13 @@
             "target": "Package",
             "version": "6.1.1"
           },
-          "Microsoft.AspNetCore": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Microsoft.AspNetCore.Mvc": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.AspNetCore.Cors": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.Extensions.Configuration": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
-          "Microsoft.Extensions.Logging.Debug": {
             "target": "Package",
             "version": "2.0.0"
           },
           "NLog.Extensions.Logging": {
             "target": "Package",
             "version": "1.0.0-rtm-beta5"
-          },
-          "Nlog.Web.AspNetCore": {
-            "target": "Package",
-            "version": "4.4.1"
           }
         },
         "imports": [

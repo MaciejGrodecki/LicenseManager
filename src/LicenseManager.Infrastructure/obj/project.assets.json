@@ -6611,6 +6611,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projekty\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
       "projectName": "LicenseManager.Infrastructure",
@@ -6650,6 +6653,10 @@
     "frameworks": {
       "netstandard1.4": {
         "dependencies": {
+          "Nlog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "4.4.1"
+          },
           "NETStandard.Library": {
             "target": "Package",
             "version": "1.6.1",
@@ -6662,10 +6669,6 @@
           "NLog.Extensions.Logging": {
             "target": "Package",
             "version": "1.0.0-rtm-beta5"
-          },
-          "Nlog.Web.AspNetCore": {
-            "target": "Package",
-            "version": "4.4.1"
           }
         }
       }
