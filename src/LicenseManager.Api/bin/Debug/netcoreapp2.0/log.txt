@@ -16717,3 +16717,228 @@ FROM [Rooms] AS [r]
 2017-10-10 10:02:21.4213|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
 2017-10-10 10:02:21.5025|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 11358.4035ms
 2017-10-10 10:02:21.5025|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 11430.7892ms 200 application/json; charset=utf-8
+2017-10-10 10:09:12.9104|INFO|DataInitializer|Seeding data
+2017-10-10 10:09:12.9850|INFO|RoomService|Adding room
+2017-10-10 10:09:13.2217|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:09:13.4723|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:09:13.5330|INFO|RoomService|Adding room
+2017-10-10 10:09:13.5330|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (3ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:09:13.5646|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:09:13.5646|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:09:13.5646|INFO|LicenseService|Adding license
+2017-10-10 10:09:13.5765|INFO|LicenseService|Adding license
+2017-10-10 10:09:13.5765|INFO|ComputerService|Adding computer
+2017-10-10 10:09:13.5765|INFO|ComputerService|Adding computer
+2017-10-10 10:09:13.6016|INFO|UserService|Adding user
+2017-10-10 10:09:14.1027|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-10 10:09:14.2765|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 181.8358ms 404 
+2017-10-10 10:09:14.2959|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-10-10 10:09:14.2959|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.2294ms 404 
+2017-10-10 10:09:39.7074|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-10 10:09:39.7834|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-10 10:09:39.7834|INFO|RoomService|Getting All rooms
+2017-10-10 10:09:48.0505|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:09:48.0677|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoomId], [r].[Name]
+FROM [Rooms] AS [r]
+2017-10-10 10:09:48.0781|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-10 10:09:48.1527|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 8375.4374ms
+2017-10-10 10:09:48.1622|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 8452.3102ms 200 application/json; charset=utf-8
+2017-10-10 10:16:38.0238|INFO|DataInitializer|Seeding data
+2017-10-10 10:16:38.0897|INFO|RoomService|Adding room
+2017-10-10 10:16:38.2710|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:16:38.5052|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (29ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:16:38.5587|INFO|RoomService|Adding room
+2017-10-10 10:16:38.5661|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (2ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:16:38.5849|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:16:38.6541|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (4ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[LicenseTypeId], [x].[Name]
+FROM [LicenseTypes] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:16:38.6972|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'LicenseManager.Infrastructure.EntityFramework.LicensesContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LicenseTypes'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:fa656e41-cb40-47e5-be55-5328218ca7c8
+Error Number:208,State:1,Class:16
+2017-10-10 10:16:38.7493|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:16:38.7493|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[LicenseTypeId], [x].[Name]
+FROM [LicenseTypes] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:16:38.8057|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'LicenseManager.Infrastructure.EntityFramework.LicensesContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LicenseTypes'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:fa656e41-cb40-47e5-be55-5328218ca7c8
+Error Number:208,State:1,Class:16
+2017-10-10 10:16:38.8462|INFO|LicenseService|Adding license
+2017-10-10 10:16:38.8462|INFO|LicenseService|Adding license
+2017-10-10 10:16:38.8462|INFO|ComputerService|Adding computer
+2017-10-10 10:16:38.8462|INFO|ComputerService|Adding computer
+2017-10-10 10:16:38.8754|INFO|UserService|Adding user
+2017-10-10 10:16:39.2972|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-10 10:16:39.4689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 172.3826ms 404 
+2017-10-10 10:16:39.4689|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-10-10 10:16:39.4973|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3.6314ms 404 
+2017-10-10 10:16:44.3119|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes  
+2017-10-10 10:16:44.3871|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-10 10:16:44.3911|INFO|LicenseTypeService|Getting all license types
+2017-10-10 10:16:44.4351|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:16:44.4577|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [l].[LicenseTypeId], [l].[Name]
+FROM [LicenseTypes] AS [l]
+2017-10-10 10:16:44.5001|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'LicenseManager.Infrastructure.EntityFramework.LicensesContext'.
+System.Data.SqlClient.SqlException (0x80131904): Invalid object name 'LicenseTypes'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, SqlDataReader ds)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.<_TrackEntities>d__17`2.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+ClientConnectionId:9bd46876-e446-422d-b4b0-24a8d09e76e1
+Error Number:208,State:1,Class:16
+2017-10-10 10:16:44.5835|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 205.7758ms
+2017-10-10 10:16:44.6533|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8FMSTLH1C1", Request id "0HL8FMSTLH1C1:00000003": An unhandled exception was thrown by the application.
+2017-10-10 10:16:44.6579|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 344.9097ms 500 
+2017-10-10 10:18:27.4330|INFO|DataInitializer|Seeding data
+2017-10-10 10:18:27.5341|INFO|RoomService|Adding room
+2017-10-10 10:18:27.7139|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:18:27.9565|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (36ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:18:28.0131|INFO|RoomService|Adding room
+2017-10-10 10:18:28.0131|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[RoomId], [x].[Name]
+FROM [Rooms] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:18:28.0364|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:18:28.0488|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[LicenseTypeId], [x].[Name]
+FROM [LicenseTypes] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:18:28.1203|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (12ms) [Parameters=[@p0='?', @p1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [LicenseTypes] ([LicenseTypeId], [Name])
+VALUES (@p0, @p1);
+2017-10-10 10:18:28.1324|INFO|LicenseTypeService|Adding license type
+2017-10-10 10:18:43.2253|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (27ms) [Parameters=[@__name_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [x].[LicenseTypeId], [x].[Name]
+FROM [LicenseTypes] AS [x]
+WHERE [x].[Name] = @__name_0
+2017-10-10 10:18:43.2797|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred in the database while iterating the results of a query for context type 'LicenseManager.Infrastructure.EntityFramework.LicensesContext'.
+System.Data.SqlClient.SqlException (0x80131904): Timeout expired.  The timeout period elapsed prior to completion of the operation or the server is not responding. ---> System.ComponentModel.Win32Exception (0x80004005): Upłynął limit czasu operacji oczekiwania
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.DrainData(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlInternalConnectionTds.ValidateConnectionForExecute(SqlCommand command)
+   at System.Data.SqlClient.SqlConnection.ValidateConnectionForExecute(String method, SqlCommand command)
+   at System.Data.SqlClient.SqlCommand.ValidateCommand(Boolean async, String method)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.SingleOrDefault[TSource](IEnumerable`1 source)
+   at lambda_method(Closure , QueryContext )
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass17_0`1.<CompileQueryCore>b__0(QueryContext qc)
+ClientConnectionId:6c2c7f17-eed1-4c19-b5b1-ec74c01ba0e8
+Error Number:-2,State:0,Class:11
+2017-10-10 10:18:43.3376|INFO|LicenseService|Adding license
+2017-10-10 10:18:43.3507|INFO|LicenseService|Adding license
+2017-10-10 10:18:43.3594|INFO|ComputerService|Adding computer
+2017-10-10 10:18:43.3594|INFO|ComputerService|Adding computer
+2017-10-10 10:18:43.3867|INFO|UserService|Adding user
+2017-10-10 10:18:43.9198|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-10 10:18:43.9198|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms application/json 
+2017-10-10 10:18:44.0787|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 186.7775ms 404 
+2017-10-10 10:18:44.1010|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2017-10-10 10:18:44.1093|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 7.6122ms 404 
+2017-10-10 10:18:44.1856|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-10 10:18:44.1856|INFO|RoomService|Getting All rooms
+2017-10-10 10:18:44.2394|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:18:44.2495|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [r].[RoomId], [r].[Name]
+FROM [Rooms] AS [r]
+2017-10-10 10:18:44.2495|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-10 10:18:44.3378|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 163.9257ms
+2017-10-10 10:18:44.3679|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 462.4099ms 200 application/json; charset=utf-8
+2017-10-10 10:18:56.2344|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes application/json 
+2017-10-10 10:18:56.2597|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-10 10:18:56.2636|INFO|LicenseTypeService|Getting all license types
+2017-10-10 10:18:56.2805|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2017-10-10 10:18:56.2805|INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [l].[LicenseTypeId], [l].[Name]
+FROM [LicenseTypes] AS [l]
+2017-10-10 10:18:56.3022|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-10 10:18:56.3170|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 68.9896ms
+2017-10-10 10:18:56.3374|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.5817ms 200 application/json; charset=utf-8

@@ -12,6 +12,7 @@ namespace LicenseManager.Infrastructure.EntityFramework
         private SqlSettings _sqlSettings;
 
         public DbSet<Room> Rooms { get; set; }
+        public DbSet<LicenseType> LicenseTypes { get; set; }
 
         public LicensesContext(DbContextOptions<LicensesContext> options, IOptions<SqlSettings> sqlSettings) : base(options)
         {
@@ -27,6 +28,9 @@ namespace LicenseManager.Infrastructure.EntityFramework
         {
             var roomBuilder = modelBuilder.Entity<Room>();
             roomBuilder.HasKey(x => x.RoomId);
+
+            var licenseTypeBuilder = modelBuilder.Entity<LicenseType>();
+            licenseTypeBuilder.HasKey(x => x.LicenseTypeId);
         }
     }
 }
