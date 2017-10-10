@@ -1,4 +1,5 @@
 ﻿using LicenseManager.Core.Repositories;
+using LicenseManager.Infrastructure.EntityFramework;
 using LicenseManager.Infrastructure.Mappers;
 using LicenseManager.Infrastructure.Repositories;
 using LicenseManager.Infrastructure.Services;
@@ -35,6 +36,7 @@ namespace LicenseManager.Api
             // Add framework services.
             services.AddMvc()
                     .AddJsonOptions(x => x.SerializerSettings.Formatting = Formatting.Indented);
+            services.Configure<SqlSettings>(Configuration.GetSection("sql"));
             services.AddCors(o => o.AddPolicy("DefaultPolicy", builder =>
             {
                 builder.AllowAnyOrigin();
@@ -44,7 +46,8 @@ namespace LicenseManager.Api
             services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
             services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
             services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
-            services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
+            //services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
+            services.AddScoped<IRoomRepository, SqlRoomRepository>();
             services.AddScoped<IUserRepository, InMemoryUserRepository>();
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ILicenseTypeService, LicenseTypeService>();
@@ -54,6 +57,7 @@ namespace LicenseManager.Api
             services.AddScoped<IDataInitializer,DataInitializer>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.Configure<AppSettings>(Configuration.GetSection("app"));
+            services.AddEntityFrameworkSqlServer().AddDbContext<LicensesContext>();
             
 
         }
