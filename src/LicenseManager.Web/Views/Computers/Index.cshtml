@@ -15,7 +15,7 @@
                 <tr ng-repeat="computer in computers" ng-click="selectComputer(computer.computerId)">
                     <td>{{computer.inventoryNumber}}</td>
                     <td>{{computer.ipAddress}}</td>
-                    <td ng-controller="GetRoomNameCtrl">{{roomName}}</td>
+                    <td ng-controller="GetRoomNameCtrl" class="text-uppercase">{{roomName}}</td>
                 </tr>
             </tbody>
         </table>

@@ -5403,6 +5403,8 @@
           "Microsoft.AspNetCore": "2.0.0",
           "Microsoft.AspNetCore.Cors": "2.0.0",
           "Microsoft.AspNetCore.Mvc": "2.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "Microsoft.Extensions.Configuration": "2.0.0",
           "Microsoft.Extensions.Logging.Debug": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
@@ -5431,11 +5433,12 @@
       },
       "LicenseManager.Infrastructure/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v1.4",
+        "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
           "AutoMapper": "6.1.1",
           "LicenseManager.Core": "1.0.0",
-          "NETStandard.Library": "1.6.1",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.0.0",
           "NLog.Extensions.Logging": "1.0.0-rtm-beta5",
           "Nlog.Web.AspNetCore": "4.4.1"
         },

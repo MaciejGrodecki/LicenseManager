@@ -3708,6 +3708,9 @@
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
       "projectUniqueName": "D:\\Projekty\\LicenseManager\\src\\LicenseManager.Core\\LicenseManager.Core.csproj",
       "projectName": "LicenseManager.Core",

@@ -1,0 +1,11 @@
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard2.0\LicenseManager.Infrastructure.deps.json
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard2.0\LicenseManager.Infrastructure.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard2.0\LicenseManager.Infrastructure.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard2.0\LicenseManager.Core.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\bin\Debug\netstandard2.0\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.csprojResolveAssemblyReference.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.AssemblyInfoInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.AssemblyInfo.cs
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Infrastructure\obj\Debug\netstandard2.0\LicenseManager.Infrastructure.pdb
