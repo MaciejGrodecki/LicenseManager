@@ -307,6 +307,14 @@ app.controller("AddComputerFormCtrl", function ($scope, $http, $window) {
     }).then(function successCallback(response) {
         $scope.rooms = response.data;
     }), function errorCallback(response) {
+        };
+
+    $http({
+        method: 'GET',
+        url: "http://localhost:5000/users/"
+    }).then(function successCallback(response) {
+        $scope.users = response.data;
+    }), function errorCallback(response) {
     };
 
     $scope.AddComputerButton = function () {
@@ -318,8 +326,10 @@ app.controller("AddComputerFormCtrl", function ($scope, $http, $window) {
                 inventoryNumber: $scope.inventoryNumber,
                 ipAddress: $scope.ipAddress,
                 roomId: $scope.ddlRooms,
+                usersId: $scope.ddlUsers
             }
         }).then(function successCallback(response) {
+            console.log($scope.ddlUsers);
             $window.alert('Added computer');
             $window.location.href = 'http://localhost:5050/computers/index';
         });
@@ -409,6 +419,7 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
     $scope.UnlockForm = function () {
         $scope.isDisabled = false;
         var licenseType = $scope.ddlRooms;
+        
 
         $http({
             method: 'GET',
@@ -416,6 +427,6 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
         }).then(function successCallback(response) {
             $scope.rooms = response.data;
             $scope.ddlRooms = $scope.computer.roomId;
-        });
+            });
     };
 });

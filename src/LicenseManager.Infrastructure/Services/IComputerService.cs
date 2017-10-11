@@ -14,6 +14,6 @@ namespace LicenseManager.Infrastructure.Services
          Task AddAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
          Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
          Task RemoveAsync(Guid computerId);
-         Task AddUserToComputer(Guid ComputerId, UserDto userDto);
+         Task AddUserToComputer(Guid ComputerId, ISet<Guid> userIds);
     }
 }

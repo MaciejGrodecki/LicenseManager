@@ -52,10 +52,11 @@ namespace LicenseManager.Api.Controllers
         public async Task<IActionResult> Post([FromBody]AddComputer command)
         {
             command.ComputerId = Guid.NewGuid();
+            
             await _computerService.AddAsync(command.ComputerId, command.InventoryNumber, command.IpAddress,
                 command.RoomId);
             
-            //await _computerService.AddUserToComputer(command.ComputerId, command.User);
+            await _computerService.AddUserToComputer(command.ComputerId, command.UsersId);
             
             return Created($"/computers/{command.InventoryNumber}", null);
         }

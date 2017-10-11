@@ -45,10 +45,10 @@ namespace LicenseManager.Api
             }));
             services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
             services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
-            //services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
-            services.AddScoped<ILicenseTypeRepository, SqlLicenseTypeRepository>();
-            //services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
-            services.AddScoped<IRoomRepository, SqlRoomRepository>();
+            services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
+            //services.AddScoped<ILicenseTypeRepository, SqlLicenseTypeRepository>();
+            services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
+            //services.AddScoped<IRoomRepository, SqlRoomRepository>();
             services.AddScoped<IUserRepository, InMemoryUserRepository>();
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ILicenseTypeService, LicenseTypeService>();

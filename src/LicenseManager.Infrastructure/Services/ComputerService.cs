@@ -13,11 +13,13 @@ namespace LicenseManager.Infrastructure.Services
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IComputerRepository _computerRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
-        public ComputerService(IComputerRepository computerRepository, IMapper mapper)
+        public ComputerService(IComputerRepository computerRepository, IUserRepository userRepository, IMapper mapper)
         {
             _computerRepository = computerRepository;
+            _userRepository = userRepository;
             _mapper = mapper;
         }
 
@@ -94,7 +96,7 @@ namespace LicenseManager.Infrastructure.Services
             await _computerRepository.UpdateAsync(computer);
         }
 
-        public async Task AddUserToComputer(Guid computerId, UserDto userDto)
+        public async Task AddUserToComputer(Guid computerId, ISet<Guid> userIds)
         {
             Logger.Info("Assign user to computer");
             var computer = await _computerRepository.GetAsync(computerId);
@@ -102,13 +104,18 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"Computer with {computerId} doesn't exist");
             }
-            var user = new User(userDto.Name, userDto.Surname);
 
-            if(computer.Users.Contains(user))
+            foreach(Guid g in userIds)
             {
-                throw new Exception ($"User already assigned to computer");
+                var user = await _userRepository.GetAsync(g);
+
+                if (computer.Users.Contains(user))
+                {
+                    throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");
+                }
+
+                computer.Users.Add(user);
             }
-            computer.Users.Add(user);
         }
     }
 }

@@ -10,9 +10,13 @@
                 <input type="text" class="form-control" id="ipAddress" ng-model="ipAddress">
             </div>
             <div class="form-group">
-                <label for="licenseTypeSelect">Wybierz typ licencji</label>
+                <label for="roomSelect">Wybierz typ licencji</label>
                 <select ng-model="ddlRooms" ng-options="room.roomId as
                         room.name for room in rooms" class="form-control text-uppercase"></select>
+            </div>
+            <div class="form-group">
+                <label for="userSelect">Wybierz użytkownika</label>
+                <select ng-model="ddlUsers" ng-options="user.userId as user.name + ' ' + user.surname for user in users" class="form-control text-uppercase" multiple></select>
             </div>
             <div class="row">
                 <button class="btn btn-info pull-right" ng-click="AddComputerButton()" type="button">Add computer</button>

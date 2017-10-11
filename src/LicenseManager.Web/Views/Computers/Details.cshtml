@@ -18,6 +18,10 @@
                 <select ng-model="ddlRooms" ng-options="room.roomId as
                         room.name for room in rooms" class="form-control text-uppercase" ng-disabled="isDisabled"></select>
             </div>
+            <div class="form-group"">
+                <label for="computerUsers">Users</label>
+                <select ng-model="ddlUsers" ng-options="user.userId as user.name + ' ' + user.surname for user in computer.users" class="form-control text-uppercase" multiple ng-disabled="isDisabled"></select>
+            </div>
             <div class="btn-toolbar">
                 <button class="btn btn-info" ng-click="UnlockForm()" type="button">Edit</button>
                 <button class="btn btn-warning pull-right" ng-click="SaveButton()" type="button" ng-disabled="isDisabled">Save</button>

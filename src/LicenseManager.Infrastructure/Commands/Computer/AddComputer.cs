@@ -10,7 +10,6 @@ namespace LicenseManager.Infrastructure.Commands.Computer
         public string InventoryNumber { get; set; }
         public string IpAddress { get; set; }
         public Guid RoomId { get; set; }
-        public UserDto User {get; set;}
-        
+        public HashSet<Guid> UsersId { get; set; } 
     }
 }
