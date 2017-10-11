@@ -41,7 +41,7 @@ namespace LicenseManager.Infrastructure.EntityFramework
 
         public async Task UpdateAsync(LicenseType licenseType)
         {
-            _context.LicenseTypes.Remove(licenseType);
+            _context.LicenseTypes.Update(licenseType);
             await _context.SaveChangesAsync();
         }
     }
