@@ -65,7 +65,7 @@ namespace LicenseManager.Api.Controllers
         public async Task<IActionResult> Put(Guid computerId, [FromBody]UpdateComputer command)
         {
             await _computerService.UpdateAsync(computerId, command.InventoryNumber,
-                command.IpAddress, command.RoomId);
+                command.IpAddress, command.RoomId, command.UsersId);
 
             return NoContent();
         }

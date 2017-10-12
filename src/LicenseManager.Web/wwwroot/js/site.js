@@ -400,13 +400,13 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
                             url: "http://localhost:5000/computers/" + currentComputerId,
                             dataType: 'application/json',
                             data: {
-
                                 inventoryNumber: $scope.computer.inventoryNumber,
                                 ipAddress: $scope.computer.ipAddress,
-                                roomId: $scope.ddlRooms
+                                roomId: $scope.ddlRooms,
+                                usersId: $scope.ddlUsers
                             }
                         }).then(function successCallback(response) {
-                            $window.location.href = 'http://localhost:5050/computers/index';
+                            
                         });
                     }
                 },
@@ -417,9 +417,18 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
     };
 
     $scope.UnlockForm = function () {
+        $scope.ddlUsers = $scope.computer.users.map(a => a.userId);
         $scope.isDisabled = false;
         var licenseType = $scope.ddlRooms;
+        $http({
+            method: 'GET',
+            url: 'http://localhost:5000/users/'
+        }).then(function successCallback(response) {
+            $scope.computer.users = response.data;
+            
+        })
         
+    
 
         $http({
             method: 'GET',

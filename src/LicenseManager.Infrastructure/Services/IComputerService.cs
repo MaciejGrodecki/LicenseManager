@@ -12,7 +12,7 @@ namespace LicenseManager.Infrastructure.Services
          Task<ComputerDto> GetAsync(string inventoryNumber);
          Task<IEnumerable<ComputerDto>> BrowseAsync();
          Task AddAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
-         Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId);
+         Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, Guid roomId, ISet<Guid> userIds);
          Task RemoveAsync(Guid computerId);
          Task AddUserToComputer(Guid ComputerId, ISet<Guid> userIds);
     }

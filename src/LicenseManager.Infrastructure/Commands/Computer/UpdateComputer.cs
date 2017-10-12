@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace LicenseManager.Infrastructure.Commands.Computer
 {
@@ -8,6 +9,6 @@ namespace LicenseManager.Infrastructure.Commands.Computer
         public string InventoryNumber { get; set; }
         public string IpAddress { get; set; }
         public Guid RoomId { get; set; }
-
+        public HashSet<Guid> UsersId { get; set; }
     }
 }

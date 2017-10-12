@@ -79,7 +79,7 @@ namespace LicenseManager.Infrastructure.Services
         }
 
         public async Task UpdateAsync(Guid computerId, string inventoryNumber, string ipAddress, 
-            Guid roomId)
+            Guid roomId, ISet<Guid> userIds)
         {
             Logger.Info("Updating computer");
 
@@ -92,6 +92,12 @@ namespace LicenseManager.Infrastructure.Services
             computer.SetInventoryNumber(inventoryNumber);
             computer.SetIpAddress(ipAddress);
             computer.AssignRoomToComputer(roomId);
+            computer.Users.Clear();
+            foreach(Guid userId in userIds)
+            {
+                var user = await _userRepository.GetAsync(userId);
+                computer.Users.Add(user);
+            }
 
             await _computerRepository.UpdateAsync(computer);
         }
@@ -105,9 +111,9 @@ namespace LicenseManager.Infrastructure.Services
                 throw new Exception($"Computer with {computerId} doesn't exist");
             }
 
-            foreach(Guid g in userIds)
+            foreach(Guid userId in userIds)
             {
-                var user = await _userRepository.GetAsync(g);
+                var user = await _userRepository.GetAsync(userId);
 
                 if (computer.Users.Contains(user))
                 {

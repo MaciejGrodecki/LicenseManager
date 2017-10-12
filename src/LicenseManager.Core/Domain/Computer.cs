@@ -74,8 +74,12 @@ namespace LicenseManager.Core.Domain
             {
                 throw new Exception("User's collection cannot be empty");
             }
+            if (!Users.Contains(user))
+            {
+                _users.Add(user);
+            }
 
-            _users.Add(user);
+            
         }
     }
 }
