@@ -1,5 +1,5 @@
 function AddLicenseRedirect() {
-    location.href = "http://localhost:5050/licenses/Add/ ";
+    location.href = "http://localhost:5050/license/Add/ ";
 }
 
 function MainPageRedirect() {
@@ -7,11 +7,11 @@ function MainPageRedirect() {
 }
 
 function AddRoomRedirect() {
-    location.href = "http://localhost:5050/rooms/Add/";
+    location.href = "http://localhost:5050/room/Add/";
 }
 
 function AddLicenseTypeRedirect() {
-    location.href = "http://localhost:5050/licenseTypes/Add";
+    location.href = "http://localhost:5050/licenseType/Add";
 }
 
 function BrowseLicenseTypesRedirect() {
@@ -19,7 +19,7 @@ function BrowseLicenseTypesRedirect() {
 }
 
 function AddComputerRedirect() {
-    location.href = "http://localhost:5050/computers/add";
+    location.href = "http://localhost:5050/computer/add";
 }
 
 function BrowseComputerRedirect() {

@@ -8,19 +8,19 @@ namespace LicenseManager.Web.Controllers
 {
     public class ComputersController : Controller
     {
-        [Route("/computers/index")]
+        [Route("computers/index")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Route("/computers/Add")]
+        [Route("computer/add")]
         public IActionResult Add()
         {
             return View();
         }
 
-        [Route("/computer/{computerId}")]
+        [Route("computer/{computerId}")]
         public IActionResult Details(Guid? computerId)
         {
             if (computerId == null)

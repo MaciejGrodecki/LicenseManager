@@ -6910,9 +6910,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Projekty\\LicenseManager\\src\\LicenseManager.Infrastructure\\LicenseManager.Infrastructure.csproj",
       "projectName": "LicenseManager.Infrastructure",
@@ -6952,31 +6949,31 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "Nlog.Web.AspNetCore": {
-            "target": "Package",
-            "version": "4.4.1"
-          },
-          "Microsoft.EntityFrameworkCore.InMemory": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
             "version": "2.0.0",
             "autoReferenced": true
           },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "AutoMapper": {
             "target": "Package",
             "version": "6.1.1"
           },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
+          "Microsoft.EntityFrameworkCore.SqlServer": {
+            "target": "Package",
+            "version": "2.0.0"
+          },
           "NLog.Extensions.Logging": {
             "target": "Package",
             "version": "1.0.0-rtm-beta5"
+          },
+          "Nlog.Web.AspNetCore": {
+            "target": "Package",
+            "version": "4.4.1"
           }
         },
         "imports": [

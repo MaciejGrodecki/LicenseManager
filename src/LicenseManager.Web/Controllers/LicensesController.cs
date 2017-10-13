@@ -4,15 +4,17 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LicenseManager.Web.Controllers
 {
-    [Route("")]
+    
     public class LicensesController : Controller
     {
+        [Route("")]
+        [Route("licenses/index")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Route("license/Add")]
+        [Route("license/add")]
         public IActionResult Add()
         {
             return View();

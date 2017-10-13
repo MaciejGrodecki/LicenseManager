@@ -13,7 +13,8 @@ namespace LicenseManager.Web.Controllers
         {
             return View();
         }
-        [Route("rooms/add")]
+
+        [Route("room/add")]
         public IActionResult Add()
         {
             return View();

@@ -72,8 +72,13 @@ namespace LicenseManager.Api
             app.AddNLogWeb();
             env.ConfigureNLog("nlog.config");
             SeedData(app);
-            
-            app.UseMvc();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Licenses}/{action=Index}/{id?}");
+            });
             
         }
 

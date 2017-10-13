@@ -10,13 +10,13 @@ namespace LicenseManager.Web.Controllers
 {
     public class LicenseTypesController : Controller
     {
-        [Route("/licenseTypes/index")]
+        [Route("licenseTypes/index")]
         public IActionResult Index()
         {
             return View();
         }
 
-        [Route("/licenseTypes/Add")]
+        [Route("licenseType/add")]
         public IActionResult Add()
         {
             return View();

@@ -14057,9 +14057,6 @@
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
       "projectUniqueName": "D:\\Projekty\\LicenseManager\\src\\LicenseManager.Web\\LicenseManager.Web.csproj",
       "projectName": "LicenseManager.Web",
@@ -14099,7 +14096,16 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "2.0.0",
+            "autoReferenced": true
+          },
+          "BuildBundlerMinifier": {
+            "target": "Package",
+            "version": "2.5.357"
+          },
+          "Microsoft.AspNetCore.All": {
             "target": "Package",
             "version": "2.0.0"
           },
@@ -14107,22 +14113,13 @@
             "target": "Package",
             "version": "2.0.0"
           },
-          "Microsoft.NETCore.App": {
-            "target": "Package",
-            "version": "2.0.0",
-            "autoReferenced": true
-          },
-          "Microsoft.AspNetCore.All": {
-            "target": "Package",
-            "version": "2.0.0"
-          },
           "Microsoft.AspNetCore.StaticFiles": {
             "target": "Package",
             "version": "2.0.0"
           },
-          "BuildBundlerMinifier": {
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
-            "version": "2.5.357"
+            "version": "2.0.0"
           }
         },
         "imports": [

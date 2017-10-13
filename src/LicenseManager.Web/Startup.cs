@@ -39,12 +39,7 @@ namespace LicenseManager.Web
             app.UseCors(builder =>
                 builder.WithOrigins("http://localhost:5050"));
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Licenses}/{action=Index}/{id?}");
-            });
+            app.UseMvc();
         }
     }
 }
