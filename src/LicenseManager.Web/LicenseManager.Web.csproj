@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Views\LicenseTypes\" />
+    <Folder Include="Views\Users\" />
     <Folder Include="Views\Rooms\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>

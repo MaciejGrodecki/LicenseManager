@@ -26,6 +26,14 @@ function BrowseComputerRedirect() {
     location.href = "http://localhost:5050/computers/index";
 }
 
+function AddUserRedirect() {
+    location.href = "http://localhost:5050/user/add";
+}
+
+function BrowseUsersRedirect() {
+    location.href = "http://localhost:5050/users/index";
+}
+
 var app = angular.module('app', ['cp.ngConfirm']);
 
 app.controller("BrowseLicensesCtrl", function ($scope, $http) {
@@ -329,7 +337,6 @@ app.controller("AddComputerFormCtrl", function ($scope, $http, $window) {
                 usersId: $scope.ddlUsers
             }
         }).then(function successCallback(response) {
-            console.log($scope.ddlUsers);
             $window.alert('Added computer');
             $window.location.href = 'http://localhost:5050/computers/index';
         });
@@ -437,5 +444,104 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
             $scope.rooms = response.data;
             $scope.ddlRooms = $scope.computer.roomId;
             });
+    };
+});
+
+app.controller("BrowseUsersCtrl", function ($scope, $http) {
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/users'
+    }).then(function successCallback(response) {
+        $scope.users = response.data;
+        });
+    $scope.selectUser = function (userId) {
+        location.href = "http://localhost:5050/user/" + userId;
+    };
+});
+
+app.controller("AddUserFormCtrl", function ($scope, $http, $window) {
+    $scope.AddUserButton = function () {
+        $http({
+            method: 'POST',
+            url: "http://localhost:5000/users",
+            dataType: 'application/json',
+            data: {
+                name: $scope.name,
+                surname: $scope.surname
+            }
+        }).then(function successCallback(response) {
+            $window.alert('Added user');
+            $window.location.href = 'http://localhost:5050/users/index';
+            }), function errorCallback(response) {
+                console.log(response);
+            };;
+    }
+});
+
+app.controller("DetailsUserFormCtrl", function ($scope, $http, $location, $ngConfirm, $window) {
+    $scope.isDisabled = true;
+    var currentUserId = $location.absUrl().split('/')[4];
+    $http({
+        method: 'GET',
+        url: 'http://localhost:5000/users/' + currentUserId
+    }).then(function successCallback(response) {
+        $scope.user = response.data;
+        });
+
+    $scope.UnlockForm = function () {
+        $scope.isDisabled = false;
+    }
+
+    $scope.SaveButton = function () {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want save changes?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'PUT',
+                            url: "http://localhost:5000/users/" + currentUserId,
+                            dataType: 'application/json',
+                            data: {
+                                name: $scope.user.name,
+                                surname: $scope.user.surname
+                            }
+                        }).then(function successCallback(response) {
+
+                        });
+                    }
+                },
+                No: function (scope, button) {
+                }
+            }
+        });
+    };
+
+    $scope.DeleteButton = function () {
+        $ngConfirm({
+            title: 'Please confirm',
+            content: 'Are you sure you want to delete this user?',
+            scope: $scope,
+            buttons: {
+                YesButton: {
+                    text: 'YES',
+                    btnClass: 'btn-blue',
+                    action: function () {
+                        $http({
+                            method: 'DELETE',
+                            url: "http://localhost:5000/users/" + currentUserId
+                        }).then(function successCallback(response) {
+                            $window.location.href = 'http://localhost:5050/users/index';
+                        });
+                    }
+                },
+                No: function (scope, button) {
+                }
+            }
+        });
     };
 });

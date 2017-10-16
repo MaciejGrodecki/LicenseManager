@@ -52,7 +52,7 @@ namespace LicenseManager.Api.Controllers
         {
             await _userService.AddAsync(command.Name, command.Surname);
 
-            return Created($"/users/{command.Surname}", null);
+            return StatusCode(201);
         }
 
         [HttpPut("{userId}")]

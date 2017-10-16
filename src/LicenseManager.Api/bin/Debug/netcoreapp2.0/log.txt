@@ -22819,3 +22819,878 @@ FROM [LicenseTypes] AS [l]
 2017-10-13 14:05:28.3574|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
 2017-10-13 14:05:28.3745|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 44.0918ms
 2017-10-13 14:05:28.3823|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.4791ms 200 application/json; charset=utf-8
+2017-10-16 10:11:56.3923|INFO|DataInitializer|Seeding data
+2017-10-16 10:11:56.6270|INFO|RoomService|Adding room
+2017-10-16 10:11:56.6543|INFO|RoomService|Adding room
+2017-10-16 10:11:56.6638|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:11:56.6638|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:11:56.6638|INFO|LicenseService|Adding license
+2017-10-16 10:11:56.7683|INFO|LicenseService|Adding license
+2017-10-16 10:11:56.7840|INFO|ComputerService|Adding computer
+2017-10-16 10:11:56.8017|INFO|ComputerService|Adding computer
+2017-10-16 10:11:56.8380|INFO|UserService|Adding user
+2017-10-16 10:12:12.9005|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:12:12.9132|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:13.0617|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:13.0698|INFO|ComputerService|Getting all computers
+2017-10-16 10:12:13.1191|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:12:13.2658|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 203.7812ms
+2017-10-16 10:12:13.2909|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 395.8808ms 200 application/json; charset=utf-8
+2017-10-16 10:12:13.2909|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/287e7e93-55cf-4cbb-ba4c-3c7b03596c2c  
+2017-10-16 10:12:13.3085|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:13.3987|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (287e7e93-55cf-4cbb-ba4c-3c7b03596c2c) - ModelState is Valid
+2017-10-16 10:12:13.3987|INFO|RoomService|Getting single room
+2017-10-16 10:12:13.4345|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 47.6134ms
+2017-10-16 10:12:13.4478|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KDMDGI0DO", Request id "0HL8KDMDGI0DO:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:12:13.4478|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 152.7379ms 500 
+2017-10-16 10:12:14.9238|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/0375d44e-a6e7-4999-abff-7861057e5019  
+2017-10-16 10:12:14.9304|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:14.9304|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (0375d44e-a6e7-4999-abff-7861057e5019) - ModelState is Valid
+2017-10-16 10:12:14.9547|INFO|ComputerService|Getting single computer
+2017-10-16 10:12:14.9703|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-16 10:12:14.9780|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 35.8279ms
+2017-10-16 10:12:14.9780|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.94ms 200 application/json; charset=utf-8
+2017-10-16 10:12:15.0099|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/287e7e93-55cf-4cbb-ba4c-3c7b03596c2c  
+2017-10-16 10:12:15.0099|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:15.0215|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (287e7e93-55cf-4cbb-ba4c-3c7b03596c2c) - ModelState is Valid
+2017-10-16 10:12:15.0385|INFO|RoomService|Getting single room
+2017-10-16 10:12:15.0385|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 27.4653ms
+2017-10-16 10:12:15.0551|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KDMDGI0DO", Request id "0HL8KDMDGI0DO:00000004": An unhandled exception was thrown by the application.
+2017-10-16 10:12:15.0551|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 52.647ms 500 
+2017-10-16 10:12:17.4550|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 10:12:17.4615|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:17.4615|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-16 10:12:17.4838|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:17.4838|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:17.4838|INFO|UserService|Getting All users
+2017-10-16 10:12:17.4838|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:17.5133|INFO|RoomService|Getting All rooms
+2017-10-16 10:12:17.5133|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:12:17.5381|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-16 10:12:17.5381|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 66.9104ms
+2017-10-16 10:12:17.5381|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 52.5051ms
+2017-10-16 10:12:17.5759|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 120.8802ms 200 application/json; charset=utf-8
+2017-10-16 10:12:17.5951|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 121.9107ms 200 application/json; charset=utf-8
+2017-10-16 10:12:19.0356|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers/0375d44e-a6e7-4999-abff-7861057e5019  
+2017-10-16 10:12:19.0522|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:19.0636|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.9554ms 204 
+2017-10-16 10:12:19.0729|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/computers/0375d44e-a6e7-4999-abff-7861057e5019  
+2017-10-16 10:12:19.0729|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:19.0981|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) with arguments (0375d44e-a6e7-4999-abff-7861057e5019) - ModelState is Valid
+2017-10-16 10:12:19.1079|INFO|ComputerService|Removing computer
+2017-10-16 10:12:19.1230|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-16 10:12:19.1324|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Delete (LicenseManager.Api) in 34.3076ms
+2017-10-16 10:12:19.1324|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.7544ms 204 
+2017-10-16 10:12:19.2367|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:12:19.2421|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:19.2604|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:19.2604|INFO|ComputerService|Getting all computers
+2017-10-16 10:12:19.2836|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:12:19.2887|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 28.3678ms
+2017-10-16 10:12:19.2887|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.3398ms 200 application/json; charset=utf-8
+2017-10-16 10:12:20.5350|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-16 10:12:20.5413|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 10:12:20.5623|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:20.5623|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:20.5773|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:20.5850|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:20.5850|INFO|UserService|Getting All users
+2017-10-16 10:12:20.6006|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:12:20.6006|INFO|RoomService|Getting All rooms
+2017-10-16 10:12:20.6200|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-16 10:12:20.6006|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 35.7156ms
+2017-10-16 10:12:20.6389|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 53.9824ms
+2017-10-16 10:12:20.6518|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.868ms 200 application/json; charset=utf-8
+2017-10-16 10:12:20.6637|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 122.3465ms 200 application/json; charset=utf-8
+2017-10-16 10:12:35.4027|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/computers  
+2017-10-16 10:12:35.4027|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:35.4187|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.0718ms 204 
+2017-10-16 10:12:35.4307|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/computers application/json;charset=UTF-8 156
+2017-10-16 10:12:35.4307|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:35.4953|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Computer.AddComputer) - ModelState is Valid
+2017-10-16 10:12:35.4953|INFO|ComputerService|Adding computer
+2017-10-16 10:12:35.5133|INFO|ComputerService|Assign user to computer
+2017-10-16 10:12:35.5244|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 10:12:35.5244|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Post (LicenseManager.Api) in 81.0783ms
+2017-10-16 10:12:35.5244|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.1006ms 201 
+2017-10-16 10:12:37.0984|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:12:37.1061|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:37.1321|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:37.1321|INFO|ComputerService|Getting all computers
+2017-10-16 10:12:37.1494|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:12:37.1494|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 25.0686ms
+2017-10-16 10:12:37.1651|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 66.7456ms 200 application/json; charset=utf-8
+2017-10-16 10:12:37.1815|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6dec3d6d-1533-4871-8dbc-b631af527487  
+2017-10-16 10:12:37.1937|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:37.1937|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6dec3d6d-1533-4871-8dbc-b631af527487) - ModelState is Valid
+2017-10-16 10:12:37.1937|INFO|RoomService|Getting single room
+2017-10-16 10:12:37.2149|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-16 10:12:37.2149|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 20.7024ms
+2017-10-16 10:12:37.2287|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 47.2568ms 200 application/json; charset=utf-8
+2017-10-16 10:12:38.1691|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/cec15472-6821-41c6-95c5-9cfe9c3dcfa8  
+2017-10-16 10:12:38.1691|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:38.2214|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments (cec15472-6821-41c6-95c5-9cfe9c3dcfa8) - ModelState is Valid
+2017-10-16 10:12:38.2319|INFO|ComputerService|Getting single computer
+2017-10-16 10:12:38.2319|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.ComputerDto.
+2017-10-16 10:12:38.2493|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 27.9875ms
+2017-10-16 10:12:38.2592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 90.0478ms 200 application/json; charset=utf-8
+2017-10-16 10:12:38.2592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6dec3d6d-1533-4871-8dbc-b631af527487  
+2017-10-16 10:12:38.2838|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:38.2904|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6dec3d6d-1533-4871-8dbc-b631af527487) - ModelState is Valid
+2017-10-16 10:12:38.3357|INFO|RoomService|Getting single room
+2017-10-16 10:12:38.3357|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-16 10:12:38.3357|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 57.2809ms
+2017-10-16 10:12:38.3540|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.7768ms 200 application/json; charset=utf-8
+2017-10-16 10:12:40.5309|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 10:12:40.5309|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-16 10:12:40.5495|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:40.5548|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:40.5548|INFO|UserService|Getting All users
+2017-10-16 10:12:40.5495|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:40.5712|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:40.5548|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:12:40.5712|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 27.8431ms
+2017-10-16 10:12:40.5881|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 57.1835ms 200 application/json; charset=utf-8
+2017-10-16 10:12:40.5712|INFO|RoomService|Getting All rooms
+2017-10-16 10:12:40.6023|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-16 10:12:40.6023|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 36.977ms
+2017-10-16 10:12:40.6164|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.1747ms 200 application/json; charset=utf-8
+2017-10-16 10:12:41.5581|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:12:41.5581|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:41.5733|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:12:41.5887|INFO|ComputerService|Getting all computers
+2017-10-16 10:12:41.5887|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:12:41.6016|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 28.37ms
+2017-10-16 10:12:41.6016|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.0672ms 200 application/json; charset=utf-8
+2017-10-16 10:12:41.6201|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6dec3d6d-1533-4871-8dbc-b631af527487  
+2017-10-16 10:12:41.6201|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:12:41.6390|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6dec3d6d-1533-4871-8dbc-b631af527487) - ModelState is Valid
+2017-10-16 10:12:41.6390|INFO|RoomService|Getting single room
+2017-10-16 10:12:41.6508|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.RoomDto.
+2017-10-16 10:12:41.6508|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 17.2238ms
+2017-10-16 10:12:41.6508|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.2196ms 200 application/json; charset=utf-8
+2017-10-16 10:28:20.3676|INFO|DataInitializer|Seeding data
+2017-10-16 10:28:20.6067|INFO|RoomService|Adding room
+2017-10-16 10:28:20.6187|INFO|RoomService|Adding room
+2017-10-16 10:28:20.6187|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:28:20.6385|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:28:20.6385|INFO|LicenseService|Adding license
+2017-10-16 10:28:20.6385|INFO|LicenseService|Adding license
+2017-10-16 10:28:20.6672|INFO|ComputerService|Adding computer
+2017-10-16 10:28:20.6857|INFO|ComputerService|Adding computer
+2017-10-16 10:28:20.6945|INFO|UserService|Adding user
+2017-10-16 10:28:44.4236|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 10:28:44.4672|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:28:44.6002|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:28:44.6090|INFO|UserService|Getting All users
+2017-10-16 10:28:44.6438|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:28:44.7652|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 171.1328ms
+2017-10-16 10:28:44.7652|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 353.8184ms 200 application/json; charset=utf-8
+2017-10-16 10:29:00.1078|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 10:29:00.1078|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:29:00.1206|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:29:00.1382|INFO|UserService|Getting All users
+2017-10-16 10:29:00.1470|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:29:00.1470|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 31.9285ms
+2017-10-16 10:29:00.1470|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.4272ms 200 application/json; charset=utf-8
+2017-10-16 10:40:43.2821|INFO|DataInitializer|Seeding data
+2017-10-16 10:40:43.3387|INFO|RoomService|Adding room
+2017-10-16 10:40:43.3387|INFO|RoomService|Adding room
+2017-10-16 10:40:43.3532|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:40:43.3532|INFO|LicenseTypeService|Adding license type
+2017-10-16 10:40:43.3532|INFO|LicenseService|Adding license
+2017-10-16 10:40:43.3739|INFO|LicenseService|Adding license
+2017-10-16 10:40:43.3739|INFO|ComputerService|Adding computer
+2017-10-16 10:40:43.3915|INFO|ComputerService|Adding computer
+2017-10-16 10:40:43.3915|INFO|UserService|Adding user
+2017-10-16 10:41:04.3915|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/6dec3d6d-1533-4871-8dbc-b631af527487  
+2017-10-16 10:41:04.4071|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:04.6005|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (6dec3d6d-1533-4871-8dbc-b631af527487) - ModelState is Valid
+2017-10-16 10:41:04.6005|INFO|RoomService|Getting single room
+2017-10-16 10:41:04.6296|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 66.3554ms
+2017-10-16 10:41:04.6296|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMHA", Request id "0HL8KE6G5NMHA:00000001": An unhandled exception was thrown by the application.
+2017-10-16 10:41:04.6451|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 259.4926ms 500 
+2017-10-16 10:41:05.3974|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:41:05.3974|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:05.4192|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:05.4333|INFO|ComputerService|Getting all computers
+2017-10-16 10:41:05.4780|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:41:05.5790|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 160.1634ms
+2017-10-16 10:41:05.5790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 187.9806ms 200 application/json; charset=utf-8
+2017-10-16 10:41:05.5949|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd0c145e-a8b4-4049-9e33-74760498d715  
+2017-10-16 10:41:05.5949|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:05.6103|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd0c145e-a8b4-4049-9e33-74760498d715) - ModelState is Valid
+2017-10-16 10:41:05.6103|INFO|RoomService|Getting single room
+2017-10-16 10:41:05.6258|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 15.7345ms
+2017-10-16 10:41:05.6258|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMHE", Request id "0HL8KE6G5NMHE:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:41:05.6258|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 45.7255ms 500 
+2017-10-16 10:41:06.6589|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/  
+2017-10-16 10:41:06.6589|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:06.6759|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:06.7002|INFO|RoomService|Getting All rooms
+2017-10-16 10:41:06.7066|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 10:41:06.7066|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:06.7191|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-16 10:41:06.7191|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:06.7356|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 59.7935ms
+2017-10-16 10:41:06.7356|INFO|UserService|Getting All users
+2017-10-16 10:41:06.7356|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 87.4623ms 200 application/json; charset=utf-8
+2017-10-16 10:41:06.7647|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:41:06.7747|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 46.3331ms
+2017-10-16 10:41:06.7812|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 74.6663ms 200 application/json; charset=utf-8
+2017-10-16 10:41:09.4322|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd0c145e-a8b4-4049-9e33-74760498d715  
+2017-10-16 10:41:09.4456|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:09.4456|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd0c145e-a8b4-4049-9e33-74760498d715) - ModelState is Valid
+2017-10-16 10:41:09.4625|INFO|RoomService|Getting single room
+2017-10-16 10:41:09.4724|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 19.7823ms
+2017-10-16 10:41:09.4724|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMHF", Request id "0HL8KE6G5NMHF:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:41:09.4950|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 62.7791ms 500 
+2017-10-16 10:41:29.5287|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 10:41:29.5355|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:29.5486|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:29.5746|INFO|ComputerService|Getting all computers
+2017-10-16 10:41:29.5830|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 10:41:29.5830|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 42.2243ms
+2017-10-16 10:41:29.5987|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.9722ms 200 application/json; charset=utf-8
+2017-10-16 10:41:29.6193|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/fd0c145e-a8b4-4049-9e33-74760498d715  
+2017-10-16 10:41:29.6274|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:29.6274|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (fd0c145e-a8b4-4049-9e33-74760498d715) - ModelState is Valid
+2017-10-16 10:41:29.6274|INFO|RoomService|Getting single room
+2017-10-16 10:41:29.6484|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 15.2943ms
+2017-10-16 10:41:29.6484|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMHL", Request id "0HL8KE6G5NMHL:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:41:29.6626|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43.284ms 500 
+2017-10-16 10:41:33.5418|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 10:41:33.5569|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:33.5642|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:33.5642|INFO|UserService|Getting All users
+2017-10-16 10:41:33.5883|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:41:33.5883|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 31.2929ms
+2017-10-16 10:41:33.5883|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 64.7552ms 200 application/json; charset=utf-8
+2017-10-16 10:41:42.7630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 10:41:42.7718|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:41:42.7830|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:41:42.7998|INFO|UserService|Getting All users
+2017-10-16 10:41:42.7998|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:41:42.8148|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 31.8661ms
+2017-10-16 10:41:42.8148|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 58.6874ms 200 application/json; charset=utf-8
+2017-10-16 10:42:09.8235|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 10:42:09.8325|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:09.8458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.2822ms 204 
+2017-10-16 10:42:09.8458|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 10:42:09.8681|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:09.9684|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 10:42:09.9797|INFO|UserService|Adding user
+2017-10-16 10:42:09.9797|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 103.0856ms
+2017-10-16 10:42:09.9924|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMI1", Request id "0HL8KE6G5NMI1:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:42:09.9924|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 145.8197ms 500 
+2017-10-16 10:42:30.8616|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 10:42:30.8616|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:30.8772|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.5933ms 204 
+2017-10-16 10:42:30.8772|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 10:42:30.8971|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:30.9101|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 10:42:30.9101|INFO|UserService|Adding user
+2017-10-16 10:42:30.9290|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 19.5737ms
+2017-10-16 10:42:30.9290|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KE6G5NMI2", Request id "0HL8KE6G5NMI2:00000002": An unhandled exception was thrown by the application.
+2017-10-16 10:42:30.9457|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 59.71ms 500 
+2017-10-16 10:42:50.9658|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 10:42:50.9865|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:50.9934|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 27.6181ms 204 
+2017-10-16 10:42:51.0115|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 38
+2017-10-16 10:42:51.0339|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:51.0339|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 10:42:51.0598|INFO|UserService|Adding user
+2017-10-16 10:42:51.0813|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 10:42:51.0813|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 45.5771ms
+2017-10-16 10:42:51.0959|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 84.4384ms 201 
+2017-10-16 10:42:53.9731|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 10:42:54.0113|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 10:42:54.0212|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 10:42:54.0603|INFO|UserService|Getting All users
+2017-10-16 10:42:54.0658|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 10:42:54.0658|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 52.3516ms
+2017-10-16 10:42:54.0813|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.2133ms 200 application/json; charset=utf-8
+2017-10-16 11:02:15.4321|INFO|DataInitializer|Seeding data
+2017-10-16 11:02:15.7104|INFO|RoomService|Adding room
+2017-10-16 11:02:15.7419|INFO|RoomService|Adding room
+2017-10-16 11:02:15.7485|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:02:15.7485|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:02:15.7655|INFO|LicenseService|Adding license
+2017-10-16 11:02:15.7655|INFO|LicenseService|Adding license
+2017-10-16 11:02:15.7801|INFO|ComputerService|Adding computer
+2017-10-16 11:02:15.7925|INFO|ComputerService|Adding computer
+2017-10-16 11:02:15.8083|INFO|UserService|Adding user
+2017-10-16 11:06:19.9268|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:06:19.9427|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:06:20.1534|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:06:20.1534|INFO|UserService|Getting All users
+2017-10-16 11:06:20.2299|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:06:20.4059|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 261.0658ms
+2017-10-16 11:06:20.4181|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 495.059ms 200 application/json; charset=utf-8
+2017-10-16 11:14:33.5392|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:14:33.5518|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:14:33.5655|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:14:33.5901|INFO|UserService|Getting All users
+2017-10-16 11:14:33.5992|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:14:33.5992|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 39.1169ms
+2017-10-16 11:14:33.6108|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 71.5925ms 200 application/json; charset=utf-8
+2017-10-16 11:14:42.1834|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:14:42.1901|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:14:42.1901|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 15.287ms 204 
+2017-10-16 11:14:42.2181|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 11:14:42.2481|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:14:42.3843|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:14:42.3922|INFO|UserService|Adding user
+2017-10-16 11:14:42.4022|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:14:42.4306|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 110.6343ms
+2017-10-16 11:14:42.4499|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KEKGH7JV9", Request id "0HL8KEKGH7JV9:00000003": An unhandled exception was thrown by the application.
+2017-10-16 11:14:42.4592|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 241.167ms 500 
+2017-10-16 11:14:49.6031|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:14:49.6212|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:14:49.6265|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.3722ms 204 
+2017-10-16 11:14:49.6483|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 11:14:49.6556|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:14:49.6556|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:14:49.6764|INFO|UserService|Adding user
+2017-10-16 11:14:49.7088|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 42.7742ms
+2017-10-16 11:14:49.7580|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KEKGH7JVA", Request id "0HL8KEKGH7JVA:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:14:49.7580|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 114.8332ms 500 
+2017-10-16 11:15:00.7879|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:15:00.8088|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:00.8231|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.1981ms 204 
+2017-10-16 11:15:00.8392|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 38
+2017-10-16 11:15:00.8807|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:00.9180|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:15:00.9265|INFO|UserService|Adding user
+2017-10-16 11:15:00.9265|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:15:00.9420|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 24.8436ms
+2017-10-16 11:15:00.9420|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 111.2444ms 201 
+2017-10-16 11:15:04.2290|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:15:04.2358|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:04.2845|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:15:04.3003|INFO|UserService|Getting All users
+2017-10-16 11:15:04.3263|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:15:04.3317|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 47.2768ms
+2017-10-16 11:15:04.3462|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 117.1984ms 200 application/json; charset=utf-8
+2017-10-16 11:15:20.9256|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:15:20.9436|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:20.9436|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.1359ms 204 
+2017-10-16 11:15:20.9690|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 36
+2017-10-16 11:15:20.9845|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:21.0076|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:15:21.0076|INFO|UserService|Adding user
+2017-10-16 11:15:21.0191|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:15:21.0191|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 19.2802ms
+2017-10-16 11:15:21.0434|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KEKGH7JVD", Request id "0HL8KEKGH7JVD:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:15:21.0864|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 117.3512ms 500 
+2017-10-16 11:15:31.6015|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:15:31.6097|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:15:31.6515|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:15:31.6632|INFO|UserService|Getting All users
+2017-10-16 11:15:31.6810|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:15:31.6947|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 43.3117ms
+2017-10-16 11:15:31.7056|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.0757ms 200 application/json; charset=utf-8
+2017-10-16 11:18:01.6540|INFO|DataInitializer|Seeding data
+2017-10-16 11:18:01.7125|INFO|RoomService|Adding room
+2017-10-16 11:18:01.7125|INFO|RoomService|Adding room
+2017-10-16 11:18:01.7338|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:18:01.7466|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:18:01.7466|INFO|LicenseService|Adding license
+2017-10-16 11:18:01.7678|INFO|LicenseService|Adding license
+2017-10-16 11:18:01.7753|INFO|ComputerService|Adding computer
+2017-10-16 11:18:01.7753|INFO|ComputerService|Adding computer
+2017-10-16 11:18:01.7951|INFO|UserService|Adding user
+2017-10-16 11:19:19.3488|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:19:19.3678|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:19:19.4905|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:19:19.4985|INFO|UserService|Getting All users
+2017-10-16 11:19:19.5322|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:19:19.6272|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 141.3572ms
+2017-10-16 11:19:19.6375|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 293.165ms 200 application/json; charset=utf-8
+2017-10-16 11:19:47.9118|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:19:47.9261|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:19:47.9261|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 22.2052ms 204 
+2017-10-16 11:19:47.9460|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 11:19:47.9597|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:19:48.0374|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:19:48.0374|INFO|UserService|Adding user
+2017-10-16 11:19:48.0543|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:19:48.0543|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 63.8917ms
+2017-10-16 11:19:48.0684|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KERSBAE99", Request id "0HL8KERSBAE99:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:19:48.0684|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 131.1577ms 500 
+2017-10-16 11:22:08.6525|INFO|DataInitializer|Seeding data
+2017-10-16 11:22:08.7088|INFO|RoomService|Adding room
+2017-10-16 11:22:08.7180|INFO|RoomService|Adding room
+2017-10-16 11:22:08.7253|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:22:08.7253|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:22:08.7412|INFO|LicenseService|Adding license
+2017-10-16 11:22:08.7412|INFO|LicenseService|Adding license
+2017-10-16 11:22:08.7412|INFO|ComputerService|Adding computer
+2017-10-16 11:22:08.7695|INFO|ComputerService|Adding computer
+2017-10-16 11:22:08.7809|INFO|UserService|Adding user
+2017-10-16 11:22:51.7721|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:22:51.7890|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:22:51.8048|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 35.8422ms 204 
+2017-10-16 11:22:51.8234|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 11:22:51.8333|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:22:52.0875|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:22:52.0948|INFO|UserService|Adding user
+2017-10-16 11:22:52.0948|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:22:52.1181|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 113.1097ms
+2017-10-16 11:22:52.1181|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KETR8Q7T2", Request id "0HL8KETR8Q7T2:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:22:52.1334|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 310.0354ms 500 
+2017-10-16 11:24:05.0842|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:24:05.1005|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:24:05.1151|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 30.8626ms 204 
+2017-10-16 11:24:05.1151|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 38
+2017-10-16 11:24:05.1363|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:24:05.1486|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:24:05.1486|INFO|UserService|Adding user
+2017-10-16 11:24:05.1730|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:24:05.1835|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 35.705ms
+2017-10-16 11:24:05.1835|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.1405ms 201 
+2017-10-16 11:24:24.8529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:24:24.8815|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:24:24.9126|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:24:24.9430|INFO|UserService|Getting All users
+2017-10-16 11:24:24.9885|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:24:25.0976|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 185.0793ms
+2017-10-16 11:24:25.1381|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 285.1885ms 200 application/json; charset=utf-8
+2017-10-16 11:24:36.5972|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:24:36.6144|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:24:36.6232|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 26.0204ms 204 
+2017-10-16 11:24:36.6414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 41
+2017-10-16 11:24:36.7083|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:24:36.7210|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:24:36.7323|INFO|UserService|Adding user
+2017-10-16 11:24:36.7440|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:24:36.7594|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 39.1213ms
+2017-10-16 11:24:36.7724|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KETR8Q7T5", Request id "0HL8KETR8Q7T5:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:24:36.7724|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 140.133ms 500 
+2017-10-16 11:37:05.8518|INFO|DataInitializer|Seeding data
+2017-10-16 11:37:06.1664|INFO|RoomService|Adding room
+2017-10-16 11:37:06.1864|INFO|RoomService|Adding room
+2017-10-16 11:37:06.1970|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:37:06.1970|INFO|LicenseTypeService|Adding license type
+2017-10-16 11:37:06.2142|INFO|LicenseService|Adding license
+2017-10-16 11:37:06.2142|INFO|LicenseService|Adding license
+2017-10-16 11:37:06.2294|INFO|ComputerService|Adding computer
+2017-10-16 11:37:06.2424|INFO|ComputerService|Adding computer
+2017-10-16 11:37:17.0548|INFO|UserService|Adding user
+2017-10-16 11:37:20.4473|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/  
+2017-10-16 11:37:21.1031|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1018.5144ms 404 
+2017-10-16 11:37:53.7294|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:37:53.7464|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:37:53.7774|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 36.6488ms 204 
+2017-10-16 11:37:53.8067|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 11:37:53.8067|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:37:54.5561|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:38:09.8664|INFO|UserService|Adding user
+2017-10-16 11:38:36.6125|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:38:36.7154|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 42470.6733ms
+2017-10-16 11:38:36.8918|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KF5VHQOEU", Request id "0HL8KF5VHQOEU:00000003": An unhandled exception was thrown by the application.
+2017-10-16 11:38:36.9405|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 43107.8876ms 500 
+2017-10-16 11:40:11.0998|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 11:40:11.1178|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:11.1619|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.7781ms 204 
+2017-10-16 11:40:11.2056|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 41
+2017-10-16 11:40:11.2056|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:11.2510|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 11:40:14.1685|INFO|UserService|Adding user
+2017-10-16 11:40:15.6235|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:40:15.6521|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 4422.5351ms
+2017-10-16 11:40:15.7601|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KF5VHQOF0", Request id "0HL8KF5VHQOF0:00000002": An unhandled exception was thrown by the application.
+2017-10-16 11:40:15.7820|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4574.5591ms 500 
+2017-10-16 11:40:37.3999|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/rooms  
+2017-10-16 11:40:37.3999|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:37.4479|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 25.9537ms 204 
+2017-10-16 11:40:37.4633|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/rooms application/json;charset=UTF-8 15
+2017-10-16 11:40:37.4789|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:37.4968|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.Room.AddRoom) - ModelState is Valid
+2017-10-16 11:40:37.5068|INFO|RoomService|Adding room
+2017-10-16 11:40:37.5068|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 11:40:37.5233|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Post (LicenseManager.Api) in 30.4848ms
+2017-10-16 11:40:37.5233|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.9303ms 201 
+2017-10-16 11:40:39.3521|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-16 11:40:39.3833|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:39.4027|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:40:39.4137|INFO|RoomService|Getting All rooms
+2017-10-16 11:40:39.5154|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-16 11:40:39.5646|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 164.9158ms
+2017-10-16 11:40:39.5911|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 229.3706ms 200 application/json; charset=utf-8
+2017-10-16 11:40:45.1091|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 11:40:45.1348|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 11:40:45.1544|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 11:40:45.1879|INFO|UserService|Getting All users
+2017-10-16 11:40:45.2702|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 11:40:45.2854|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 136.6924ms
+2017-10-16 11:40:45.3191|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 184.1658ms 200 application/json; charset=utf-8
+2017-10-16 12:21:45.4902|INFO|DataInitializer|Seeding data
+2017-10-16 12:21:45.8146|INFO|RoomService|Adding room
+2017-10-16 12:21:45.8249|INFO|RoomService|Adding room
+2017-10-16 12:21:45.8249|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:21:45.8497|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:21:45.8573|INFO|LicenseService|Adding license
+2017-10-16 12:21:45.8573|INFO|LicenseService|Adding license
+2017-10-16 12:21:45.8726|INFO|ComputerService|Adding computer
+2017-10-16 12:21:45.8726|INFO|ComputerService|Adding computer
+2017-10-16 12:21:45.8924|INFO|UserService|Adding user
+2017-10-16 12:22:23.5555|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 12:22:23.5663|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:22:23.5663|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.5458ms 204 
+2017-10-16 12:22:23.5961|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 12:22:23.6015|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:22:23.9965|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 12:22:23.9965|INFO|UserService|Adding user
+2017-10-16 12:22:24.0128|INFO|Microsoft.AspNetCore.Mvc.Internal.ObjectResultExecutor|Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+2017-10-16 12:22:24.0332|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 257.9124ms
+2017-10-16 12:22:24.0414|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KFUUL05K7", Request id "0HL8KFUUL05K7:00000002": An unhandled exception was thrown by the application.
+2017-10-16 12:22:24.0414|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 452.8613ms 500 
+2017-10-16 12:27:22.3618|INFO|DataInitializer|Seeding data
+2017-10-16 12:27:22.4213|INFO|RoomService|Adding room
+2017-10-16 12:27:22.4213|INFO|RoomService|Adding room
+2017-10-16 12:27:22.4416|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:27:22.4416|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:27:22.4698|INFO|LicenseService|Adding license
+2017-10-16 12:27:22.4698|INFO|LicenseService|Adding license
+2017-10-16 12:27:22.4860|INFO|ComputerService|Adding computer
+2017-10-16 12:27:22.4998|INFO|ComputerService|Adding computer
+2017-10-16 12:27:22.4998|INFO|UserService|Adding user
+2017-10-16 12:27:48.5303|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 12:27:48.5303|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:27:48.5675|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 40.5989ms 204 
+2017-10-16 12:27:48.5810|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 39
+2017-10-16 12:27:48.6043|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:27:48.8249|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 12:27:48.8316|INFO|UserService|Adding user
+2017-10-16 12:27:48.8316|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 201
+2017-10-16 12:27:48.8498|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 116.8192ms
+2017-10-16 12:27:48.8603|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 279.3486ms 201 
+2017-10-16 12:27:51.0654|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:27:51.1212|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:27:51.1340|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:27:51.1426|INFO|UserService|Getting All users
+2017-10-16 12:27:51.1833|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:27:51.2275|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 93.6449ms
+2017-10-16 12:27:51.2551|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 189.7103ms 200 application/json; charset=utf-8
+2017-10-16 12:39:32.0569|INFO|DataInitializer|Seeding data
+2017-10-16 12:39:32.3143|INFO|RoomService|Adding room
+2017-10-16 12:39:32.3143|INFO|RoomService|Adding room
+2017-10-16 12:39:32.3325|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:39:32.3520|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:39:32.3595|INFO|LicenseService|Adding license
+2017-10-16 12:39:32.3595|INFO|LicenseService|Adding license
+2017-10-16 12:39:32.3742|INFO|ComputerService|Adding computer
+2017-10-16 12:39:32.3875|INFO|ComputerService|Adding computer
+2017-10-16 12:39:32.3875|INFO|UserService|Adding user
+2017-10-16 12:39:52.1929|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:39:52.2074|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:39:52.3305|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:39:52.3388|INFO|UserService|Getting All users
+2017-10-16 12:39:52.3740|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:39:52.4614|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 137.7437ms
+2017-10-16 12:39:52.4732|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 284.8946ms 200 application/json; charset=utf-8
+2017-10-16 12:40:10.5010|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:40:10.5109|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:40:10.5308|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:40:10.5565|INFO|UserService|Getting All users
+2017-10-16 12:40:10.5565|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:40:10.5756|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 44.8802ms
+2017-10-16 12:40:10.5756|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.8264ms 200 application/json; charset=utf-8
+2017-10-16 12:40:56.1810|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:40:56.1919|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:40:56.2071|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:40:56.2172|INFO|UserService|Getting All users
+2017-10-16 12:40:56.2172|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:40:56.2308|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 23.8054ms
+2017-10-16 12:40:56.2308|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.733ms 200 application/json; charset=utf-8
+2017-10-16 12:43:37.7724|INFO|DataInitializer|Seeding data
+2017-10-16 12:43:37.8321|INFO|RoomService|Adding room
+2017-10-16 12:43:37.8416|INFO|RoomService|Adding room
+2017-10-16 12:43:37.8416|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:43:37.8605|INFO|LicenseTypeService|Adding license type
+2017-10-16 12:43:37.8605|INFO|LicenseService|Adding license
+2017-10-16 12:43:37.8788|INFO|LicenseService|Adding license
+2017-10-16 12:43:37.8788|INFO|ComputerService|Adding computer
+2017-10-16 12:43:37.9004|INFO|ComputerService|Adding computer
+2017-10-16 12:43:37.9087|INFO|UserService|Adding user
+2017-10-16 12:43:52.6935|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/70d43b23-859b-41bb-ad32-1dc6aec661e4  
+2017-10-16 12:43:52.7150|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:43:52.8805|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (70d43b23-859b-41bb-ad32-1dc6aec661e4) - ModelState is Valid
+2017-10-16 12:43:52.9147|INFO|UserService|Getting single user
+2017-10-16 12:43:52.9992|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 142.9779ms
+2017-10-16 12:43:53.0559|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7QC", Request id "0HL8KGB5FD7QC:00000001": An unhandled exception was thrown by the application.
+2017-10-16 12:43:53.0678|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 379.9344ms 500 
+2017-10-16 12:44:47.7049|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/70d43b23-859b-41bb-ad32-1dc6aec661e4  
+2017-10-16 12:44:47.7192|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (70d43b23-859b-41bb-ad32-1dc6aec661e4) - ModelState is Valid
+2017-10-16 12:44:47.7467|INFO|UserService|Getting single user
+2017-10-16 12:44:47.7690|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 50.3226ms
+2017-10-16 12:44:47.7799|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7QD", Request id "0HL8KGB5FD7QD:00000001": An unhandled exception was thrown by the application.
+2017-10-16 12:44:47.7799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.3335ms 500 
+2017-10-16 12:44:52.9715|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 12:44:53.0035|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:44:53.0278|INFO|UserService|Getting All users
+2017-10-16 12:44:53.1228|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:44:53.2194|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 215.9663ms
+2017-10-16 12:44:53.2424|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 270.9002ms 200 application/json; charset=utf-8
+2017-10-16 12:45:28.4630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:45:28.4902|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:45:28.5004|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:45:28.5004|INFO|UserService|Getting All users
+2017-10-16 12:45:28.5328|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:45:28.5328|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 42.4544ms
+2017-10-16 12:45:28.5521|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.1201ms 200 application/json; charset=utf-8
+2017-10-16 12:45:29.3529|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:45:29.3590|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:45:29.3590|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:45:29.3763|INFO|UserService|Getting single user
+2017-10-16 12:45:29.3898|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:45:29.3898|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 31.2801ms
+2017-10-16 12:45:29.3898|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 50.684ms 200 application/json; charset=utf-8
+2017-10-16 12:45:35.9509|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/http://localhost:5000/users/70d43b23-859b-41bb-ad32-1dc6aec661e4  
+2017-10-16 12:45:35.9712|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 20.2808ms 404 
+2017-10-16 12:45:41.9913|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/  
+2017-10-16 12:45:42.0053|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:45:42.0357|INFO|UserService|Getting All users
+2017-10-16 12:45:42.0357|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:45:42.0546|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 49.3358ms
+2017-10-16 12:45:42.0673|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 76.0338ms 200 application/json; charset=utf-8
+2017-10-16 12:47:24.0396|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:47:24.0476|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:47:24.0476|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:47:24.0813|INFO|UserService|Getting single user
+2017-10-16 12:47:24.1316|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:47:24.1521|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 94.065ms
+2017-10-16 12:47:24.1662|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 126.5683ms 200 application/json; charset=utf-8
+2017-10-16 12:48:02.9528|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:48:02.9691|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:48:03.0316|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:48:03.0529|INFO|UserService|Getting single user
+2017-10-16 12:48:03.0640|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:48:03.0853|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 53.8304ms
+2017-10-16 12:48:03.0853|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 139.4263ms 200 application/json; charset=utf-8
+2017-10-16 12:49:12.3889|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:49:12.4000|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:49:12.4092|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:49:12.4329|INFO|UserService|Getting single user
+2017-10-16 12:49:12.4706|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:49:12.4884|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 79.4592ms
+2017-10-16 12:49:12.5747|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 185.7864ms 200 application/json; charset=utf-8
+2017-10-16 12:50:17.7374|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:50:17.7374|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:50:17.7543|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:50:17.7543|INFO|UserService|Getting single user
+2017-10-16 12:50:17.7849|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:50:17.7849|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 45.4433ms
+2017-10-16 12:50:17.8158|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.4702ms 200 application/json; charset=utf-8
+2017-10-16 12:50:58.4827|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:50:58.4913|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:50:58.5057|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:50:58.5359|INFO|UserService|Getting single user
+2017-10-16 12:50:58.5359|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:50:58.5589|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 53.4026ms
+2017-10-16 12:50:58.5715|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.7937ms 200 application/json; charset=utf-8
+2017-10-16 12:52:25.9871|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:52:25.9931|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:52:25.9931|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:52:26.0154|INFO|UserService|Getting single user
+2017-10-16 12:52:26.0222|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:52:26.0222|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 28.0586ms
+2017-10-16 12:52:26.0382|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 51.088ms 200 application/json; charset=utf-8
+2017-10-16 12:55:58.5218|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:55:58.5278|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:55:58.5483|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:55:58.5665|INFO|UserService|Getting single user
+2017-10-16 12:55:58.5750|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:55:58.5750|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 34.1235ms
+2017-10-16 12:55:58.5925|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.7679ms 200 application/json; charset=utf-8
+2017-10-16 12:56:04.3960|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:56:04.4048|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:04.4155|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:56:04.4155|INFO|UserService|Getting single user
+2017-10-16 12:56:04.4377|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:56:04.4490|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 33.6118ms
+2017-10-16 12:56:04.4648|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.7291ms 200 application/json; charset=utf-8
+2017-10-16 12:56:43.4549|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:56:43.4621|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:43.4875|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:56:43.4951|INFO|UserService|Getting single user
+2017-10-16 12:56:43.4951|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:56:43.6246|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 137.2955ms
+2017-10-16 12:56:43.6657|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 210.7738ms 200 application/json; charset=utf-8
+2017-10-16 12:56:49.5630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:56:49.5779|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:49.5910|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.0064ms 204 
+2017-10-16 12:56:49.6093|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a application/json;charset=UTF-8 36
+2017-10-16 12:56:49.6422|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:50.0473|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Put (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a, LicenseManager.Infrastructure.Commands.User.UpdateUser) - ModelState is Valid
+2017-10-16 12:56:50.0611|INFO|UserService|Updating user
+2017-10-16 12:56:50.0782|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-16 12:56:50.0887|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Put (LicenseManager.Api) in 417.4341ms
+2017-10-16 12:56:50.1018|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 492.476ms 204 
+2017-10-16 12:56:54.0719|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-16 12:56:54.0719|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:54.0956|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:56:54.1110|INFO|ComputerService|Getting all computers
+2017-10-16 12:56:54.1675|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-16 12:56:54.2191|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 123.6947ms
+2017-10-16 12:56:54.2427|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 170.7849ms 200 application/json; charset=utf-8
+2017-10-16 12:56:54.2776|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms/2d7b2df5-6522-4434-944f-b3fb98de8888  
+2017-10-16 12:56:54.2916|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:54.3099|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments (2d7b2df5-6522-4434-944f-b3fb98de8888) - ModelState is Valid
+2017-10-16 12:56:54.3273|INFO|RoomService|Getting single room
+2017-10-16 12:56:54.3595|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 49.7872ms
+2017-10-16 12:56:54.4292|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7QS", Request id "0HL8KGB5FD7QS:00000004": An unhandled exception was thrown by the application.
+2017-10-16 12:56:54.4354|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 157.7544ms 500 
+2017-10-16 12:56:59.5152|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:56:59.5297|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:56:59.5416|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:56:59.5737|INFO|UserService|Getting All users
+2017-10-16 12:56:59.5737|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:56:59.5943|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 52.8023ms
+2017-10-16 12:56:59.6048|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.6616ms 200 application/json; charset=utf-8
+2017-10-16 12:57:01.4366|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:57:01.4366|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:57:01.4508|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:57:01.4743|INFO|UserService|Getting single user
+2017-10-16 12:57:01.5027|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:57:01.5115|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 60.7438ms
+2017-10-16 12:57:01.5115|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 84.2178ms 200 application/json; charset=utf-8
+2017-10-16 12:57:06.1621|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:57:06.1821|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:57:06.1821|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 29.2139ms 204 
+2017-10-16 12:57:06.2112|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a application/json;charset=UTF-8 35
+2017-10-16 12:57:06.2112|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:57:06.2399|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Put (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a, LicenseManager.Infrastructure.Commands.User.UpdateUser) - ModelState is Valid
+2017-10-16 12:57:06.2564|INFO|UserService|Updating user
+2017-10-16 12:57:06.2629|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-16 12:57:06.2746|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Put (LicenseManager.Api) in 35.6642ms
+2017-10-16 12:57:06.2994|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 88.2912ms 204 
+2017-10-16 12:57:11.2687|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:57:11.3058|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:57:11.3058|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:57:11.3251|INFO|UserService|Getting All users
+2017-10-16 12:57:11.3251|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:57:11.3478|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 33.5819ms
+2017-10-16 12:57:11.3538|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.1266ms 200 application/json; charset=utf-8
+2017-10-16 12:57:23.5295|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:57:23.5763|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:57:23.5894|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:57:23.5894|INFO|UserService|Getting All users
+2017-10-16 12:57:23.6115|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:57:23.6197|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 30.3352ms
+2017-10-16 12:57:23.6405|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 110.9724ms 200 application/json; charset=utf-8
+2017-10-16 12:58:12.7748|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:58:12.7943|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:12.7943|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:58:12.8166|INFO|UserService|Getting All users
+2017-10-16 12:58:12.8236|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:58:12.9468|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 145.6589ms
+2017-10-16 12:58:12.9637|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 188.9343ms 200 application/json; charset=utf-8
+2017-10-16 12:58:14.1214|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:14.1214|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:14.1556|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:14.1656|INFO|UserService|Getting single user
+2017-10-16 12:58:14.1656|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:58:14.2958|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 140.3879ms
+2017-10-16 12:58:14.3452|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 223.7054ms 200 application/json; charset=utf-8
+2017-10-16 12:58:17.4472|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:58:17.4472|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:17.4636|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:58:17.4810|INFO|UserService|Getting All users
+2017-10-16 12:58:17.4946|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:58:17.4946|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 38.5225ms
+2017-10-16 12:58:17.5125|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 65.2785ms 200 application/json; charset=utf-8
+2017-10-16 12:58:18.4314|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:18.4314|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:18.4314|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:18.4735|INFO|UserService|Getting single user
+2017-10-16 12:58:18.4805|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:58:18.4805|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 47.5941ms
+2017-10-16 12:58:18.5000|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 68.6375ms 200 application/json; charset=utf-8
+2017-10-16 12:58:20.9457|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:20.9569|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:20.9630|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 17.3168ms 204 
+2017-10-16 12:58:20.9820|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:20.9946|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:21.0223|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Delete (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:21.0515|INFO|UserService|Removing user
+2017-10-16 12:58:21.0717|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-16 12:58:21.0717|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Delete (LicenseManager.Api) in 55.9761ms
+2017-10-16 12:58:21.0907|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 108.6884ms 204 
+2017-10-16 12:58:29.5405|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:29.5492|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:29.5691|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:29.5827|INFO|UserService|Getting single user
+2017-10-16 12:58:29.5928|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 23.828ms
+2017-10-16 12:58:29.6045|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7R5", Request id "0HL8KGB5FD7R5:00000001": An unhandled exception was thrown by the application.
+2017-10-16 12:58:29.6192|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 78.6051ms 500 
+2017-10-16 12:58:36.5903|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:36.5903|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:36.6096|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:36.6360|INFO|UserService|Getting single user
+2017-10-16 12:58:36.6592|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 49.7508ms
+2017-10-16 12:58:36.6725|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7R5", Request id "0HL8KGB5FD7R5:00000002": An unhandled exception was thrown by the application.
+2017-10-16 12:58:36.6725|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 89.9395ms 500 
+2017-10-16 12:58:41.7978|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a  
+2017-10-16 12:58:41.7978|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:41.8088|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (8aa33c18-9723-4dc5-88e9-4f7fab3d1f7a) - ModelState is Valid
+2017-10-16 12:58:41.8088|INFO|UserService|Getting single user
+2017-10-16 12:58:41.8261|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 17.4834ms
+2017-10-16 12:58:41.8261|ERROR|Microsoft.AspNetCore.Server.Kestrel|Connection id "0HL8KGB5FD7R6", Request id "0HL8KGB5FD7R6:00000001": An unhandled exception was thrown by the application.
+2017-10-16 12:58:41.8403|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 42.4329ms 500 
+2017-10-16 12:58:52.0103|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:58:52.0103|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:58:52.0444|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:58:52.0444|INFO|UserService|Getting All users
+2017-10-16 12:58:52.0611|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:58:52.0611|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 25.0008ms
+2017-10-16 12:58:52.0839|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 73.6222ms 200 application/json; charset=utf-8
+2017-10-16 12:59:02.2292|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users  
+2017-10-16 12:59:02.2474|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:02.2754|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 46.1992ms 204 
+2017-10-16 12:59:02.2908|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 POST http://localhost:5000/users application/json;charset=UTF-8 35
+2017-10-16 12:59:02.2908|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:02.3286|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) with arguments (LicenseManager.Infrastructure.Commands.User.AddUser) - ModelState is Valid
+2017-10-16 12:59:02.3419|INFO|UserService|Adding user
+2017-10-16 12:59:02.3657|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 201
+2017-10-16 12:59:02.3773|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Post (LicenseManager.Api) in 51.1245ms
+2017-10-16 12:59:02.3851|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 94.3506ms 201 
+2017-10-16 12:59:04.4155|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:59:04.4450|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:04.4525|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:59:04.4631|INFO|UserService|Getting All users
+2017-10-16 12:59:04.4631|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:59:04.4799|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 27.4747ms
+2017-10-16 12:59:04.4799|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.8883ms 200 application/json; charset=utf-8
+2017-10-16 12:59:05.5084|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/0203119a-5eb2-4bb1-9d00-a4233044ab41  
+2017-10-16 12:59:05.5141|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:05.5141|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (0203119a-5eb2-4bb1-9d00-a4233044ab41) - ModelState is Valid
+2017-10-16 12:59:05.5599|INFO|UserService|Getting single user
+2017-10-16 12:59:05.5599|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:59:05.5745|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 52.4056ms
+2017-10-16 12:59:05.5745|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.3165ms 200 application/json; charset=utf-8
+2017-10-16 12:59:22.4711|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users/0203119a-5eb2-4bb1-9d00-a4233044ab41  
+2017-10-16 12:59:22.4827|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:22.5021|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments (0203119a-5eb2-4bb1-9d00-a4233044ab41) - ModelState is Valid
+2017-10-16 12:59:22.5442|INFO|UserService|Getting single user
+2017-10-16 12:59:22.5442|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.UserDto.
+2017-10-16 12:59:22.5612|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 59.3205ms
+2017-10-16 12:59:22.5612|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 98.703ms 200 application/json; charset=utf-8
+2017-10-16 12:59:25.0904|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/users/0203119a-5eb2-4bb1-9d00-a4233044ab41  
+2017-10-16 12:59:25.1045|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:25.1045|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 21.1623ms 204 
+2017-10-16 12:59:25.1255|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 DELETE http://localhost:5000/users/0203119a-5eb2-4bb1-9d00-a4233044ab41  
+2017-10-16 12:59:25.1367|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:25.1528|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Delete (LicenseManager.Api) with arguments (0203119a-5eb2-4bb1-9d00-a4233044ab41) - ModelState is Valid
+2017-10-16 12:59:25.1528|INFO|UserService|Removing user
+2017-10-16 12:59:25.1733|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-16 12:59:25.1855|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Delete (LicenseManager.Api) in 32.8569ms
+2017-10-16 12:59:25.2031|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 77.5866ms 204 
+2017-10-16 12:59:25.5489|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/users  
+2017-10-16 12:59:25.5682|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-16 12:59:25.5788|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-16 12:59:25.6417|INFO|UserService|Getting All users
+2017-10-16 12:59:25.6524|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.UserDto].
+2017-10-16 12:59:25.6955|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.UsersController.Get (LicenseManager.Api) in 116.7867ms
+2017-10-16 12:59:25.7022|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 153.3382ms 200 application/json; charset=utf-8

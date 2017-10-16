@@ -5,7 +5,7 @@ namespace LicenseManager.Core.Domain
 {
     public class User
     {
-        private static readonly string OnlyStringCheck = @"^[a-zA-Z]+$";
+        private static readonly string OnlyStringCheck = @"^[a-z¹¿Ÿæêó³ñA-Z¥¯ÆÊÓ£Ñ]+$";
         public Guid UserId { get; protected set; }
         public string Name { get; protected set; }
         public string Surname { get; protected set; }

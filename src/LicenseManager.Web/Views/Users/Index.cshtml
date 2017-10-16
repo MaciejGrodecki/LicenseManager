@@ -1,0 +1,21 @@
+﻿<div ng-app="app" ng-controller="BrowseUsersCtrl">
+    <div class="row">
+        <button type="button" class="btn btn-primary pull-right" onclick="AddUserRedirect()">Add user</button>
+    </div>
+    <div class="row">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Surname</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users" ng-click="selectUser(user.userId)">
+                    <td class="text-uppercase">{{user.name}}</td>
+                    <td class="text-uppercase">{{user.surname}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
