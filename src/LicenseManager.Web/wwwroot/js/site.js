@@ -209,7 +209,7 @@ app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location
                             url: "http://localhost:5000/rooms/" + roomId
                         }).then(function successCallback(response) {
                             location.reload();
-                        })
+                        });
                     }
                 },
                 No: function (scope, button) {
@@ -258,7 +258,7 @@ app.controller("BrowseLicenseTypesCtrl", function ($scope, $http, $ngConfirm, $l
                             url: "http://localhost:5000/licenseTypes/" + licenseTypeId
                         }).then(function successCallback(response) {
                             location.reload();
-                        })
+                        });
                     }
                 },
                 No: function (scope, button) {
@@ -432,8 +432,8 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
             url: 'http://localhost:5000/users/'
         }).then(function successCallback(response) {
             $scope.computer.users = response.data;
-            
-        })
+
+        });
         
     
 
