@@ -43,13 +43,16 @@ namespace LicenseManager.Api
                 builder.AllowAnyMethod();
                 builder.AllowAnyHeader();
             }));
-            services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
-            services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
-            services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
-            //services.AddScoped<ILicenseTypeRepository, SqlLicenseTypeRepository>();
-            services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
-            //services.AddScoped<IRoomRepository, SqlRoomRepository>();
-            services.AddScoped<IUserRepository, InMemoryUserRepository>();
+            //services.AddScoped<IComputerRepository, InMemoryComputerRepository>();
+            services.AddScoped<IComputerRepository, SqlComputerRepository>();
+            //services.AddScoped<ILicenseRepository, InMemoryLicenseRepository>();
+            services.AddScoped<ILicenseRepository, SqlLicenseRepository>();
+            //services.AddScoped<ILicenseTypeRepository, InMemoryLicenseTypeRepository>();
+            services.AddScoped<ILicenseTypeRepository, SqlLicenseTypeRepository>();
+            //services.AddScoped<IRoomRepository, InMemoryRoomRepository>();
+            services.AddScoped<IRoomRepository, SqlRoomRepository>();
+            //services.AddScoped<IUserRepository, InMemoryUserRepository>();
+            services.AddScoped<IUserRepository, SqlUserRepository>();
             services.AddScoped<IRoomService, RoomService>();
             services.AddScoped<ILicenseTypeService, LicenseTypeService>();
             services.AddScoped<IUserService, UserService>();
@@ -58,7 +61,9 @@ namespace LicenseManager.Api
             services.AddScoped<IDataInitializer,DataInitializer>();
             services.AddSingleton(AutoMapperConfig.Initialize());
             services.Configure<AppSettings>(Configuration.GetSection("app"));
-            services.AddEntityFrameworkSqlServer().AddDbContext<LicensesContext>();
+            services.AddEntityFrameworkSqlServer()
+                .AddEntityFrameworkInMemoryDatabase()
+                .AddDbContext<LicensesContext>();
             
 
         }

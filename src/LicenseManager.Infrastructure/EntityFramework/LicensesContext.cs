@@ -22,9 +22,15 @@ namespace LicenseManager.Infrastructure.EntityFramework
             _sqlSettings = sqlSettings.Value;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionBuilder)
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionBuilder.UseSqlServer(_sqlSettings.ConnectionString);
+            if (_sqlSettings.InMemory)
+            {
+                optionsBuilder.UseInMemoryDatabase();
+
+                return;
+            }
+            optionsBuilder.UseSqlServer(_sqlSettings.ConnectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
