@@ -14,12 +14,15 @@ namespace LicenseManager.Infrastructure.Services
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly IComputerRepository _computerRepository;
         private readonly IUserRepository _userRepository;
+        private readonly ILicenseRepository _licenseRepository;
         private readonly IMapper _mapper;
 
-        public ComputerService(IComputerRepository computerRepository, IUserRepository userRepository, IMapper mapper)
+        public ComputerService(IComputerRepository computerRepository, IUserRepository userRepository, ILicenseRepository licenseRepository,
+            IMapper mapper)
         {
             _computerRepository = computerRepository;
             _userRepository = userRepository;
+            _licenseRepository = licenseRepository;
             _mapper = mapper;
         }
 
@@ -122,6 +125,20 @@ namespace LicenseManager.Infrastructure.Services
 
                 computer.Users.Add(user);
             }
+            await _computerRepository.UpdateAsync(computer);
+        }
+
+        public async Task AddLicenseToComputer(Guid computerId, Guid licenseId)
+        {
+            Logger.Info("Assign license to computer");
+            var computer = await _computerRepository.GetAsync(computerId);
+            if (computer == null)
+            {
+                throw new Exception($"Computer with {computerId} doesn't exist");
+            }
+            var license = await _licenseRepository.GetAsync(licenseId);
+            computer.AddLicense(license);
+            await _computerRepository.UpdateAsync(computer);
         }
     }
 }
