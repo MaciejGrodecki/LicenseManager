@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace LicenseManager.Infrastructure.EntityFramework
 {
@@ -20,10 +21,20 @@ namespace LicenseManager.Infrastructure.EntityFramework
             => await Task.FromResult(_context.Computers);
 
         public async Task<Computer> GetAsync(Guid computerId)
-            => await Task.FromResult(_context.Computers.SingleOrDefault(x => x.ComputerId == computerId));
+        {
+            var computer = await _context.Computers
+                .Include(x => x.Users)
+                .SingleOrDefaultAsync(x => x.ComputerId == computerId);
+            return computer;
+        }
 
         public async Task<Computer> GetAsync(string inventoryNumber)
-            => await Task.FromResult(_context.Computers.SingleOrDefault(x => x.InventoryNumber == inventoryNumber));
+        {
+            var computer = await _context.Computers
+                .Include(x => x.Users)
+                .SingleOrDefaultAsync(x => x.InventoryNumber == inventoryNumber);
+            return computer;
+        }
 
         public async Task AddAsync(Computer computer)
         {

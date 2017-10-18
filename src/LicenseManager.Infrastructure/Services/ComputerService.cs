@@ -99,7 +99,7 @@ namespace LicenseManager.Infrastructure.Services
             foreach(Guid userId in userIds)
             {
                 var user = await _userRepository.GetAsync(userId);
-                computer.Users.Add(user);
+                computer.AddUser(user);
             }
 
             await _computerRepository.UpdateAsync(computer);
@@ -122,22 +122,8 @@ namespace LicenseManager.Infrastructure.Services
                 {
                     throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");
                 }
-
                 computer.Users.Add(user);
             }
-            await _computerRepository.UpdateAsync(computer);
-        }
-
-        public async Task AddLicenseToComputer(Guid computerId, Guid licenseId)
-        {
-            Logger.Info("Assign license to computer");
-            var computer = await _computerRepository.GetAsync(computerId);
-            if (computer == null)
-            {
-                throw new Exception($"Computer with {computerId} doesn't exist");
-            }
-            var license = await _licenseRepository.GetAsync(licenseId);
-            computer.AddLicense(license);
             await _computerRepository.UpdateAsync(computer);
         }
     }

@@ -1,5 +1,6 @@
 using System;
 using LicenseManager.Core.Domain;
+using System.Collections.Generic;
 
 namespace LicenseManager.Infrastructure.DTO
 {
@@ -10,5 +11,6 @@ namespace LicenseManager.Infrastructure.DTO
         public int Count { get; set; }
         public Guid LicenseTypeId { get; set; }
         public DateTime BuyDate { get;  set; }
+        public IEnumerable<Computer> Computers { get; set; }
     }
 }

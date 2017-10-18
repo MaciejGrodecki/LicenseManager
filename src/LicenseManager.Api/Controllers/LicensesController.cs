@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using LicenseManager.Infrastructure.Commands.License;
 using LicenseManager.Infrastructure.Services;
@@ -49,9 +50,12 @@ namespace LicenseManager.Api.Controllers
         [HttpPut("{licenseId}")]
         public async Task<IActionResult> Put(Guid licenseId, [FromBody]UpdateLicense command)
         {
+         
             await _licenseService.UpdateAsync(licenseId, command.Name, command.Count,
-                command.LicenseTypeId, command.BuyDate);
+                        command.LicenseTypeId, command.BuyDate);
 
+            await _licenseService.AddComputer(licenseId, command.Computers);
+                        
             return NoContent();
         }
 

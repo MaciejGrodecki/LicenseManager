@@ -7,14 +7,12 @@ namespace LicenseManager.Core.Domain
     public class Computer
     {
         private ISet<User> _users = new HashSet<User>();
-        private ISet<License> _licenses = new HashSet<License>();
         private static readonly string IpAddressCheck = @"((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)";
         public Guid ComputerId { get; protected set; }
         public string InventoryNumber { get; protected set; }
         public string IpAddress { get; protected set; }
         public Guid RoomId { get; protected set; }
         public ICollection<User> Users => _users;
-        public ICollection<License> Licenses => _licenses;
 
         protected Computer()
         {
@@ -79,18 +77,6 @@ namespace LicenseManager.Core.Domain
             if (!Users.Contains(user))
             {
                 _users.Add(user);
-            }
-        }
-
-        public void AddLicense(License license)
-        {
-            if(license == null)
-            {
-                throw new Exception("License cannot be null");
-            }
-            if (!Licenses.Contains(license))
-            {
-                _licenses.Add(license);
             }
         }
     }

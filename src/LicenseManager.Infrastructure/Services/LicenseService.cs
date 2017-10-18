@@ -13,11 +13,13 @@ namespace LicenseManager.Infrastructure.Services
     {
         private static Logger Logger = LogManager.GetCurrentClassLogger();
         private readonly ILicenseRepository _licenseRepository;
+        private readonly IComputerRepository _computerRepository;
         private readonly IMapper _mapper;
 
-        public LicenseService(ILicenseRepository licenseRepository, IMapper mapper)
+        public LicenseService(ILicenseRepository licenseRepository, IComputerRepository computerRepository, IMapper mapper)
         {
             _licenseRepository = licenseRepository;
+            _computerRepository = computerRepository;
             _mapper = mapper;
         }
         public async Task<IEnumerable<LicenseDto>> BrowseAsync()
@@ -78,6 +80,24 @@ namespace LicenseManager.Infrastructure.Services
             license.SetLicenseType(licenseTypeId);
             license.SetBuyDate(buyDate);
             await _licenseRepository.UpdateAsync(license);
+        }
+
+        public async Task AddComputer(Guid licenseId, ISet<Guid> computerIds)
+        {
+            Logger.Info("Adding computer to license");
+            var license = await _licenseRepository.GetAsync(licenseId);
+            if(license == null)
+            {
+                throw new Exception($"License with id: {licenseId} doesn't exist");
+            }
+            license.Computers.Clear();
+            foreach(Guid computerId in computerIds)
+            {
+                var computer = await _computerRepository.GetAsync(computerId);
+                license.Computers.Add(computer);
+            }
+            await _licenseRepository.UpdateAsync(license);
+
         }
     }
 }

@@ -81,7 +81,7 @@ app.controller("AddLicenseFormCtrl", function ($scope, $http, $window) {
                 buyDate: $scope.buyDate
             }
         }).then(function successCallback(response) {
-            $window.alert('Added license');
+            $window.alert('License was added');
             $window.location.href = 'http://localhost:5050/';
         });
     };
@@ -90,6 +90,7 @@ app.controller("AddLicenseFormCtrl", function ($scope, $http, $window) {
 app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $window, $filter,
     $ngConfirm) {
     $scope.isDisabled = true;
+    $scope.isReadonly = true;
     var currentLicenseId = $location.absUrl().split('/')[4];
     var currentLicenseTypeId;
     $http({
@@ -131,6 +132,7 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
                             method: 'DELETE',
                             url: "http://localhost:5000/licenses/" + currentLicenseId
                         }).then(function successCallback(response) {
+                            $window.alert('License was deleted');
                             $window.location.href = 'http://localhost:5050/';
                         });
                     }
@@ -159,9 +161,11 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
                                 name: $scope.license.name,
                                 count: $scope.license.count,
                                 licenseTypeId: $scope.ddlLicenseTypes,
-                                buyDate: $scope.license.buyDate
+                                buyDate: $scope.license.buyDate,
+                                computers: $scope.ddlComputers
                             }
                         }).then(function successCallback(response) {
+                            $window.alert('License was updated');
                             $window.location.href = 'http://localhost:5050/';
                         });
                     }
@@ -173,7 +177,9 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
     };
 
     $scope.UnlockForm = function () {
+        $scope.ddlComputers = $scope.license.computers.map(a => a.computerId);
         $scope.isDisabled = false;
+        $scope.isReadonly = false;
         var licenseType = $scope.ddlLicenseTypes;
 
         $http({
@@ -183,7 +189,52 @@ app.controller("DetailsLicenseFormCtrl", function ($scope, $http, $location, $wi
             $scope.licenseTypes = response.data;
             $scope.ddlLicenseTypes = $scope.license.licenseTypeId;
         });
+
+        $http({
+            method: 'GET',
+            url: 'http://localhost:5000/computers/'
+        }).then(function successOnCallback(response){
+            $scope.license.computers = response.data;
+            console.log($scope.license.computers);
+        });
     };
+
+    $scope.Open = function(){
+        $http({
+            method: 'GET',
+            url: 'http://localhost:5000/computers/' + $scope.ddlComputers
+        }).then(function successOnCallback(response){
+            $http({
+                method:'GET',
+                url: 'http://localhost:5000/rooms/' + response.data.roomId
+            }).then(function successOnCallback(response2){
+                $ngConfirm({
+                    title: 'Computer details',
+                    content: 'Inventory number: <b>' + response.data.inventoryNumber + '</b> <br> IP address: <b>' 
+                                + response.data.ipAddress + ' </b> <br> Room: <b>' 
+                                + response2.data.name + '</b>',
+                    scope: $scope,
+                    buttons: {
+                        DetailsButton:{
+                            text: 'Details',
+                            btnClass: 'btn-blue',
+                            action: function(){
+                                location.href = "http://localhost:5050/computer/" + $scope.ddlComputers;
+                            }
+                        },
+                        CloseButton:{
+                            text:'Close',
+                            btnClass: 'btn-warning',
+                            action: function(){
+
+                            }
+                        }
+                    }
+                });
+            });
+            
+        }); 
+    }
 });
 
 app.controller("BrowseRoomsCtrl", function ($scope, $http, $ngConfirm, $location) {
@@ -229,7 +280,7 @@ app.controller("AddRoomFormCtrl", function ($scope, $http, $window) {
                 name: $scope.name
             }
         }).then(function successCallback(response) {
-            $window.alert('Added room');
+            $window.alert('Room was added');
             $window.location.href = 'http://localhost:5050/rooms/index';
         });
     }
@@ -337,7 +388,7 @@ app.controller("AddComputerFormCtrl", function ($scope, $http, $window) {
                 usersId: $scope.ddlUsers
             }
         }).then(function successCallback(response) {
-            $window.alert('Added computer');
+            $window.alert('Computer was added');
             $window.location.href = 'http://localhost:5050/computers/index';
         });
     };
@@ -382,6 +433,7 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
                             method: 'DELETE',
                             url: "http://localhost:5000/computers/" + currentComputerId
                         }).then(function successCallback(response) {
+                            $window.alert('Computer was deleted');
                             $window.location.href = 'http://localhost:5050/computers/index';
                         });
                     }
@@ -413,7 +465,8 @@ app.controller("DetailsComputerFormCtrl", function ($scope, $http, $location, $w
                                 usersId: $scope.ddlUsers
                             }
                         }).then(function successCallback(response) {
-                            
+                            $window.alert('Computer was updated');
+                            location.href = "http://localhost:5050/computer/" + currentComputerId;
                         });
                     }
                 },
@@ -470,10 +523,9 @@ app.controller("AddUserFormCtrl", function ($scope, $http, $window) {
                 surname: $scope.surname
             }
         }).then(function successCallback(response) {
-            $window.alert('Added user');
+            $window.alert('User was added');
             $window.location.href = 'http://localhost:5050/users/index';
             }), function errorCallback(response) {
-                console.log(response);
             };;
     }
 });
@@ -511,7 +563,7 @@ app.controller("DetailsUserFormCtrl", function ($scope, $http, $location, $ngCon
                                 surname: $scope.user.surname
                             }
                         }).then(function successCallback(response) {
-
+                            $window.alert('User was updated');
                         });
                     }
                 },
@@ -535,6 +587,7 @@ app.controller("DetailsUserFormCtrl", function ($scope, $http, $location, $ngCon
                             method: 'DELETE',
                             url: "http://localhost:5000/users/" + currentUserId
                         }).then(function successCallback(response) {
+                            $window.alert('User was deleted');
                             $window.location.href = 'http://localhost:5050/users/index';
                         });
                     }

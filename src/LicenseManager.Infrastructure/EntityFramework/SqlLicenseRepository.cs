@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using LicenseManager.Core.Domain;
 using LicenseManager.Core.Repositories;
+using Microsoft.EntityFrameworkCore;
 
 namespace LicenseManager.Infrastructure.EntityFramework
 {
@@ -27,7 +28,12 @@ namespace LicenseManager.Infrastructure.EntityFramework
         }
 
         public async Task<License> GetAsync(Guid licenseId)
-            => await Task.FromResult(_context.Licenses.SingleOrDefault(x => x.LicenseId == licenseId));
+        {
+            var license = await _context.Licenses
+                .Include(x => x.Computers)
+                .SingleOrDefaultAsync(x => x.LicenseId == licenseId);
+            return license;
+        }
 
         public async Task AddAsync(License license)
         {

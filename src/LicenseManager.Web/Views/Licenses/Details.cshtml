@@ -22,6 +22,11 @@
                 <select ng-model="ddlLicenseTypes" ng-options="licenseType.licenseTypeId as
                         licenseType.name for licenseType in licenseTypes" class="form-control" ng-disabled="isDisabled"></select>
             </div>
+            <div class="form-group">
+                <label for="licensesComputer">Computers connected to License</label>
+                <select multiple ng-model="ddlComputers" ng-options="computer.computerId as computer.inventoryNumber for computer in license.computers" 
+                        class="form-control text-uppercase"  ng-readonly="isReadonly" ng-dblclick="Open()"></select>
+            </div>
             <div class="btn-toolbar">
                 <button class="btn btn-info" ng-click="UnlockForm()" type="button">Edit</button>
                 <button class="btn btn-warning pull-right" ng-click="SaveButton()" type="button" ng-disabled="isDisabled">Save</button>

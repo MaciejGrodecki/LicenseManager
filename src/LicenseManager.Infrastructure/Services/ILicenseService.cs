@@ -16,5 +16,6 @@ namespace LicenseManager.Infrastructure.Services
          Task RemoveAsync(Guid licenseId);
          Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
              DateTime buyDat);
+         Task AddComputer(Guid licenseId, ISet<Guid> computerIds);
     }
 }
