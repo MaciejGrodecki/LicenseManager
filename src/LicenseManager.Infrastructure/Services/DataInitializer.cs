@@ -35,9 +35,9 @@ namespace LicenseManager.Infrastructure.Services
             tasks.Add(_licenseTypeService.AddAsync("BOX"));
             //Licenses
             tasks.Add(_licenseService.AddAsync("MS Office 2007 Pro", 100,
-                Guid.NewGuid(), DateTime.UtcNow));
+                Guid.NewGuid(), DateTime.UtcNow, "1A2B-3C4D-5E6F-7G58"));
             tasks.Add(_licenseService.AddAsync("MS Office 2010 Pro", 10,
-                Guid.NewGuid(), DateTime.UtcNow));
+                Guid.NewGuid(), DateTime.UtcNow, "1A2B-3C4D-5E6F-7G58"));
             //Computers
             tasks.Add(_computerService.AddAsync(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));
             tasks.Add(_computerService.AddAsync(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.100", Guid.NewGuid()));

@@ -41,8 +41,8 @@ namespace LicenseManager.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]AddLicense command)
         {
-            await _licenseService.AddAsync(command.Name, command.count,
-                command.licenseTypeId, command.buyDate);
+            await _licenseService.AddAsync(command.Name, command.Count,
+                command.LicenseTypeId, command.BuyDate, command.SerialNumber);
 
             return Created($"/licenseTypes/{command.Name}", null);
         }
@@ -52,7 +52,7 @@ namespace LicenseManager.Api.Controllers
         {
          
             await _licenseService.UpdateAsync(licenseId, command.Name, command.Count,
-                        command.LicenseTypeId, command.BuyDate);
+                        command.LicenseTypeId, command.BuyDate, command.SerialNumber);
 
             await _licenseService.AddComputer(licenseId, command.Computers);
                         

@@ -12,6 +12,7 @@ namespace LicenseManager.Core.Domain
         public Guid LicenseTypeId { get; protected set; }
         public DateTime BuyDate { get; protected set; }
         public ICollection<Computer> Computers => _computers;
+        public string SerialNumber { get; protected set; }
 
         protected License()
         {
@@ -19,13 +20,14 @@ namespace LicenseManager.Core.Domain
         }
 
         public License(string name, int count, Guid licenseTypeId,
-                DateTime buyDate)
+                DateTime buyDate, string serialNumber)
         {
             LicenseId = Guid.NewGuid();
             SetName(name);
             SetCount(count);
             LicenseTypeId = licenseTypeId;
             SetBuyDate(buyDate);
+            SetSerialNumber(serialNumber);
         }
 
         public void SetLicenseType(Guid licenseTypeId)
@@ -75,6 +77,16 @@ namespace LicenseManager.Core.Domain
             }
 
             _computers.Add(computer);
+        }
+
+        public void SetSerialNumber(string serialNumber)
+        {
+            if(String.IsNullOrWhiteSpace(serialNumber))
+            {
+                throw new Exception("Serial number cannot be null");
+            }
+
+            SerialNumber = serialNumber;
         }
 
     }

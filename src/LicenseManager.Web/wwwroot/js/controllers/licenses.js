@@ -28,7 +28,8 @@ angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$win
                 $scope.name,
                 $scope.count,
                 $scope.ddlLicenseTypes,
-                $scope.buyDate
+                $scope.buyDate,
+                $scope.serialNumber
             ).then(function success(response){
                 $window.alert('License was added');
                 $window.location.href = 'http://localhost:5050/';
@@ -115,6 +116,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                     $scope.license.count,
                                     $scope.ddlLicenseTypes,
                                     $scope.license.buyDate,
+                                    $scope.serialNumber,
                                     $scope.ddlComputers
                                 ).then(function success(response){
 

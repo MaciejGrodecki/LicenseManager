@@ -47,10 +47,10 @@ namespace LicenseManager.Infrastructure.Services
             return _mapper.Map<LicenseDto>(license);
         }      
         public async Task AddAsync(string name, int count, Guid licenseTypeId,
-             DateTime buyDate)
+             DateTime buyDate, string serialNumber)
         {
             Logger.Info("Adding license");
-            var license = new License(name, count, licenseTypeId, buyDate);
+            var license = new License(name, count, licenseTypeId, buyDate, serialNumber);
 
             await  _licenseRepository.AddAsync(license);
         }
@@ -67,7 +67,7 @@ namespace LicenseManager.Infrastructure.Services
         }
 
         public async Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
-             DateTime buyDate)
+             DateTime buyDate, string serialNumber)
         {
             Logger.Info("Updating license");
             var license = await _licenseRepository.GetAsync(licenseId);
@@ -79,6 +79,7 @@ namespace LicenseManager.Infrastructure.Services
             license.SetCount(count);
             license.SetLicenseType(licenseTypeId);
             license.SetBuyDate(buyDate);
+            license.SetSerialNumber(serialNumber);
             await _licenseRepository.UpdateAsync(license);
         }
 

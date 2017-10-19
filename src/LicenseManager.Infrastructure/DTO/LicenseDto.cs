@@ -11,6 +11,7 @@ namespace LicenseManager.Infrastructure.DTO
         public int Count { get; set; }
         public Guid LicenseTypeId { get; set; }
         public DateTime BuyDate { get;  set; }
+        public string SerialNumber { get; set; }
         public IEnumerable<Computer> Computers { get; set; }
     }
 }

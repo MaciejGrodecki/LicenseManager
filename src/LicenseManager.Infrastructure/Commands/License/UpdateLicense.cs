@@ -10,6 +10,7 @@ namespace LicenseManager.Infrastructure.Commands.License
         public int Count { get; set; }
         public Guid LicenseTypeId { get; set; }
         public DateTime BuyDate { get; set; }
+        public string SerialNumber { get; set; }
         public HashSet<Guid> Computers { get; set; } 
         
     }

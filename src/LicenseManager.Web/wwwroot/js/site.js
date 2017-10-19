@@ -56,7 +56,7 @@ angular.module('app').factory('licensesFactory', function($http){
                 url: 'http://localhost:5000/licenses/' + licenseId
             })
         },
-        AddLicense: function(name, count, licenseTypeId, buyDate){
+        AddLicense: function(name, count, licenseTypeId, buyDate, serialNumber){
             return $http({
                 method: 'POST',
                 url: 'http://localhost:5000/licenses',
@@ -65,7 +65,8 @@ angular.module('app').factory('licensesFactory', function($http){
                     name: name,
                     count: count,
                     licenseTypeId: licenseTypeId,
-                    buyDate: buyDate
+                    buyDate: buyDate,
+                    serialNumber: serialNumber
                 }
             })
         },
@@ -75,7 +76,7 @@ angular.module('app').factory('licensesFactory', function($http){
                 url: 'http://localhost:5000/licenses/' + licenseId
             })
         },
-        UpdateLicense: function(licenseId, name, count, licenseTypeId, buyDate, computers){
+        UpdateLicense: function(licenseId, name, count, licenseTypeId, buyDate, serialNumber, computers){
             return $http({
                 method: 'PUT',
                 url: 'http://localhost:5000/licenses/' + licenseId,
@@ -85,6 +86,7 @@ angular.module('app').factory('licensesFactory', function($http){
                     count: count,
                     licenseTypeId: licenseTypeId,
                     buyDate: buyDate,
+                    serialNumber: serialNumber,
                     computers: computers
                 }
             })

@@ -12,10 +12,10 @@ namespace LicenseManager.Infrastructure.Services
          Task<IEnumerable<LicenseDto>> BrowseAsync();
          Task<IEnumerable<LicenseDto>> BrowseAsync(string name);
          Task<LicenseDto> GetAsync(Guid licenseId);
-         Task AddAsync(string name, int count, Guid licenseTypeId, DateTime buyDate);
+         Task AddAsync(string name, int count, Guid licenseTypeId, DateTime buyDate, string serialNumber);
          Task RemoveAsync(Guid licenseId);
          Task UpdateAsync(Guid licenseId, string name, int count, Guid licenseTypeId,
-             DateTime buyDat);
+             DateTime buyDate, string serialNumber);
          Task AddComputer(Guid licenseId, ISet<Guid> computerIds);
     }
 }

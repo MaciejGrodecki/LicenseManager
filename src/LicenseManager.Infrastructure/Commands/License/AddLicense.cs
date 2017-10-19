@@ -5,9 +5,10 @@ namespace LicenseManager.Infrastructure.Commands.License
     public class AddLicense
     {
         public string Name { get; set; }
-        public int count { get; set; }
-        public Guid licenseTypeId { get; set; }
-        public DateTime buyDate { get; set; }
+        public int Count { get; set; }
+        public Guid LicenseTypeId { get; set; }
+        public DateTime BuyDate { get; set; }
+        public string SerialNumber { get; set; }
 
     }
 }
