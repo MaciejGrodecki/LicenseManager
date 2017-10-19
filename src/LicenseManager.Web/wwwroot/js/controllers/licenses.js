@@ -1,3 +1,4 @@
+//Controller for Licenses' index view
 angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'licensesFactory',  function ($scope, $http, licensesFactory){
     licensesFactory.BrowseLicenses()
         .then(function success(response){
@@ -6,22 +7,22 @@ angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'lice
             $window.alert(reponse.error);
         }
     
-
     $scope.selectLicense = function (licenseId) {
         location.href = 'http://localhost:5050/license/' + licenseId;
     };
 }]);
 
+//Controller for Licenses' add view
 angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licensesFactory',
     function($scope, $http, $window, licenseTypesFactory, licensesFactory){
-        
+        //Get all license types
             licenseTypesFactory.BrowseLicenseTypes()
                 .then(function success(response){
                     $scope.licenseTypes = response.data;
                 }), function error(response){
                     $window.alert(response.error);
             };
-
+        
         $scope.AddLicenseButton = function(){
             licensesFactory.AddLicense(
                 $scope.name,
@@ -38,20 +39,22 @@ angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$win
         
 
 }]);
-
+//Controller for license's details view
 angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '$location', '$window', '$filter', '$ngConfirm', 'licensesFactory', 'licenseTypesFactory', 
     'computersFactory', 'roomsFactory', function($scope, $http, $location, $window, $filter, $ngConfirm, licensesFactory, licenseTypesFactory, computersFactory, roomsFactory){
-
+        //$scope.isDisable = true -- disable all inputs
+        //$scope.isReadonly = true -- readonly for computer input
         $scope.isDisabled = true;
         $scope.isReadonly = true;
         
+        //get current licenseId from URL
         var currentLicenseId = $location.absUrl().split('/')[4];
         var ll;
         //Get selected license details
         licensesFactory.GetLicense(currentLicenseId)
             .then(function success(response){
                 $scope.license = response.data;
-
+                //create new Date to fix date problems with zone
                 var buyDateFormated = new Date($scope.license.buyDate);
                 $scope.license.buyDate = buyDateFormated;
                 //Get licenseType 
@@ -140,7 +143,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                     }), function error(response){
                         $window.alert(response.error);
                     }
-
+                //Get all computers
                 computersFactory.BrowseComputers()
                     .then(function success(response){
                         $scope.license.computers = response.data;

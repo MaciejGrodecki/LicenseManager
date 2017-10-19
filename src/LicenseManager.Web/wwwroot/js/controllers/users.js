@@ -1,3 +1,4 @@
+//Controller for Users' Index View
 angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFactory', function($scope, $http, usersFactory){
     usersFactory.BrowseUsers()
         .then(function success(response){
@@ -10,7 +11,7 @@ angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFa
         location.href = "http://localhost:5050/user/" + userId;
     };
 }]);
-
+//Controller for User's Add View
 angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window', 'usersFactory',
     function($scope, $http, $window, usersFactory){
         
@@ -26,7 +27,7 @@ angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window
             }
         }
 }]);
-
+//Controller for User's details View
 angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$location', '$ngConfirm', '$window', 'usersFactory',
     function($scope, $http, $location, $ngConfirm, $window, usersFactory){
         $scope.isDisabled = true;

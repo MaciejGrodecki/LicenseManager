@@ -1,10 +1,11 @@
+//Controller for Licenses' Index View to get all license types names
 angular.module('app').controller('GetLicenseTypeNameCtrl',['$scope', '$http','licenseTypesFactory', function ($scope, $http, licenseTypesFactory) {
     licenseTypesFactory.GetLicenseType($scope.license.licenseTypeId)
         .then(function success(response){
             $scope.licenseTypeName = response.data.name;
         });
 }]);
-
+//Controller for LicenseTypes' Index View
 angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$ngConfirm', '$location','licenseTypesFactory', function ($scope, $http, $ngConfirm, $location, licenseTypesFactory) {
     licenseTypesFactory.BrowseLicenseTypes()
         .then(function success(response){
@@ -37,9 +38,8 @@ angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$
         });
     }
 }]);
-
-angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', function($scope, $http, $window, licenseTypesFactory){
-    
+//Controller for LicenseType's Add View
+angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', function($scope, $http, $window, licenseTypesFactory){  
     $scope.AddLicenseTypeButton = function (){
         licenseTypesFactory.AddLicenseType($scope.name)
         .then(function success(response){
