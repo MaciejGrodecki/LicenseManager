@@ -51,12 +51,9 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
         licensesFactory.GetLicense(currentLicenseId)
             .then(function success(response){
                 $scope.license = response.data;
-                var json = {
-                    initDate: $scope.license.buyDate
-                };
-                var formatedBuyDate = new Date(json.initDate);
-                $scope.license.buyDate = $filter('date')(formatedBuyDate, 'yyyy-MM-dd');
-                
+
+                var buyDateFormated = new Date($scope.license.buyDate);
+                $scope.license.buyDate = buyDateFormated;
                 //Get licenseType 
                 licenseTypesFactory.GetLicenseType($scope.license.licenseTypeId)
                     .then(function success(response){
@@ -117,6 +114,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                     $scope.license.buyDate,
                                     $scope.ddlComputers
                                 ).then(function success(response){
+
                                     $window.alert('License was updated');
                                     $window.location.href = 'http://localhost:5050/';
                                 }), function error(response){
