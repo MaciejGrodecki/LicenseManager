@@ -10,12 +10,12 @@
                 <input type="text" class="form-control" id="ipAddress" ng-model="ipAddress">
             </div>
             <div class="form-group">
-                <label for="roomSelect">Wybierz typ licencji</label>
+                <label for="roomSelect">Choose room</label>
                 <select ng-model="ddlRooms" ng-options="room.roomId as
                         room.name for room in rooms" class="form-control text-uppercase"></select>
             </div>
             <div class="form-group">
-                <label for="userSelect">Wybierz użytkownika</label>
+                <label for="userSelect">Choose users</label>
                 <select ng-model="ddlUsers" ng-options="user.userId as user.name + ' ' + user.surname for user in users" class="form-control text-uppercase" multiple></select>
             </div>
             <div class="row">
@@ -27,3 +27,8 @@
     </div>
 
 </div>
+
+@section Scripts{
+    <script src="~/js/controllers/computers.js" asp-append-version="true"></script>
+    <script src="~/js/controllers/rooms.js" asp-append-version="true"></script>
+}
