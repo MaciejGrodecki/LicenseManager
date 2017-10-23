@@ -9,7 +9,7 @@
                         <th>Name</th>
                         <th>Count</th>
                         <th>License Type</th>
-                        <th>Buy date (dd.MM.yyyy)</th>
+                        <th>Buy date (yyyy-MM-dd)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -17,7 +17,7 @@
                         <td>{{license.name}}</td>
                         <td>{{license.count}}</td>
                         <td ng-controller="GetLicenseTypeNameCtrl">{{licenseTypeName}}</td>
-                        <td>{{license.buyDate | date: 'dd.MM.yyyy'}}</td>
+                        <td>{{license.buyDate | date: 'yyyy-MM-dd'}}</td>
                     </tr>
                 </tbody>
             </table>

@@ -55,10 +55,9 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
         licensesFactory.GetLicense(currentLicenseId)
             .then(function success(response){
                 $scope.license = response.data;
-                //create new Date to fix date problems with zone
-                var buyDateFormated = new Date($scope.license.buyDate);
-                $scope.license.buyDate = buyDateFormated;
+                $scope.license.buyDate = moment(response.data.buyDate).format('YYYY-MM-DD');
                 //Get licenseType 
+                
                 licenseTypesFactory.GetLicenseType($scope.license.licenseTypeId)
                     .then(function success(response){
                         $scope.licenseTypes = response.data;
@@ -116,7 +115,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                     $scope.license.count,
                                     $scope.ddlLicenseTypes,
                                     $scope.license.buyDate,
-                                    $scope.serialNumber,
+                                    $scope.license.serialNumber,
                                     $scope.ddlComputers
                                 ).then(function success(response){
 

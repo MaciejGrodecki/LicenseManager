@@ -1,0 +1,197 @@
+2017-10-23 13:31:04.4481|INFO|DataInitializer|Seeding data
+2017-10-23 13:31:04.5501|INFO|RoomService|Adding room
+2017-10-23 13:31:05.0828|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:31:05.4634|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.4719|INFO|RoomService|Adding room
+2017-10-23 13:31:05.4863|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.4863|INFO|LicenseTypeService|Adding license type
+2017-10-23 13:31:05.5150|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.5586|INFO|LicenseTypeService|Adding license type
+2017-10-23 13:31:05.5746|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.5869|INFO|LicenseService|Adding license
+2017-10-23 13:31:05.6155|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.6155|INFO|LicenseService|Adding license
+2017-10-23 13:31:05.6281|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.6281|INFO|ComputerService|Adding computer
+2017-10-23 13:31:05.7890|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:31:05.7890|INFO|ComputerService|Adding computer
+2017-10-23 13:31:05.8308|INFO|UserService|Adding user
+2017-10-23 13:31:05.8536|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:32:43.1639|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-23 13:32:43.1801|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:32:43.6208|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:32:43.6324|INFO|LicenseService|Getting all licenses
+2017-10-23 13:32:43.6864|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:32:43.7827|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-23 13:32:44.0762|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 541.1255ms
+2017-10-23 13:32:44.0940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 942.4688ms 200 application/json; charset=utf-8
+2017-10-23 13:32:44.1133|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/34fb23f9-c09f-4cb7-b742-1bc2f44595df  
+2017-10-23 13:32:44.1133|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:32:44.1133|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/8b3c876c-da8d-45d9-9e81-97f85b0cc73c  
+2017-10-23 13:32:44.1353|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:32:44.2118|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (8b3c876c-da8d-45d9-9e81-97f85b0cc73c) - ModelState is Valid
+2017-10-23 13:32:44.2118|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (34fb23f9-c09f-4cb7-b742-1bc2f44595df) - ModelState is Valid
+2017-10-23 13:32:44.2234|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:32:44.2234|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:32:44.2381|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:32:44.2381|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:32:44.2578|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-23 13:32:44.2696|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 110.6504ms
+2017-10-23 13:32:44.2578|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-23 13:32:44.2873|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 128.3753ms
+2017-10-23 13:32:44.2873|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 180.666ms 404 
+2017-10-23 13:32:44.2696|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 161.2239ms 404 
+2017-10-23 13:33:01.5105|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/3c0da7d8-ca22-475a-a5bb-51cfb63a9628  
+2017-10-23 13:33:01.5105|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:01.5292|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments (3c0da7d8-ca22-475a-a5bb-51cfb63a9628) - ModelState is Valid
+2017-10-23 13:33:01.5408|INFO|LicenseService|Getting single license
+2017-10-23 13:33:01.5546|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:01.6245|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseDto.
+2017-10-23 13:33:01.6334|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 105.1529ms
+2017-10-23 13:33:01.6443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 133.7425ms 200 application/json; charset=utf-8
+2017-10-23 13:33:01.6443|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/8b3c876c-da8d-45d9-9e81-97f85b0cc73c  
+2017-10-23 13:33:01.6609|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:01.6609|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (8b3c876c-da8d-45d9-9e81-97f85b0cc73c) - ModelState is Valid
+2017-10-23 13:33:01.6793|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:01.6793|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:01.6991|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-23 13:33:01.6991|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 35.7827ms
+2017-10-23 13:33:01.7148|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.8685ms 404 
+2017-10-23 13:33:03.0584|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-10-23 13:33:03.0584|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:03.0584|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-23 13:33:03.0818|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:03.0763|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:03.0818|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:03.1015|INFO|LicenseTypeService|Getting all license types
+2017-10-23 13:33:03.1015|INFO|ComputerService|Getting all computers
+2017-10-23 13:33:03.1224|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:03.1327|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:03.1327|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-23 13:33:03.1492|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-23 13:33:03.1492|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 78.9213ms
+2017-10-23 13:33:03.1714|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 113.0732ms 200 application/json; charset=utf-8
+2017-10-23 13:33:03.1774|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 85.8989ms
+2017-10-23 13:33:03.1950|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 124.7767ms 200 application/json; charset=utf-8
+2017-10-23 13:33:06.7509|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenses/3c0da7d8-ca22-475a-a5bb-51cfb63a9628  
+2017-10-23 13:33:06.7665|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:06.7790|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 28.1399ms 204 
+2017-10-23 13:33:06.7940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/licenses/3c0da7d8-ca22-475a-a5bb-51cfb63a9628 application/json;charset=UTF-8 208
+2017-10-23 13:33:06.8029|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:07.0464|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Put (LicenseManager.Api) with arguments (3c0da7d8-ca22-475a-a5bb-51cfb63a9628, LicenseManager.Infrastructure.Commands.License.UpdateLicense) - ModelState is Valid
+2017-10-23 13:33:07.0574|INFO|LicenseService|Updating license
+2017-10-23 13:33:07.0574|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:07.0762|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:33:07.0853|INFO|LicenseService|Adding computer to license
+2017-10-23 13:33:07.1201|INFO|Microsoft.EntityFrameworkCore.Update|Saved 2 entities to in-memory store.
+2017-10-23 13:33:07.1201|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-23 13:33:07.1328|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Put (LicenseManager.Api) in 311.5317ms
+2017-10-23 13:33:07.1328|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 349.0317ms 204 
+2017-10-23 13:33:08.5110|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-23 13:33:08.5252|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:08.5353|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:08.5353|INFO|LicenseService|Getting all licenses
+2017-10-23 13:33:08.5518|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:08.5518|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-23 13:33:08.5518|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 29.5289ms
+2017-10-23 13:33:08.5716|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 60.5859ms 200 application/json; charset=utf-8
+2017-10-23 13:33:08.5852|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/34fb23f9-c09f-4cb7-b742-1bc2f44595df  
+2017-10-23 13:33:08.5852|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/172435aa-b264-443d-9bfd-b4814e5decd4  
+2017-10-23 13:33:08.6010|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:08.6010|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (172435aa-b264-443d-9bfd-b4814e5decd4) - ModelState is Valid
+2017-10-23 13:33:08.6142|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:08.6142|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:08.5852|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:08.6142|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseTypeDto.
+2017-10-23 13:33:08.6351|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 33.1421ms
+2017-10-23 13:33:08.6351|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 61.882ms 200 application/json; charset=utf-8
+2017-10-23 13:33:08.6351|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (34fb23f9-c09f-4cb7-b742-1bc2f44595df) - ModelState is Valid
+2017-10-23 13:33:08.6634|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:08.6634|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:08.6771|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-23 13:33:08.6771|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 49.7606ms
+2017-10-23 13:33:08.6918|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 106.585ms 404 
+2017-10-23 13:33:09.6169|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/4aa3f74a-8173-440b-8f6c-ee553496447c  
+2017-10-23 13:33:09.6169|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:09.6316|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments (4aa3f74a-8173-440b-8f6c-ee553496447c) - ModelState is Valid
+2017-10-23 13:33:09.6316|INFO|LicenseService|Getting single license
+2017-10-23 13:33:09.6473|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:09.6647|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseDto.
+2017-10-23 13:33:09.6765|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 45.0221ms
+2017-10-23 13:33:09.6922|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.1903ms 200 application/json; charset=utf-8
+2017-10-23 13:33:09.7124|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/34fb23f9-c09f-4cb7-b742-1bc2f44595df  
+2017-10-23 13:33:09.7124|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:09.7306|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (34fb23f9-c09f-4cb7-b742-1bc2f44595df) - ModelState is Valid
+2017-10-23 13:33:09.7377|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:09.7377|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:09.7591|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 404
+2017-10-23 13:33:09.7709|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 40.4549ms
+2017-10-23 13:33:09.7709|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 69.0153ms 404 
+2017-10-23 13:33:10.6296|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-10-23 13:33:10.6296|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/computers/  
+2017-10-23 13:33:10.6491|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:10.6491|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:10.6636|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:10.6636|INFO|ComputerService|Getting all computers
+2017-10-23 13:33:10.6491|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:10.6786|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:10.6786|INFO|LicenseTypeService|Getting all license types
+2017-10-23 13:33:10.6925|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.ComputerDto].
+2017-10-23 13:33:10.7088|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.ComputersController.Get (LicenseManager.Api) in 45.2711ms
+2017-10-23 13:33:10.7088|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 85.9205ms 200 application/json; charset=utf-8
+2017-10-23 13:33:10.6925|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:10.7317|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-23 13:33:10.7396|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 81.6662ms
+2017-10-23 13:33:10.7396|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 116.9767ms 200 application/json; charset=utf-8
+2017-10-23 13:33:14.9661|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 OPTIONS http://localhost:5000/licenses/4aa3f74a-8173-440b-8f6c-ee553496447c  
+2017-10-23 13:33:14.9749|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:14.9749|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 19.6485ms 204 
+2017-10-23 13:33:14.9983|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 PUT http://localhost:5000/licenses/4aa3f74a-8173-440b-8f6c-ee553496447c application/json;charset=UTF-8 209
+2017-10-23 13:33:15.0079|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:15.0079|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Put (LicenseManager.Api) with arguments (4aa3f74a-8173-440b-8f6c-ee553496447c, LicenseManager.Infrastructure.Commands.License.UpdateLicense) - ModelState is Valid
+2017-10-23 13:33:15.0289|INFO|LicenseService|Updating license
+2017-10-23 13:33:15.0378|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:15.0378|INFO|Microsoft.EntityFrameworkCore.Update|Saved 1 entities to in-memory store.
+2017-10-23 13:33:15.0617|INFO|LicenseService|Adding computer to license
+2017-10-23 13:33:15.0709|INFO|Microsoft.EntityFrameworkCore.Update|Saved 2 entities to in-memory store.
+2017-10-23 13:33:15.0826|INFO|Microsoft.AspNetCore.Mvc.StatusCodeResult|Executing HttpStatusCodeResult, setting HTTP status code 204
+2017-10-23 13:33:15.0826|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Put (LicenseManager.Api) in 74.8012ms
+2017-10-23 13:33:15.1026|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 104.332ms 204 
+2017-10-23 13:33:16.6509|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenses/  
+2017-10-23 13:33:16.6717|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:16.6808|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:33:16.6808|INFO|LicenseService|Getting all licenses
+2017-10-23 13:33:16.6973|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:16.6973|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseDto].
+2017-10-23 13:33:16.7122|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicensesController.Get (LicenseManager.Api) in 31.4894ms
+2017-10-23 13:33:16.7216|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 70.7402ms 200 application/json; charset=utf-8
+2017-10-23 13:33:16.7216|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/172435aa-b264-443d-9bfd-b4814e5decd4  
+2017-10-23 13:33:16.7216|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/d1010813-ed98-49fb-a4b4-b875fb831ebb  
+2017-10-23 13:33:16.7408|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:16.7408|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|Policy execution successful.
+2017-10-23 13:33:16.7583|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (d1010813-ed98-49fb-a4b4-b875fb831ebb) - ModelState is Valid
+2017-10-23 13:33:16.7583|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments (172435aa-b264-443d-9bfd-b4814e5decd4) - ModelState is Valid
+2017-10-23 13:33:16.7714|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:16.7714|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:16.7940|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseTypeDto.
+2017-10-23 13:33:16.7940|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 42.4128ms
+2017-10-23 13:33:16.7940|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 75.0561ms 200 application/json; charset=utf-8
+2017-10-23 13:33:16.7714|INFO|LicenseTypeService|Getting single license type
+2017-10-23 13:33:16.8235|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:33:16.8235|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value LicenseManager.Infrastructure.DTO.LicenseTypeDto.
+2017-10-23 13:33:16.8368|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 72.4261ms
+2017-10-23 13:33:16.8368|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 109.9031ms 200 application/json; charset=utf-8
+2017-10-23 13:35:27.0777|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/licenseTypes/  
+2017-10-23 13:35:27.0907|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:35:27.1013|INFO|LicenseTypeService|Getting all license types
+2017-10-23 13:35:27.1206|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:35:27.1367|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.LicenseTypeDto].
+2017-10-23 13:35:27.1706|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.LicenseTypesController.Get (LicenseManager.Api) in 80.0109ms
+2017-10-23 13:35:27.1852|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 107.5579ms 200 application/json; charset=utf-8
+2017-10-23 13:35:30.6593|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/rooms  
+2017-10-23 13:35:30.6729|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) with arguments ((null)) - ModelState is Valid
+2017-10-23 13:35:30.7004|INFO|RoomService|Getting All rooms
+2017-10-23 13:35:30.7243|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 2.0.0-rtm-26452 initialized 'LicensesContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=___Shared_Database___ 
+2017-10-23 13:35:30.7561|INFO|Microsoft.AspNetCore.Mvc.Formatters.Json.Internal.JsonResultExecutor|Executing JsonResult, writing value System.Collections.Generic.List`1[LicenseManager.Infrastructure.DTO.RoomDto].
+2017-10-23 13:35:30.7736|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action LicenseManager.Api.Controllers.RoomsController.Get (LicenseManager.Api) in 100.7648ms
+2017-10-23 13:35:30.7837|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 124.3252ms 200 application/json; charset=utf-8

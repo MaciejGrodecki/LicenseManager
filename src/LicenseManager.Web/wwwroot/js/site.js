@@ -40,6 +40,12 @@ function BrowseUsersRedirect() {
     location.href = 'http://localhost:5050/users/index';
 }
 
+//JQuery datepicker
+$( function(){
+    $('#datepicker').datepicker({
+        dateFormat: 'yy-mm-dd'
+    });
+});
 //License's HTTP requests
 
 angular.module('app').factory('licensesFactory', function($http){
