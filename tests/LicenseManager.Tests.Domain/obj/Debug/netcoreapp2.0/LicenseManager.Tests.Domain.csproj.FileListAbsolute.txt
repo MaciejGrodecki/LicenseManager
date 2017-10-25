@@ -1,0 +1,13 @@
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\Machine.TestAdapter.dll
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.deps.json
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.runtimeconfig.json
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.runtimeconfig.dev.json
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.dll
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.pdb
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Core.dll
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\bin\Debug\netcoreapp2.0\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\obj\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.csproj.CoreCompileInputs.cache
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\obj\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.AssemblyInfoInputs.cache
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\obj\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.AssemblyInfo.cs
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\obj\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.dll
+D:\Projekty\LicenseManager\tests\LicenseManager.Tests.Domain\obj\Debug\netcoreapp2.0\LicenseManager.Tests.Domain.pdb

@@ -5,7 +5,7 @@ namespace LicenseManager.Core.Domain
 {
     public class User
     {
-        private static readonly string OnlyStringCheck = @"^[a-zπøüÊÍÛ≥ÒA-Z•Øè∆ ”£—]+$";
+        private static readonly string OnlyStringCheck = @"[A-ZƒÑƒÜƒò≈Å≈É√ì≈ö≈π≈ª]";
         public Guid UserId { get; protected set; }
         public string Name { get; protected set; }
         public string Surname { get; protected set; }
@@ -30,7 +30,7 @@ namespace LicenseManager.Core.Domain
             {
                 throw new Exception(exceptionMsg);
             }
-            if (!Regex.IsMatch(surname, OnlyStringCheck))
+            if (!Regex.IsMatch(surname.ToUpperInvariant(), OnlyStringCheck))
             {
                 throw new Exception(exceptionMsg);
             }
@@ -46,7 +46,7 @@ namespace LicenseManager.Core.Domain
             {
                 throw new Exception(exceptionMsg);
             }
-            if (!Regex.IsMatch(name, OnlyStringCheck))
+            if (!Regex.IsMatch(name.ToUpperInvariant(), OnlyStringCheck))
             {
                 throw new Exception(exceptionMsg);
             }

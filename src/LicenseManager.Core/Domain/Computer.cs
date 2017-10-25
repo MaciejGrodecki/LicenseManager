@@ -39,11 +39,11 @@ namespace LicenseManager.Core.Domain
         {
             if (String.IsNullOrWhiteSpace(ipAddress))
             {
-                throw new Exception("Proszę podać adres IP!");
+                throw new Exception("IP address is empty!");
             }
             if (!Regex.IsMatch(ipAddress, IpAddressCheck))
             {
-                throw new Exception("Adres IP jest niepoprawny!");
+                throw new Exception("IP address is incorrect!");
             }
 
             IpAddress = ipAddress;
@@ -53,7 +53,7 @@ namespace LicenseManager.Core.Domain
         {
             if (String.IsNullOrWhiteSpace(inventoryNumber))
             {
-                throw new Exception("Proszę podać numer inwentarzowy!");
+                throw new Exception("Inventory number is empty!");
             }
 
             InventoryNumber = inventoryNumber.ToUpperInvariant();
