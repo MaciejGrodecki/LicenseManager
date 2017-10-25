@@ -3,7 +3,7 @@ angular.module('app').controller('BrowseComputersCtrl',['$http', '$scope', 'comp
     //Get all computers
     computersFactory.BrowseComputers()
         .then(function success(response){
-            $scope.computers = response.data
+            $scope.computers = response.data;
         }), function error(response){
             $window.alert(response.error);
         }
@@ -114,7 +114,7 @@ angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '
                                     $scope.ddlUsers
                                 ).then(function success(response){
                                     $window.alert('Computer was updated');
-                                    location.href = "http://localhost:5050/computer/" + currentComputerId;
+                                    location.href = "http://localhost:5050/computers/index";
                                 }), function error(response){
                                     $window.alert(response.error);
                                 }
@@ -127,7 +127,7 @@ angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '
             }
 
             $scope.UnlockForm = function () {
-                $scope.ddlUsers = $scope.computer.users.map(a => a.userId);
+                $scope.ddlUsers = $scope.computer.users.map(function(a) { return a.userId;});
                 $scope.isDisabled = false;
                 var licenseType = $scope.ddlRooms;
                 

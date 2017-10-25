@@ -20,6 +20,8 @@ namespace LicenseManager.Tests.Services
             new User("Jan", "Kowalski")
         };
         private readonly Mock<IComputerRepository> _computerRepositoryMock;
+        private readonly Mock<IUserRepository> _userRepositoryMock;
+        private readonly Mock<ILicenseRepository> _licenseRepositoryMock;
         private readonly Mock<IMapper> _mapperMock;
         private readonly IComputerService _computerService;
         private readonly Computer _computer = new Computer(Guid.NewGuid(), "US-IN/Z/1-W", "10.11.2.1",
@@ -31,8 +33,10 @@ namespace LicenseManager.Tests.Services
         public ComputerServiceTests()
         {
             _computerRepositoryMock = new Mock<IComputerRepository>();
+            _userRepositoryMock = new Mock<IUserRepository>();
+            _licenseRepositoryMock = new Mock<ILicenseRepository>();
             _mapperMock = new Mock<IMapper>();
-            _computerService = new ComputerService(_computerRepositoryMock.Object, _mapperMock.Object);
+            _computerService = new ComputerService(_computerRepositoryMock.Object, _userRepositoryMock.Object, _licenseRepositoryMock.Object, _mapperMock.Object);
             _computerDto = new ComputerDto
             {
                 ComputerId = _computer.ComputerId,

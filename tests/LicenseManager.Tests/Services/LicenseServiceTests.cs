@@ -16,11 +16,12 @@ namespace LicenseManager.Tests.Services
     {
         private static readonly LicenseType _licenseType = new LicenseType(Guid.NewGuid(), "OEM");
         private readonly Mock<ILicenseRepository> _licenseRepositoryMock;
+        private readonly Mock<IComputerRepository> _computerRepositoryMock;
         private readonly Mock<IMapper> _mapperMock;
         private ILicenseService _licenseService;
 
         private readonly License _license = new License("MS Office 2017", 10, _licenseType.LicenseTypeId,
-            DateTime.UtcNow);
+            DateTime.UtcNow, "123A-345B-678C");
         private readonly LicenseDto _licenseDto;
         private readonly ISet<License> _licenses = new HashSet<License>();
         private readonly ISet<LicenseDto> _licensesDto = new HashSet<LicenseDto>();
@@ -28,8 +29,9 @@ namespace LicenseManager.Tests.Services
         public LicenseServiceTests()
         {
             _licenseRepositoryMock = new Mock<ILicenseRepository>();
+            _computerRepositoryMock = new Mock<IComputerRepository>();
             _mapperMock = new Mock<IMapper>();
-            _licenseService = new LicenseService(_licenseRepositoryMock.Object, _mapperMock.Object);
+            _licenseService = new LicenseService(_licenseRepositoryMock.Object, _computerRepositoryMock.Object, _mapperMock.Object);
             _licenseDto = new LicenseDto
             {
                 LicenseId = _license.LicenseId,
@@ -98,7 +100,7 @@ namespace LicenseManager.Tests.Services
         public async Task Add_license_async_should_invoke_add_license_async_on_license_repository()
         {
             //Act
-            await _licenseService.AddAsync(_license.Name, _license.Count, _license.LicenseTypeId, _license.BuyDate);
+            await _licenseService.AddAsync(_license.Name, _license.Count, _license.LicenseTypeId, _license.BuyDate, _license.SerialNumber);
 
             //Assert
             _licenseRepositoryMock.Verify(x => x.AddAsync(It.IsAny<License>()), Times.Once());

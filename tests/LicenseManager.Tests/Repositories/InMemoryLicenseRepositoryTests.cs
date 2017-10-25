@@ -14,7 +14,7 @@ namespace LicenseManager.Tests.Repositories
 
         private static readonly LicenseType _licenseType = new LicenseType(Guid.NewGuid(), "OEM");
         private static readonly License _license = new License(
-            "MS Office 2010", 10, _licenseType.LicenseTypeId, DateTime.Now);
+            "MS Office 2010", 10, _licenseType.LicenseTypeId, DateTime.Now, "1234-5678-AA18");
         public InMemoryLicenseRepositoryTests()
         {
             //Arrange

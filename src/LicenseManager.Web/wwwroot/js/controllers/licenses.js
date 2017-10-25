@@ -134,7 +134,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
 
             //Unlock button
             $scope.UnlockForm = function(){
-                $scope.ddlComputers = $scope.license.computers.map(a => a.computerId);
+                $scope.ddlComputers = $scope.license.computers.map(function(a) { return a.computerId;});
                 $scope.isDisabled = false;
                 $scope.isReadonly = false;
                 licenseTypesFactory.BrowseLicenseTypes()
