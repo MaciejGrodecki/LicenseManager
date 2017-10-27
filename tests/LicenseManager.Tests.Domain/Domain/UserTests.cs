@@ -12,7 +12,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         protected static void Initialize()
         {
-            User = new User(Name, Surname);
+            User = new User(Guid.NewGuid(), Name, Surname);
         }
         
     }

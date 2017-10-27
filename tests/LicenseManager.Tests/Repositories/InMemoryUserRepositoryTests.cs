@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using LicenseManager.Core.Domain;
@@ -10,7 +11,7 @@ namespace LicenseManager.Tests.Repositories
     public class InMemoryUserRepositoryTests
     {
         private readonly IUserRepository _repository;
-        private static readonly User _user = new User("Jan", "Kowalski");
+        private static readonly User _user = new User(Guid.NewGuid(), "Jan", "Kowalski");
 
         public InMemoryUserRepositoryTests()
         {

@@ -59,7 +59,7 @@ namespace LicenseManager.Infrastructure.Services
             {
                 throw new Exception($"User with name: {name} and username: {surname} already exist");
             }
-            user = new User(name, surname);
+            user = new User(Guid.NewGuid(), name, surname);
             await _userRepository.AddAsync(user);
         }
 

@@ -5,11 +5,34 @@
    "version": "0.2.0",
    "configurations": [
        {
-           "type": "chrome",
+           "name": "LicenseManager.API debug",
+           "type": "coreclr",
            "request": "launch",
-           "name": "Launch Chrome",
-           "url": "http://localhost:5050",
-           "webRoot": "${workspaceRoot}"
+           "preLaunchTask": "build",
+           "program": "${workspaceRoot}/src/LicenseManager.Api/bin/Debug/netcoreapp2.0/LicenseManager.Api.dll",
+           "args": [],
+           "cwd": "${workspaceRoot}/src/LicenseManager.Api",
+           "stopAtEntry": false,
+           "launchBrowser": {
+               "enabled": true,
+               "args": "${auto-detect-url}",
+               "windows": {
+                   "command": "cmd.exe",
+                   "args": "/C start ${auto-detect-url}"
+               },
+               "osx": {
+                   "command": "open"
+               },
+               "linux": {
+                   "command": "xdg-open"
+               }
+           },
+           "env": {
+               "ASPNETCORE_ENVIRONMENT": "Development"
+           },
+           "sourceFileMap": {
+               "/Views": "${workspaceRoot}/src/LicenseManager.Api//Views"
+           }
        }
     ]
 }

@@ -15,7 +15,7 @@ namespace LicenseManager.Tests.Repositories
 
         private static readonly Room _room = new Room(Guid.NewGuid(), "A-11");
         private static readonly ISet<User> _users = new HashSet<User>{
-            new User("Jan", "Kowalski")
+            new User(Guid.NewGuid(), "Jan", "Kowalski")
         };
         private static readonly Computer _computer = new Computer(
             Guid.NewGuid(), "US-IN/Z/1-W", "192.168.0.1", _room.RoomId

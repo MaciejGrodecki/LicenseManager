@@ -17,7 +17,7 @@ namespace LicenseManager.Tests.Services
         private static readonly Room _room = new Room(Guid.NewGuid(), "A-11");
         private static readonly ISet<User> _users = new HashSet<User>
         {
-            new User("Jan", "Kowalski")
+            new User(Guid.NewGuid(), "Jan", "Kowalski")
         };
         private readonly Mock<IComputerRepository> _computerRepositoryMock;
         private readonly Mock<IUserRepository> _userRepositoryMock;

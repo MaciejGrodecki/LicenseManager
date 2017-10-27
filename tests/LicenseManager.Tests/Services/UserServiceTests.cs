@@ -17,7 +17,7 @@ namespace LicenseManager.Tests.Services
         private readonly Mock<IUserRepository> _userRepositoryMock;
         private readonly Mock<IMapper> _mapperMock;
         private readonly IUserService _userService;
-        private readonly User _user = new User("Jan", "Kowalski");
+        private readonly User _user = new User(Guid.NewGuid(), "Jan", "Kowalski");
         private readonly ISet<User> _users = new HashSet<User>();
         private readonly UserDto _userDto;
         private readonly ISet<UserDto> _usersDto = new HashSet<UserDto>();

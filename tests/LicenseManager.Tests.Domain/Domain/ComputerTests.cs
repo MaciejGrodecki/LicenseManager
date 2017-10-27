@@ -10,7 +10,7 @@ namespace LicenseManager.Tests.Domain.Domain
         protected static string InventoryNumber = "US-IN/Z/50-W";
         protected static string IpAddress = "192.168.1.1";
         protected static Guid RoomId = Guid.NewGuid();
-        protected static User User = new User("Anna", "Kowalska");
+        protected static User User = new User(Guid.NewGuid(), "Anna", "Kowalska");
         protected static Computer Computer;
 
         protected static void Initialize()
@@ -53,7 +53,7 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_add_room_to_computer : ComputerTests
     {
         Establish context = () => {};
-        Because of = () => Computer.AssignRoomToComputer(RoomId);
+        Because of = () => Computer.SetRoom(RoomId);
 
         It should_add_roomId_to_computer = () => Computer.RoomId.ShouldEqual(RoomId);
     }

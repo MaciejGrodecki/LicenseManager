@@ -11,7 +11,11 @@ namespace LicenseManager.Core.Domain
         public int Count { get; protected set; }
         public Guid LicenseTypeId { get; protected set; }
         public DateTime BuyDate { get; protected set; }
-        public ICollection<Computer> Computers => _computers;
+        public ICollection<Computer> Computers
+        {
+            get => _computers;
+            protected set => _computers = new HashSet<Computer>(value);
+        }
         public string SerialNumber { get; protected set; }
 
         protected License()
@@ -71,9 +75,9 @@ namespace LicenseManager.Core.Domain
 
         public void AddComputer(Computer computer)
         {
-            if(computer == null)
+            if(Computers.Contains(computer))
             {
-                throw new Exception("Computer cannot be null");
+                throw new Exception($"Computer with {computer.InventoryNumber} already exists");
             }
 
             _computers.Add(computer);

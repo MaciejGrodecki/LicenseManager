@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace LicenseManager.Core.Domain
@@ -12,7 +13,11 @@ namespace LicenseManager.Core.Domain
         public string InventoryNumber { get; protected set; }
         public string IpAddress { get; protected set; }
         public Guid RoomId { get; protected set; }
-        public ICollection<User> Users => _users;
+        public ICollection<User> Users
+        {
+            get => _users;
+            protected set => _users = new HashSet<User>(value);
+        }
 
         protected Computer()
         {
@@ -32,7 +37,7 @@ namespace LicenseManager.Core.Domain
             ComputerId = computerId;
             SetInventoryNumber(inventoryNumber);
             SetIpAddress(ipAddress);
-            RoomId = roomId;
+            SetRoom(roomId);
         }
 
         public void SetIpAddress(string ipAddress)
@@ -59,7 +64,7 @@ namespace LicenseManager.Core.Domain
             InventoryNumber = inventoryNumber.ToUpperInvariant();
         }
 
-        public void AssignRoomToComputer(Guid roomId)
+        public void SetRoom(Guid roomId)
         {
             if(roomId == null)
             {
@@ -70,14 +75,12 @@ namespace LicenseManager.Core.Domain
 
         public void AddUser(User user)
         {
-            if(user == null)
+            if(Users.Contains(user))
             {
-                throw new Exception("User cannot be null");
+                throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");
             }
-            if (!Users.Contains(user))
-            {
-                _users.Add(user);
-            }
+
+            _users.Add(user);
         }
     }
 }

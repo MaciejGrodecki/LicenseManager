@@ -38,10 +38,7 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            if(computer == null)
-            {
-                throw new Exception($"Computer with id: {computerId} doesn't exist");
-            }
+            NullCheck(computer);
 
             return _mapper.Map<ComputerDto>(computer);
         }
@@ -49,10 +46,7 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(inventoryNumber);
-            if(computer == null)
-            {
-                throw new Exception($"Computer with inventory number: {inventoryNumber} doesn't exist");
-            }
+            NullCheck(computer);
 
             return _mapper.Map<ComputerDto>(computer);
         }
@@ -60,10 +54,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding computer");
             var computer  = await _computerRepository.GetAsync(inventoryNumber);
-            if(computer != null)
-            {
-                throw new Exception($"Computer with inventory number: {inventoryNumber} already exist");
-            }
+            NotNullCheck(computer);
+
             computer = new Computer(computerId, inventoryNumber, ipAddress, roomId);
             await _computerRepository.AddAsync(computer);
         }
@@ -72,10 +64,7 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            if(computer == null)
-            {
-                throw new Exception($"Computer with id: {computerId} doesn't exist");
-            }
+            NullCheck(computer);
 
             await _computerRepository.RemoveAsync(computer);
 
@@ -87,14 +76,12 @@ namespace LicenseManager.Infrastructure.Services
             Logger.Info("Updating computer");
 
             var computer = await _computerRepository.GetAsync(computerId);
-            if(computer == null)
-            {
-                throw new Exception($"Computer with id: {computerId} doesn't exist");
-            }
+            NullCheck(computer);
             
             computer.SetInventoryNumber(inventoryNumber);
             computer.SetIpAddress(ipAddress);
-            computer.AssignRoomToComputer(roomId);
+            computer.SetRoom(roomId);
+
             computer.Users.Clear();
             foreach(Guid userId in userIds)
             {
@@ -109,22 +96,30 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Assign user to computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            if(computer == null)
-            {
-                throw new Exception($"Computer with {computerId} doesn't exist");
-            }
+            NullCheck(computer);
 
             foreach(Guid userId in userIds)
             {
                 var user = await _userRepository.GetAsync(userId);
-
-                if (computer.Users.Contains(user))
-                {
-                    throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");
-                }
                 computer.Users.Add(user);
             }
             await _computerRepository.UpdateAsync(computer);
+        }
+
+        private void NullCheck(Computer computer)
+        {
+            if(computer == null)
+            {
+                throw new Exception($"Computer doesn't exist");
+            }
+        }
+
+        private void NotNullCheck(Computer computer)
+        {
+            if(computer != null)
+            {
+                throw new Exception($"Computer already exist");
+            }
         }
     }
 }

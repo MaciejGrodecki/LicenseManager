@@ -15,9 +15,9 @@ namespace LicenseManager.Core.Domain
 
         }
 
-        public User(string name, string surname)
+        public User(Guid userId, string name, string surname)
         {
-            UserId = Guid.NewGuid();
+            UserId = userId;
             SetName(name);
             SetSurname(surname);
         }
