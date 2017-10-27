@@ -14,8 +14,8 @@ angular.module('app').controller('BrowseComputersCtrl',['$http', '$scope', 'comp
 }]);
 
 //Controller for Computer's Add View
-angular.module('app').controller('AddComputerFormCtrl',['$http', '$scope', '$window', 'computersFactory', 'roomsFactory', 'usersFactory',
-    function($http, $scope, $window, computersFactory, roomsFactory, usersFactory){
+angular.module('app').controller('AddComputerFormCtrl',['$http', '$scope', '$window', 'computersFactory', 'roomsFactory', 'usersFactory', 'displayComputerFactory',
+    function($http, $scope, $window, computersFactory, roomsFactory, usersFactory, displayComputerFactory){
         //get all rooms
         roomsFactory.BrowseRooms()
             .then(function success(response){
@@ -38,8 +38,7 @@ angular.module('app').controller('AddComputerFormCtrl',['$http', '$scope', '$win
                 $scope.ddlRooms,
                 $scope.ddlUsers
             ).then(function success(response){
-                $window.alert('Computer was added');
-                $window.location.href = 'http://localhost:5050/computers/index';
+                displayComputerFactory.AddDisplay();
             }), function error(response){
                 $window.alert(response.error);
             }
@@ -47,8 +46,10 @@ angular.module('app').controller('AddComputerFormCtrl',['$http', '$scope', '$win
 
 }]);
 //Controller for Computer's Details View
-angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '$location', '$window', '$filter', '$ngConfirm', 'computersFactory', 'usersFactory', 'roomsFactory',
-    function($scope, $http, $location, $window, $filter, $ngConfirm, computersFactory, usersFactory, roomsFactory){
+angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '$location', '$window', '$filter', '$ngConfirm', 'computersFactory', 
+    'usersFactory', 'roomsFactory', 'displayComputerFactory', function($scope, $http, $location, $window, $filter, $ngConfirm, computersFactory, 
+        usersFactory, roomsFactory, displayComputerFactory){
+
         $scope.isDisabled = true;
         //Get computerId from URL
         var currentComputerId = $location.absUrl().split('/')[4];
@@ -77,8 +78,7 @@ angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '
                             action: function () {
                                 computersFactory.DeleteComputer(currentComputerId)
                                     .then(function success(response){
-                                        $window.alert('Computer was deleted');
-                                        $window.location.href = 'http://localhost:5050/computers/index';
+                                        displayComputerFactory.DeleteDisplay();
                                     }), function error(response){
                                         $window.alert(response.error);
                                     }
@@ -107,9 +107,8 @@ angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '
                                     $scope.ddlRooms,
                                     $scope.ddlUsers
                                 ).then(function success(response){
-                                    $window.alert('Computer was updated');
-                                    location.href = "http://localhost:5050/computers/index";
-                                }), function error(response){
+                                    displayComputerFactory.SaveDisplay();  
+                                }), function error( sponse){
                                     $window.alert(response.error);
                                 }
                             }

@@ -12,24 +12,23 @@ angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFa
     };
 }]);
 //Controller for User's Add View
-angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window', 'usersFactory',
-    function($scope, $http, $window, usersFactory){
+angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window', 'usersFactory', 'usersDisplayFactory',
+    function($scope, $http, $window, usersFactory, usersDisplayFactory){
         
         $scope.AddUserButton = function () {
             usersFactory.AddUser(
                 $scope.name,
                 $scope.surname
             ).then(function success(response){
-                $window.alert('User was added');
-                $window.location.href = 'http://localhost:5050/users/index';
+                usersDisplayFactory.AddDisplay();
             }), function error(response){
                 $window.alert(response.error);
             }
         }
 }]);
 //Controller for User's details View
-angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$location', '$ngConfirm', '$window', 'usersFactory',
-    function($scope, $http, $location, $ngConfirm, $window, usersFactory){
+angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$location', '$ngConfirm', '$window', 'usersFactory', 'usersDisplayFactory',
+    function($scope, $http, $location, $ngConfirm, $window, usersFactory, usersDisplayFactory){
         $scope.isDisabled = true;
         var currentUserId = $location.absUrl().split('/')[4];
 
@@ -59,7 +58,7 @@ angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$lo
                                 $scope.user.name,
                                 $scope.user.surname
                             ).then(function success(response){
-                                $window.alert('User was updated');
+                                usersDisplayFactory.SaveDisplay();
                             }), function error(response){
                                 $window.alert(response.error);
                             }
@@ -83,8 +82,7 @@ angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$lo
                         action: function () {
                             usersFactory.DeleteUser(currentUserId)
                                 .then(function success(response){
-                                    $window.alert('User was deleted');
-                                    $window.location.href = 'http://localhost:5050/users/index';
+                                    usersDisplayFactory.DeleteDisplay();
                                 }), function error(response){
                                     $window.alert(response.error);
                                 }

@@ -13,8 +13,8 @@ angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'lice
 }]);
 
 //Controller for Licenses' add view
-angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licensesFactory',
-    function($scope, $http, $window, licenseTypesFactory, licensesFactory){
+angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licensesFactory', 'displayLicensesFactory',
+    function($scope, $http, $window, licenseTypesFactory, licensesFactory, displayLicensesFactory){
         //Get all license types
             licenseTypesFactory.BrowseLicenseTypes()
                 .then(function success(response){
@@ -31,8 +31,7 @@ angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$win
                 $scope.buyDate,
                 $scope.serialNumber
             ).then(function success(response){
-                $window.alert('License was added');
-                $window.location.href = 'http://localhost:5050/';
+                displayLicensesFactory.AddDisplay();
             }), function error(response){
                 $window.alert(response.error);
             }
@@ -42,7 +41,8 @@ angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$win
 }]);
 //Controller for license's details view
 angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '$location', '$window', '$filter', '$ngConfirm', 'licensesFactory', 'licenseTypesFactory', 
-    'computersFactory', 'roomsFactory', function($scope, $http, $location, $window, $filter, $ngConfirm, licensesFactory, licenseTypesFactory, computersFactory, roomsFactory){
+    'computersFactory', 'roomsFactory', 'displayLicensesFactory', function($scope, $http, $location, $window, $filter, $ngConfirm, licensesFactory, licenseTypesFactory, 
+    computersFactory, roomsFactory, displayLicensesFactory){
         //$scope.isDisable = true -- disable all inputs
         //$scope.isReadonly = true -- readonly for computer input
         $scope.isDisabled = true;
@@ -78,8 +78,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                             action: function () {
                                 licensesFactory.DeleteLicense(currentLicenseId)
                                     .then(function successCallback(response) {
-                                    $window.alert('License was deleted');
-                                    $window.location.href = 'http://localhost:5050/';
+                                        displayLicensesFactory.DeleteDisplay();
                                 }), function error(response){
                                     $window.alert(response.error);
                                 };
@@ -111,9 +110,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                     $scope.license.serialNumber,
                                     $scope.ddlComputers
                                 ).then(function success(response){
-
-                                    $window.alert('License was updated');
-                                    $window.location.href = 'http://localhost:5050/';
+                                    displayLicensesFactory.SaveDisplay();
                                 }), function error(response){
                                     $window.alert(response.error);
                                 };

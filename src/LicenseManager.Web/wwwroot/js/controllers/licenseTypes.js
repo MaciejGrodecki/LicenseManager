@@ -39,12 +39,12 @@ angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$
     }
 }]);
 //Controller for LicenseType's Add View
-angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', function($scope, $http, $window, licenseTypesFactory){  
+angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licenseTypesDisplayFactory', 
+    function($scope, $http, $window, licenseTypesFactory, licenseTypesDisplayFactory){  
     $scope.AddLicenseTypeButton = function (){
         licenseTypesFactory.AddLicenseType($scope.name)
         .then(function success(response){
-            $window.alert('Added license type');
-            $window.location.href = 'http://localhost:5050/licenseTypes/index';
+            licenseTypesDisplayFactory.AddDisplay();
         }), function error(response){
             $window.alert(response.error);
         }

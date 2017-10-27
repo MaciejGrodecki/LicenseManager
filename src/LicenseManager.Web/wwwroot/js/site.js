@@ -40,14 +40,240 @@ function BrowseUsersRedirect() {
     location.href = 'http://localhost:5050/users/index';
 }
 
+function DisplayOnSuccess(){
+    $ngConfirm({
+        title: 'Please confirm',
+        content: 'The computer was updated',
+        scope: $scope,
+        buttons: {
+            YesButton: {
+                text: 'Computer details',
+                btnClass: 'btn-blue',
+                action: function (scope, button) {
+                   
+                }
+            },
+            No: {
+                text: 'List of computers',
+                btnClass: 'btn-blue',
+                action: function(){
+                    $window.location.href = 'http://localhost:5050/computers/index';
+                }
+            }
+        }
+    });
+}
+
 //JQuery datepicker
 $( function(){
     $('#datepicker').datepicker({
         dateFormat: 'yy-mm-dd'
     });
 });
-//License's HTTP requests
 
+//Display informations - Computer
+angular.module('app').factory('displayComputerFactory', function($ngConfirm, $window){
+    return {
+        SaveDisplay : function(){
+            return $ngConfirm({
+                title: '<b>Computer data has been updated</b>',
+                content: '',
+                buttons: {
+                    YesButton: {
+                        text: 'Back to details',
+                        btnClass: 'btn-blue',
+                        action: function (scope, button) {
+                            location.reload();
+                        }
+                    },
+                    No: {
+                        text: 'List of computers',
+                        btnClass: 'btn-warning',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/computers/index';
+                        }
+                    }
+                }
+            });
+        },
+        AddDisplay: function(){
+            return $ngConfirm({
+                title: '<b>Computer has been added</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/computers/index';
+                        }
+                    }
+                }
+            });
+        },
+        DeleteDisplay: function(){
+            return $ngConfirm({
+                title: '<b>Computer has been deleted</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/computers/index';
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
+
+//Display informations - Licenses
+angular.module('app').factory('displayLicensesFactory', function($ngConfirm, $window){
+    return{
+        SaveDisplay : function(){
+            return $ngConfirm({
+                title: '<b>License data has been updated</b>',
+                content: '',
+                buttons: {
+                    YesButton: {
+                        text: 'Back to details',
+                        btnClass: 'btn-blue',
+                        action: function (scope, button) {
+                            location.reload();
+                        }
+                    },
+                    No: {
+                        text: 'List of licenses',
+                        btnClass: 'btn-warning',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/licenses/index';
+                        }
+                    }
+                }
+            });
+        },
+        DeleteDisplay: function(){
+            return $ngConfirm({
+                title: '<b>License has been deleted</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/licenses/index';
+                        }
+                    }
+                }
+            });
+        },
+        AddDisplay: function(){
+            return $ngConfirm({
+                title: '<b>License has been added</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/licenses/index';
+                        }
+                    }
+                }
+            });
+        },
+    }
+});
+
+//Display informations - License types
+angular.module('app').factory('licenseTypesDisplayFactory', function ($ngConfirm, $window){
+    return {
+        AddDisplay: function(){
+            return $ngConfirm({
+                title: '<b>License type has been added</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/licenseTypes/index';
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
+
+//Display informations - Users
+angular.module('app').factory('usersDisplayFactory', function ($ngConfirm, $window){
+    return {
+        AddDisplay: function(){
+            return $ngConfirm({
+                title: '<b>User has been added</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/users/index';
+                        }
+                    }
+                }
+            });
+        },
+        SaveDisplay : function(){
+            return $ngConfirm({
+                title: '<b>User data has been updated</b>',
+                content: '',
+                buttons: {
+                    YesButton: {
+                        text: 'Back to details',
+                        btnClass: 'btn-blue',
+                        action: function (scope, button) {
+                            location.reload();
+                        }
+                    },
+                    No: {
+                        text: 'List of users',
+                        btnClass: 'btn-warning',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/users/index';
+                        }
+                    }
+                }
+            });
+        },
+        DeleteDisplay: function(){
+            return $ngConfirm({
+                title: '<b>User has been deleted</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = 'http://localhost:5050/users/index';
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
+
+//License's HTTP requests
 angular.module('app').factory('licensesFactory', function($http){
     return {
         BrowseLicenses: function(){
