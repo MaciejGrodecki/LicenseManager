@@ -58,14 +58,8 @@ angular.module('app').controller('DetailsComputerFormCtrl',['$scope', '$http', '
                 $scope.computer = response.data;
                 roomsFactory.GetRoom($scope.computer.roomId)
                     .then(function success(response){
-                        $scope.rooms = response.data;
-                        var arrayOfRooms = [];
-                        for (var key in $scope.rooms) {
-                            var tmp = {};
-                            tmp[key] = $scope.rooms[key];
-                            arrayOfRooms.push(tmp);
-                        }
-                        $scope.rooms = arrayOfRooms;
+                        $scope.rooms = [response.data];
+                        $scope.ddlRooms = $scope.computer.roomId;
                     });
             }), function error(response){
                 $window.alert(response.error);

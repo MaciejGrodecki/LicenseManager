@@ -57,17 +57,10 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                 $scope.license = response.data;
                 $scope.license.buyDate = moment(response.data.buyDate).format('YYYY-MM-DD');
                 //Get licenseType 
-                
                 licenseTypesFactory.GetLicenseType($scope.license.licenseTypeId)
                     .then(function success(response){
-                        $scope.licenseTypes = response.data;
-                        var arrayOfLicenseTypes = [];
-                        for (var key in $scope.licenseTypes) {
-                            var tmp = {};
-                            tmp[key] = $scope.licenseTypes[key];
-                            arrayOfLicenseTypes.push(tmp);
-                        }
-                        $scope.licenseTypes = arrayOfLicenseTypes;
+                        $scope.licenseTypes = [response.data];
+                        $scope.ddlLicenseTypes = $scope.license.licenseTypeId;
                     }), function error(response){
                         $window.alert(response.error);
                     }
