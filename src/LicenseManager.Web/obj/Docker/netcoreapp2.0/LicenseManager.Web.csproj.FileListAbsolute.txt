@@ -1,0 +1,16 @@
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Web.deps.json
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Web.runtimeconfig.json
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Web.runtimeconfig.dev.json
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Web.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Web.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Api.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Core.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Infrastructure.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Api.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Core.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Web\bin\Docker\netcoreapp2.0\LicenseManager.Infrastructure.pdb
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Docker\netcoreapp2.0\LicenseManager.Web.csproj.CoreCompileInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Docker\netcoreapp2.0\LicenseManager.Web.AssemblyInfoInputs.cache
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Docker\netcoreapp2.0\LicenseManager.Web.AssemblyInfo.cs
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Docker\netcoreapp2.0\LicenseManager.Web.dll
+D:\Projekty\LicenseManager\src\LicenseManager.Web\obj\Docker\netcoreapp2.0\LicenseManager.Web.pdb

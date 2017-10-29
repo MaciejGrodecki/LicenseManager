@@ -1,0 +1,6 @@
+FROM microsoft/dotnet:runtime
+WORKDIR /dotnetapp
+COPY ./bin/Docker/netcoreapp2.0/publish .
+ENV ASPNETCORE_URLS http://*:5050
+ENV ASPNETCORE_ENVIRONMENT production
+ENTRYPOINT dotnet LicenseManager.Web.dll

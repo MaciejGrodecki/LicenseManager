@@ -21,4 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LicenseManager.Api\LicenseManager.Api.csproj" />
   </ItemGroup>
+  <PropertyGroup>
+  <PublishWithAspNetCoreTargetManifest>false</PublishWithAspNetCoreTargetManifest>
+</PropertyGroup>
 </Project>

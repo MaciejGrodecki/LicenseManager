@@ -1,0 +1,38 @@
+﻿<div ng-app="app">
+
+    <div class="row">
+        <form ng-controller="DetailsComputerFormCtrl">
+            <div class="form-group">
+                <button type="button" class="btn btn-warning" onclick="BrowseComputerRedirect()">Return</button>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="computer.inventoryNumber" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="count">Count</label>
+                <input type="text" class="form-control" id="count" ng-model="computer.ipAddress" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="roomsSelect">Room</label>
+                <select ng-model="ddlRooms" ng-options="room.roomId as
+                        room.name for room in rooms" class="form-control text-uppercase" ng-disabled="isDisabled"></select>
+            </div>
+            <div class="form-group">
+                <label for="computerUsers">Users</label>
+                <select multiple ng-model="ddlUsers" ng-options="user.userId as user.name + ' ' + user.surname for user in computer.users" 
+                        class="form-control text-uppercase"  ng-disabled="isDisabled"></select>
+            </div>
+            <div class="btn-toolbar">
+                <button class="btn btn-info" ng-click="UnlockForm()" type="button">Edit</button>
+                <button class="btn btn-warning pull-right" ng-click="SaveButton()" type="button" ng-disabled="isDisabled">Save</button>
+                <button class="btn btn-danger pull-right" ng-click="DeleteButton()" type="button" ng-disabled="isDisabled">Delete</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/controllers/computers.js" asp-append-version="true"></script>
+    <script src="~/js/controllers/rooms.js" asp-append-version="true"></script>
+}

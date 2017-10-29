@@ -1,0 +1,20 @@
+﻿<div ng-app="app">
+    <div class="row">
+        <form ng-controller="AddLicenseTypeFormCtrl">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="name">
+            </div>
+            <div class="row">
+                <button class="btn btn-info pull-right" ng-click="AddLicenseTypeButton()" type="button">Add license type</button>
+                <button type="button" class="btn btn-warning pull-left" onclick="BrowseLicenseTypesRedirect()">Return</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="~/js/controllers/licenseTypes.js" asp-append-version="true"></script>
+}

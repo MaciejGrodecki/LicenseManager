@@ -37,7 +37,7 @@ namespace LicenseManager.Web
             }
 
             app.UseCors(builder =>
-                builder.WithOrigins("http://localhost:5050"));
+                builder.WithOrigins("http://127.0.0.1:5050"));
 
             app.UseMvc();
         }

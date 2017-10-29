@@ -1,0 +1,46 @@
+<div ng-app="app">
+
+    <div class="row">
+        <form ng-controller="DetailsLicenseFormCtrl">
+            <div class="form-group">
+                <button type="button" class="btn btn-warning" onclick="MainPageRedirect()">Return</button>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="license.name" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="count">Count</label>
+                <input type="text" class="form-control" id="count" ng-model="license.count" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="buyDate">Buy date</label>
+                <input type="text" class="form-control" id="datepicker" ng-model="license.buyDate" value="{{license.buyDate}}" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="serialNumber">Serial number</label>
+                <input type="text" class="form-control" id="serialNumber"  ng-model="license.serialNumber" ng-disabled="isDisabled">
+            </div>
+            <div class="form-group">
+                <label for="licenseTypeSelect">License type</label>
+                <select ng-model="ddlLicenseTypes" ng-options="licenseType.licenseTypeId as
+                        licenseType.name for licenseType in licenseTypes" class="form-control" ng-disabled="isDisabled"></select>
+            </div>
+            <div class="form-group">
+                <label for="licensesComputer">Computers connected to License</label>
+                <select multiple ng-model="ddlComputers" ng-options="computer.computerId as computer.inventoryNumber for computer in license.computers" 
+                        class="form-control text-uppercase"  ng-readonly="isReadonly" ng-dblclick="Open()"></select>
+            </div>
+            <div class="btn-toolbar">
+                <button class="btn btn-info" ng-click="UnlockForm()" type="button">Edit</button>
+                <button class="btn btn-warning pull-right" ng-click="SaveButton()" type="button" ng-disabled="isDisabled">Save</button>
+                <button class="btn btn-danger pull-right" ng-click="DeleteButton()" type="button" ng-disabled="isDisabled">Delete</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/js/controllers/licenses.js" asp-append-version="true"></script>
+    <script src="~/js/controllers/licenseTypes.js" asp-append-version="true"></script>
+}

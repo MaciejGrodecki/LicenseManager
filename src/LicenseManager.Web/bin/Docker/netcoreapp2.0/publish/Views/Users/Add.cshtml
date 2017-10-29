@@ -1,0 +1,24 @@
+﻿<div ng-app="app">
+    <div class="row">
+        <form ng-controller="AddUserFormCtrl">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" ng-model="name">
+            </div>
+            <div class="form-group">
+                <label for="surname">Surname</label>
+                <input type="text" class="form-control" id="surname" ng-model="surname" />
+            </div>
+            <div class="row">
+                <button class="btn btn-info pull-right" ng-click="AddUserButton()" type="button">Add user</button>
+                <button type="button" class="btn btn-warning pull-left" onclick="BrowseUsersRedirect()">Return</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+@section Scripts{
+    <script src="~/js/controllers/users.js" asp-append-version="true"></script>
+}

@@ -1,0 +1,7 @@
+version: "2"
+
+services:
+  api:
+    image: maciejgrodecki/licensemanager-web
+    ports:
+      - '5050:5050'
