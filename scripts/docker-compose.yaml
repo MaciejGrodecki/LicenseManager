@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  api:
+    build: ../src/Passenger.Api
+    links:
+      - mssql
+    ports:
+      - '5000:5000'
+
+  mssql:
+    image: microsoft/mssql-server-linux
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: "P@ssw0rd"
+    ports:
+      - "1433:1433"
