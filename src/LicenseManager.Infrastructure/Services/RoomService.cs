@@ -47,7 +47,7 @@ namespace LicenseManager.Infrastructure.Services
         public async Task AddAsync(string name)
         {
             Logger.Info("Adding room");
-            var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
+            var room = await _roomRepository.GetAsync(name);
             if(room != null)
             {
                 throw new Exception($"Room with name: {name} already exist");

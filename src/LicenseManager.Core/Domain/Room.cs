@@ -24,7 +24,7 @@ namespace LicenseManager.Core.Domain
             {
                 throw new Exception("Room's name is incorrect");
             }
-            Name = name;
+            Name = name.ToUpperInvariant();
         }
     }
 }

@@ -75,6 +75,10 @@ namespace LicenseManager.Core.Domain
 
         public void AddComputer(Computer computer)
         {
+            if(computer == null)
+            {
+                throw new Exception("Computer cannot be null");
+            }
             if(Computers.Contains(computer))
             {
                 throw new Exception($"Computer with {computer.InventoryNumber} already exists");

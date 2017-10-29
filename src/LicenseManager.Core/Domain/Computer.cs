@@ -75,6 +75,10 @@ namespace LicenseManager.Core.Domain
 
         public void AddUser(User user)
         {
+            if(user == null)
+            {
+                throw new Exception("User cannot be null");
+            }
             if(Users.Contains(user))
             {
                 throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");

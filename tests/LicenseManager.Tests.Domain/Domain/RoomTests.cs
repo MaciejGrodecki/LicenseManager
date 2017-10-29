@@ -25,7 +25,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_not_be_null = () => Room.ShouldNotBeNull();
         It should_have_assigned_roomId = () => Room.RoomId.ShouldEqual(RoomId);
-        It should_have_assigned_name = () => Room.Name.ShouldEqual(Name.ToLowerInvariant());
+        It should_have_assigned_name = () => Room.Name.ShouldEqual(Name.ToUpperInvariant());
     }
 
     [Subject("Room initialize with whiteSpace name")]

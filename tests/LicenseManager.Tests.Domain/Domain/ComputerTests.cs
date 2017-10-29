@@ -118,14 +118,4 @@ namespace LicenseManager.Tests.Domain.Domain
             Exception.Message.ShouldStartWith("Inventory number is empty!");
         };
     }
-
-    
-
-    
-
-    
-
-    
-
-    
 }
