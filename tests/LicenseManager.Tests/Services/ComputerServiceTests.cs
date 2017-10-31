@@ -91,7 +91,7 @@ namespace LicenseManager.Tests.Services
             _computerRepositoryMock.Setup(x => x.GetAsync(_computer.ComputerId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _computerService.GetAsync(_computer.ComputerId));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _computerService.GetAsync(_computer.ComputerId));
 
             //Assert
             _computerRepositoryMock.Verify(x => x.GetAsync(_computer.ComputerId), Times.Once());
@@ -120,7 +120,7 @@ namespace LicenseManager.Tests.Services
             _computerRepositoryMock.Setup(x => x.GetAsync(_computer.InventoryNumber)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _computerService.GetAsync(_computer.InventoryNumber));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _computerService.GetAsync(_computer.InventoryNumber));
 
             //Assert
             _computerRepositoryMock.Verify(x => x.GetAsync(_computer.InventoryNumber), Times.Once());
@@ -143,7 +143,7 @@ namespace LicenseManager.Tests.Services
             _computerRepositoryMock.Setup(x => x.GetAsync(_computer.InventoryNumber)).ReturnsAsync((_computer));
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _computerService.AddAsync(_computer.ComputerId, _computer.InventoryNumber, 
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _computerService.AddAsync(_computer.ComputerId, _computer.InventoryNumber, 
                 _computer.IpAddress, _computer.RoomId));
 
             //Assert
@@ -172,7 +172,7 @@ namespace LicenseManager.Tests.Services
             _computerRepositoryMock.Setup(x => x.GetAsync(_computer.ComputerId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _computerService.RemoveAsync(_computer.ComputerId));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _computerService.RemoveAsync(_computer.ComputerId));
             
 
             //Assert

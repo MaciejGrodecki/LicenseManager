@@ -33,16 +33,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_creating_user_without_surname : UserTests
     {
         Establish context = () => Surname = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("Surname is incorrect");
+            Exception.Message.ShouldStartWith("incorrect_surname");
         };
     }
 
@@ -50,16 +50,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_creating_user_without_name : UserTests
     {
         Establish context = () => Name = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("Name is incorrect");
+            Exception.Message.ShouldStartWith("incorrect_name");
         };
     }
 

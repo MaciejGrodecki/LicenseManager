@@ -38,7 +38,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            NullCheck(computer);
+            //Exception if computer is null
+            NullCheck.IsNull(computer);
 
             return _mapper.Map<ComputerDto>(computer);
         }
@@ -46,7 +47,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single computer");
             var computer = await _computerRepository.GetAsync(inventoryNumber);
-            NullCheck(computer);
+            //Exception if computer is null
+            NullCheck.IsNull(computer);
 
             return _mapper.Map<ComputerDto>(computer);
         }
@@ -54,7 +56,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding computer");
             var computer  = await _computerRepository.GetAsync(inventoryNumber);
-            NotNullCheck(computer);
+            //Exception if computer is not null
+            NullCheck.IsNotNull(computer);
 
             computer = new Computer(computerId, inventoryNumber, ipAddress, roomId);
             await _computerRepository.AddAsync(computer);
@@ -64,7 +67,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            NullCheck(computer);
+            //Exception if computer is null
+            NullCheck.IsNull(computer);
 
             await _computerRepository.RemoveAsync(computer);
 
@@ -76,7 +80,8 @@ namespace LicenseManager.Infrastructure.Services
             Logger.Info("Updating computer");
 
             var computer = await _computerRepository.GetAsync(computerId);
-            NullCheck(computer);
+            //Exception if computer is null
+            NullCheck.IsNull(computer);
             
             computer.SetInventoryNumber(inventoryNumber);
             computer.SetIpAddress(ipAddress);
@@ -96,7 +101,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Assign user to computer");
             var computer = await _computerRepository.GetAsync(computerId);
-            NullCheck(computer);
+            //Exception if computer is null
+            NullCheck.IsNull(computer);
 
             foreach(Guid userId in userIds)
             {
@@ -104,22 +110,6 @@ namespace LicenseManager.Infrastructure.Services
                 computer.Users.Add(user);
             }
             await _computerRepository.UpdateAsync(computer);
-        }
-
-        private void NullCheck(Computer computer)
-        {
-            if(computer == null)
-            {
-                throw new Exception($"Computer doesn't exist");
-            }
-        }
-
-        private void NotNullCheck(Computer computer)
-        {
-            if(computer != null)
-            {
-                throw new Exception($"Computer already exist");
-            }
         }
     }
 }

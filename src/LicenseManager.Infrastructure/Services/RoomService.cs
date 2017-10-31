@@ -48,10 +48,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding room");
             var room = await _roomRepository.GetAsync(name);
-            if(room != null)
-            {
-                throw new Exception($"Room with name: {name} already exist");
-            }
+            //Exception if room is not null
+            NullCheck.IsNotNull(room);
+
             room = new Room(Guid.NewGuid(), name);
             await _roomRepository.AddAsync(room);
         }
@@ -60,10 +59,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing room");
             var room = await _roomRepository.GetAsync(roomId);
-            if(room == null)
-            {
-                throw new Exception($"Room with id: {roomId} doesn't exist");
-            }
+            //Exception if room is null
+            NullCheck.IsNull(room);
 
             await _roomRepository.RemoveAsync(room);
         }
@@ -74,15 +71,18 @@ namespace LicenseManager.Infrastructure.Services
             var room = await _roomRepository.GetAsync(name.ToLowerInvariant());
             if(room != null)
             {
-                throw new Exception($"Room with name: {name} already exist");
+                //Exception if room is not null
+                NullCheck.IsNotNull(room);
             }
             room = await _roomRepository.GetAsync(roomId);
             if(room == null)
             {
-                throw new Exception($"Room with id: {roomId} cannot be updated becouse it doesn't exist");
+                //Exception if room is null
+                NullCheck.IsNull(room);
             }
             room.SetName(name);
             await _roomRepository.UpdateAsync(room);
         }
+
     }
 }

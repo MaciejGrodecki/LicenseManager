@@ -123,7 +123,7 @@ namespace LicenseManager.Tests.Services
             _licenseTypeRepositoryMock.Setup(x => x.GetAsync(_licenseType.Name)).ReturnsAsync((_licenseType));
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _licenseTypeService.AddAsync(_licenseType.Name));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _licenseTypeService.AddAsync(_licenseType.Name));
 
             //Assert
             _licenseTypeRepositoryMock.Verify(x => x.GetAsync(_licenseType.Name), Times.Once());
@@ -151,7 +151,7 @@ namespace LicenseManager.Tests.Services
             _licenseTypeRepositoryMock.Setup(x => x.GetAsync(_licenseType.LicenseTypeId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _licenseTypeService.RemoveAsync(_licenseType.LicenseTypeId));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _licenseTypeService.RemoveAsync(_licenseType.LicenseTypeId));
             
 
             //Assert

@@ -44,11 +44,11 @@ namespace LicenseManager.Core.Domain
         {
             if (String.IsNullOrWhiteSpace(ipAddress))
             {
-                throw new Exception("IP address is empty!");
+                throw new LicenseManagerException("empty_ip", "IP address is empty!");
             }
             if (!Regex.IsMatch(ipAddress, IpAddressCheck))
             {
-                throw new Exception("IP address is incorrect!");
+                throw new LicenseManagerException("incorrect_ip", "IP address is incorrect!");
             }
 
             IpAddress = ipAddress;
@@ -58,7 +58,7 @@ namespace LicenseManager.Core.Domain
         {
             if (String.IsNullOrWhiteSpace(inventoryNumber))
             {
-                throw new Exception("Inventory number is empty!");
+                throw new LicenseManagerException("empty_inventoryNumber", "Inventory number is empty!");
             }
 
             InventoryNumber = inventoryNumber.ToUpperInvariant();
@@ -68,7 +68,7 @@ namespace LicenseManager.Core.Domain
         {
             if(roomId == null)
             {
-                throw new Exception("Room id cannot be null");
+                throw new LicenseManagerException("roomId_is_null", "Room id cannot be null");
             }
             RoomId = roomId;
         }
@@ -77,11 +77,11 @@ namespace LicenseManager.Core.Domain
         {
             if(user == null)
             {
-                throw new Exception("User cannot be null");
+                throw new LicenseManagerException("user_is_null", "User cannot be null");
             }
             if(Users.Contains(user))
             {
-                throw new Exception($"User with name {user.Name} and {user.Surname} already assigned to computer");
+                throw new LicenseManagerException("user_already_exists", $"User with name {user.Name} and {user.Surname} already assigned to computer");
             }
 
             _users.Add(user);

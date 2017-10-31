@@ -39,15 +39,15 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_license_without_serial_number : LicenseTests
     {
         Establish context = () => SerialNumber = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
         
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("Serial number cannot be null");
+            Exception.Message.ShouldStartWith("serial_cannot_be_null");
         };
         
     }
@@ -56,16 +56,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_license_with_buyDate_later_than_today : LicenseTests
     {
         Establish context = () => BuyDate = DateTime.Now.AddDays(1);
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("Buy date must be earlier");
+            Exception.Message.ShouldStartWith("buy_date_earlier");
         };
     }
 
@@ -73,16 +73,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_license_with_count_less_than_one : LicenseTests
     {
         Establish context = () => Count = 0;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("Count is lower than 1");
+            Exception.Message.ShouldStartWith("count_lower_than_1");
         };
     }
 
@@ -90,16 +90,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_license_without_name : LicenseTests
     {
         Establish context = () => Name = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("Name is incorrect");
+            Exception.Message.ShouldStartWith("incorrect_name");
         };
     }
 
@@ -120,16 +120,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_add_null_computer_to_license : LicenseTests
     {
         Establish context = () => Computer = null;
-        Because of = () => Exception = Catch.Exception(() => License.AddComputer(Computer));
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => License.AddComputer(Computer));
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("Computer cannot be null");
+            Exception.Message.ShouldStartWith("computer_is_null");
         };
     }
     

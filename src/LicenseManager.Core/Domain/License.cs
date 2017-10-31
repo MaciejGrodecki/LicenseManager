@@ -38,7 +38,7 @@ namespace LicenseManager.Core.Domain
         {
             if(licenseTypeId == null)
             {
-                throw new Exception("License type is null");
+                throw new LicenseManagerException("licenseType_is_null", "License type is null");
             }
             LicenseTypeId = licenseTypeId;
         }
@@ -48,7 +48,7 @@ namespace LicenseManager.Core.Domain
 
             if(buyDate > DateTime.Now)
             {
-                throw new Exception("Buy date must be earlier");
+                throw new LicenseManagerException("buy_date_earlier", "Buy date must be earlier");
             }
             BuyDate = buyDate.Date;
         }
@@ -57,7 +57,7 @@ namespace LicenseManager.Core.Domain
         {
             if(count < 1)
             {
-                throw new Exception("Count is lower than 1");
+                throw new LicenseManagerException("count_lower_than_1","Count is lower than 1");
             }
 
             Count = count;
@@ -67,7 +67,7 @@ namespace LicenseManager.Core.Domain
         {
             if(String.IsNullOrWhiteSpace(name))
             {
-                throw new Exception("Name is incorrect");
+                throw new LicenseManagerException("incorrect_name", "Name is incorrect");
             }
 
             Name = name;
@@ -77,11 +77,11 @@ namespace LicenseManager.Core.Domain
         {
             if(computer == null)
             {
-                throw new Exception("Computer cannot be null");
+                throw new LicenseManagerException("computer_is_null", "Computer cannot be null");
             }
             if(Computers.Contains(computer))
             {
-                throw new Exception($"Computer with {computer.InventoryNumber} already exists");
+                throw new LicenseManagerException("computer_already_in_collection", $"Computer with {computer.InventoryNumber} already exists");
             }
 
             _computers.Add(computer);
@@ -91,7 +91,7 @@ namespace LicenseManager.Core.Domain
         {
             if(String.IsNullOrWhiteSpace(serialNumber))
             {
-                throw new Exception("Serial number cannot be null");
+                throw new LicenseManagerException("serial_cannot_be_null", "Serial number cannot be null");
             }
 
             SerialNumber = serialNumber;

@@ -1,9 +1,10 @@
 using System;
+using LicenseManager.Core.Domain;
 
 namespace LicenseManager.Tests.Domain.Domain
 {
     public class DomainException
     {
-        protected static Exception Exception;
+        protected static LicenseManagerException Exception;
     }
 }

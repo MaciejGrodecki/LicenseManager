@@ -28,11 +28,11 @@ namespace LicenseManager.Core.Domain
 
             if (String.IsNullOrWhiteSpace(surname))
             {
-                throw new Exception(exceptionMsg);
+                throw new LicenseManagerException("incorrect_surname", exceptionMsg);
             }
             if (!Regex.IsMatch(surname.ToUpperInvariant(), OnlyStringCheck))
             {
-                throw new Exception(exceptionMsg);
+                throw new LicenseManagerException("incorrect_surname", exceptionMsg);
             }
 
             Surname = surname;
@@ -44,11 +44,11 @@ namespace LicenseManager.Core.Domain
 
             if (String.IsNullOrWhiteSpace(name))
             {
-                throw new Exception(exceptionMsg);
+                throw new LicenseManagerException("incorrect_name", exceptionMsg);
             }
             if (!Regex.IsMatch(name.ToUpperInvariant(), OnlyStringCheck))
             {
-                throw new Exception(exceptionMsg);
+                throw new LicenseManagerException("incorrect_name", exceptionMsg);
             }
 
             Name = name;

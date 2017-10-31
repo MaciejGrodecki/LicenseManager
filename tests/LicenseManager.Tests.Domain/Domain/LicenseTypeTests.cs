@@ -32,16 +32,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_licensetype_initialize_without_name : LicenseTypeTests
     {
         Establish context = () => Name = String.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("License type's name is incorrect");
+            Exception.Message.ShouldStartWith("incorrect_licenseType");
         };
     }
 }

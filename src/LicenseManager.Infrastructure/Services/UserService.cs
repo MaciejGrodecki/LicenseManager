@@ -32,10 +32,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single user");
             var user = await _userRepository.GetAsync(userId);
-            if(user == null)
-            {
-                throw new Exception($"User type with id: {userId} doesn't exist");
-            }
+            //Exception if user is null
+            NullCheck.IsNull(user);
 
             return _mapper.Map<UserDto>(user);
         }
@@ -44,10 +42,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single user");
             var user = await _userRepository.GetAsync(name, surname);
-            if(user == null)
-            {
-                throw new Exception($"User type with name: {name} and surname: {surname} doesn't exist");
-            }
+            //Exception if user is null
+            NullCheck.IsNull(user);
+
             return _mapper.Map<UserDto>(user);
         }
 
@@ -55,10 +52,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding user");
             var user = await _userRepository.GetAsync(name,surname);
-            if(user != null)
-            {
-                throw new Exception($"User with name: {name} and username: {surname} already exist");
-            }
+            //Exception if user is not null
+            NullCheck.IsNotNull(user);
+
             user = new User(Guid.NewGuid(), name, surname);
             await _userRepository.AddAsync(user);
         }
@@ -67,10 +63,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing user");
             var user = await _userRepository.GetAsync(userId);
-            if(user == null)
-            {
-                throw new Exception($"User type with id: {userId} doesn't exist");
-            }
+            //Exception if user is null
+            NullCheck.IsNull(user);
 
             await _userRepository.RemoveAsync(user);
         }
@@ -79,16 +73,12 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Updating user");
             var user = await _userRepository.GetAsync(name, surname);
-            if(user != null)
-            {
-                throw new Exception($"User with name: {name} and {surname} already exists");
-            }
+            //Exception if user is not null
+            NullCheck.IsNotNull(user);
 
             user = await _userRepository.GetAsync(userId);
-            if(user == null)
-            {
-                throw new Exception($"User type with id: {userId} doesn't exist");
-            }
+            //Exception if user is null
+            NullCheck.IsNull(user);
 
             if(user.Name != name && name != null)
             {

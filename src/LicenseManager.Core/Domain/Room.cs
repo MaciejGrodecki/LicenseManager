@@ -22,7 +22,7 @@ namespace LicenseManager.Core.Domain
         {
             if(String.IsNullOrWhiteSpace(name))
             {
-                throw new Exception("Room's name is incorrect");
+                throw new LicenseManagerException("blank_room_name", "Room's name is incorrect");
             }
             Name = name.ToUpperInvariant();
         }

@@ -71,7 +71,7 @@ namespace LicenseManager.Tests.Services
             _userRepositoryMock.Setup(x => x.GetAsync(_user.UserId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _userService.GetAsync(_user.UserId));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _userService.GetAsync(_user.UserId));
 
             //Assert
             _userRepositoryMock.Verify(x => x.GetAsync(_user.UserId), Times.Once());
@@ -101,7 +101,7 @@ namespace LicenseManager.Tests.Services
             _userRepositoryMock.Setup(x => x.GetAsync(_user.Name, _user.Surname)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _userService.GetAsync(_user.Name, _user.Surname));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _userService.GetAsync(_user.Name, _user.Surname));
 
             //Assert
             _userRepositoryMock.Verify(x => x.GetAsync(_user.Name, _user.Surname), Times.Once());
@@ -124,7 +124,7 @@ namespace LicenseManager.Tests.Services
             _userRepositoryMock.Setup(x => x.GetAsync(_user.Name, _user.Surname)).ReturnsAsync((_user));
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _userService.AddAsync(_user.Name, _user.Surname));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _userService.AddAsync(_user.Name, _user.Surname));
 
             //Assert
             _userRepositoryMock.Verify(x => x.GetAsync(_user.Name, _user.Surname), Times.Once());
@@ -152,7 +152,7 @@ namespace LicenseManager.Tests.Services
             _userRepositoryMock.Setup(x => x.GetAsync(_user.UserId)).ReturnsAsync(() => null);
 
             //Act
-            await Assert.ThrowsAsync<Exception>(async () => await _userService.RemoveAsync(_user.UserId));
+            await Assert.ThrowsAsync<LicenseManagerException>(async () => await _userService.RemoveAsync(_user.UserId));
             
 
             //Assert

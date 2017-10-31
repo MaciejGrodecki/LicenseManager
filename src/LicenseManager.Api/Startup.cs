@@ -1,6 +1,7 @@
 ﻿using LicenseManager.Core.Repositories;
 using LicenseManager.Infrastructure.EntityFramework;
 using LicenseManager.Infrastructure.Mappers;
+using LicenseManager.Infrastructure.Middleware;
 using LicenseManager.Infrastructure.Repositories;
 using LicenseManager.Infrastructure.Services;
 using LicenseManager.Infrastructure.Settings;
@@ -74,6 +75,8 @@ namespace LicenseManager.Api
             app.UseCors(builder =>
                 builder.WithOrigins("http://localhost:5050").AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             loggerFactory.AddNLog();
+
+            app.UseMiddleware<ErrorHandlerMiddleware>();
             app.AddNLogWeb();
             env.ConfigureNLog("nlog.config");
             SeedData(app);

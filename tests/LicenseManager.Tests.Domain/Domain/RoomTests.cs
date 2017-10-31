@@ -32,16 +32,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_creating_new_room_with_whiteSpace_name : RoomTests
     {
         Establish context = () => Name = String.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("Room's name is incorrect");
+            Exception.Message.ShouldStartWith("blank_room_name");
         };
     }
 
@@ -49,16 +49,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_creating_new_room_without_name : RoomTests
     {
         Establish context = () => Name = null;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("Room's name is incorrect");
+            Exception.Message.ShouldStartWith("blank_room_name");
         };
     }
 }

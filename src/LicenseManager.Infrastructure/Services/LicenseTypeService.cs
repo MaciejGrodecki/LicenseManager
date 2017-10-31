@@ -49,10 +49,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding license type");
             var licenseType = await _licenseTypeRepository.GetAsync(name);
-            if(licenseType != null)
-            {
-                throw new Exception($"License type with name: {name} already exist");
-            }
+            //Exception if license type is not null
+            NullCheck.IsNotNull(licenseType);
+
             licenseType = new LicenseType(Guid.NewGuid(), name);
             await _licenseTypeRepository.AddAsync(licenseType);
         }
@@ -61,10 +60,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing license type");
             var licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
-            if(licenseType == null)
-            {
-                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
-            }
+            //Exception if license type is null
+            NullCheck.IsNull(licenseType);
 
             await _licenseTypeRepository.RemoveAsync(licenseType);
         }
@@ -73,16 +70,12 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Updating license type");
             var licenseType = await _licenseTypeRepository.GetAsync(name);
-            if(licenseType != null)
-            {
-                throw new Exception($"License type with name: {name} already exist");
-            }
+            //Exception if license type is not null
+            NullCheck.IsNotNull(licenseType);
 
             licenseType = await _licenseTypeRepository.GetAsync(licenseTypeId);
-            if(licenseType == null)
-            {
-                throw new Exception($"License type with id: {licenseTypeId} doesn't exist");
-            }
+            //Exception if license type is null
+            NullCheck.IsNull(licenseType);
 
             licenseType.SetName(name);
             

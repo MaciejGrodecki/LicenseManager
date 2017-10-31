@@ -42,7 +42,7 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_computer_without_roomId : ComputerTests
     {
         Establish context = () => InitializeWithoutRoom();
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_not_be_null = () => Computer.ShouldNotBeNull();
         It should_has_assigned_inventoryNumber = () => Computer.InventoryNumber.ShouldEqual(InventoryNumber);
@@ -71,16 +71,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_add_null_user_to_computer : ComputerTests
     {
         Establish context = () => User = null;
-        Because of = () => Exception = Catch.Exception(() => Computer.AddUser(User));
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Computer.AddUser(User));
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("User cannot be null");
+            Exception.Message.ShouldStartWith("user_is_null");
         };
     }
 
@@ -89,16 +89,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_computer_without_ipAddress : ComputerTests
     {
         Establish context = () => IpAddress = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("IP address is empty!");
+            Exception.Message.ShouldStartWith("empty_ip");
         };
     }
 
@@ -106,16 +106,16 @@ namespace LicenseManager.Tests.Domain.Domain
     public class when_create_computer_without_inventoryNumber : ComputerTests
     {
         Establish context = () => InventoryNumber = string.Empty;
-        Because of = () => Exception = Catch.Exception(() => Initialize());
+        Because of = () => Exception = LicenseManagerExceptionCatch.Exception(() => Initialize());
 
         It should_throw_exception = () =>
         {
-            Exception.ShouldBeOfExactType<System.Exception>();
+            Exception.ShouldBeOfExactType<LicenseManagerException>();
         };
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("Inventory number is empty!");
+            Exception.Message.ShouldStartWith("empty_inventoryNumber");
         };
     }
 }

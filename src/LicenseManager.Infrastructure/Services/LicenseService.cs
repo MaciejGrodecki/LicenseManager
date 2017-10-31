@@ -39,7 +39,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Getting single license");
             var license = await _licenseRepository.GetAsync(licenseId);
-            NotNull(license);
+
+            //Exception if license is null
+            NullCheck.IsNull(license);
             
             return _mapper.Map<LicenseDto>(license);
         }      
@@ -55,7 +57,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Removing license");
             var license = await _licenseRepository.GetAsync(licenseId);
-            NotNull(license);
+            
+            //Exception if license is null
+            NullCheck.IsNull(license);
             
             await _licenseRepository.RemoveAsync(license);
         }
@@ -65,7 +69,9 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Updating license");
             var license = await _licenseRepository.GetAsync(licenseId);
-            NotNull(license);
+            
+            //Exception if license is null
+            NullCheck.IsNull(license);
             
             license.SetName(name);
             license.SetCount(count);
@@ -79,7 +85,8 @@ namespace LicenseManager.Infrastructure.Services
         {
             Logger.Info("Adding computer to license");
             var license = await _licenseRepository.GetAsync(licenseId);
-            NotNull(license);
+            //Exception if license is null
+            NullCheck.IsNull(license);
             
             license.Computers.Clear();
             foreach(Guid computerId in computerIds)
@@ -89,16 +96,6 @@ namespace LicenseManager.Infrastructure.Services
             }
             await _licenseRepository.UpdateAsync(license);
 
-        }
-
-
-        private void NotNull(License license)
-        {
-            if(license == null)
-            {
-                Logger.Error("License doesn't exist");
-                throw new Exception("License doesn't exist");              
-            }
         }
     }
 }

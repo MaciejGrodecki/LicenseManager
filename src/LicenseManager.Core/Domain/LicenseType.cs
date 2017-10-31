@@ -25,11 +25,11 @@ namespace LicenseManager.Core.Domain
         {
             if(String.IsNullOrWhiteSpace(name))
             {
-                throw new Exception("License type's name is incorrect");
+                throw new LicenseManagerException("incorrect_licenseType", "License type's name is incorrect");
             }
             if(Regex.IsMatch(name, OnlyStringCheck))
             {
-                throw new Exception("License type's name is incorrect");
+                throw new LicenseManagerException("incorrect_licenseType", "License type's name is incorrect");
             }
 
             Name = name;
