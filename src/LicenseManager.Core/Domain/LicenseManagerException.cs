@@ -22,6 +22,12 @@ namespace LicenseManager.Core.Domain
             
         }
 
+        public LicenseManagerException(string errorCode, string message, params object[] args)
+            :this(errorCode, null, message, args)
+        {
+            
+        }
+
         public LicenseManagerException(Exception innerException, string message, params object[] args)
             :this(string.Empty, innerException, message, args)
         {
