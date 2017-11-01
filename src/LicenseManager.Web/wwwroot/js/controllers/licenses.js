@@ -8,7 +8,7 @@ angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'lice
         }
     
     $scope.selectLicense = function (licenseId) {
-        location.href = 'http://46.101.102.100/license/' + licenseId;
+        location.href = serverAddress + '/license/' + licenseId;
     };
 }]);
 
@@ -160,7 +160,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                         text: 'Details',
                                         btnClass: 'btn-blue',
                                         action: function(){
-                                            location.href = "http://46.101.102.100/computer/" + $scope.ddlComputers;
+                                            location.href = serverAddress + '/computer/' + $scope.ddlComputers;
                                         }
                                     },
                                     CloseButton:{

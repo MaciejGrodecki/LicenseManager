@@ -8,7 +8,7 @@ angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFa
         }
 
     $scope.selectUser = function (userId) {
-        location.href = "http://46.101.102.100/user/" + userId;
+        location.href = serverAddress + '/user/' + userId;
     };
 }]);
 //Controller for User's Add View

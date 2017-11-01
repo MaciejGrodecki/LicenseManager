@@ -1,45 +1,49 @@
-var ipServerAddress = "http://46.101.102.100:5000/";
+// var ipServerAddress = 'http://46.101.102.100:5000/';
+// var serverAddress = 'http://46.101.102.100/';
+
+var ipServerAddress = 'http://localhost:5000/';
+var serverAddress = 'http://localhost:5050';
 
 //Redirects
 
 function AddLicenseRedirect() {
-    location.href = 'http://46.101.102.100/license/Add/ ';
+    location.href = serverAddress + 'license/Add/ ';
 }
 
 function MainPageRedirect() {
-    location.href = 'http://46.101.102.100/ ';
+    location.href = serverAddress;
 }
 
 function AddRoomRedirect() {
-    location.href = 'http://46.101.102.100/room/Add/';
+    location.href = serverAddress + '/room/Add/';
 }
 
 function BrowseRoomRedirect(){
-    location.href = 'http://46.101.102.100/rooms/index';
+    location.href = serverAddress + '/rooms/index';
 }
 
 function AddLicenseTypeRedirect() {
-    location.href = 'http://46.101.102.100/licenseType/Add';
+    location.href = serverAddress + '/licenseType/Add';
 }
 
 function BrowseLicenseTypesRedirect() {
-    location.href = 'http://46.101.102.100/licenseTypes/index';
+    location.href = serverAddress + '/licenseTypes/index';
 }
 
 function AddComputerRedirect() {
-    location.href = 'http://46.101.102.100/computer/add';
+    location.href = serverAddress + '/computer/add';
 }
 
 function BrowseComputerRedirect() {
-    location.href = 'http://46.101.102.100/computers/index';
+    location.href = serverAddress + '/computers/index';
 }
 
 function AddUserRedirect() {
-    location.href = 'http://46.101.102.100/user/add';
+    location.href = serverAddress + '/user/add';
 }
 
 function BrowseUsersRedirect() {
-    location.href = 'http://46.101.102.100/users/index';
+    location.href = serverAddress + '/users/index';
 }
 
 function DisplayOnSuccess(){
@@ -59,18 +63,40 @@ function DisplayOnSuccess(){
                 text: 'List of computers',
                 btnClass: 'btn-blue',
                 action: function(){
-                    $window.location.href = 'http://46.101.102.100/computers/index';
+                    $window.location.href = serverAddress + '/computers/index';
                 }
             }
         }
     });
 }
 
+
 //JQuery datepicker
 $( function(){
     $('#datepicker').datepicker({
         dateFormat: 'yy-mm-dd'
     });
+});
+
+//Display error response
+angular.module('app').factory('displayErrorFactory', function($ngConfirm){
+    return {
+        DisplayError : function(message){
+            return $ngConfirm({
+                title: 'Error',
+                content: message,
+                buttons:{
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+        
+                        }
+                    }
+                }
+            });
+        }
+    }
 });
 
 //Display informations - Computer
@@ -92,7 +118,7 @@ angular.module('app').factory('displayComputerFactory', function($ngConfirm, $wi
                         text: 'List of computers',
                         btnClass: 'btn-warning',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/computers/index';
+                            $window.location.href = serverAddress + '/computers/index';
                         }
                     }
                 }
@@ -108,7 +134,7 @@ angular.module('app').factory('displayComputerFactory', function($ngConfirm, $wi
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/computers/index';
+                            $window.location.href = serverAddress + '/computers/index';
                         }
                     }
                 }
@@ -124,7 +150,7 @@ angular.module('app').factory('displayComputerFactory', function($ngConfirm, $wi
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/computers/index';
+                            $window.location.href = serverAddress + '/computers/index';
                         }
                     }
                 }
@@ -152,7 +178,7 @@ angular.module('app').factory('displayLicensesFactory', function($ngConfirm, $wi
                         text: 'List of licenses',
                         btnClass: 'btn-warning',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/licenses/index';
+                            $window.location.href = serverAddress + '/licenses/index';
                         }
                     }
                 }
@@ -168,7 +194,7 @@ angular.module('app').factory('displayLicensesFactory', function($ngConfirm, $wi
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/licenses/index';
+                            $window.location.href = serverAddress + '/licenses/index';
                         }
                     }
                 }
@@ -184,7 +210,7 @@ angular.module('app').factory('displayLicensesFactory', function($ngConfirm, $wi
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/licenses/index';
+                            $window.location.href = serverAddress + '/licenses/index';
                         }
                     }
                 }
@@ -206,7 +232,7 @@ angular.module('app').factory('licenseTypesDisplayFactory', function ($ngConfirm
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/licenseTypes/index';
+                            $window.location.href = serverAddress + '/licenseTypes/index';
                         }
                     }
                 }
@@ -228,7 +254,7 @@ angular.module('app').factory('usersDisplayFactory', function ($ngConfirm, $wind
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/users/index';
+                            $window.location.href = serverAddress + '/users/index';
                         }
                     }
                 }
@@ -250,7 +276,7 @@ angular.module('app').factory('usersDisplayFactory', function ($ngConfirm, $wind
                         text: 'List of users',
                         btnClass: 'btn-warning',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/users/index';
+                            $window.location.href = serverAddress + '/users/index';
                         }
                     }
                 }
@@ -266,7 +292,7 @@ angular.module('app').factory('usersDisplayFactory', function ($ngConfirm, $wind
                         text: 'Close',
                         btnClass: 'btn-info',
                         action: function(){
-                            $window.location.href = 'http://46.101.102.100/users/index';
+                            $window.location.href = serverAddress + '/users/index';
                         }
                     }
                 }

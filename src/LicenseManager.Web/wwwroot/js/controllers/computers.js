@@ -9,7 +9,7 @@ angular.module('app').controller('BrowseComputersCtrl',['$http', '$scope', 'comp
         }
 
     $scope.selectComputer = function(computerId){
-        location.href = "http://46.101.102.100/computer/" + computerId;
+        location.href = serverAddress + '/computer/' + computerId;
     }
 }]);
 
