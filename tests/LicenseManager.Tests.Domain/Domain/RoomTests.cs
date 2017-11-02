@@ -41,7 +41,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("blank_room_name");
+            Exception.Message.ShouldStartWith("Room's name is incorrect");
         };
     }
 
@@ -58,7 +58,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("blank_room_name");
+            Exception.Message.ShouldStartWith("Room's name is incorrect");
         };
     }
 }

@@ -6,13 +6,14 @@ angular.module('app').controller('GetLicenseTypeNameCtrl',['$scope', '$http','li
         });
 }]);
 //Controller for LicenseTypes' Index View
-angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$ngConfirm', '$location','licenseTypesFactory', function ($scope, $http, $ngConfirm, $location, licenseTypesFactory) {
+angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$ngConfirm', '$location','licenseTypesFactory', 'displayErrorFactory',
+    function ($scope, $http, $ngConfirm, $location, licenseTypesFactory, displayErrorFactory) {
     licenseTypesFactory.BrowseLicenseTypes()
         .then(function success(response){
             $scope.licenseTypes = response.data;
-        }), function error(response){
-            $window.alert(response.error);
-        }
+        }, function error(response){
+            displayErrorFactory.DisplayError('Cannot load license types');
+        });
 
     $scope.DeleteButton = function(licenseTypeId){
         $ngConfirm({
@@ -27,9 +28,14 @@ angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$
                         licenseTypesFactory.DeleteLicenseType(licenseTypeId)
                             .then(function success(response){
                                 location.reload();
-                            }), function error(response){
-                                $window.alert(response.error);
-                            }
+                            }, function error(response){
+                                if(response.status === 401){
+                                    displayErrorFactory.DisplayError(response.data.message);
+                                }
+                                else{
+                                    displayErrorFactory.DisplayError('Cannot delete license type');
+                                }
+                            });
                     }
                 },
                 No: function (scope, button) {
@@ -39,14 +45,20 @@ angular.module('app').controller('BrowseLicenseTypesCtrl',['$scope', '$http', '$
     }
 }]);
 //Controller for LicenseType's Add View
-angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licenseTypesDisplayFactory', 
-    function($scope, $http, $window, licenseTypesFactory, licenseTypesDisplayFactory){  
+angular.module('app').controller('AddLicenseTypeFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licenseTypesDisplayFactory', 'displayErrorFactory',
+    function($scope, $http, $window, licenseTypesFactory, licenseTypesDisplayFactory, displayErrorFactory){  
+    
     $scope.AddLicenseTypeButton = function (){
         licenseTypesFactory.AddLicenseType($scope.name)
         .then(function success(response){
             licenseTypesDisplayFactory.AddDisplay();
-        }), function error(response){
-            $window.alert(response.error);
-        }
+        }, function error(response){
+            if(response.status === 401){
+                displayErrorFactory.DisplayError(response.data.message);
+            }
+            else{
+                displayErrorFactory.DisplayError('Cannot add license type');
+            }
+        });
     }
 }]);

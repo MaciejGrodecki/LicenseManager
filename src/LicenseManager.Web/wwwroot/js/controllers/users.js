@@ -1,19 +1,19 @@
 //Controller for Users' Index View
-angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFactory', function($scope, $http, usersFactory){
+angular.module('app').controller('BrowseUsersCtrl', ['$scope', '$http', 'usersFactory', 'displayErrorFactory', function($scope, $http, usersFactory, displayErrorFactory){
     usersFactory.BrowseUsers()
         .then(function success(response){
             $scope.users = response.data;
-        }), function error(response){
-            $window(response.error);
-        }
+        }, function error(response){
+            displayErrorFactory.DisplayError('Cannot load users');
+        });
 
     $scope.selectUser = function (userId) {
         location.href = serverAddress + '/user/' + userId;
     };
 }]);
 //Controller for User's Add View
-angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window', 'usersFactory', 'usersDisplayFactory',
-    function($scope, $http, $window, usersFactory, usersDisplayFactory){
+angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window', 'usersFactory', 'usersDisplayFactory', 'displayErrorFactory',
+    function($scope, $http, $window, usersFactory, usersDisplayFactory, displayErrorFactory){
         
         $scope.AddUserButton = function () {
             usersFactory.AddUser(
@@ -21,23 +21,33 @@ angular.module('app').controller('AddUserFormCtrl', ['$scope', '$http', '$window
                 $scope.surname
             ).then(function success(response){
                 usersDisplayFactory.AddDisplay();
-            }), function error(response){
-                $window.alert(response.error);
-            }
+            }, function error(response){
+                if(response.status === 401){
+                    displayErrorFactory.DisplayError(response.data.message);
+                }
+                else{
+                    displayErrorFactory.DisplayError('Cannot add user');
+                }
+            });
         }
 }]);
 //Controller for User's details View
-angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$location', '$ngConfirm', '$window', 'usersFactory', 'usersDisplayFactory',
-    function($scope, $http, $location, $ngConfirm, $window, usersFactory, usersDisplayFactory){
+angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$location', '$ngConfirm', '$window', 'usersFactory', 'usersDisplayFactory', 'displayErrorFactory',
+    function($scope, $http, $location, $ngConfirm, $window, usersFactory, usersDisplayFactory, displayErrorFactory){
         $scope.isDisabled = true;
         var currentUserId = $location.absUrl().split('/')[4];
 
         usersFactory.GetUser(currentUserId)
             .then(function success(response){
                 $scope.user = response.data;
-            }), function error(response){
-                $window.alert(response.error);
-            }
+            }, function error(response){
+                if(response.status === 401){
+                    displayErrorFactory.DisplayError(response.data.message);
+                }
+                else{
+                    displayErrorFactory.DisplayError('Cannot load user data');
+                }
+            });
 
         $scope.UnlockForm = function () {
             $scope.isDisabled = false;
@@ -59,9 +69,14 @@ angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$lo
                                 $scope.user.surname
                             ).then(function success(response){
                                 usersDisplayFactory.SaveDisplay();
-                            }), function error(response){
-                                $window.alert(response.error);
-                            }
+                            }, function error(response){
+                                if(response.status === 401){
+                                    displayErrorFactory.DisplayError(response.data.message);
+                                }
+                                else{
+                                    displayErrorFactory.DisplayError('Cannot change user data');
+                                }
+                            });
                         }
                     },
                     No: function (scope, button) {
@@ -83,9 +98,14 @@ angular.module('app').controller('DetailsUserFormCtrl', ['$scope', '$http', '$lo
                             usersFactory.DeleteUser(currentUserId)
                                 .then(function success(response){
                                     usersDisplayFactory.DeleteDisplay();
-                                }), function error(response){
-                                    $window.alert(response.error);
-                                }
+                                }, function error(response){
+                                    if(response.status === 401){
+                                        displayErrorFactory.DisplayError(response.data.message);
+                                    }
+                                    else{
+                                        displayErrorFactory.DisplayError('Cannot delete user');
+                                    }
+                                });
                         }
                     },
                     No: function (scope, button) {

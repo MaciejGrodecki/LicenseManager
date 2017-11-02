@@ -47,7 +47,7 @@ namespace LicenseManager.Tests.Domain.Domain
         };
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("serial_cannot_be_null");
+            Exception.Message.ShouldStartWith("Serial number cannot be null");
         };
         
     }
@@ -65,7 +65,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("buy_date_earlier");
+            Exception.Message.ShouldStartWith("Buy date must be earlier");
         };
     }
 
@@ -82,7 +82,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("count_lower_than_1");
+            Exception.Message.ShouldStartWith("Count is lower than 1");
         };
     }
 
@@ -99,7 +99,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("incorrect_name");
+            Exception.Message.ShouldStartWith("Name is incorrect");
         };
     }
 
@@ -129,7 +129,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("computer_is_null");
+            Exception.Message.ShouldStartWith("Computer cannot be null");
         };
     }
     

@@ -301,6 +301,28 @@ angular.module('app').factory('usersDisplayFactory', function ($ngConfirm, $wind
     }
 });
 
+//Display informations - Rooms
+angular.module('app').factory('roomDisplayFactory', function($ngConfirm, $window){
+    return {
+        AddDisplay: function(){
+            return $ngConfirm({
+                title: '<b>Room has been added</b>',
+                content: '',
+                autoClose: 'CloseButton|2000',
+                buttons: {
+                    CloseButton: {
+                        text: 'Close',
+                        btnClass: 'btn-info',
+                        action: function(){
+                            $window.location.href = serverAddress + '/rooms/index';
+                        }
+                    }
+                }
+            });
+        }
+    }
+});
+
 //License's HTTP requests
 angular.module('app').factory('licensesFactory', function($http){
     return {

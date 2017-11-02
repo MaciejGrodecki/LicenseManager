@@ -41,7 +41,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_message = () =>
         {
-            Exception.Message.ShouldStartWith("incorrect_licenseType");
+            Exception.Message.ShouldStartWith("License type's name is incorrect");
         };
     }
 }

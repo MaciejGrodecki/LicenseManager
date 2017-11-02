@@ -80,7 +80,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("user_is_null");
+            Exception.Message.ShouldStartWith("User cannot be null");
         };
     }
 
@@ -98,7 +98,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("empty_ip");
+            Exception.Message.ShouldStartWith("IP address is empty!");
         };
     }
 
@@ -115,7 +115,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("empty_inventoryNumber");
+            Exception.Message.ShouldStartWith("Inventory number is empty!");
         };
     }
 }

@@ -42,7 +42,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("incorrect_surname");
+            Exception.Message.ShouldStartWith("Surname is incorrect");
         };
     }
 
@@ -59,7 +59,7 @@ namespace LicenseManager.Tests.Domain.Domain
 
         It should_contain_error_msg = () =>
         {
-            Exception.Message.ShouldStartWith("incorrect_name");
+            Exception.Message.ShouldStartWith("Name is incorrect");
         };
     }
 

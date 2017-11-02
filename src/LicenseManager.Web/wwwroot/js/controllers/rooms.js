@@ -1,13 +1,13 @@
 //Controller for Computer's Add View
-angular.module('app').controller('BrowseRoomsCtrl', ['$scope', '$http', '$ngConfirm', '$location', 'roomsFactory',
-    function($scope, $http, $ngConfirm, $location, roomsFactory){
+angular.module('app').controller('BrowseRoomsCtrl', ['$scope', '$http', '$ngConfirm', '$location', 'roomsFactory', 'displayErrorFactory',
+    function($scope, $http, $ngConfirm, $location, roomsFactory, displayErrorFactory){
         //Get all rooms
         roomsFactory.BrowseRooms()
             .then(function success(response){
                 $scope.rooms = response.data;
-            }), function error(response){
-                $window.alert(response.error)
-            }
+            }, function error(response){
+                displayErrorFactory.DisplayError('Cannot load data');
+            });
         
         $scope.DeleteButton = function(roomId){
             $ngConfirm({
@@ -22,9 +22,17 @@ angular.module('app').controller('BrowseRoomsCtrl', ['$scope', '$http', '$ngConf
                             roomsFactory.DeleteRoom(roomId)
                                 .then(function success(response){
                                     location.reload();
-                                }), function error(response){
-                                    $window.alert(response.error);
-                                }
+                                }, function error(response){
+                                    if(response.status === 401)
+                                    {
+                                        displayErrorFactory.DisplayError(response.data.message);
+                                    }
+                                    else
+                                    {
+                                        displayErrorFactory.DisplayError("Cannot delete room");
+                                    }
+                                    
+                                });
                         }
                     },
                     No: function (scope, button) {
@@ -34,29 +42,35 @@ angular.module('app').controller('BrowseRoomsCtrl', ['$scope', '$http', '$ngConf
         }
     }]);
 //Controller for Room's Add View
-angular.module('app').controller('AddRoomFormCtrl', ['$scope', '$http', '$window', '$location', 'roomsFactory', 'displayErrorFactory',
-    function($scope, $http, $window, $location, roomsFactory, displayErrorFactory){
+angular.module('app').controller('AddRoomFormCtrl', ['$scope', '$http', '$window', '$location', 'roomsFactory', 'displayErrorFactory', 'roomDisplayFactory',
+    function($scope, $http, $window, $location, roomsFactory, displayErrorFactory, roomDisplayFactory){
 
         $scope.AddRoomButton = function(){
             roomsFactory.AddRoom($scope.name)
                 .then(function success(response){
-                    $window.alert('Room was added');
-                    $window.location.href = serverAddress + '/rooms/index';
-                    console.log(response.status);
-                }, function err(error){
-                    if(error.status === 401)
+                    roomDisplayFactory.AddDisplay();
+                }, function errorCallback(response){
+                    if(response.status === 401)
                     {
-                        displayErrorFactory.DisplayError(error.data.message);
+                        displayErrorFactory.DisplayError(response.data.message);
+                    }
+                    else
+                    {
+                        displayErrorFactory.DisplayError('Cannot add room');
                     }
                     
                 });
         }
 }]);
 
-angular.module('app').controller('GetRoomNameCtrl', ['$scope', '$http', 'roomsFactory', function ($scope, $http, roomsFactory) {
+angular.module('app').controller('GetRoomNameCtrl', ['$scope', '$http', 'roomsFactory', 'displayErrorFactory', 
+    function ($scope, $http, roomsFactory, displayErrorFactory) {
     roomsFactory.GetRoom($scope.computer.roomId)
         .then(function successCallback(response) {
             $scope.roomName = response.data.name;
-        }), function errorCallback(response) {
-        };
+        }, function errorCallback(response) {
+            if(response.status === 401){
+                displayErrorFactory.DisplayError(response.data.message);
+            }
+        });
 }]);

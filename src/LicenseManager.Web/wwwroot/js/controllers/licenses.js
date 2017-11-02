@@ -1,11 +1,12 @@
 //Controller for Licenses' index view
-angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'licensesFactory',  function ($scope, $http, licensesFactory){
+angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'licensesFactory', 'displayErrorFactory', 
+    function ($scope, $http, licensesFactory, displayErrorFactory){
     licensesFactory.BrowseLicenses()
         .then(function success(response){
             $scope.licenses = response.data;
-        }), function error(reponse){
-            $window.alert(reponse.error);
-        }
+        }, function error(reponse){
+            displayErrorFactory.DisplayError('Cannot load licenses');
+        });
     
     $scope.selectLicense = function (licenseId) {
         location.href = serverAddress + '/license/' + licenseId;
@@ -13,15 +14,15 @@ angular.module('app').controller('BrowseLicensesCtrl', ['$scope', '$http', 'lice
 }]);
 
 //Controller for Licenses' add view
-angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licensesFactory', 'displayLicensesFactory',
-    function($scope, $http, $window, licenseTypesFactory, licensesFactory, displayLicensesFactory){
+angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$window', 'licenseTypesFactory', 'licensesFactory', 'displayLicensesFactory', 'displayErrorFactory',
+    function($scope, $http, $window, licenseTypesFactory, licensesFactory, displayLicensesFactory, displayErrorFactory){
         //Get all license types
             licenseTypesFactory.BrowseLicenseTypes()
                 .then(function success(response){
                     $scope.licenseTypes = response.data;
-                }), function error(response){
-                    $window.alert(response.error);
-            };
+                }, function error(response){
+                    displayErrorFactory.DisplayError('Cannot load license types');
+            });
         
         $scope.AddLicenseButton = function(){
             licensesFactory.AddLicense(
@@ -32,17 +33,22 @@ angular.module('app').controller('AddLicenseFormCtrl', ['$scope', '$http', '$win
                 $scope.serialNumber
             ).then(function success(response){
                 displayLicensesFactory.AddDisplay();
-            }), function error(response){
-                $window.alert(response.error);
-            }
+            }, function error(response){
+                if(response.status === 401){
+                    displayErrorFactory.DisplayError(response.data.message);
+                }
+                else{
+                    displayErrorFactory.DisplayError('Cannot add license type');
+                } 
+            });
         }
         
 
 }]);
 //Controller for license's details view
 angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '$location', '$window', '$filter', '$ngConfirm', 'licensesFactory', 'licenseTypesFactory', 
-    'computersFactory', 'roomsFactory', 'displayLicensesFactory', function($scope, $http, $location, $window, $filter, $ngConfirm, licensesFactory, licenseTypesFactory, 
-    computersFactory, roomsFactory, displayLicensesFactory){
+    'computersFactory', 'roomsFactory', 'displayLicensesFactory', 'displayErrorFactory', function($scope, $http, $location, 
+    $window, $filter, $ngConfirm, licensesFactory, licenseTypesFactory, computersFactory, roomsFactory, displayLicensesFactory, displayErrorFactory){
         //$scope.isDisable = true -- disable all inputs
         //$scope.isReadonly = true -- readonly for computer input
         $scope.isDisabled = true;
@@ -50,7 +56,7 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
         
         //get current licenseId from URL
         var currentLicenseId = $location.absUrl().split('/')[4];
-        var ll;
+
         //Get selected license details
         licensesFactory.GetLicense(currentLicenseId)
             .then(function success(response){
@@ -61,9 +67,14 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                     .then(function success(response){
                         $scope.licenseTypes = [response.data];
                         $scope.ddlLicenseTypes = $scope.license.licenseTypeId;
-                    }), function error(response){
-                        $window.alert(response.error);
-                    }
+                    }, function error(response){
+                        if(response.status === 401){
+                            displayErrorFactory.DisplayError(response.data.message);
+                        }
+                        else{
+                            displayErrorFactory.DisplayError('Cannot load license type data');
+                        }
+                    });
             });
             //Delete button
             $scope.DeleteButton = function(){
@@ -79,9 +90,14 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                 licensesFactory.DeleteLicense(currentLicenseId)
                                     .then(function successCallback(response) {
                                         displayLicensesFactory.DeleteDisplay();
-                                }), function error(response){
-                                    $window.alert(response.error);
-                                };
+                                }, function error(response){
+                                    if(response.status === 401){
+                                        displayErrorFactory.DisplayError(response.data.message);
+                                    }
+                                    else{
+                                        displayErrorFactory.DisplayError('Cannot delete license type');
+                                    }
+                                });
                             }
                         },
                         No: function (scope, button) {
@@ -111,9 +127,14 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                     $scope.ddlComputers
                                 ).then(function success(response){
                                     displayLicensesFactory.SaveDisplay();
-                                }), function error(response){
-                                    $window.alert(response.error);
-                                };
+                                }, function error(response){
+                                    if(response.status === 401){
+                                        displayErrorFactory.DisplayError(response.data.message);
+                                    }
+                                    else{
+                                        displayErrorFactory.DisplayError('Cannot save license type');
+                                    }
+                                });
                             }
                         },
                         No: function (scope, button) {
@@ -138,9 +159,9 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                 computersFactory.BrowseComputers()
                     .then(function success(response){
                         $scope.license.computers = response.data;
-                    }), function error(reponse){
-                        $window.alert(response.error)
-                    }
+                    }, function error(reponse){
+                        displayErrorFactory.DisplayError('Cannot load computers');
+                    });
             }
 
             //Doubleclick on computer's inventoryNumber event
@@ -174,9 +195,14 @@ angular.module('app').controller('DetailsLicenseFormCtrl', ['$scope', '$http', '
                                 });
                             })
                         
-                    }), function error(response){
-                        $window.alert(response.error);
-                    }
+                    }, function error(response){
+                        if(response.status === 401){
+                            displayErrorFactory.DisplayError(response.data.message);
+                        }
+                        else{
+                            displayErrorFactory.DisplayError('Cannot load computer data');
+                        }
+                    });
             }
 }]);
 
