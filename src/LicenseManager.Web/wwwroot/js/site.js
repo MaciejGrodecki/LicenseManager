@@ -1,13 +1,13 @@
-// var ipServerAddress = 'http://46.101.102.100:5000/';
-// var serverAddress = 'http://46.101.102.100/';
+var ipServerAddress = 'http://46.101.102.100:5000/';
+var serverAddress = 'http://46.101.102.100';
 
-var ipServerAddress = 'http://localhost:5000/';
-var serverAddress = 'http://localhost:5050';
+// var ipServerAddress = 'http://localhost:5000/';
+// var serverAddress = 'http://localhost:5050';
 
 //Redirects
 
 function AddLicenseRedirect() {
-    location.href = serverAddress + 'license/Add/ ';
+    location.href = serverAddress + '/license/Add/ ';
 }
 
 function MainPageRedirect() {
